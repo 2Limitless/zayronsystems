@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "ZayronSystems",
     images: [
       {
-        url: "/og-image.jpg", // You can update this to an actual image path later
+        url: "/logo.png",
         width: 1200,
         height: 630,
       }
