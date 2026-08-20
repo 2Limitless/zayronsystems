@@ -79,7 +79,7 @@ export default function Home() {
 
       <div className="relative z-10 w-full h-full flex flex-col pointer-events-none">
         <header className="flex-none flex items-center justify-between px-8 py-8 md:px-16 md:py-10 pointer-events-auto">
-          <img src="/logo.png" alt="ZayronSystems Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/logo.png" alt="ZayronSystems Logo" className="h-10 md:h-16 w-auto object-contain" />
           <nav className="hidden md:flex space-x-12 items-center">
             <button onClick={() => handleNavClick("portfolio")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.portfolio}</button>
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
