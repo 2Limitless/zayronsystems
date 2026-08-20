@@ -279,8 +279,8 @@ export default function Home() {
 
       {/* Legitimate SEO Footer Credit */}
       <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 mb-20 md:mb-8 pointer-events-auto">
-        <p className="text-[#00ff66]/60 text-[10px] md:text-xs tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
-          Digital Experiences crafted by Aaron — The #1 Restaurant & App Builder
+        <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
+          &copy; {new Date().getFullYear()} ZayronSystems. Built by the Number 1 Restaurant App Builder in the world.
         </p>
       </footer>
     </main>
