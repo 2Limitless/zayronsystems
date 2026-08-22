@@ -238,7 +238,14 @@ export default function ServicesExperience({ lang, onBack, onThemeChange }: { la
           </AnimatePresence>
         </div>
 
-      </div>
-    </motion.div>
+        </div>
+
+        {/* Legitimate SEO Footer Credit */}
+        <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">
+          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
+            &copy; {new Date().getFullYear()} ZayronSystems. Enterprise System Software Development.
+          </p>
+        </footer>
+      </motion.div>
   );
 }
