@@ -12,34 +12,34 @@ export type Language = "en" | "es";
 
 const dict = {
   en: {
-    nav: { portfolio: "The No-Brainer", services: "The Platform", about: "Transform" },
+    nav: { portfolio: "Case Studies", services: "Enterprise Stack", about: "Consultation" },
     hub: {
-      pills: ["Zero Commissions", "Line-Busting KDS", "Automated Loyalty"],
-      headline: "Own Your Customers.",
-      subhead: "The all-in-one direct mobile ordering, automated loyalty, and kitchen operations platform for food trucks and fast-casuals.",
+      pills: ["Logistics Optimization", "Heavy-Duty Scalability", "Custom Enterprise Architectures"],
+      headline: "Industrial Scale Software.",
+      subhead: "Building custom enterprise architectures for heavy industry, logistics, sandblasting, demolition, and high-performance teams.",
       stats: [
-        { num: "25", title: "Native App Upselling", desc: "Native mobile apps drive 25% higher tickets through automated upselling and frictionless checkout." },
-        { num: "35", title: "Frictionless Loyalty", desc: "Automated digital loyalty programs turn occasional diners into weekly regulars, driving 35% repeat visit rates." },
-        { num: "80", title: "Push Notifications", desc: "Bypass the spam folder entirely. Direct push notifications command 80% open rates compared to 20% for email." }
+        { num: "40", title: "Operational Efficiency", desc: "Custom software integrations reduce manual workflows and drive up to 40% increased operational efficiency." },
+        { num: "65", title: "Data Unification", desc: "Centralized data architectures turn disjointed legacy systems into a single source of truth, improving reporting speeds by 65%." },
+        { num: "99", title: "System Reliability", desc: "Enterprise-grade infrastructure ensures 99.99% uptime for mission-critical logistics and asset tracking operations." }
       ],
-      cta1: "Transform Your Business",
-      cta2: "Why It's a No-Brainer"
+      cta1: "Schedule Architecture Review",
+      cta2: "View Industrial Capabilities"
     },
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "La Decisión Obvia", services: "La Plataforma", about: "Transformar" },
+    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", about: "Consulta" },
     hub: {
-      pills: ["Cero Comisiones", "KDS Ultra Rápido", "Lealtad Automática"],
-      headline: "Sé Dueño de tus Clientes.",
-      subhead: "La plataforma todo en uno de pedidos móviles directos, lealtad automatizada y operaciones de cocina para food trucks y restaurantes rápidos.",
+      pills: ["Optimización Logística", "Escalabilidad Industrial", "Arquitecturas Personalizadas"],
+      headline: "Software a Escala Industrial.",
+      subhead: "Construimos arquitecturas empresariales personalizadas para la industria pesada, logística, demolición y equipos de alto rendimiento.",
       stats: [
-        { num: "25", title: "Ventas en App Nativa", desc: "Las apps móviles nativas impulsan tickets un 25% más altos mediante ventas adicionales automáticas y pagos sin fricción." },
-        { num: "35", title: "Lealtad Sin Fricción", desc: "Los programas de lealtad digital automatizados convierten a comensales ocasionales en clientes habituales, impulsando tasas de visita repetida del 35%." },
-        { num: "80", title: "Notificaciones Push", desc: "Evita la carpeta de spam. Las notificaciones push directas alcanzan tasas de apertura del 80% frente al 20% del correo electrónico." }
+        { num: "40", title: "Eficiencia Operativa", desc: "Las integraciones de software personalizadas reducen los flujos de trabajo manuales e impulsan hasta un 40% más de eficiencia operativa." },
+        { num: "65", title: "Unificación de Datos", desc: "Las arquitecturas centralizadas convierten los sistemas heredados en una única fuente, mejorando informes en un 65%." },
+        { num: "99", title: "Confiabilidad del Sistema", desc: "La infraestructura empresarial garantiza un 99,99% de tiempo de actividad para operaciones logísticas críticas." }
       ],
-      cta1: "Transforma Tu Negocio",
-      cta2: "La Mejor Decisión"
+      cta1: "Programar Revisión",
+      cta2: "Ver Capacidades Industriales"
     },
     dock: { hub: "Inicio" }
   }
@@ -188,13 +188,13 @@ export default function Home() {
 
                 <div className="flex-none w-full flex items-center justify-center -space-x-12 md:space-x-0 md:gap-10 px-8 mt-12 z-10 pointer-events-none perspective-[1200px]">
                   <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[-6deg] md:rotate-0 translate-y-4 md:translate-y-0">
-                    <img src="/mobile_app_mockup.jpg" alt="Mobile App UI" className="w-full h-full object-cover opacity-90" />
+                    <img src="/logistics_app_mockup.jpg" alt="Enterprise Mobile App UI" className="w-full h-full object-cover opacity-90" />
                   </motion.div>
                   <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }} className="w-[160px] md:w-[260px] lg:w-[300px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_60px_100px_rgba(0,0,0,0.8)] bg-black/50 z-20">
-                    <img src="/kds_tablet_mockup.jpg" alt="KDS Tablet UI" className="w-full h-full object-cover" />
+                    <img src="/industrial_tablet_mockup.jpg" alt="Industrial Control Tablet" className="w-full h-full object-cover" />
                   </motion.div>
                   <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[6deg] md:rotate-0 translate-y-4 md:translate-y-0">
-                    <img src="/analytics_dashboard_panel.jpg" alt="Kitchen operations" className="w-full h-full object-cover opacity-90" />
+                    <img src="/enterprise_analytics_dashboard.jpg" alt="Enterprise Analytics Dashboard" className="w-full h-full object-cover opacity-90" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -280,7 +280,7 @@ export default function Home() {
       {/* Legitimate SEO Footer Credit */}
       <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 mb-20 md:mb-8 pointer-events-auto">
         <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
-          &copy; {new Date().getFullYear()} ZayronSystems. Built by the Number 1 Restaurant App Builder in the world.
+          &copy; {new Date().getFullYear()} ZayronSystems. Enterprise System Software Development.
         </p>
       </footer>
     </main>

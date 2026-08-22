@@ -7,81 +7,81 @@ import type { Language } from "../app/page";
 const dict = {
   en: {
     back: "Back to Hub",
-    title: "The ",
-    titleHighlight: "No-Brainer.",
-    desc: "Why leaving DoorDash for a direct first-party mobile app is the easiest decision you'll ever make.",
+    title: "Industrial ",
+    titleHighlight: "Scale.",
+    desc: "Why replacing disjointed legacy systems with custom enterprise software is a competitive necessity.",
     profit: {
-      market: "Marketplace Delivery",
-      marketDesc1: "Take-home on a $25 order via DoorDash or UberEats.",
-      marketDesc2: "Standard 30% Commission.",
-      direct: "Direct App Orders",
-      directDesc1: "Take-home on a $25 order via your own app.",
-      directDesc2: "Standard Processing. You keep the revenue."
+      market: "Off-the-shelf Software",
+      marketDesc1: "Annual cost of patching together 5 different SaaS tools.",
+      marketDesc2: "High friction, data silos, monthly fees.",
+      direct: "Custom Architecture",
+      directDesc1: "A unified system built specifically for your operations.",
+      directDesc2: "Total data sovereignty. No per-user licenses."
     },
     cards: [
       {
-        title: "Build Your Digital Empire",
-        desc: "Keep every email, phone number, and order history. Power your marketing and own your audience instead of renting it."
+        title: "Data Sovereignty",
+        desc: "Own your data architecture. Avoid vendor lock-in and power your operations with centralized intelligence."
       },
       {
-        title: "Line-Busting Speed",
-        desc: "Turn massive lines into fast, frictionless throughput instantly."
+        title: "Operational Automation",
+        desc: "Reduce manual overhead by automating logistics, scheduling, and asset management in real-time."
       },
       {
-        title: "Automated Loyalty",
-        desc: "Digital points effortlessly turn casual diners into loyal regulars."
+        title: "Asset Tracking",
+        desc: "Real-time visibility into heavy machinery, fleets, and dispersed enterprise resources."
       },
       {
-        title: "Kitchen Sync",
-        desc: "Included KDS replaces messy paper tickets with clear, digital firing."
+        title: "Legacy System Integration",
+        desc: "Seamlessly connect old databases and hardware to modern cloud infrastructure."
       },
       {
-        title: "Command Attention",
-        desc: "Instantly drive foot traffic on slow days with direct mobile alerts. Enjoy massive open rates compared to email marketing."
+        title: "Mission Critical Uptime",
+        desc: "Heavy-duty server architectures designed for the demands of industrial 24/7 environments."
       },
       {
-        title: "Upsize Every Order",
-        desc: "Automated upselling drives up to 25% larger average tickets."
+        title: "Scalable Infrastructure",
+        desc: "Built to handle massive data loads without breaking a sweat as your enterprise grows."
       }
     ]
   },
   es: {
     back: "Volver al Inicio",
-    title: "La Decisión ",
-    titleHighlight: "Obvia.",
-    desc: "Por qué dejar las apps de terceros por una app móvil directa es la decisión más fácil que tomarás.",
+    title: "Escala ",
+    titleHighlight: "Industrial.",
+    desc: "Por qué reemplazar los sistemas heredados con software empresarial personalizado es una necesidad competitiva.",
     profit: {
-      market: "Apps de Terceros",
-      marketDesc1: "Ganancia de un pedido de $25 vía DoorDash o UberEats.",
-      marketDesc2: "Comisión estándar del 30%.",
-      direct: "Tu Propia App",
-      directDesc1: "Ganancia de un pedido de $25 mediante tu propia app.",
-      directDesc2: "Procesamiento estándar. Tú te quedas con las ganancias."
+      market: "Software Comercial",
+      marketDesc1: "Costo anual de usar 5 herramientas SaaS diferentes.",
+      marketDesc2: "Alta fricción, silos de datos, tarifas mensuales.",
+      direct: "Arquitectura Personalizada",
+      directDesc1: "Un sistema unificado creado específicamente para tus operaciones.",
+      directDesc2: "Soberanía total de datos. Sin licencias por usuario."
     },
     cards: [
       {
-        title: "Construye tu Imperio Digital",
-        desc: "Guarda cada correo, teléfono e historial de pedidos. Potencia tu marketing y sé dueño de tu audiencia en lugar de alquilarla."
+        title: "Soberanía de Datos",
+        desc: "Sé dueño de tu arquitectura de datos. Evita ataduras a proveedores y potencia tus operaciones."
       },
       {
-        title: "Velocidad Ultra Rápida",
-        desc: "Convierte filas masivas en un rendimiento rápido y sin fricción al instante."
+        title: "Automatización Operativa",
+        desc: "Reduce costos manuales automatizando logística, programación y gestión de activos en tiempo real."
       },
       {
-        title: "Lealtad Automatizada",
-        desc: "Los puntos digitales convierten sin esfuerzo a los comensales casuales en clientes habituales."
+        title: "Seguimiento de Activos",
+        desc: "Visibilidad en tiempo real de maquinaria pesada, flotas y recursos empresariales dispersos."
       },
       {
-        title: "Sincronización de Cocina",
-        desc: "El KDS incluido reemplaza los boletos de papel con pedidos digitales claros."
+        title: "Integración de Sistemas Heredados",
+        desc: "Conecta sin problemas bases de datos y hardware antiguos a una infraestructura en la nube moderna."
       },
       {
-        title: "Llama la Atención",
-        desc: "Atrae clientes en días lentos con alertas móviles directas. Disfruta de tasas de apertura masivas frente al correo."
+        title: "Confiabilidad Crítica",
+        desc: "Arquitecturas de servidores diseñadas para las demandas de entornos industriales 24/7."
       },
       {
-        title: "Incrementa los Pedidos",
-        desc: "Las ventas adicionales automáticas generan tickets en promedio 25% más altos."
+        title: "Infraestructura Escalable",
+        desc: "Creada para manejar cargas de datos masivas sin problemas a medida que tu empresa crece."
       }
     ]
   }
@@ -124,7 +124,7 @@ export default function PortfolioExperience({ lang, onBack }: { lang: Language, 
           >
             <div className="absolute top-0 right-0 w-48 h-48 bg-red-500/10 blur-[80px] rounded-full pointer-events-none" />
             <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-red-500 font-bold">{t.profit.market}</h3>
-            <div><span className="text-3xl md:text-6xl font-sans font-bold text-white tracking-tighter">$17.50</span></div>
+            <div><span className="text-3xl md:text-6xl font-sans font-bold text-white tracking-tighter">$145k+</span></div>
             <p className="text-white/70 text-xs md:text-base font-medium leading-tight">{t.profit.marketDesc1}</p>
             <div className="w-full h-[1px] bg-red-500/20 my-2 md:my-4" />
             <p className="text-red-400 text-xs md:text-sm font-semibold leading-tight">{t.profit.marketDesc2}</p>
@@ -136,7 +136,7 @@ export default function PortfolioExperience({ lang, onBack }: { lang: Language, 
           >
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#00ff66]/10 blur-[80px] rounded-full pointer-events-none" />
             <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#00ff66] font-bold">{t.profit.direct}</h3>
-            <div><span className="text-3xl md:text-6xl font-sans font-bold text-white tracking-tighter">$23.97</span></div>
+            <div><span className="text-3xl md:text-6xl font-sans font-bold text-white tracking-tighter">OWNED</span></div>
             <p className="text-white/70 text-xs md:text-base font-medium leading-tight">{t.profit.directDesc1}</p>
             <div className="w-full h-[1px] bg-[#00ff66]/20 my-2 md:my-4" />
             <p className="text-[#00ff66]/80 text-xs md:text-sm font-semibold leading-tight">{t.profit.directDesc2}</p>

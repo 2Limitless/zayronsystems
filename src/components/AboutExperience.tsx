@@ -7,32 +7,32 @@ import type { Language } from "../app/page";
 const dict = {
   en: {
     back: "Back to Hub",
-    title1: "Book a meeting to",
-    title2: "Transform your business.",
-    desc1: "Stop renting your customers. It's time to own your digital real estate.",
-    desc2: "We build the exact enterprise-grade platform you need to automate loyalty, bypass third-party fees, and turn casual diners into lifelong regulars.",
+    title1: "Schedule an",
+    title2: "Architecture Review.",
+    desc1: "Stop patching together legacy systems. It's time to build a unified enterprise infrastructure.",
+    desc2: "We architect custom, heavy-duty software solutions that scale with your operations and give you complete sovereignty over your data.",
     form: {
       name: "Full Name",
       email: "Email Address",
       phone: "Phone Number",
-      business: "Food Truck / Restaurant Name",
-      submit: "Claim Your Custom App Build",
-      success: "Received! We will contact you shortly."
+      business: "Company Name & Industry",
+      submit: "Request Enterprise Build",
+      success: "Received! An architect will contact you shortly."
     }
   },
   es: {
     back: "Volver al Inicio",
-    title1: "Agenda una reunión para",
-    title2: "Transformar tu negocio.",
-    desc1: "Deja de alquilar a tus clientes. Es hora de ser dueño de tu espacio digital.",
-    desc2: "Construimos la plataforma empresarial exacta que necesitas para automatizar la lealtad, evitar tarifas de terceros y convertir a comensales ocasionales en clientes habituales de por vida.",
+    title1: "Programa una",
+    title2: "Revisión de Arquitectura.",
+    desc1: "Deja de improvisar con sistemas heredados. Es hora de construir una infraestructura empresarial unificada.",
+    desc2: "Diseñamos soluciones de software personalizadas de uso rudo que escalan con tus operaciones y te brindan soberanía total sobre tus datos.",
     form: {
       name: "Nombre Completo",
       email: "Correo Electrónico",
       phone: "Número de Teléfono",
-      business: "Nombre del Food Truck / Restaurante",
-      submit: "Reclamar Tu App Personalizada",
-      success: "¡Recibido! Nos pondremos en contacto contigo pronto."
+      business: "Nombre de la Empresa e Industria",
+      submit: "Solicitar Build Empresarial",
+      success: "¡Recibido! Un arquitecto te contactará pronto."
     }
   }
 };

@@ -8,63 +8,63 @@ import type { Language } from "../app/page";
 const dict = {
   en: {
     back: "Back to Hub",
-    title: "The ",
-    titleHighlight: "Platform.",
-    desc: "A complete ecosystem. We empower your kitchen operations while delivering a world-class experience to your customers.",
-    scrollCompare: "Compare Packages Below",
+    title: "Enterprise ",
+    titleHighlight: "Stack.",
+    desc: "A complete infrastructure. We architect high-performance data systems while delivering world-class reliability.",
+    scrollCompare: "Compare Tiers Below",
     tier1: {
-      headerSubtitle: "Tier 1",
-      headerTitle: "The Core Technology.",
-      headerDesc: "The ultimate software stack to run your restaurant.",
+      headerSubtitle: "Core",
+      headerTitle: "Core Infrastructure.",
+      headerDesc: "The foundational software stack for industrial operations.",
       cards: [
-        { title: "Custom App", desc: "Frictionless mobile ordering matching your exact branding." },
-        { title: "Digital KDS", desc: "Eliminate paper tickets with a smart kitchen display." },
-        { title: "Loyalty Engine", desc: "Automated points and rewards to drive repeat visits." },
-        { title: "Live Analytics", desc: "100% ownership of your customer data and sales trends." }
+        { title: "Logistics Hub", desc: "Custom dashboards for real-time tracking and dispatching." },
+        { title: "Data Warehouse", desc: "Centralized storage for critical operational data." },
+        { title: "API Gateway", desc: "Secure endpoints for third-party service integration." },
+        { title: "Live Analytics", desc: "100% ownership of your performance metrics and usage trends." }
       ]
     },
     complete: {
-      headerSubtitle: "Tier 2",
-      headerTitle: "The Complete Package.",
-      headerDesc: "Everything in Tier 1, PLUS our 'Done-For-You' white-glove launch.",
+      headerSubtitle: "Full-Scale",
+      headerTitle: "Full-Scale Transformation.",
+      headerDesc: "Everything in Core, PLUS our 'White-Glove' enterprise deployment.",
       cards: [
-        { title: "Store Publishing", desc: "We handle developer accounts, Apple/Google approval, and Stripe." },
-        { title: "Menu Merchandising", desc: "We manually build your menu and program smart upsells." },
-        { title: "Physical Hardware", desc: "Pre-configured 10\" Android tablet with a heavy-duty mount." },
-        { title: "Marketing Kit", desc: "Printed QR table stands, vinyls, and physical loyalty cards." },
-        { title: "SMS Campaigns", desc: "Automated pickup alerts and win-back texts for lapsed diners." },
-        { title: "In-Person Support", desc: "On-site staff training and live coverage during your first rush." }
+        { title: "Cloud Deployment", desc: "We manage AWS/GCP provisioning, security, and VPC setup." },
+        { title: "Legacy Migration", desc: "We manually migrate your old data to the new architecture." },
+        { title: "Hardware Provisioning", desc: "Pre-configured rugged industrial tablets and IoT sensors." },
+        { title: "SOP Development", desc: "Custom digital standard operating procedures and documentation." },
+        { title: "Automated Alerts", desc: "Critical system notifications and maintenance reminders via SMS." },
+        { title: "24/7 Support SLA", desc: "Dedicated engineering support and guaranteed uptime SLAs." }
       ]
     }
   },
   es: {
     back: "Volver al Inicio",
-    title: "La ",
-    titleHighlight: "Plataforma.",
-    desc: "Un ecosistema completo. Potenciamos las operaciones de tu cocina mientras brindamos una experiencia de primer nivel a tus clientes.",
-    scrollCompare: "Compara Paquetes Abajo",
+    title: "Stack ",
+    titleHighlight: "Empresarial.",
+    desc: "Una infraestructura completa. Diseñamos sistemas de datos de alto rendimiento con confiabilidad mundial.",
+    scrollCompare: "Compara Niveles Abajo",
     tier1: {
-      headerSubtitle: "Nivel 1",
-      headerTitle: "Tecnología Principal.",
-      headerDesc: "El software definitivo para operar tu restaurante.",
+      headerSubtitle: "Base",
+      headerTitle: "Infraestructura Base.",
+      headerDesc: "El stack de software fundamental para operaciones industriales.",
       cards: [
-        { title: "App Personalizada", desc: "Pedidos móviles rápidos y sin fricción, con tu propia marca." },
-        { title: "KDS Digital", desc: "Elimina los tickets de papel con una pantalla de cocina inteligente." },
-        { title: "Motor de Lealtad", desc: "Puntos y recompensas automáticas para visitas recurrentes." },
-        { title: "Análisis en Vivo", desc: "Propiedad del 100% de los datos de tus clientes y tendencias." }
+        { title: "Hub Logístico", desc: "Paneles personalizados para seguimiento y despacho en tiempo real." },
+        { title: "Almacén de Datos", desc: "Almacenamiento centralizado para datos operativos críticos." },
+        { title: "Gateway API", desc: "Endpoints seguros para la integración de servicios de terceros." },
+        { title: "Análisis en Vivo", desc: "Propiedad del 100% de tus métricas de rendimiento y tendencias." }
       ]
     },
     complete: {
-      headerSubtitle: "Nivel 2",
-      headerTitle: "El Paquete Completo.",
-      headerDesc: "Todo en el Nivel 1, MÁS nuestro lanzamiento VIP 'Hecho por Ti'.",
+      headerSubtitle: "Escala Total",
+      headerTitle: "Transformación a Escala Total.",
+      headerDesc: "Todo en la Base, MÁS nuestro despliegue empresarial 'VIP'.",
       cards: [
-        { title: "Publicación en Tiendas", desc: "Manejamos cuentas, aprobación de Apple/Google y pagos." },
-        { title: "Menú y Ventas", desc: "Construimos tu menú y programamos sugerencias de ventas." },
-        { title: "Hardware Físico", desc: "Tableta de 10\" configurada con soporte de uso rudo." },
-        { title: "Kit de Marketing", desc: "Soportes acrílicos QR, vinilos y tarjetas físicas impresas." },
-        { title: "Campañas por SMS", desc: "Alertas automáticas y textos para recuperar clientes perdidos." },
-        { title: "Soporte en Persona", desc: "Entrenamiento local y apoyo durante tu primer gran turno." }
+        { title: "Despliegue en la Nube", desc: "Manejamos AWS/GCP, seguridad y configuración de VPC." },
+        { title: "Migración de Sistemas", desc: "Migramos manualmente tus datos antiguos a la nueva arquitectura." },
+        { title: "Hardware Industrial", desc: "Tabletas industriales resistentes preconfiguradas y sensores IoT." },
+        { title: "Desarrollo de SOPs", desc: "Procedimientos operativos estándar digitales personalizados." },
+        { title: "Alertas Automatizadas", desc: "Notificaciones críticas del sistema y recordatorios de mantenimiento." },
+        { title: "Soporte SLA 24/7", desc: "Soporte de ingeniería dedicado y garantías de tiempo de actividad." }
       ]
     }
   }

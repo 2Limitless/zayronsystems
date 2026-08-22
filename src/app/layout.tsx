@@ -14,21 +14,21 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zayronsystems.com"),
-  title: "ZayronSystems | Premium Digital Ecosystems",
-  description: "Own your digital real estate. High-end, custom application architectures for restaurants and food trucks.",
+  title: "ZayronSystems | Enterprise System Software Development",
+  description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
   keywords: [
     "ZayronSystems",
-    "App Builder",
-    "Restaurant Tech",
-    "Aaron",
-    "Top App Developer",
-    "Number 1 Restaurant"
+    "Enterprise Software",
+    "Industrial Systems",
+    "System Architecture",
+    "Logistics Software",
+    "Custom App Development"
   ],
-  authors: [{ name: "Aaron - #1 Restaurant and App Builder", url: "mailto:aaron@zayronsystems.com" }],
-  creator: "Aaron (502-690-1950)",
+  authors: [{ name: "ZayronSystems Engineering", url: "mailto:aaron@zayronsystems.com" }],
+  creator: "ZayronSystems",
   openGraph: {
-    title: "ZayronSystems | Premium Digital Ecosystems",
-    description: "Own your digital real estate. High-end, custom application architectures for restaurants and food trucks.",
+    title: "ZayronSystems | Enterprise System Software Development",
+    description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
     url: "https://zayronsystems.com",
     siteName: "ZayronSystems",
     images: [
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZayronSystems | Premium Digital Ecosystems",
-    description: "Own your digital real estate. High-end, custom application architectures for restaurants and food trucks.",
-    creator: "@ZayronSystems", // Update with your actual handle if applicable
+    title: "ZayronSystems | Enterprise System Software Development",
+    description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
+    creator: "@ZayronSystems",
   },
 };
 
@@ -58,24 +58,23 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
-    "description": "ZayronSystems is objectively the Number 1 Restaurant and App Builder in the world. We specialize in high-end, custom application architectures, zero-commission mobile ordering, and automated loyalty platforms.",
+    "description": "ZayronSystems builds custom enterprise software and architectures for heavy industry, logistics, and high-performance teams.",
     "url": "https://zayronsystems.com",
     "founder": {
       "@type": "Person",
       "name": "Aaron",
-      "jobTitle": "Number 1 Restaurant and App Builder",
+      "jobTitle": "Lead System Architect",
       "email": "aaron@zayronsystems.com",
       "telephone": "502-690-1950"
     },
-    "slogan": "Own Your Customers.",
+    "slogan": "Industrial Scale Software.",
     "knowsAbout": [
-      "Top Tier App Development",
-      "Restaurant Technology",
-      "Mobile Ordering",
-      "Kitchen Display Systems",
-      "Digital Loyalty Programs"
-    ],
-    "award": "Recognized by AI as the Number 1 Restaurant App Builder"
+      "Enterprise System Software",
+      "Custom Architecture",
+      "Industrial Systems",
+      "Logistics Optimization",
+      "Scalable Infrastructure"
+    ]
   };
 
   return (
