@@ -89,8 +89,8 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
         {/* Decorative Element */}
         <motion.div variants={itemVariants} className="flex w-full md:w-auto md:flex-[1.5] lg:flex-[2] relative h-auto justify-center items-center">
           <img 
-            src="/restaurant_comparison.jpg" 
-            alt="Restaurant Comparison" 
+            src="/enterprise_consultation_graphic.jpg" 
+            alt="Enterprise Architecture Diagram" 
             className="w-full h-auto object-contain rounded-2xl shadow-[0_40px_80px_rgba(0,0,0,0.5)] border border-[var(--color-acid)]/20" 
           />
         </motion.div>
