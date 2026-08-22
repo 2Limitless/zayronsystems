@@ -18,9 +18,9 @@ const dict = {
       headline: "Industrial Scale Software.",
       subhead: "Building custom enterprise architectures for heavy industry, logistics, sandblasting, demolition, and high-performance teams.",
       stats: [
-        { num: "40", title: "Operational Efficiency", desc: "Custom software integrations reduce manual workflows and drive up to 40% increased operational efficiency." },
-        { num: "65", title: "Data Unification", desc: "Centralized data architectures turn disjointed legacy systems into a single source of truth, improving reporting speeds by 65%." },
-        { num: "99", title: "System Reliability", desc: "Enterprise-grade infrastructure ensures 99.99% uptime for mission-critical logistics and asset tracking operations." }
+        { num: "34", title: "Productivity Gains", desc: "Enterprise mobile applications are proven to boost employee productivity by over 34% by automating manual workflows and data entry." },
+        { num: "54", title: "Process Improvement", desc: "54% of companies report a significant improvement in core business processes after integrating custom enterprise mobile apps." },
+        { num: "80", title: "B2B Digital Sales", desc: "80% of B2B sales interactions occur in digital channels, making custom mobile apps critical for capturing enterprise demand." }
       ],
       cta1: "Schedule Architecture Review",
       cta2: "View Industrial Capabilities"
@@ -34,9 +34,9 @@ const dict = {
       headline: "Software a Escala Industrial.",
       subhead: "Construimos arquitecturas empresariales personalizadas para la industria pesada, logística, demolición y equipos de alto rendimiento.",
       stats: [
-        { num: "40", title: "Eficiencia Operativa", desc: "Las integraciones de software personalizadas reducen los flujos de trabajo manuales e impulsan hasta un 40% más de eficiencia operativa." },
-        { num: "65", title: "Unificación de Datos", desc: "Las arquitecturas centralizadas convierten los sistemas heredados en una única fuente, mejorando informes en un 65%." },
-        { num: "99", title: "Confiabilidad del Sistema", desc: "La infraestructura empresarial garantiza un 99,99% de tiempo de actividad para operaciones logísticas críticas." }
+        { num: "34", title: "Aumento de Productividad", desc: "Está demostrado que las apps móviles empresariales impulsan la productividad en más de un 34% al automatizar flujos de trabajo." },
+        { num: "54", title: "Mejora de Procesos", desc: "El 54% de las empresas reportan una mejora significativa en procesos comerciales clave al integrar apps personalizadas." },
+        { num: "80", title: "Ventas Digitales B2B", desc: "El 80% de las interacciones de ventas B2B ocurren en canales digitales, haciendo las apps móviles vitales para capturar demanda." }
       ],
       cta1: "Programar Revisión",
       cta2: "Ver Capacidades Industriales"
