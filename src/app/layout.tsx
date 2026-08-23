@@ -14,21 +14,24 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zayronsystems.com"),
-  title: "ZayronSystems | Enterprise System Software Development",
-  description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
+  title: "ZayronSystems | Custom Enterprise Software & Architecture",
+  description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
   keywords: [
     "ZayronSystems",
-    "Enterprise Software",
-    "Industrial Systems",
-    "System Architecture",
-    "Logistics Software",
-    "Custom App Development"
+    "Enterprise Software Development",
+    "Custom Restaurant Apps",
+    "Zero Commission Ordering",
+    "Auto Dealership Digital Showrooms",
+    "Industrial IoT Software",
+    "Predictive Maintenance Systems",
+    "Custom CRM ERP",
+    "Digital Transformation"
   ],
   authors: [{ name: "ZayronSystems Engineering", url: "mailto:aaron@zayronsystems.com" }],
   creator: "ZayronSystems",
   openGraph: {
-    title: "ZayronSystems | Enterprise System Software Development",
-    description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
+    title: "ZayronSystems | Custom Enterprise Software & Architecture",
+    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
     url: "https://zayronsystems.com",
     siteName: "ZayronSystems",
     images: [
@@ -43,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZayronSystems | Enterprise System Software Development",
-    description: "Industrial scale software. Custom enterprise architectures for heavy industry, logistics, and high-performance teams.",
+    title: "ZayronSystems | Custom Enterprise Software & Architecture",
+    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
     creator: "@ZayronSystems",
   },
 };
@@ -58,7 +61,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
-    "description": "ZayronSystems builds custom enterprise software and architectures for heavy industry, logistics, and high-performance teams.",
+    "description": "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure for high-performance teams.",
     "url": "https://zayronsystems.com",
     "founder": {
       "@type": "Person",
@@ -67,12 +70,13 @@ export default function RootLayout({
       "email": "aaron@zayronsystems.com",
       "telephone": "502-690-1950"
     },
-    "slogan": "Industrial Scale Software.",
+    "slogan": "Digital Transformation at Scale.",
     "knowsAbout": [
       "Enterprise System Software",
+      "Restaurant Tech & Zero Commission Apps",
+      "Auto Dealership Digital Showrooms",
+      "Industrial IoT & Predictive Maintenance",
       "Custom Architecture",
-      "Industrial Systems",
-      "Logistics Optimization",
       "Scalable Infrastructure"
     ]
   };
