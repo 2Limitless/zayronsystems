@@ -239,8 +239,8 @@ export default function PortfolioExperience({ lang, industry, onBack }: { lang: 
           >
             <div className="absolute top-0 right-0 w-48 h-48 bg-red-500/10 blur-[80px] rounded-full pointer-events-none" />
             <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-red-500 font-bold">{content.profit.market}</h3>
-            <div><span className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-nowrap">{content.profit.marketMetric}</span></div>
-            <p className="text-white/70 text-xs md:text-base font-medium leading-tight">{content.profit.marketDesc1}</p>
+            <div><span className="text-2xl min-[400px]:text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-normal md:whitespace-nowrap leading-none">{content.profit.marketMetric}</span></div>
+            <p className="text-white/70 text-xs md:text-base font-medium leading-tight mt-2">{content.profit.marketDesc1}</p>
             <div className="w-full h-[1px] bg-red-500/20 my-2 md:my-4" />
             <p className="text-red-400 text-xs md:text-sm font-semibold leading-tight">{content.profit.marketDesc2}</p>
           </motion.div>
@@ -251,8 +251,8 @@ export default function PortfolioExperience({ lang, industry, onBack }: { lang: 
           >
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#00ff66]/10 blur-[80px] rounded-full pointer-events-none" />
             <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#00ff66] font-bold">{content.profit.direct}</h3>
-            <div><span className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-nowrap">{content.profit.directMetric}</span></div>
-            <p className="text-white/70 text-xs md:text-base font-medium leading-tight">{content.profit.directDesc1}</p>
+            <div><span className="text-2xl min-[400px]:text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-normal md:whitespace-nowrap leading-none">{content.profit.directMetric}</span></div>
+            <p className="text-white/70 text-xs md:text-base font-medium leading-tight mt-2">{content.profit.directDesc1}</p>
             <div className="w-full h-[1px] bg-[#00ff66]/20 my-2 md:my-4" />
             <p className="text-[#00ff66]/80 text-xs md:text-sm font-semibold leading-tight">{content.profit.directDesc2}</p>
           </motion.div>
