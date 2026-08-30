@@ -425,11 +425,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
-              className={`fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 p-2 rounded-[2rem] backdrop-blur-xl z-[300] border shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 max-w-[95vw] overflow-x-auto overflow-y-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${
+              className={`fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 p-2 rounded-[1.5rem] md:rounded-full backdrop-blur-xl z-[300] border shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 w-[95vw] md:w-max ${
                 isLightMode ? "bg-black/10 border-black/10" : "bg-white/5 border-white/10"
               }`}
             >
-              <div className="flex items-center gap-1 md:gap-2 pointer-events-auto w-max px-1">
+              <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-1.5 md:gap-2 pointer-events-auto w-full">
                 {[
                   { id: "hub", label: t.dock.hub },
                   { id: "portfolio", label: t.nav.portfolio },
@@ -442,7 +442,9 @@ export default function Home() {
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id as ViewState)}
-                      className={`relative px-4 md:px-8 py-3 rounded-full text-center transition-colors duration-500 ${
+                      className={`relative px-3 md:px-8 py-3 rounded-full text-center transition-colors duration-500 ${
+                        item.id === "about" ? "w-full md:w-auto mt-1 md:mt-0" : ""
+                      } ${
                         item.id === "about"
                           ? isActive 
                             ? "text-[var(--color-void)] font-bold"
