@@ -438,27 +438,28 @@ export default function Home() {
                   @media (max-width: 767px) {
                     .mobile-t-mask {
                       border-radius: 0 !important;
+                      --svg-pill: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Crect width='100%25' height='100%25' rx='100' fill='black'/%3E%3C/svg%3E");
                       -webkit-mask-image: 
-                        linear-gradient(black, black),
-                        linear-gradient(black, black),
+                        var(--svg-pill),
+                        var(--svg-pill),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       mask-image: 
-                        linear-gradient(black, black),
-                        linear-gradient(black, black),
+                        var(--svg-pill),
+                        var(--svg-pill),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       
                       -webkit-mask-position: 
                         top center,
                         bottom center,
-                        calc(50% - 109px) 60px,
-                        calc(50% + 85px) 60px;
+                        calc(50% - 97px) 60px,
+                        calc(50% + 97px) 60px;
                       mask-position: 
                         top center,
                         bottom center,
-                        calc(50% - 109px) 60px,
-                        calc(50% + 85px) 60px;
+                        calc(50% - 97px) 60px,
+                        calc(50% + 97px) 60px;
                         
                       -webkit-mask-size: 
                         100% 60px,
