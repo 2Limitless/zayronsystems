@@ -6,8 +6,9 @@ import { X, ArrowUp, Globe } from "lucide-react";
 import PortfolioExperience from "../components/PortfolioExperience";
 import ServicesExperience from "../components/ServicesExperience";
 import AboutExperience from "../components/AboutExperience";
+import WhyUsExperience from "../components/WhyUsExperience";
 
-export type ViewState = "hub" | "portfolio" | "services" | "about";
+export type ViewState = "hub" | "portfolio" | "services" | "whyus" | "about";
 export type Language = "en" | "es";
 export type Industry = "general" | "industrial" | "restaurants" | "auto";
 
@@ -20,7 +21,7 @@ const industriesList = [
 
 const dict = {
   en: {
-    nav: { portfolio: "Case Studies", services: "Enterprise Stack", about: "Consultation" },
+    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation" },
     hub: {
       general: {
         pills: ["Legacy Modernization", "Custom CRM/ERP", "AI Integration"],
@@ -74,7 +75,7 @@ const dict = {
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", about: "Consulta" },
+    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta" },
     hub: {
       general: {
         pills: ["Modernización Legacy", "CRM/ERP Personalizado", "Integración de IA"],
@@ -232,6 +233,7 @@ export default function Home() {
           <nav className="hidden md:flex space-x-12 items-center">
             <button onClick={() => handleNavClick("portfolio")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.portfolio}</button>
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
+            <button onClick={() => handleNavClick("whyus")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.whyus}</button>
             <button onClick={() => handleNavClick("about")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.about}</button>
             
             {/* Language Toggle */}
@@ -402,6 +404,12 @@ export default function Home() {
               </OverlayWrapper>
             )}
 
+            {currentView === "whyus" && (
+              <OverlayWrapper key="whyus" onClose={() => setCurrentView("hub")}>
+                <WhyUsExperience lang={lang} onBack={() => setCurrentView("hub")} />
+              </OverlayWrapper>
+            )}
+
             {currentView === "about" && (
               <OverlayWrapper key="about" onClose={() => setCurrentView("hub")}>
                 <AboutExperience lang={lang} onBack={() => setCurrentView("hub")} />
@@ -426,6 +434,7 @@ export default function Home() {
                   { id: "hub", label: t.dock.hub },
                   { id: "portfolio", label: t.nav.portfolio },
                   { id: "services", label: t.nav.services },
+                  { id: "whyus", label: t.nav.whyus },
                   { id: "about", label: t.nav.about }
                 ].map((item) => {
                   const isActive = currentView === item.id;
