@@ -460,25 +460,25 @@ export default function Home() {
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       
                       -webkit-mask-position: 
-                        top center,
-                        top left,
-                        top right,
-                        center 60px,
-                        bottom center,
-                        calc(50% - 62px) bottom,
-                        calc(50% + 62px) bottom,
-                        calc(50% - 102px) 60px,
-                        calc(50% + 102px) 60px;
+                        left 30px top 0px,
+                        left 0px top 0px,
+                        right 0px top 0px,
+                        left calc(50% - 90px) top 60px,
+                        left calc(50% - 62px) bottom 0px,
+                        left calc(50% - 90px) bottom 0px,
+                        left calc(50% + 34px) bottom 0px,
+                        left calc(50% - 114px) top 60px,
+                        left calc(50% + 90px) top 60px;
                       mask-position: 
-                        top center,
-                        top left,
-                        top right,
-                        center 60px,
-                        bottom center,
-                        calc(50% - 62px) bottom,
-                        calc(50% + 62px) bottom,
-                        calc(50% - 102px) 60px,
-                        calc(50% + 102px) 60px;
+                        left 30px top 0px,
+                        left 0px top 0px,
+                        right 0px top 0px,
+                        left calc(50% - 90px) top 60px,
+                        left calc(50% - 62px) bottom 0px,
+                        left calc(50% - 90px) bottom 0px,
+                        left calc(50% + 34px) bottom 0px,
+                        left calc(50% - 114px) top 60px,
+                        left calc(50% + 90px) top 60px;
                         
                       -webkit-mask-size: 
                         calc(100% - 60px) 60px,
