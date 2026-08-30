@@ -429,13 +429,9 @@ export default function Home() {
             >
               {/* Unified Masked Dock (Single continuous piece of glass, carved via CSS mask) */}
               <div 
-                className={`flex flex-col items-center pointer-events-auto w-full md:w-auto relative z-[5] transition-colors duration-500 backdrop-blur-xl ${
+                className={`mobile-t-mask flex flex-col items-center pointer-events-auto w-full md:w-auto relative z-[5] transition-colors duration-500 backdrop-blur-xl ${
                   isLightMode ? "bg-black/10 md:border md:border-black/10" : "bg-white/5 md:border md:border-white/10"
                 }`}
-                style={{
-                  // On desktop, it's just a rounded-full pill. On mobile, we use a complex mask to carve a T-shape.
-                  borderRadius: '2rem',
-                }}
               >
                 {/* Mobile-only CSS Mask injected via a style block to handle media queries easily */}
                 <style dangerouslySetInnerHTML={{__html: `
@@ -485,8 +481,6 @@ export default function Home() {
                     }
                   }
                 `}} />
-
-                <div className="mobile-t-mask absolute inset-0 -z-10 pointer-events-none" />
 
                 {/* Top Row (60px exactly on mobile) */}
                 <div className="flex flex-nowrap items-center justify-center gap-1.5 md:gap-2 h-[60px] md:h-auto px-2 md:p-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:overflow-visible w-full md:w-auto relative z-10">
