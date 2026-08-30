@@ -22,6 +22,7 @@ const industriesList = [
 const dict = {
   en: {
     nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation" },
+    shortNav: { portfolio: "Cases", services: "Stack", whyus: "Why Us", about: "Consult" },
     hub: {
       general: {
         pills: ["Legacy Modernization", "Custom CRM/ERP", "AI Integration"],
@@ -76,6 +77,7 @@ const dict = {
   },
   es: {
     nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta" },
+    shortNav: { portfolio: "Casos", services: "Stack", whyus: "Nosotros", about: "Consulta" },
     hub: {
       general: {
         pills: ["Modernización Legacy", "CRM/ERP Personalizado", "Integración de IA"],
@@ -429,20 +431,20 @@ export default function Home() {
                 isLightMode ? "bg-black/10 border-black/10" : "bg-white/5 border-white/10"
               }`}
             >
-              <div className="flex items-center gap-1 md:gap-2 pointer-events-auto">
+              <div className="flex items-center gap-0.5 md:gap-2 pointer-events-auto">
                 {[
-                  { id: "hub", label: t.dock.hub },
-                  { id: "portfolio", label: t.nav.portfolio },
-                  { id: "services", label: t.nav.services },
-                  { id: "whyus", label: t.nav.whyus },
-                  { id: "about", label: t.nav.about }
+                  { id: "hub", label: t.dock.hub, shortLabel: t.dock.hub },
+                  { id: "portfolio", label: t.nav.portfolio, shortLabel: t.shortNav.portfolio },
+                  { id: "services", label: t.nav.services, shortLabel: t.shortNav.services },
+                  { id: "whyus", label: t.nav.whyus, shortLabel: t.shortNav.whyus },
+                  { id: "about", label: t.nav.about, shortLabel: t.shortNav.about }
                 ].map((item) => {
                   const isActive = currentView === item.id;
                   return (
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id as ViewState)}
-                      className={`relative px-3 md:px-8 py-3 rounded-full text-center transition-colors duration-500 ${
+                      className={`relative px-2.5 md:px-8 py-2.5 md:py-3 rounded-full text-center transition-colors duration-500 ${
                         item.id === "about"
                           ? isActive 
                             ? "text-[var(--color-void)] font-bold"
@@ -465,7 +467,8 @@ export default function Home() {
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
                       )}
-                      <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{item.label}</span>
+                      <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap hidden md:inline">{item.label}</span>
+                      <span className="relative z-10 font-sans text-[9px] font-bold tracking-wider uppercase whitespace-nowrap md:hidden">{item.shortLabel}</span>
                     </button>
                   );
                 })}
