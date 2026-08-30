@@ -427,73 +427,46 @@ export default function Home() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
               className="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[300] flex flex-col items-center pointer-events-none max-w-[95vw] md:max-w-none"
             >
-              {/* Unified Dock Container (Single piece, no layering issues) */}
-              <div className={`flex flex-col items-center justify-center p-2 rounded-[2rem] md:rounded-full backdrop-blur-xl border shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 pointer-events-auto relative w-full md:w-auto ${
-                isLightMode ? "bg-black/10 border-black/10" : "bg-white/5 border-white/10"
+              {/* Main Nav Bar (Top of T) */}
+              <div className={`flex flex-nowrap items-center justify-center gap-1.5 md:gap-2 pointer-events-auto p-2 rounded-full backdrop-blur-xl shadow-none md:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:overflow-visible w-full md:w-auto relative z-[5] ${
+                isLightMode ? "bg-black/10 md:border md:border-black/10" : "bg-white/5 md:border md:border-white/10"
               }`}>
-                
-                {/* Top Nav Items Row */}
-                <div className="flex flex-nowrap items-center justify-center gap-1.5 md:gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:overflow-visible w-full md:w-auto">
-                  {[
-                    { id: "hub", label: t.dock.hub },
-                    { id: "portfolio", label: t.nav.portfolio },
-                    { id: "services", label: t.nav.services },
-                    { id: "whyus", label: t.nav.whyus }
-                  ].map((item) => {
-                    const isActive = currentView === item.id;
-                    return (
-                      <button
-                        key={item.id}
-                        onClick={() => handleNavClick(item.id as ViewState)}
-                        className={`relative px-4 md:px-8 py-3 rounded-full text-center transition-colors duration-500 flex-shrink-0 ${
-                          isActive
-                            ? isLightMode ? "text-white" : "text-black"
-                            : isLightMode ? "text-black/60 hover:text-black" : "text-white/60 hover:text-white"
-                        }`}
-                      >
-                        {isActive && (
-                          <motion.div
-                            layoutId="liquid-nav-blob"
-                            className={`absolute inset-0 rounded-full -z-10 shadow-lg ${
-                              isLightMode ? "bg-black" : "bg-white"
-                            }`}
-                            transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
-                          />
-                        )}
-                        <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{item.label}</span>
-                      </button>
-                    );
-                  })}
-
-                  {/* Desktop Consultation Button (Inline) */}
-                  <div className="hidden md:block">
+                {[
+                  { id: "hub", label: t.dock.hub },
+                  { id: "portfolio", label: t.nav.portfolio },
+                  { id: "services", label: t.nav.services },
+                  { id: "whyus", label: t.nav.whyus }
+                ].map((item) => {
+                  const isActive = currentView === item.id;
+                  return (
                     <button
-                      onClick={() => handleNavClick("about")}
-                      className={`relative px-8 py-3 rounded-full text-center transition-colors duration-500 ${
-                        currentView === "about"
-                          ? "text-[var(--color-void)] font-bold"
-                          : isLightMode
-                            ? "text-black font-bold bg-[#00ff66]/40 border border-[#00ff66] hover:bg-[#00ff66]/60 shadow-[0_0_15px_rgba(0,255,102,0.3)]"
-                            : "text-[#00ff66] font-bold bg-[#00ff66]/10 hover:bg-[#00ff66]/20 shadow-[0_0_15px_rgba(0,255,102,0.1)]"
+                      key={item.id}
+                      onClick={() => handleNavClick(item.id as ViewState)}
+                      className={`relative px-4 md:px-8 py-3 rounded-full text-center transition-colors duration-500 flex-shrink-0 ${
+                        isActive
+                          ? isLightMode ? "text-white" : "text-black"
+                          : isLightMode ? "text-black/60 hover:text-black" : "text-white/60 hover:text-white"
                       }`}
                     >
-                      {currentView === "about" && (
+                      {isActive && (
                         <motion.div
-                          layoutId="liquid-nav-blob-about-desktop"
-                          className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
+                          layoutId="liquid-nav-blob"
+                          className={`absolute inset-0 rounded-full -z-10 shadow-lg ${
+                            isLightMode ? "bg-black" : "bg-white"
+                          }`}
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
                       )}
-                      <span className="relative z-10 font-sans text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{t.nav.about}</span>
+                      <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{item.label}</span>
                     </button>
-                  </div>
-                </div>
+                  );
+                })}
 
-                {/* Mobile Consultation Button Row */}
-                <div className="md:hidden flex items-center justify-center w-full mt-2 mb-1">
+                {/* Desktop Consultation Button (Inline) */}
+                <div className="hidden md:block">
                   <button
                     onClick={() => handleNavClick("about")}
-                    className={`relative px-6 py-2.5 rounded-full text-center transition-colors duration-500 ${
+                    className={`relative px-8 py-3 rounded-full text-center transition-colors duration-500 ${
                       currentView === "about"
                         ? "text-[var(--color-void)] font-bold"
                         : isLightMode
@@ -503,14 +476,62 @@ export default function Home() {
                   >
                     {currentView === "about" && (
                       <motion.div
-                        layoutId="liquid-nav-blob-about-mobile"
+                        layoutId="liquid-nav-blob-about-desktop"
                         className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
                         transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                       />
                     )}
-                    <span className="relative z-10 font-sans text-[10px] font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{t.nav.about}</span>
+                    <span className="relative z-10 font-sans text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{t.nav.about}</span>
                   </button>
                 </div>
+              </div>
+
+              {/* Mobile Consultation Button (Tetris Bottom Piece) */}
+              <div className={`md:hidden flex items-center justify-center p-1.5 rounded-b-full backdrop-blur-xl shadow-none md:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 pointer-events-auto relative z-[10] ${
+                isLightMode ? "bg-black/10" : "bg-white/5"
+              }`}>
+
+                {/* Left Webbing (Wrapper technique bypasses Safari backdrop-blur bugs) */}
+                <div 
+                  className="absolute top-0 right-full w-[24px] h-[24px] pointer-events-none"
+                  style={{
+                    maskImage: 'radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px)',
+                    WebkitMaskImage: 'radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px)'
+                  }}
+                >
+                  <div className={`w-full h-full backdrop-blur-xl transition-colors duration-500 ${isLightMode ? "bg-black/10" : "bg-white/5"}`} />
+                </div>
+
+                {/* Right Webbing (Wrapper technique) */}
+                <div 
+                  className="absolute top-0 left-full w-[24px] h-[24px] pointer-events-none"
+                  style={{
+                    maskImage: 'radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px)',
+                    WebkitMaskImage: 'radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px)'
+                  }}
+                >
+                  <div className={`w-full h-full backdrop-blur-xl transition-colors duration-500 ${isLightMode ? "bg-black/10" : "bg-white/5"}`} />
+                </div>
+
+                <button
+                  onClick={() => handleNavClick("about")}
+                  className={`relative px-6 py-2.5 rounded-full text-center transition-colors duration-500 ${
+                    currentView === "about"
+                      ? "text-[var(--color-void)] font-bold"
+                      : isLightMode
+                        ? "text-black font-bold bg-[#00ff66]/40 border border-[#00ff66] hover:bg-[#00ff66]/60 shadow-[0_0_15px_rgba(0,255,102,0.3)]"
+                        : "text-[#00ff66] font-bold bg-[#00ff66]/10 hover:bg-[#00ff66]/20 shadow-[0_0_15px_rgba(0,255,102,0.1)]"
+                  }`}
+                >
+                  {currentView === "about" && (
+                    <motion.div
+                      layoutId="liquid-nav-blob-about-mobile"
+                      className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
+                      transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
+                    />
+                  )}
+                  <span className="relative z-10 font-sans text-[10px] font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{t.nav.about}</span>
+                </button>
               </div>
             </motion.nav>
           );
