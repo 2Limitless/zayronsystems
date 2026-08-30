@@ -22,7 +22,6 @@ const industriesList = [
 const dict = {
   en: {
     nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation" },
-    shortNav: { portfolio: "Cases", services: "Stack", whyus: "Why Us", about: "Consult" },
     hub: {
       general: {
         pills: ["Legacy Modernization", "Custom CRM/ERP", "AI Integration"],
@@ -77,7 +76,6 @@ const dict = {
   },
   es: {
     nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta" },
-    shortNav: { portfolio: "Casos", services: "Stack", whyus: "Nosotros", about: "Consulta" },
     hub: {
       general: {
         pills: ["Modernización Legacy", "CRM/ERP Personalizado", "Integración de IA"],
@@ -427,24 +425,24 @@ export default function Home() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
-              className={`fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 p-2 rounded-full backdrop-blur-xl z-[300] border shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 ${
+              className={`fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 p-2 rounded-[2rem] backdrop-blur-xl z-[300] border shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-colors duration-500 max-w-[95vw] overflow-x-auto overflow-y-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] ${
                 isLightMode ? "bg-black/10 border-black/10" : "bg-white/5 border-white/10"
               }`}
             >
-              <div className="flex items-center gap-0.5 md:gap-2 pointer-events-auto">
+              <div className="flex items-center gap-1 md:gap-2 pointer-events-auto w-max px-1">
                 {[
-                  { id: "hub", label: t.dock.hub, shortLabel: t.dock.hub },
-                  { id: "portfolio", label: t.nav.portfolio, shortLabel: t.shortNav.portfolio },
-                  { id: "services", label: t.nav.services, shortLabel: t.shortNav.services },
-                  { id: "whyus", label: t.nav.whyus, shortLabel: t.shortNav.whyus },
-                  { id: "about", label: t.nav.about, shortLabel: t.shortNav.about }
+                  { id: "hub", label: t.dock.hub },
+                  { id: "portfolio", label: t.nav.portfolio },
+                  { id: "services", label: t.nav.services },
+                  { id: "whyus", label: t.nav.whyus },
+                  { id: "about", label: t.nav.about }
                 ].map((item) => {
                   const isActive = currentView === item.id;
                   return (
                     <button
                       key={item.id}
                       onClick={() => handleNavClick(item.id as ViewState)}
-                      className={`relative px-2.5 md:px-8 py-2.5 md:py-3 rounded-full text-center transition-colors duration-500 ${
+                      className={`relative px-4 md:px-8 py-3 rounded-full text-center transition-colors duration-500 ${
                         item.id === "about"
                           ? isActive 
                             ? "text-[var(--color-void)] font-bold"
@@ -467,8 +465,7 @@ export default function Home() {
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
                       )}
-                      <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap hidden md:inline">{item.label}</span>
-                      <span className="relative z-10 font-sans text-[9px] font-bold tracking-wider uppercase whitespace-nowrap md:hidden">{item.shortLabel}</span>
+                      <span className="relative z-10 font-sans text-[10px] md:text-xs font-semibold tracking-[0.1em] uppercase whitespace-nowrap">{item.label}</span>
                     </button>
                   );
                 })}
