@@ -444,8 +444,8 @@ export default function Home() {
                         radial-gradient(circle, black 30px, transparent 30.5px),
                         linear-gradient(black, black),
                         linear-gradient(black, black),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
+                        radial-gradient(circle, black 28px, transparent 28.5px),
+                        radial-gradient(circle, black 28px, transparent 28.5px),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       mask-image: 
@@ -454,8 +454,8 @@ export default function Home() {
                         radial-gradient(circle, black 30px, transparent 30.5px),
                         linear-gradient(black, black),
                         linear-gradient(black, black),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
+                        radial-gradient(circle, black 28px, transparent 28.5px),
+                        radial-gradient(circle, black 28px, transparent 28.5px),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       
@@ -465,39 +465,39 @@ export default function Home() {
                         top right,
                         center 60px,
                         bottom center,
-                        calc(50% - 59px) bottom,
-                        calc(50% + 59px) bottom,
-                        calc(50% - 97px) 60px,
-                        calc(50% + 97px) 60px;
+                        calc(50% - 62px) bottom,
+                        calc(50% + 62px) bottom,
+                        calc(50% - 102px) 60px,
+                        calc(50% + 102px) 60px;
                       mask-position: 
                         top center,
                         top left,
                         top right,
                         center 60px,
                         bottom center,
-                        calc(50% - 59px) bottom,
-                        calc(50% + 59px) bottom,
-                        calc(50% - 97px) 60px,
-                        calc(50% + 97px) 60px;
+                        calc(50% - 62px) bottom,
+                        calc(50% + 62px) bottom,
+                        calc(50% - 102px) 60px,
+                        calc(50% + 102px) 60px;
                         
                       -webkit-mask-size: 
                         calc(100% - 60px) 60px,
                         60px 60px,
                         60px 60px,
-                        170px 26px,
-                        66px 52px,
-                        52px 52px,
-                        52px 52px,
+                        180px 28px,
+                        124px 56px,
+                        56px 56px,
+                        56px 56px,
                         24px 24px,
                         24px 24px;
                       mask-size: 
                         calc(100% - 60px) 60px,
                         60px 60px,
                         60px 60px,
-                        170px 26px,
-                        66px 52px,
-                        52px 52px,
-                        52px 52px,
+                        180px 28px,
+                        124px 56px,
+                        56px 56px,
+                        56px 56px,
                         24px 24px,
                         24px 24px;
                         
@@ -559,7 +559,7 @@ export default function Home() {
                     >
                       {currentView === "about" && (
                         <motion.div
-                          layoutId="liquid-nav-blob-about-desktop"
+                          layoutId="liquid-nav-blob"
                           className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
@@ -569,11 +569,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Bottom Row (52px exactly, 170px wide) */}
-                <div className="md:hidden flex items-center justify-center h-[52px] w-[170px] relative z-10 pb-2">
+                {/* Bottom Row (56px exactly, 180px wide) */}
+                <div className="md:hidden flex items-center justify-center h-[56px] w-[180px] relative z-10">
                   <button
                     onClick={() => handleNavClick("about")}
-                    className={`relative w-full h-[40px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
+                    className={`relative w-[150px] h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
                       currentView === "about"
                         ? "text-[var(--color-void)] font-bold"
                         : isLightMode
@@ -583,7 +583,7 @@ export default function Home() {
                   >
                     {currentView === "about" && (
                       <motion.div
-                        layoutId="liquid-nav-blob-about-mobile"
+                        layoutId="liquid-nav-blob"
                         className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
                         transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                       />
