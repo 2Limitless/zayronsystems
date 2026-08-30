@@ -152,8 +152,17 @@ export default function Home() {
   const [currentView, setCurrentView] = useState<ViewState>("hub");
   const [lang, setLang] = useState<Language>("en");
   const [servicesTheme, setServicesTheme] = useState<"dark" | "light">("dark");
-  const [selectedIndustry, setSelectedIndustry] = useState<Industry>("general");
   const [showIndustryPopup, setShowIndustryPopup] = useState(true);
+  const [maskWidth, setMaskWidth] = useState(0);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      setMaskWidth(window.innerWidth - 32); // 16px left + 16px right padding
+    };
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
   
   const t = dict[lang];
   const hubData = t.hub[selectedIndustry];
@@ -427,90 +436,41 @@ export default function Home() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
               className="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[300] flex flex-col items-center pointer-events-none max-w-[95vw] md:max-w-none"
             >
-              {/* Unified Masked Dock (Single continuous piece of glass, carved via CSS mask) */}
-              <div 
-                className={`mobile-t-mask flex flex-col items-center pointer-events-auto w-full md:w-auto relative z-[5] transition-colors duration-500 backdrop-blur-xl ${
-                  isLightMode ? "bg-black/10 md:border md:border-black/10" : "bg-white/5 md:border md:border-white/10"
-                }`}
-              >
-                {/* Mobile-only CSS Mask injected via a style block to handle media queries easily */}
-                <style dangerouslySetInnerHTML={{__html: `
-                  @media (max-width: 767px) {
-                    .mobile-t-mask {
-                      border-radius: 0 !important;
-                      -webkit-mask-image: 
-                        linear-gradient(black, black),
-                        radial-gradient(circle, black 30px, transparent 30.5px),
-                        radial-gradient(circle, black 30px, transparent 30.5px),
-                        linear-gradient(black, black),
-                        linear-gradient(black, black),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
-                        radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
-                      mask-image: 
-                        linear-gradient(black, black),
-                        radial-gradient(circle, black 30px, transparent 30.5px),
-                        radial-gradient(circle, black 30px, transparent 30.5px),
-                        linear-gradient(black, black),
-                        linear-gradient(black, black),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle, black 26px, transparent 26.5px),
-                        radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
-                        radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
-                      
-                      -webkit-mask-position: 
-                        top center,
-                        top left,
-                        top right,
-                        center 60px,
-                        bottom center,
-                        calc(50% - 59px) bottom,
-                        calc(50% + 59px) bottom,
-                        calc(50% - 96px) 60px,
-                        calc(50% + 96px) 60px;
-                      mask-position: 
-                        top center,
-                        top left,
-                        top right,
-                        center 60px,
-                        bottom center,
-                        calc(50% - 59px) bottom,
-                        calc(50% + 59px) bottom,
-                        calc(50% - 96px) 60px,
-                        calc(50% + 96px) 60px;
-                        
-                      -webkit-mask-size: 
-                        calc(100% - 60px) 60px,
-                        60px 60px,
-                        60px 60px,
-                        170px 26px,
-                        66px 52px,
-                        52px 52px,
-                        52px 52px,
-                        24px 24px,
-                        24px 24px;
-                      mask-size: 
-                        calc(100% - 60px) 60px,
-                        60px 60px,
-                        60px 60px,
-                        170px 26px,
-                        66px 52px,
-                        52px 52px,
-                        52px 52px,
-                        24px 24px,
-                        24px 24px;
-                        
-                      -webkit-mask-repeat: no-repeat;
-                      mask-repeat: no-repeat;
-                    }
-                  }
-                  @media (min-width: 768px) {
-                    .mobile-t-mask {
-                      border-radius: 9999px !important;
-                    }
-                  }
-                `}} />
+              {/* Unified Masked Dock (Single continuous piece of glass, carved via pure SVG) */}
+              {(() => {
+                const W = maskWidth || (typeof window !== 'undefined' ? window.innerWidth - 32 : 358);
+                const svgPath = `M 30,0 H ${W - 30} A 30,30 0 0 1 ${W},30 A 30,30 0 0 1 ${W - 30},60 H ${W/2 + 109} A 24,24 0 0 0 ${W/2 + 85},84 V 86 A 26,26 0 0 1 ${W/2 + 59},112 H ${W/2 - 59} A 26,26 0 0 1 ${W/2 - 85},86 V 84 A 24,24 0 0 0 ${W/2 - 109},60 H 30 A 30,30 0 0 1 0,30 A 30,30 0 0 1 30,0 Z`;
+                const svgString = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="112"><path d="${svgPath}" fill="black"/></svg>`;
+                const encodedSvg = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
+
+                return (
+                  <div 
+                    className={`mobile-svg-mask flex flex-col items-center pointer-events-auto w-full md:w-auto relative z-[5] transition-colors duration-500 backdrop-blur-xl ${
+                      isLightMode ? "bg-black/10 md:border md:border-black/10" : "bg-white/5 md:border md:border-white/10"
+                    }`}
+                    style={{ '--dynamic-svg': `url("${encodedSvg}")` } as React.CSSProperties}
+                  >
+                    {/* Mobile-only CSS Mask injected via a style block to handle media queries easily */}
+                    <style dangerouslySetInnerHTML={{__html: `
+                      @media (max-width: 767px) {
+                        .mobile-svg-mask {
+                          border-radius: 0 !important;
+                          -webkit-mask-image: var(--dynamic-svg);
+                          mask-image: var(--dynamic-svg);
+                          -webkit-mask-size: 100% 100%;
+                          mask-size: 100% 100%;
+                          -webkit-mask-repeat: no-repeat;
+                          mask-repeat: no-repeat;
+                        }
+                      }
+                      @media (min-width: 768px) {
+                        .mobile-svg-mask {
+                          border-radius: 9999px !important;
+                          -webkit-mask-image: none;
+                          mask-image: none;
+                        }
+                      }
+                    `}} />
 
                 {/* Top Row (60px exactly on mobile) */}
                 <div className="flex flex-nowrap items-center justify-center gap-1.5 md:gap-2 h-[60px] md:h-auto px-2 md:p-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:overflow-visible w-full md:w-auto relative z-10">
@@ -592,6 +552,8 @@ export default function Home() {
                   </button>
                 </div>
               </div>
+              );
+            })()}
             </motion.nav>
           );
         })()}
