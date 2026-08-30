@@ -438,45 +438,66 @@ export default function Home() {
                   @media (max-width: 767px) {
                     .mobile-t-mask {
                       border-radius: 0 !important;
-                      --svg-top-pill: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='60'%3E%3Crect width='100%25' height='60' rx='30' fill='black'/%3E%3C/svg%3E");
-                      --svg-bottom-pill: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='52'%3E%3Crect width='170' height='52' rx='26' fill='black'/%3E%3C/svg%3E");
-                      
                       -webkit-mask-image: 
-                        var(--svg-top-pill),
                         linear-gradient(black, black),
-                        var(--svg-bottom-pill),
+                        radial-gradient(circle, black 30px, transparent 30.5px),
+                        radial-gradient(circle, black 30px, transparent 30.5px),
+                        linear-gradient(black, black),
+                        linear-gradient(black, black),
+                        radial-gradient(circle, black 26px, transparent 26.5px),
+                        radial-gradient(circle, black 26px, transparent 26.5px),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       mask-image: 
-                        var(--svg-top-pill),
                         linear-gradient(black, black),
-                        var(--svg-bottom-pill),
+                        radial-gradient(circle, black 30px, transparent 30.5px),
+                        radial-gradient(circle, black 30px, transparent 30.5px),
+                        linear-gradient(black, black),
+                        linear-gradient(black, black),
+                        radial-gradient(circle, black 26px, transparent 26.5px),
+                        radial-gradient(circle, black 26px, transparent 26.5px),
                         radial-gradient(circle at 0% 100%, transparent 24px, black 24.5px),
                         radial-gradient(circle at 100% 100%, transparent 24px, black 24.5px);
                       
                       -webkit-mask-position: 
                         top center,
+                        top left,
+                        top right,
                         center 60px,
                         bottom center,
+                        calc(50% - 59px) bottom,
+                        calc(50% + 59px) bottom,
                         calc(50% - 97px) 60px,
                         calc(50% + 97px) 60px;
                       mask-position: 
                         top center,
+                        top left,
+                        top right,
                         center 60px,
                         bottom center,
+                        calc(50% - 59px) bottom,
+                        calc(50% + 59px) bottom,
                         calc(50% - 97px) 60px,
                         calc(50% + 97px) 60px;
                         
                       -webkit-mask-size: 
-                        100% 60px,
+                        calc(100% - 60px) 60px,
+                        60px 60px,
+                        60px 60px,
                         170px 26px,
-                        170px 52px,
+                        66px 52px,
+                        52px 52px,
+                        52px 52px,
                         24px 24px,
                         24px 24px;
                       mask-size: 
-                        100% 60px,
+                        calc(100% - 60px) 60px,
+                        60px 60px,
+                        60px 60px,
                         170px 26px,
-                        170px 52px,
+                        66px 52px,
+                        52px 52px,
+                        52px 52px,
                         24px 24px,
                         24px 24px;
                         
