@@ -435,7 +435,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.8 }}
-              className="fixed bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-[300] flex flex-col items-center pointer-events-none max-w-[95vw] md:max-w-none"
+              className="fixed bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-[300] flex flex-col items-center pointer-events-none max-w-[95vw] md:max-w-none"
             >
               {/* Unified Masked Dock (Single continuous piece of glass, carved via pure SVG) */}
               {(() => {
@@ -531,7 +531,7 @@ export default function Home() {
                 </div>
 
                 {/* Bottom Row (52px exactly, 166px wide) */}
-                <div className="md:hidden flex items-center justify-center h-[52px] w-[166px] relative z-10">
+                <div className="md:hidden flex items-center justify-center h-[52px] w-[166px] relative z-10 pb-1">
                   <button
                     onClick={() => handleNavClick("about")}
                     className={`relative w-[150px] h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
