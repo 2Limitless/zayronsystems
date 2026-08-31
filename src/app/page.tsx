@@ -440,7 +440,7 @@ export default function Home() {
               {/* Unified Masked Dock (Single continuous piece of glass, carved via pure SVG) */}
               {(() => {
                 const W = maskWidth || (typeof window !== 'undefined' ? window.innerWidth - 32 : 358);
-                const svgPath = `M 30,0 H ${W - 30} A 30,30 0 0 1 ${W},30 A 30,30 0 0 1 ${W - 30},60 H ${W/2 + 99} A 16,16 0 0 1 ${W/2 + 83},76 V 86 A 26,26 0 0 1 ${W/2 + 57},112 H ${W/2 - 57} A 26,26 0 0 1 ${W/2 - 83},86 V 76 A 16,16 0 0 1 ${W/2 - 99},60 H 30 A 30,30 0 0 1 0,30 A 30,30 0 0 1 30,0 Z`;
+                const svgPath = `M 30,0 H ${W - 30} A 30,30 0 0 1 ${W},30 A 30,30 0 0 1 ${W - 30},60 H ${W/2 + 100} C ${W/2 + 83},60 ${W/2 + 83},72 ${W/2 + 83},86 C ${W/2 + 83},100.35 ${W/2 + 71.35},112 ${W/2 + 57},112 H ${W/2 - 57} C ${W/2 - 71.35},112 ${W/2 - 83},100.35 ${W/2 - 83},86 C ${W/2 - 83},72 ${W/2 - 83},60 ${W/2 - 100},60 H 30 A 30,30 0 0 1 0,30 A 30,30 0 0 1 30,0 Z`;
                 const svgString = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="112"><path d="${svgPath}" fill="black"/></svg>`;
                 const encodedSvg = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
 
