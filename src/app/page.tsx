@@ -440,7 +440,7 @@ export default function Home() {
               {/* Unified Masked Dock (Single continuous piece of glass, carved via pure SVG) */}
               {(() => {
                 const W = maskWidth || (typeof window !== 'undefined' ? window.innerWidth - 32 : 358);
-                const svgPath = `M 30,0 H ${W - 30} A 30,30 0 0 1 ${W},30 A 30,30 0 0 1 ${W - 30},60 H ${W/2 + 100} C ${W/2 + 83},60 ${W/2 + 83},72 ${W/2 + 83},86 C ${W/2 + 83},100.35 ${W/2 + 71.35},112 ${W/2 + 57},112 H ${W/2 - 57} C ${W/2 - 71.35},112 ${W/2 - 83},100.35 ${W/2 - 83},86 C ${W/2 - 83},72 ${W/2 - 83},60 ${W/2 - 100},60 H 30 A 30,30 0 0 1 0,30 A 30,30 0 0 1 30,0 Z`;
+                const svgPath = `M 30,0 H ${W - 30} A 30,30 0 0 1 ${W},30 A 30,30 0 0 1 ${W - 30},60 H ${W/2 + 96} C ${W/2 + 81},60 ${W/2 + 81},70 ${W/2 + 81},82 A 24,24 0 0 1 ${W/2 + 57},106 H ${W/2 - 57} A 24,24 0 0 1 ${W/2 - 81},82 C ${W/2 - 81},70 ${W/2 - 81},60 ${W/2 - 96},60 H 30 A 30,30 0 0 1 0,30 A 30,30 0 0 1 30,0 Z`;
                 const svgString = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="112"><path d="${svgPath}" fill="black"/></svg>`;
                 const encodedSvg = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
 
@@ -530,8 +530,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Bottom Row (52px exactly, 166px wide) */}
-                <div className="md:hidden flex items-center justify-center h-[52px] w-[166px] relative z-10 pb-1">
+                {/* Bottom Row (52px exactly, 162px wide) */}
+                <div className="md:hidden flex items-center justify-center h-[52px] w-[162px] relative z-10 pb-2">
                   <button
                     onClick={() => handleNavClick("about")}
                     className={`relative w-[150px] h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
