@@ -129,8 +129,8 @@ export default function WhyUsExperience({ lang, onBack }: { lang: Language, onBa
             
             {/* The Industry Standard (Them) */}
             <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-red-500/20 bg-red-500/5 relative overflow-hidden group">
-                <div className="absolute -top-12 -right-4 opacity-[0.03] pointer-events-none select-none overflow-visible">
-                    <span className="font-sans font-black text-[180px] leading-none text-red-500 uppercase tracking-tighter">THEM</span>
+                <div className="absolute -top-4 md:-top-12 -right-2 md:-right-4 opacity-[0.03] pointer-events-none select-none overflow-visible">
+                    <span className="font-sans font-black text-[100px] md:text-[180px] leading-none text-red-500 uppercase tracking-tighter">THEM</span>
                 </div>
                 
                 <h4 className="text-red-500 text-xs font-bold tracking-[0.2em] uppercase mb-2">
@@ -154,8 +154,8 @@ export default function WhyUsExperience({ lang, onBack }: { lang: Language, onBa
 
             {/* ZayronSystems (Us) */}
             <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#00ff66]/30 bg-[#00ff66]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(0,255,102,0.05)]">
-                <div className="absolute -bottom-8 -right-4 opacity-[0.04] pointer-events-none select-none overflow-visible">
-                    <span className="font-sans font-black text-[220px] leading-none text-[#00ff66] uppercase tracking-tighter">US</span>
+                <div className="absolute -bottom-4 md:-bottom-8 -right-2 md:-right-4 opacity-[0.04] pointer-events-none select-none overflow-visible">
+                    <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#00ff66] uppercase tracking-tighter">US</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 to-[#00ff66]/5 pointer-events-none" />
 
