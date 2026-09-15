@@ -21,7 +21,7 @@ export default function BarbersShowcase() {
             Barbershop Technology Showcase
           </p>
           <Link 
-            href="/"
+            href="/?consultation=true"
             className="group relative flex items-center gap-2 bg-white/5 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 border border-white/10 hover:border-[#00ff66]/50 hover:bg-[#00ff66]/10 backdrop-blur-md overflow-hidden hover:shadow-[0_0_20px_rgba(0,255,102,0.15)]"
           >
             <Calendar size={16} className="text-white/70 group-hover:text-[#00ff66] transition-colors duration-300" />

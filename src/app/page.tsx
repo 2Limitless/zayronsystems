@@ -162,6 +162,13 @@ export default function Home() {
     };
     updateWidth();
     window.addEventListener('resize', updateWidth);
+    
+    // Check for direct consultation link to skip modal
+    if (window.location.search.includes("consultation=true")) {
+      setShowIndustryPopup(false);
+      setCurrentView("about");
+    }
+
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
   
