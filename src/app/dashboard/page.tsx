@@ -29,7 +29,7 @@ export default function DashboardPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "admin123") {
+    if (password === "Hulk0110") {
       setIsAuthenticated(true);
       setError("");
       fetchLeads();
