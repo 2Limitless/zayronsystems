@@ -5,10 +5,10 @@ import { createClient } from "@supabase/supabase-js";
 import { motion } from "framer-motion";
 import { Lock, Search, Users, Phone, Mail, Building, Clock, LogOut } from "lucide-react";
 
-// Initialize Supabase client
+// Initialize Supabase client safely
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
 
 type Lead = {
   id: string;
@@ -47,6 +47,12 @@ export default function DashboardPage() {
   const fetchLeads = async () => {
     setLoading(true);
     try {
+      if (!supabase) {
+        setError("Database connection is not configured on this environment (missing env variables).");
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from("leads")
         .select("*")
