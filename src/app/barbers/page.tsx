@@ -22,10 +22,10 @@ export default function BarbersShowcase() {
           </p>
           <Link 
             href="/"
-            className="flex items-center gap-2 bg-[#00ff66] text-black px-5 py-2.5 rounded-full font-semibold hover:bg-white transition-all transform hover:scale-105"
+            className="group relative flex items-center gap-2 bg-white/5 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 border border-white/10 hover:border-[#00ff66]/50 hover:bg-[#00ff66]/10 backdrop-blur-md overflow-hidden hover:shadow-[0_0_20px_rgba(0,255,102,0.15)]"
           >
-            <Calendar size={16} />
-            <span className="text-sm uppercase tracking-wider">Book Consultation</span>
+            <Calendar size={16} className="text-white/70 group-hover:text-[#00ff66] transition-colors duration-300" />
+            <span className="text-xs font-semibold uppercase tracking-widest">Book Consultation</span>
           </Link>
         </div>
       </header>
