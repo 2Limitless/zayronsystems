@@ -5,8 +5,8 @@ export default function BarbersShowcase() {
   return (
     <main className="w-full h-[100dvh] relative bg-black overflow-hidden font-sans">
       
-      {/* Floating Back Button (Top Left) */}
-      <div className="absolute top-6 left-6 z-50">
+      {/* Floating Back Button (Bottom Left) */}
+      <div className="absolute bottom-8 left-8 z-50">
         <Link 
           href="/" 
           className="flex items-center gap-3 bg-black/40 backdrop-blur-xl border border-white/10 text-white/70 hover:text-white px-4 py-3 rounded-full hover:bg-black/60 transition-all shadow-lg group"
