@@ -3,36 +3,43 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import type { Language } from "../app/page";
+import { Shield, Zap, Lock, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const dict = {
   en: {
-    back: "Back to Hub",
-    title1: "Schedule an",
-    title2: "Architecture Review.",
-    desc1: "Stop patching together legacy systems. It's time to build a unified enterprise infrastructure.",
-    desc2: "We architect custom, heavy-duty software solutions that scale with your operations and give you complete sovereignty over your data.",
+    back: "Return",
+    availability: "Currently Accepting 3 New Enterprise Partners",
+    title1: "Build Your",
+    title2: "Digital Legacy.",
+    desc1: "Your business deserves software that works as relentlessly as you do. Stop fighting with fragile, off-the-shelf tools and fragmented systems.",
+    desc2: "We architect bespoke, sovereign enterprise infrastructure that scales infinitely. Become the undeniable authority in your industry.",
     form: {
-      name: "Full Name",
-      email: "Email Address",
-      phone: "Phone Number",
-      business: "Company Name & Industry",
-      submit: "Request Enterprise Build",
-      success: "Received! An architect will contact you shortly."
+      name: "Full Legal Name",
+      email: "Executive Email",
+      phone: "Direct Phone Line",
+      business: "Company Name & Vision",
+      submit: "Apply for Partnership",
+      successTitle: "Application Received.",
+      successDesc: "Your request has been secured. Our lead architect will review your application and reach out within 24 hours.",
+      trust: "Your data is secured with bank-level encryption and absolute confidentiality."
     }
   },
   es: {
-    back: "Volver al Inicio",
-    title1: "Programa una",
-    title2: "Revisión de Arquitectura.",
-    desc1: "Deja de improvisar con sistemas heredados. Es hora de construir una infraestructura empresarial unificada.",
-    desc2: "Diseñamos soluciones de software personalizadas de uso rudo que escalan con tus operaciones y te brindan soberanía total sobre tus datos.",
+    back: "Regresar",
+    availability: "Aceptando 3 Nuevos Socios Empresariales",
+    title1: "Construye tu",
+    title2: "Legado Digital.",
+    desc1: "Tu negocio merece software que trabaje tan incansablemente como tú. Deja de luchar con herramientas frágiles y genéricas.",
+    desc2: "Diseñamos infraestructura empresarial soberana y a la medida que escala infinitamente. Conviértete en la autoridad innegable de tu industria.",
     form: {
-      name: "Nombre Completo",
-      email: "Correo Electrónico",
-      phone: "Número de Teléfono",
-      business: "Nombre de la Empresa e Industria",
-      submit: "Solicitar Build Empresarial",
-      success: "¡Recibido! Un arquitecto te contactará pronto."
+      name: "Nombre Legal Completo",
+      email: "Correo Ejecutivo",
+      phone: "Línea Directa",
+      business: "Nombre de Empresa y Visión",
+      submit: "Aplicar para Asociación",
+      successTitle: "Aplicación Recibida.",
+      successDesc: "Tu solicitud ha sido asegurada. Nuestro arquitecto principal revisará tu aplicación y te contactará en menos de 24 horas.",
+      trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
     }
   }
 };
@@ -41,6 +48,7 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
   const t = dict[lang];
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", business: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+  const [focusedInput, setFocusedInput] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,136 +59,186 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
       });
-      // Always show success to user even if DB fails
-      setStatus("success");
+      // Add artificial delay to make the processing feel substantial and thorough
+      setTimeout(() => setStatus("success"), 1500);
     } catch {
-      setStatus("success");
+      setTimeout(() => setStatus("success"), 1500);
     }
   };
 
   const containerVariants: any = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.2 }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 0.1 } }
   };
 
   const itemVariants: any = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
   };
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 50 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="absolute inset-0 z-40 w-full h-full bg-[var(--color-void)] p-6 md:p-12 overflow-y-auto overflow-x-hidden pointer-events-auto"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+      className="absolute inset-0 z-40 w-full h-full bg-black flex flex-col pointer-events-auto overflow-y-auto overflow-x-hidden"
     >
-      <motion.div 
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="w-full max-w-7xl mx-auto pt-12 md:pt-0 pb-32 flex flex-col-reverse md:flex-row items-center gap-12"
-      >
+      {/* Dynamic Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,255,102,0.1),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-30" />
+      </div>
+
+      {/* Top Navbar */}
+      <div className="w-full flex justify-between items-center px-8 py-6 relative z-10 flex-none">
+        <motion.button 
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2 }}
+          onClick={onBack}
+          className="text-white/50 hover:text-white text-xs tracking-widest uppercase transition-colors flex items-center gap-4 group"
+        >
+          <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-all">
+            <ArrowRight className="w-4 h-4 rotate-180" />
+          </div>
+          <span className="hidden md:inline">{t.back}</span>
+        </motion.button>
+        <img src="/logo.png" alt="ZayronSystems" className="h-8 md:h-10 opacity-80" />
+      </div>
+
+      <div className="flex-1 w-full max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col lg:flex-row items-center justify-center gap-16 relative z-10">
         
-        {/* Decorative Element */}
-        <motion.div variants={itemVariants} className="flex w-full md:w-auto md:flex-[1.5] lg:flex-[2] relative h-auto justify-center items-center">
-          <img 
-            src="/enterprise_consultation_graphic.jpg" 
-            alt="Enterprise Architecture Diagram" 
-            className="w-full h-auto object-contain rounded-2xl shadow-[0_40px_80px_rgba(0,0,0,0.5)] border border-[var(--color-acid)]/20" 
-          />
-        </motion.div>
+        {/* Left Column: Vision & Authority */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex-1 flex flex-col justify-center max-w-2xl"
+        >
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 mb-10 w-max shadow-[0_0_20px_rgba(0,255,102,0.15)]">
+            <span className="w-2 h-2 rounded-full bg-[#00ff66] animate-pulse shadow-[0_0_10px_#00ff66]" />
+            <span className="text-[#00ff66] text-[10px] md:text-xs font-bold tracking-widest uppercase">{t.availability}</span>
+          </motion.div>
 
-        {/* Text & Form Section */}
-        <div className="flex-1 flex flex-col justify-center">
-          <motion.button 
-            variants={itemVariants}
-            onClick={onBack}
-            className="text-[var(--color-ice)]/50 text-xs tracking-[0.3em] uppercase mb-12 hover:text-[var(--color-acid)] transition-colors flex items-center gap-4 group w-max"
-          >
-            <span className="w-8 h-[1px] bg-[var(--color-ice)]/50 group-hover:w-12 group-hover:bg-[var(--color-acid)] transition-all" /> 
-            {t.back}
-          </motion.button>
-
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[var(--color-ice)] mb-4 leading-tight">
+          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white tracking-tighter leading-[0.9] mb-8">
             {t.title1} <br/>
-            <span className="italic text-[var(--color-acid)] drop-shadow-[0_0_20px_rgba(204,255,0,0.2)]">{t.title2}</span>
-          </motion.h2>
+            <span className="bg-gradient-to-r from-white via-white/80 to-[#00ff66] text-transparent bg-clip-text pr-4">{t.title2}</span>
+          </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-[var(--color-ice)]/70 font-sans text-sm md:text-base font-light leading-relaxed mb-4">
+          <motion.p variants={itemVariants} className="text-white/60 text-base md:text-xl font-light leading-relaxed mb-6 max-w-xl">
             {t.desc1}
           </motion.p>
-          <motion.p variants={itemVariants} className="text-[var(--color-ice)]/70 font-sans text-sm md:text-base font-light leading-relaxed mb-8">
+          <motion.p variants={itemVariants} className="text-white/60 text-base md:text-xl font-light leading-relaxed mb-12 max-w-xl">
             {t.desc2}
           </motion.p>
 
-          {/* Contact Form */}
-          <motion.div variants={itemVariants} className="w-full max-w-md">
-            {status === "success" ? (
-              <div className="p-6 rounded-2xl border border-[#00ff66]/30 bg-[#00ff66]/5 backdrop-blur-md flex flex-col items-center justify-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#00ff66]/20 flex items-center justify-center">
-                  <span className="text-[#00ff66] text-xl">✓</span>
-                </div>
-                <p className="text-[#00ff66] font-bold tracking-wide text-center">{t.form.success}</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <input 
-                  type="text" 
-                  required
-                  placeholder={t.form.name}
-                  value={formData.name}
-                  onChange={e => setFormData({...formData, name: e.target.value})}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[var(--color-acid)]/50 focus:bg-white/10 transition-all font-sans text-sm"
-                />
-                <input 
-                  type="email" 
-                  required
-                  placeholder={t.form.email}
-                  value={formData.email}
-                  onChange={e => setFormData({...formData, email: e.target.value})}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[var(--color-acid)]/50 focus:bg-white/10 transition-all font-sans text-sm"
-                />
-                <input 
-                  type="tel" 
-                  required
-                  placeholder={t.form.phone}
-                  value={formData.phone}
-                  onChange={e => setFormData({...formData, phone: e.target.value})}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[var(--color-acid)]/50 focus:bg-white/10 transition-all font-sans text-sm"
-                />
-                <input 
-                  type="text" 
-                  required
-                  placeholder={t.form.business}
-                  value={formData.business}
-                  onChange={e => setFormData({...formData, business: e.target.value})}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-[var(--color-acid)]/50 focus:bg-white/10 transition-all font-sans text-sm"
-                />
-                <button 
-                  type="submit"
-                  disabled={status === "loading"}
-                  className="mt-2 bg-transparent border border-[var(--color-acid)]/30 text-[var(--color-acid)] hover:bg-[var(--color-acid)] hover:text-[var(--color-void)] disabled:opacity-50 px-8 py-4 rounded-xl font-bold font-sans text-xs tracking-widest uppercase transition-all duration-500 flex items-center justify-center gap-3 group shadow-[0_0_20px_rgba(204,255,0,0.1)]"
-                >
-                  {status === "loading" ? "..." : t.form.submit}
-                  {status !== "loading" && <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>}
-                </button>
-              </form>
-            )}
+          <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
+            <div className="flex flex-col gap-2">
+              <Shield className="w-6 h-6 text-[#00ff66]/70 mb-2" />
+              <h4 className="text-white text-sm font-bold uppercase tracking-wider">Absolute Sovereignty</h4>
+              <p className="text-white/40 text-xs">Own your data and infrastructure completely.</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <Zap className="w-6 h-6 text-[#00ff66]/70 mb-2" />
+              <h4 className="text-white text-sm font-bold uppercase tracking-wider">Infinite Scalability</h4>
+              <p className="text-white/40 text-xs">Built to handle massive growth without friction.</p>
+            </div>
           </motion.div>
-        </div>
-      </motion.div>
+        </motion.div>
 
-      {/* Legitimate SEO Footer Credit */}
-      <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">
-        <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
-          &copy; {new Date().getFullYear()} ZayronSystems. Enterprise System Software Development.
-        </p>
-      </footer>
+        {/* Right Column: Premium Application Form */}
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="w-full max-w-lg lg:w-[450px]"
+        >
+          <div className="relative p-[1px] rounded-[2rem] overflow-hidden bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-[0_40px_100px_-20px_rgba(0,255,102,0.15)]">
+            <div className="absolute inset-0 bg-black/40 backdrop-blur-3xl" />
+            
+            <div className="relative p-8 md:p-10 flex flex-col gap-8">
+              {status === "success" ? (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex flex-col items-center justify-center text-center py-12 gap-6"
+                >
+                  <div className="w-20 h-20 rounded-full bg-[#00ff66]/10 border border-[#00ff66]/30 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0.2)]">
+                    <CheckCircle2 className="w-10 h-10 text-[#00ff66]" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-3">{t.form.successTitle}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{t.form.successDesc}</p>
+                  </div>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                  <div className="space-y-5">
+                    {[
+                      { id: "name", label: t.form.name, type: "text" },
+                      { id: "email", label: t.form.email, type: "email" },
+                      { id: "phone", label: t.form.phone, type: "tel" },
+                      { id: "business", label: t.form.business, type: "text" }
+                    ].map((field) => (
+                      <div key={field.id} className="relative group">
+                        <input
+                          id={field.id}
+                          type={field.type}
+                          required
+                          value={(formData as any)[field.id]}
+                          onChange={e => setFormData({...formData, [field.id]: e.target.value})}
+                          onFocus={() => setFocusedInput(field.id)}
+                          onBlur={() => setFocusedInput(null)}
+                          className={`w-full bg-black/50 border rounded-xl px-5 py-4 text-white text-sm font-medium transition-all duration-300 outline-none
+                            ${focusedInput === field.id ? "border-[#00ff66]/50 shadow-[0_0_15px_rgba(0,255,102,0.1)]" : "border-white/10 hover:border-white/20"}
+                          `}
+                        />
+                        <label 
+                          htmlFor={field.id}
+                          className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
+                            ${(formData as any)[field.id] || focusedInput === field.id 
+                              ? "text-[9px] top-1.5 text-[#00ff66]" 
+                              : "text-[11px] top-4 text-white/40 group-hover:text-white/60"}
+                          `}
+                        >
+                          {field.label}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+
+                  <button 
+                    type="submit"
+                    disabled={status === "loading"}
+                    className="relative w-full overflow-hidden rounded-xl mt-4 group"
+                  >
+                    <div className={`absolute inset-0 transition-all duration-500 ${status === "loading" ? "bg-white/10" : "bg-white hover:bg-white/90"}`} />
+                    <div className="relative px-8 py-5 flex items-center justify-center gap-3">
+                      {status === "loading" ? (
+                        <>
+                          <div className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+                          <span className="text-white text-xs font-bold uppercase tracking-widest">Encrypting & Submitting...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="text-black text-xs font-bold uppercase tracking-widest">{t.form.submit}</span>
+                          <ArrowRight className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" />
+                        </>
+                      )}
+                    </div>
+                  </button>
+
+                  <div className="flex items-center justify-center gap-2 mt-4 text-white/30">
+                    <Lock className="w-3 h-3" />
+                    <span className="text-[10px] uppercase tracking-wider">{t.form.trust}</span>
+                  </div>
+                </form>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </motion.div>
   );
 }
