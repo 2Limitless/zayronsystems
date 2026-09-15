@@ -200,7 +200,7 @@ export default function Home() {
                 To provide the most relevant experience and insights, please select your primary industry focus:
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {industriesList.filter(ind => ind.id !== "general").map((ind) => (
                   <button
                     key={ind.id}
@@ -219,6 +219,19 @@ export default function Home() {
                      </span>
                   </button>
                 ))}
+                
+                <a
+                  href="https://ldw.vercel.app"
+                  className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#00ff66]/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)] block no-underline"
+                >
+                   <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 via-[#00ff66]/0 to-[#00ff66]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
+                     {lang === 'es' ? "Barberos" : "Barbers"}
+                   </span>
+                   <span className="relative z-10 text-white/50 text-[10px] tracking-widest uppercase block">
+                     {lang === 'es' ? "Sitio Exclusivo" : "Exclusive Site"}
+                   </span>
+                </a>
               </div>
               
               <button 
