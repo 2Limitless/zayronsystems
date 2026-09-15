@@ -8,37 +8,37 @@ import { Shield, Zap, Lock, ArrowRight, CheckCircle2 } from "lucide-react";
 const dict = {
   en: {
     back: "Return",
-    availability: "Currently Accepting 3 New Enterprise Partners",
+    availability: "Currently Accepting 3 New Client Projects",
     title1: "Build Your",
     title2: "Digital Legacy.",
     desc1: "Your business deserves software that works as relentlessly as you do. Stop fighting with fragile, off-the-shelf tools and fragmented systems.",
-    desc2: "We architect bespoke, sovereign enterprise infrastructure that scales infinitely. Become the undeniable authority in your industry.",
+    desc2: "We architect bespoke, sovereign digital infrastructure that scales infinitely. Become the undeniable authority in your industry.",
     form: {
-      name: "Full Legal Name",
-      email: "Executive Email",
-      phone: "Direct Phone Line",
-      business: "Company Name & Vision",
-      submit: "Apply for Partnership",
-      successTitle: "Application Received.",
-      successDesc: "Your request has been secured. Our lead architect will review your application and reach out within 24 hours.",
+      name: "Full Name",
+      email: "Email Address",
+      phone: "Phone Number",
+      business: "Company Name & Industry",
+      submit: "Request Consultation",
+      successTitle: "Request Received.",
+      successDesc: "Your information has been secured. Our lead architect will review your request and reach out within 24 hours.",
       trust: "Your data is secured with bank-level encryption and absolute confidentiality."
     }
   },
   es: {
     back: "Regresar",
-    availability: "Aceptando 3 Nuevos Socios Empresariales",
+    availability: "Aceptando 3 Nuevos Proyectos de Clientes",
     title1: "Construye tu",
     title2: "Legado Digital.",
     desc1: "Tu negocio merece software que trabaje tan incansablemente como tú. Deja de luchar con herramientas frágiles y genéricas.",
-    desc2: "Diseñamos infraestructura empresarial soberana y a la medida que escala infinitamente. Conviértete en la autoridad innegable de tu industria.",
+    desc2: "Diseñamos infraestructura digital soberana y a la medida que escala infinitamente. Conviértete en la autoridad innegable de tu industria.",
     form: {
-      name: "Nombre Legal Completo",
-      email: "Correo Ejecutivo",
-      phone: "Línea Directa",
-      business: "Nombre de Empresa y Visión",
-      submit: "Aplicar para Asociación",
-      successTitle: "Aplicación Recibida.",
-      successDesc: "Tu solicitud ha sido asegurada. Nuestro arquitecto principal revisará tu aplicación y te contactará en menos de 24 horas.",
+      name: "Nombre Completo",
+      email: "Correo Electrónico",
+      phone: "Número de Teléfono",
+      business: "Nombre de Empresa e Industria",
+      submit: "Solicitar Consulta",
+      successTitle: "Solicitud Recibida.",
+      successDesc: "Tu información ha sido asegurada. Nuestro arquitecto principal revisará tu solicitud y te contactará en menos de 24 horas.",
       trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
     }
   }
