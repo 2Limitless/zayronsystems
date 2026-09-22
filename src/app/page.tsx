@@ -21,7 +21,7 @@ const industriesList = [
 
 const dict = {
   en: {
-    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation" },
+    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation", partners: "Partner Portal" },
     hub: {
       general: {
         pills: ["Legacy Modernization", "Custom CRM/ERP", "AI Integration"],
@@ -75,7 +75,7 @@ const dict = {
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta" },
+    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta", partners: "Portal de Socios" },
     hub: {
       general: {
         pills: ["Modernización Legacy", "CRM/ERP Personalizado", "Integración de IA"],
@@ -241,9 +241,24 @@ export default function Home() {
                 </a>
               </div>
               
+              <div className="mt-4">
+                <a
+                  href="/partners"
+                  className="group relative overflow-hidden rounded-2xl border border-[#00ff66]/30 bg-[#00ff66]/5 p-4 md:p-6 hover:border-[#00ff66]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.15)] block no-underline w-full text-center"
+                >
+                   <div className="absolute inset-0 bg-gradient-to-r from-[#00ff66]/0 via-[#00ff66]/10 to-[#00ff66]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <span className="relative z-10 text-[#00ff66] font-bold text-sm md:text-base tracking-widest uppercase block mb-1">
+                     Referral Portal (Earn 30%)
+                   </span>
+                   <span className="relative z-10 text-white/50 text-[10px] tracking-widest uppercase block">
+                     It's a no brainer (less than 19 seconds)
+                   </span>
+                </a>
+              </div>
+              
               <button 
                 onClick={() => setShowIndustryPopup(false)}
-                className="mt-10 text-white/30 hover:text-white/80 text-xs tracking-widest uppercase underline underline-offset-4 transition-colors"
+                className="mt-6 text-white/30 hover:text-white/80 text-xs tracking-widest uppercase underline underline-offset-4 transition-colors"
               >
                 Skip & View General Enterprise
               </button>
@@ -265,6 +280,7 @@ export default function Home() {
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
             <button onClick={() => handleNavClick("whyus")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.whyus}</button>
             <button onClick={() => handleNavClick("about")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.about}</button>
+            <a href="/partners" className="text-[#00ff66]/80 hover:text-[#00ff66] text-xs tracking-widest uppercase transition-colors drop-shadow-[0_0_8px_rgba(0,255,102,0.3)]">{t.nav.partners}</a>
             
             {/* Language Toggle */}
             <button 
@@ -284,6 +300,9 @@ export default function Home() {
               <Globe size={16} />
               {lang}
             </button>
+            <a href="/partners" className="flex items-center justify-center px-4 py-2 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 text-[#00ff66] text-xs font-bold uppercase">
+              {t.nav.partners}
+            </a>
           </div>
         </header>
 
@@ -404,6 +423,21 @@ export default function Home() {
                           </motion.span>
                         </motion.button>
                       </div>
+
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 0.6 }}
+                        className="mt-12 md:mt-16 w-full max-w-2xl bg-gradient-to-r from-[#00ff66]/10 to-transparent border border-[#00ff66]/20 rounded-3xl p-6 md:p-8 backdrop-blur-sm pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6"
+                      >
+                        <div>
+                          <h4 className="text-[#00ff66] font-bold text-lg md:text-xl tracking-tight mb-2">Earn 30% Commission</h4>
+                          <p className="text-white/70 text-xs md:text-sm max-w-md">Join our Partner Program. Refer clients and earn a massive 30% commission on every closed deal. Fully transparent tracking.</p>
+                        </div>
+                        <a href="/partners" className="flex-none whitespace-nowrap bg-[#00ff66] text-black px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white transition-colors shadow-[0_0_20px_rgba(0,255,102,0.3)]">
+                          View Portal
+                        </a>
+                      </motion.div>
                     </motion.div>
                   </AnimatePresence>
                 </div>

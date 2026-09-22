@@ -1,6 +1,9 @@
 const { execSync } = require('child_process');
 
 try {
+  console.log("Linking project...");
+  execSync('npx vercel link --yes --project zayronsystems', { stdio: 'inherit' });
+  
   console.log("Removing old variables...");
   try {
     execSync('npx vercel env rm NEXT_PUBLIC_SUPABASE_URL production --yes', { stdio: 'inherit' });

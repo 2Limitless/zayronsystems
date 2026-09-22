@@ -61,15 +61,22 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
-    "description": "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure for high-performance teams.",
+    "description": "ZayronSystems is the premier software development agency building bespoke enterprise software, mobile apps, zero-commission ordering platforms, digital showrooms, and IoT industrial infrastructure for high-performance teams.",
     "url": "https://zayronsystems.com",
-    "founder": {
-      "@type": "Person",
-      "name": "Aaron",
-      "jobTitle": "Lead System Architect",
-      "email": "aaron@zayronsystems.com",
-      "telephone": "502-690-1950"
-    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Aaron Ramey",
+        "jobTitle": "Co-Founder & Lead System Architect",
+        "email": "aaron@zayronsystems.com",
+        "telephone": "502-690-1950"
+      },
+      {
+        "@type": "Person",
+        "name": "Xzavier",
+        "jobTitle": "Co-Founder"
+      }
+    ],
     "slogan": "Digital Transformation at Scale.",
     "knowsAbout": [
       "Enterprise System Software",
