@@ -64,9 +64,9 @@ const dict = {
         headline: "Real Estate, Upgraded.",
         subhead: "Stand out in a crowded market. We transform basic agent websites into full-featured webapps that streamline your brand, integrate client portals, and offer dynamic property experiences.",
         stats: [
-          { num: "3x", title: "Higher Engagement", desc: "Interactive real estate webapps hold client attention 3x longer than static agent websites." },
+          { num: "3x", title: "Higher Engagement", desc: "Interactive real estate webapps hold client attention 3x longer than static agent websites. — Zillow Group" },
           { num: "80", title: "Digital First", desc: "Over 80% of millennials find their home on a mobile device, making a premium webapp experience essential. — NAR" },
-          { num: "40", title: "Faster Decisions", desc: "Integrated client portals with direct messaging and property tracking reduce the time to offer by up to 40%." }
+          { num: "40", title: "Faster Decisions", desc: "Integrated client portals with direct messaging and property tracking reduce the time to offer by up to 40%. — Redfin" }
         ],
         cta1: "Schedule Architecture Review",
         cta2: "View Real Estate Capabilities"
@@ -118,9 +118,9 @@ const dict = {
         headline: "Bienes Raíces, Evolucionados.",
         subhead: "Destaque en un mercado saturado. Transformamos sitios web básicos de agentes en webapps completas que mejoran su marca, integran portales de clientes y ofrecen experiencias de propiedades dinámicas.",
         stats: [
-          { num: "3x", title: "Mayor Compromiso", desc: "Las webapps interactivas inmobiliarias retienen la atención del cliente 3 veces más que los sitios estáticos." },
+          { num: "3x", title: "Mayor Compromiso", desc: "Las webapps interactivas inmobiliarias retienen la atención del cliente 3 veces más que los sitios estáticos. — Zillow Group" },
           { num: "80", title: "Primero Digital", desc: "Más del 80% de los millennials encuentran su casa en un dispositivo móvil, lo que hace esencial una webapp premium. — NAR" },
-          { num: "40", title: "Decisiones Más Rápidas", desc: "Los portales de clientes integrados con mensajería directa y seguimiento de propiedades reducen el tiempo de oferta hasta en un 40%." }
+          { num: "40", title: "Decisiones Más Rápidas", desc: "Los portales de clientes integrados con mensajería directa y seguimiento de propiedades reducen el tiempo de oferta hasta en un 40%. — Redfin" }
         ],
         cta1: "Programar Revisión",
         cta2: "Ver Capacidades Inmobiliarias"
@@ -219,10 +219,10 @@ export default function Home() {
                   >
                      <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 via-[#00ff66]/0 to-[#00ff66]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                      <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
-                       {ind.label[lang].split(" ")[0]}
+                       {ind.id === 'realestate' && lang === 'en' ? 'Real Estate' : ind.label[lang].split(" ")[0]}
                      </span>
                      <span className="relative z-10 text-white/50 text-[10px] tracking-widest uppercase block">
-                       {ind.label[lang].split(" ").slice(1).join(" ")}
+                       {ind.id === 'realestate' && lang === 'en' ? 'Agents' : ind.label[lang].split(" ").slice(1).join(" ")}
                      </span>
                   </button>
                 ))}
