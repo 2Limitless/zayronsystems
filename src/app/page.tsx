@@ -10,13 +10,13 @@ import WhyUsExperience from "../components/WhyUsExperience";
 
 export type ViewState = "hub" | "portfolio" | "services" | "whyus" | "about";
 export type Language = "en" | "es";
-export type Industry = "general" | "industrial" | "restaurants" | "auto";
+export type Industry = "general" | "industrial" | "restaurants" | "realestate";
 
 const industriesList = [
   { id: "general", label: { en: "General", es: "General" } },
   { id: "industrial", label: { en: "Industrial Operations", es: "Operaciones Industriales" } },
   { id: "restaurants", label: { en: "Restaurants & Food", es: "Restaurantes y Comida" } },
-  { id: "auto", label: { en: "Auto Dealerships", es: "Concesionarios" } }
+  { id: "realestate", label: { en: "Real Estate Agents", es: "Agentes Inmobiliarios" } }
 ] as const;
 
 const dict = {
@@ -59,17 +59,17 @@ const dict = {
         cta1: "Schedule Architecture Review",
         cta2: "View Restaurant Capabilities"
       },
-      auto: {
-        pills: ["Digital Showrooms", "Inventory Sync", "Custom CRM"],
-        headline: "Dealerships, Digitalized.",
-        subhead: "Accelerate your sales pipeline. We build custom digital showroom apps, inventory management systems, and tailored CRM integrations that close deals faster.",
+      realestate: {
+        pills: ["Dynamic Webapps", "Client Portals", "Property Tech"],
+        headline: "Real Estate, Upgraded.",
+        subhead: "Stand out in a crowded market. We transform basic agent websites into full-featured webapps that streamline your brand, integrate client portals, and offer dynamic property experiences.",
         stats: [
-          { num: "90", title: "Omnichannel Demand", desc: "90% of modern car buyers prefer dealerships that offer a seamless bridge between digital apps and the physical showroom. — Cox Automotive" },
-          { num: "45", title: "Min Saved/Deal", desc: "Integrated digital document signing and real-time financing calculators reduce time-to-close paperwork by 45 minutes per deal. — Cox Automotive" },
-          { num: "25", title: "More Conversions", desc: "Dealerships utilizing custom digital retailing tools see a 25% increase in lead-to-sale conversion rates. — NADA" }
+          { num: "3x", title: "Higher Engagement", desc: "Interactive real estate webapps hold client attention 3x longer than static agent websites." },
+          { num: "80", title: "Digital First", desc: "Over 80% of millennials find their home on a mobile device, making a premium webapp experience essential. — NAR" },
+          { num: "40", title: "Faster Decisions", desc: "Integrated client portals with direct messaging and property tracking reduce the time to offer by up to 40%." }
         ],
         cta1: "Schedule Architecture Review",
-        cta2: "View Auto Capabilities"
+        cta2: "View Real Estate Capabilities"
       }
     },
     dock: { hub: "Hub" }
@@ -113,17 +113,17 @@ const dict = {
         cta1: "Programar Revisión",
         cta2: "Ver Capacidades de Restaurantes"
       },
-      auto: {
-        pills: ["Showrooms Digitales", "Sincronización de Inventario", "CRM Personalizado"],
-        headline: "Concesionarios, Digitalizados.",
-        subhead: "Acelere su embudo de ventas. Construimos aplicaciones de sala de exposición digital personalizadas, sistemas de gestión de inventario e integraciones de CRM que cierran tratos más rápido.",
+      realestate: {
+        pills: ["Webapps Dinámicas", "Portales de Clientes", "Tecnología Inmobiliaria"],
+        headline: "Bienes Raíces, Evolucionados.",
+        subhead: "Destaque en un mercado saturado. Transformamos sitios web básicos de agentes en webapps completas que mejoran su marca, integran portales de clientes y ofrecen experiencias de propiedades dinámicas.",
         stats: [
-          { num: "90", title: "Demanda Omnicanal", desc: "El 90% de los compradores prefieren concesionarios que ofrecen un puente perfecto entre las aplicaciones digitales y la sala física. — Cox Automotive" },
-          { num: "45", title: "Minutos Ahorrados", desc: "La firma digital integrada y las calculadoras de financiamiento reducen el papeleo de cierre en 45 minutos por trato. — Cox Automotive" },
-          { num: "25", title: "Más Conversiones", desc: "Los concesionarios que utilizan herramientas de venta minorista digital ven un aumento del 25% en la conversión de clientes. — NADA" }
+          { num: "3x", title: "Mayor Compromiso", desc: "Las webapps interactivas inmobiliarias retienen la atención del cliente 3 veces más que los sitios estáticos." },
+          { num: "80", title: "Primero Digital", desc: "Más del 80% de los millennials encuentran su casa en un dispositivo móvil, lo que hace esencial una webapp premium. — NAR" },
+          { num: "40", title: "Decisiones Más Rápidas", desc: "Los portales de clientes integrados con mensajería directa y seguimiento de propiedades reducen el tiempo de oferta hasta en un 40%." }
         ],
         cta1: "Programar Revisión",
-        cta2: "Ver Capacidades Automotrices"
+        cta2: "Ver Capacidades Inmobiliarias"
       }
     },
     dock: { hub: "Inicio" }

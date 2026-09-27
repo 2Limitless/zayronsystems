@@ -15,13 +15,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://zayronsystems.com"),
   title: "ZayronSystems | Custom Enterprise Software & Architecture",
-  description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
+  description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
   keywords: [
     "ZayronSystems",
     "Enterprise Software Development",
     "Custom Restaurant Apps",
     "Zero Commission Ordering",
-    "Auto Dealership Digital Showrooms",
+    "Real Estate Webapps",
     "Industrial IoT Software",
     "Predictive Maintenance Systems",
     "Custom CRM ERP",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   creator: "ZayronSystems",
   openGraph: {
     title: "ZayronSystems | Custom Enterprise Software & Architecture",
-    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
+    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
     url: "https://zayronsystems.com",
     siteName: "ZayronSystems",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ZayronSystems | Custom Enterprise Software & Architecture",
-    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, digital showrooms, and IoT industrial infrastructure to maximize ROI.",
+    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
     creator: "@ZayronSystems",
   },
 };
@@ -61,7 +61,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
-    "description": "ZayronSystems is the premier software development agency building bespoke enterprise software, mobile apps, zero-commission ordering platforms, digital showrooms, and IoT industrial infrastructure for high-performance teams.",
+    "description": "ZayronSystems is the premier software development agency building bespoke enterprise software, mobile apps, zero-commission ordering platforms, real estate webapps, and IoT industrial infrastructure for high-performance teams.",
     "url": "https://zayronsystems.com",
     "founder": [
       {
@@ -81,7 +81,7 @@ export default function RootLayout({
     "knowsAbout": [
       "Enterprise System Software",
       "Restaurant Tech & Zero Commission Apps",
-      "Auto Dealership Digital Showrooms",
+      "Real Estate Webapps",
       "Industrial IoT & Predictive Maintenance",
       "Custom Architecture",
       "Scalable Infrastructure"

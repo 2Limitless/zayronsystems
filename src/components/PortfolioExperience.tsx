@@ -77,27 +77,27 @@ const dict = {
           { title: "Omni-Channel Sync", desc: "Sync inventory and menus across all physical and digital locations instantly." }
         ]
       },
-      auto: {
-        title: "Dealership ",
+      realestate: {
+        title: "Real Estate ",
         titleHighlight: "Scale.",
-        desc: "Why replacing fragmented CRMs with a unified digital showroom is a competitive necessity.",
+        desc: "Why upgrading your static agent website to a dynamic webapp is a competitive necessity.",
         profit: {
-          market: "Fragmented Dealer Systems",
-          marketMetric: "LOST LEADS",
-          marketDesc1: "Lost leads due to slow response times and data silos.",
-          marketDesc2: "Hours wasted on manual paperwork and disjointed CRMs.",
-          direct: "Unified Digital Dealership",
-          directMetric: "FASTER DEALS",
-          directDesc1: "A seamless omnichannel flow from app to showroom.",
-          directDesc2: "Faster closing times. Total inventory sync."
+          market: "Basic Static Websites",
+          marketMetric: "LOST CLIENTS",
+          marketDesc1: "Generic templates that blend in with every other agent.",
+          marketDesc2: "Zero interactive features. High bounce rates.",
+          direct: "Custom Webapp Experience",
+          directMetric: "PREMIUM BRAND",
+          directDesc1: "A bespoke digital platform that sets you apart.",
+          directDesc2: "Client portals. Dynamic listings. Full control."
         },
         cards: [
-          { title: "Digital Showrooms", desc: "Allow customers to explore inventory, customize builds, and start deals entirely online." },
-          { title: "Real-time Inventory Sync", desc: "Ensure your digital app and physical lot reflect the exact same inventory instantly." },
-          { title: "Automated Financing", desc: "Integrate rapid financing calculators to pre-qualify leads before they enter the door." },
-          { title: "Seamless CRM Integration", desc: "Never lose a lead. Track customer interactions from the first click to the final signature." },
-          { title: "Accelerated Deal Closing", desc: "Digitize the paperwork process, slashing the time it takes to finalize a vehicle sale." },
-          { title: "Omnichannel Journeys", desc: "Provide a frictionless transition for buyers moving between your website and your showroom." }
+          { title: "Dynamic Webapps", desc: "Transform your online presence from a static brochure into a fully interactive digital platform." },
+          { title: "Client Portals", desc: "Give buyers and sellers their own secure login to track properties, offers, and documents." },
+          { title: "Interactive Listings", desc: "Showcase properties with rich media, interactive maps, and advanced filtering algorithms." },
+          { title: "Seamless Scheduling", desc: "Integrate direct booking for open houses and private viewings straight from your webapp." },
+          { title: "Brand Differentiation", desc: "Stop using the same generic templates as your competitors. Establish a true luxury brand." },
+          { title: "Omnichannel Sync", desc: "Ensure your mobile webapp and desktop experience are perfectly synchronized in real-time." }
         ]
       }
     }
@@ -174,27 +174,27 @@ const dict = {
           { title: "Sincronización Omnicanal", desc: "Sincroniza el inventario y los menús en todas las ubicaciones físicas y digitales al instante." }
         ]
       },
-      auto: {
-        title: "Escala de ",
-        titleHighlight: "Concesionarios.",
-        desc: "Por qué reemplazar los CRM fragmentados con una sala de exposición digital unificada es una necesidad.",
+      realestate: {
+        title: "Escala ",
+        titleHighlight: "Inmobiliaria.",
+        desc: "Por qué actualizar su sitio web estático a una webapp dinámica es una necesidad competitiva.",
         profit: {
-          market: "Sistemas de Concesionario Fragmentados",
-          marketMetric: "VENTAS PERDIDAS",
-          marketDesc1: "Clientes perdidos por tiempos de respuesta lentos.",
-          marketDesc2: "Horas perdidas en papeleo manual y CRM inconexos.",
-          direct: "Concesionario Digital Unificado",
-          directMetric: "MÁS RÁPIDO",
-          directDesc1: "Un flujo omnicanal perfecto de la app a la sala de exposición.",
-          directDesc2: "Cierres más rápidos. Sincronización total de inventario."
+          market: "Sitios Web Estáticos",
+          marketMetric: "CLIENTES PERDIDOS",
+          marketDesc1: "Plantillas genéricas que se confunden con cualquier otro agente.",
+          marketDesc2: "Cero características interactivas. Altas tasas de rebote.",
+          direct: "Experiencia Webapp Personalizada",
+          directMetric: "MARCA PREMIUM",
+          directDesc1: "Una plataforma digital a medida que lo distingue.",
+          directDesc2: "Portales de clientes. Listados dinámicos. Control total."
         },
         cards: [
-          { title: "Showrooms Digitales", desc: "Permite a los clientes explorar inventario, personalizar y comenzar tratos completamente en línea." },
-          { title: "Sincronización de Inventario", desc: "Asegura que tu app digital y el lote físico reflejen exactamente el mismo inventario al instante." },
-          { title: "Financiamiento Automatizado", desc: "Integra calculadoras rápidas para precalificar clientes antes de que crucen la puerta." },
-          { title: "Integración de CRM Perfecta", desc: "Nunca pierdas un cliente. Rastrea interacciones desde el primer clic hasta la firma final." },
-          { title: "Cierre de Tratos Acelerado", desc: "Digitaliza el proceso de papeleo, reduciendo drásticamente el tiempo para finalizar una venta." },
-          { title: "Viajes Omnicanal", desc: "Proporciona una transición sin fricciones para los compradores entre tu web y tu sala de exposición." }
+          { title: "Webapps Dinámicas", desc: "Transforme su presencia en línea de un folleto estático a una plataforma digital interactiva." },
+          { title: "Portales de Clientes", desc: "Ofrezca a compradores y vendedores su propio inicio de sesión para rastrear propiedades y ofertas." },
+          { title: "Listados Interactivos", desc: "Muestre propiedades con multimedia, mapas interactivos y algoritmos de filtrado avanzados." },
+          { title: "Programación Perfecta", desc: "Integre reservas directas para visitas directamente desde su webapp." },
+          { title: "Diferenciación de Marca", desc: "Deje de usar las mismas plantillas que sus competidores. Establezca una verdadera marca de lujo." },
+          { title: "Sincronización Omnicanal", desc: "Asegure que su webapp móvil y la experiencia de escritorio estén sincronizadas en tiempo real." }
         ]
       }
     }
