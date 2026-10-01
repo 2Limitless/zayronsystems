@@ -36,9 +36,9 @@ const hubImages: Record<Industry, { left: string, center: string, right: string 
     right: "/restaurant_comparison.jpg"
   },
   realestate: {
-    left: "/floating_phone.png",
-    center: "/book_demo_app_showcase.jpg",
-    right: "/app_showcase_2.png"
+    left: "/realestate_app_mockup.jpg",
+    center: "/realestate_dashboard.jpg",
+    right: "/realestate_virtual_tour.jpg"
   }
 };
 
