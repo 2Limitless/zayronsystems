@@ -19,6 +19,29 @@ const industriesList = [
   { id: "realestate", label: { en: "Real Estate Agents", es: "Agentes Inmobiliarios" } }
 ] as const;
 
+const hubImages: Record<Industry, { left: string, center: string, right: string }> = {
+  general: {
+    left: "/app_showcase_1.png",
+    center: "/enterprise_analytics_dashboard.jpg",
+    right: "/app_showcase_3.png"
+  },
+  industrial: {
+    left: "/logistics_app_mockup.jpg",
+    center: "/industrial_tablet_mockup.jpg",
+    right: "/analytics_dashboard_panel.jpg"
+  },
+  restaurants: {
+    left: "/mobile_app_mockup.jpg",
+    center: "/kds_tablet_mockup.jpg",
+    right: "/restaurant_comparison.jpg"
+  },
+  realestate: {
+    left: "/floating_phone.png",
+    center: "/book_demo_app_showcase.jpg",
+    right: "/app_showcase_2.png"
+  }
+};
+
 const dict = {
   en: {
     nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation", partners: "Partner Portal" },
@@ -443,14 +466,20 @@ export default function Home() {
                 </div>
 
                 <div className="flex-none w-full flex items-center justify-center -space-x-12 md:space-x-0 md:gap-10 px-8 mt-12 z-10 pointer-events-none perspective-[1200px]">
-                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[-6deg] md:rotate-0 translate-y-4 md:translate-y-0">
-                    <img src="/logistics_app_mockup.jpg" alt="Enterprise Mobile App UI" className="w-full h-full object-cover opacity-90" />
+                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[-6deg] md:rotate-0 translate-y-4 md:translate-y-0 relative">
+                    <AnimatePresence>
+                      <motion.img key={hubImages[selectedIndustry].left} initial={{ opacity: 0 }} animate={{ opacity: 0.9 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} src={hubImages[selectedIndustry].left} alt="App UI Left" className="absolute inset-0 w-full h-full object-cover" />
+                    </AnimatePresence>
                   </motion.div>
-                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }} className="w-[160px] md:w-[260px] lg:w-[300px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_60px_100px_rgba(0,0,0,0.8)] bg-black/50 z-20">
-                    <img src="/industrial_tablet_mockup.jpg" alt="Industrial Control Tablet" className="w-full h-full object-cover" />
+                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }} className="w-[160px] md:w-[260px] lg:w-[300px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_60px_100px_rgba(0,0,0,0.8)] bg-black/50 z-20 relative">
+                    <AnimatePresence>
+                      <motion.img key={hubImages[selectedIndustry].center} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} src={hubImages[selectedIndustry].center} alt="App UI Center" className="absolute inset-0 w-full h-full object-cover" />
+                    </AnimatePresence>
                   </motion.div>
-                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[6deg] md:rotate-0 translate-y-4 md:translate-y-0">
-                    <img src="/enterprise_analytics_dashboard.jpg" alt="Enterprise Analytics Dashboard" className="w-full h-full object-cover opacity-90" />
+                  <motion.div animate={{ y: [-5, 5, -5] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="w-[140px] md:w-[220px] lg:w-[260px] aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] bg-black/50 rotate-[6deg] md:rotate-0 translate-y-4 md:translate-y-0 relative">
+                    <AnimatePresence>
+                      <motion.img key={hubImages[selectedIndustry].right} initial={{ opacity: 0 }} animate={{ opacity: 0.9 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} src={hubImages[selectedIndustry].right} alt="App UI Right" className="absolute inset-0 w-full h-full object-cover" />
+                    </AnimatePresence>
                   </motion.div>
                 </div>
               </motion.div>
