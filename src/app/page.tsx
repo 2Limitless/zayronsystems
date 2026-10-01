@@ -83,12 +83,12 @@ const dict = {
         cta2: "View Restaurant Capabilities"
       },
       realestate: {
-        pills: ["VIP Client Portal", "Shadow Pipeline", "WelcomeParrot AI"],
+        pills: ["VIP Client Portal", "Shadow Pipeline", "AI SMS Receptionist"],
         headline: "Stop Splitting Your Own Leads.",
         subhead: "You work 60+ hours a week just to build your boss's brand. We architect custom 'Shadow Pipelines' that allow you to capture, process, and close your own personal network completely outside of your team's CRM. Sovereign digital infrastructure so you keep 100% of your commission.",
         stats: [
           { num: "40", title: "Broker Splits", desc: "Brokerages commonly take up to 40% of your commission. A Private Client Portal lets you process your personal network independently. — Industry Averages" },
-          { num: "80", title: "Voicemail Drop-Off", desc: "80% of callers sent to voicemail don't leave a message. WelcomeParrot AI engages them instantly via text so you never lose a lead. — Forbes" },
+          { num: "80", title: "Voicemail Drop-Off", desc: "80% of callers sent to voicemail don't leave a message. Our custom AI SMS receptionists engage them instantly via text so you never lose a lead. — Forbes" },
           { num: "71", title: "Brand Trust", desc: "71% of buyers choose agents based on their independent digital presence. A custom VIP portal makes you look like a sovereign $100M broker. — NAR" }
         ],
         cta1: "Build Your Shadow Pipeline",
@@ -137,12 +137,12 @@ const dict = {
         cta2: "Ver Capacidades de Restaurantes"
       },
       realestate: {
-        pills: ["Portal VIP", "Pipeline Oculto", "WelcomeParrot AI"],
+        pills: ["Portal VIP", "Pipeline Oculto", "Recepcionista IA"],
         headline: "Deja de Dividir tus Propios Leads.",
         subhead: "Trabajas más de 60 horas a la semana para construir la marca de tu jefe. Arquitectamos 'Pipelines Ocultos' personalizados que te permiten capturar y procesar tu propia red personal completamente fuera del CRM de tu equipo. Infraestructura digital soberana para que conserves el 100% de tu comisión.",
         stats: [
           { num: "40", title: "Cortes del Broker", desc: "Las agencias suelen retener hasta el 40% de tu comisión. Un Portal Privado te permite capturar a tu red personal de forma independiente. — Promedios de la Industria" },
-          { num: "80", title: "Pérdida en Buzón", desc: "El 80% de quienes van al buzón de voz no dejan mensaje. WelcomeParrot AI los atiende por texto al instante para que nunca pierdas un lead. — Forbes" },
+          { num: "80", title: "Pérdida en Buzón", desc: "El 80% de quienes van al buzón de voz no dejan mensaje. Nuestras recepcionistas SMS con IA los atienden al instante para que nunca pierdas un lead. — Forbes" },
           { num: "71", title: "Confianza de Marca", desc: "El 71% de los compradores eligen agentes por su presencia digital independiente. Un portal VIP te hace ver como un broker de $100M. — NAR" }
         ],
         cta1: "Construye tu Pipeline",
