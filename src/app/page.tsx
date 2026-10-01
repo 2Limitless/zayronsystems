@@ -83,16 +83,16 @@ const dict = {
         cta2: "View Restaurant Capabilities"
       },
       realestate: {
-        pills: ["Dynamic Webapps", "Client Portals", "Property Tech"],
-        headline: "Real Estate, Upgraded.",
-        subhead: "Stand out in a crowded market. We transform basic agent websites into full-featured webapps that streamline your brand, integrate client portals, and offer dynamic property experiences.",
+        pills: ["VIP Client Portal", "Shadow Pipeline", "WelcomeParrot AI"],
+        headline: "Stop Splitting Your Own Leads.",
+        subhead: "You work 60+ hours a week just to build your boss's brand. We architect custom 'Shadow Pipelines' that allow you to capture, process, and close your own personal network completely outside of your team's CRM. Sovereign digital infrastructure so you keep 100% of your commission.",
         stats: [
-          { num: "5x", title: "Higher Engagement", desc: "Interactive property tech and virtual media hold buyer attention up to 5x longer than standard static agent websites. — Matterport" },
-          { num: "97", title: "Digital First", desc: "97% of modern homebuyers use the internet in their search, making a premium mobile-first webapp experience essential. — NAR" },
-          { num: "31", title: "Faster Sales", desc: "Homes marketed with interactive digital tools and robust online portals sell up to 31% faster. — Matterport" }
+          { num: "100", title: "Commission Kept", desc: "Pay a freelance TC $300 for paperwork instead of surrendering 50% of your own personal network's deals to your broker for doing absolutely nothing." },
+          { num: "0", title: "Leads Lost", desc: "WelcomeParrot AI missed-call texting and stealth Open House QR codes ensure every buyer routes instantly to your private database, not the team's." },
+          { num: "10x", title: "Perceived Authority", desc: "Our luxury VIP discovery portals feature custom swipe-mechanics and premium UI, instantly making you look like a sovereign $100M broker." }
         ],
-        cta1: "Schedule Architecture Review",
-        cta2: "View Real Estate Capabilities"
+        cta1: "Build Your Shadow Pipeline",
+        cta2: "View Agent Infrastructure"
       }
     },
     dock: { hub: "Hub" }
@@ -137,16 +137,16 @@ const dict = {
         cta2: "Ver Capacidades de Restaurantes"
       },
       realestate: {
-        pills: ["Webapps Dinámicas", "Portales de Clientes", "Tecnología Inmobiliaria"],
-        headline: "Bienes Raíces, Evolucionados.",
-        subhead: "Destaque en un mercado saturado. Transformamos sitios web básicos de agentes en webapps completas que mejoran su marca, integran portales de clientes y ofrecen experiencias de propiedades dinámicas.",
+        pills: ["Portal VIP", "Pipeline Oculto", "WelcomeParrot AI"],
+        headline: "Deja de Dividir tus Propios Leads.",
+        subhead: "Trabajas más de 60 horas a la semana para construir la marca de tu jefe. Arquitectamos 'Pipelines Ocultos' personalizados que te permiten capturar y procesar tu propia red personal completamente fuera del CRM de tu equipo. Infraestructura digital soberana para que conserves el 100% de tu comisión.",
         stats: [
-          { num: "5x", title: "Mayor Compromiso", desc: "La tecnología inmobiliaria interactiva y multimedia retienen la atención del comprador hasta 5 veces más que los sitios estáticos. — Matterport" },
-          { num: "97", title: "Primero Digital", desc: "El 97% de los compradores modernos usan internet en su búsqueda, haciendo esencial una webapp móvil premium. — NAR" },
-          { num: "31", title: "Ventas Más Rápidas", desc: "Las propiedades comercializadas con portales y herramientas digitales interactivas se venden hasta un 31% más rápido. — Matterport" }
+          { num: "100", title: "Comisión Retenida", desc: "Págale a un coordinador freelance $300 por el papeleo en lugar de ceder el 50% de las ventas de tu propia familia a tu broker por no hacer absolutamente nada." },
+          { num: "0", title: "Leads Perdidos", desc: "La IA de WelcomeParrot y los códigos QR de Open House aseguran que cada comprador se enrute instantáneamente a tu base de datos privada." },
+          { num: "10x", title: "Autoridad Percibida", desc: "Nuestros portales VIP de lujo cuentan con mecánicas premium, haciéndote lucir al instante como un broker independiente de $100M." }
         ],
-        cta1: "Programar Revisión",
-        cta2: "Ver Capacidades Inmobiliarias"
+        cta1: "Construye tu Pipeline",
+        cta2: "Ver Infraestructura"
       }
     },
     dock: { hub: "Inicio" }
