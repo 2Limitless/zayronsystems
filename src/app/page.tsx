@@ -193,7 +193,8 @@ export default function Home() {
     const savedName = sessionStorage.getItem("zayron_visitor_name");
 
     if (savedName) {
-      setVisitorName(savedName);
+      const formatted = savedName.charAt(0).toUpperCase() + savedName.slice(1);
+      setVisitorName(formatted);
     }
 
     // Check for direct consultation link to skip modal
@@ -218,8 +219,10 @@ export default function Home() {
 
   const handleInitiate = () => {
     if (!visitorName.trim()) return;
-    sessionStorage.setItem("zayron_visitor_name", visitorName.trim());
+    const formattedName = visitorName.trim().charAt(0).toUpperCase() + visitorName.trim().slice(1);
+    sessionStorage.setItem("zayron_visitor_name", formattedName);
     sessionStorage.setItem("zayron_access", "granted");
+    setVisitorName(formattedName);
     setHasInitiated(true);
   };
 
