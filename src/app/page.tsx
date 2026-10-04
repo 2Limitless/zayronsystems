@@ -44,7 +44,7 @@ const hubImages: Record<Industry, { left: string, center: string, right: string 
 
 const dict = {
   en: {
-    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation", partners: "Partner Portal" },
+    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Apply for Architecture", partners: "Partner Portal" },
     hub: {
       general: {
         pills: ["Sovereign Infrastructure", "Systemic Diagnosis", "Workflow Automation"],
@@ -98,7 +98,7 @@ const dict = {
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta", partners: "Portal de Socios" },
+    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Aplicar para Arquitectura", partners: "Portal de Socios" },
     hub: {
       general: {
         pills: ["Infraestructura Soberana", "Diagnóstico Sistémico", "Automatización"],
@@ -177,6 +177,9 @@ export default function Home() {
   const [servicesTheme, setServicesTheme] = useState<"dark" | "light">("dark");
   const [selectedIndustry, setSelectedIndustry] = useState<Industry>("general");
   const [showIndustryPopup, setShowIndustryPopup] = useState(true);
+  const [hasInitiated, setHasInitiated] = useState(false);
+  const [visitorName, setVisitorName] = useState("");
+  const [isReady, setIsReady] = useState(false);
   const [maskWidth, setMaskWidth] = useState(0);
 
   useEffect(() => {
@@ -186,26 +189,126 @@ export default function Home() {
     updateWidth();
     window.addEventListener('resize', updateWidth);
     
+    const savedIndustry = sessionStorage.getItem("zayron_industry") as Industry | null;
+    const savedName = sessionStorage.getItem("zayron_visitor_name");
+
+    if (savedName) {
+      setVisitorName(savedName);
+    }
+
     // Check for direct consultation link to skip modal
     if (window.location.search.includes("consultation=true")) {
       setShowIndustryPopup(false);
+      setHasInitiated(true);
       setCurrentView("about");
+    } else {
+      if (sessionStorage.getItem("zayron_access") === "granted") {
+        setHasInitiated(true);
+      }
+      if (savedIndustry) {
+        setSelectedIndustry(savedIndustry);
+        setShowIndustryPopup(false);
+      }
     }
+    
+    setIsReady(true);
 
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
+
+  const handleInitiate = () => {
+    if (!visitorName.trim()) return;
+    sessionStorage.setItem("zayron_visitor_name", visitorName.trim());
+    sessionStorage.setItem("zayron_access", "granted");
+    setHasInitiated(true);
+  };
+
+  const handleIndustrySelect = (indId: Industry) => {
+    sessionStorage.setItem("zayron_industry", indId);
+    setSelectedIndustry(indId);
+    setShowIndustryPopup(false);
+  };
   
   const t = dict[lang];
   const hubData = t.hub[selectedIndustry];
 
   const handleNavClick = (view: ViewState) => setCurrentView(view);
 
+  if (!isReady) {
+    return <div className="w-full h-[100dvh] bg-black" />; // Prevent UI flash during hydration
+  }
+
   return (
     <main className={`relative w-full h-[100dvh] overflow-x-hidden bg-black flex flex-col ${currentView === 'hub' ? 'overflow-y-auto' : 'overflow-hidden'}`}>
       
-      {/* Initial Industry Selection Modal */}
+      {/* Initial Gateway / Micro-Commitment 1 */}
       <AnimatePresence>
-        {showIndustryPopup && (
+        {!hasInitiated && (
+          <motion.div
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 1.1, filter: "blur(20px)" }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed inset-0 z-[1000] bg-black flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
+          >
+            {/* Extremely subtle, deep ambient glow */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" />
+            
+            {/* Top Left Logo */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2, ease: "easeOut" }}
+              className="absolute top-8 left-8 md:top-12 md:left-12 z-20"
+            >
+              <img 
+                src="/logo.png" 
+                alt="ZayronSystems" 
+                className="h-8 md:h-12 w-auto object-contain opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
+              />
+            </motion.div>
+
+            <motion.div 
+              initial={{ scale: 1.1, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 2, delay: 0.2, ease: "easeOut" }}
+              className="flex flex-col items-center justify-center z-10 relative w-full h-full px-8"
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+                className="flex flex-col items-center gap-8 w-full max-w-sm"
+              >
+                <input 
+                  type="text" 
+                  value={visitorName}
+                  onChange={(e) => setVisitorName(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && visitorName.trim()) handleInitiate();
+                  }}
+                  placeholder="IDENTIFY YOURSELF"
+                  className="w-full bg-transparent border-b border-white/20 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/20 font-light"
+                  autoFocus
+                />
+                
+                <button 
+                  onClick={handleInitiate}
+                  disabled={!visitorName.trim()}
+                  className="group relative w-full py-5 bg-transparent border border-white/30 hover:border-white hover:bg-white disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-white/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0)] hover:shadow-[0_0_60px_rgba(255,255,255,0.15)]"
+                >
+                  <span className="relative z-10 text-white/70 group-hover:text-black disabled:group-hover:text-white/70 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
+                    Initialize
+                  </span>
+                </button>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Initial Industry Selection Modal / Micro-Commitment 2 */}
+      <AnimatePresence>
+        {hasInitiated && showIndustryPopup && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -234,10 +337,7 @@ export default function Home() {
                 {industriesList.filter(ind => ind.id !== "general").map((ind) => (
                   <button
                     key={ind.id}
-                    onClick={() => {
-                      setSelectedIndustry(ind.id);
-                      setShowIndustryPopup(false);
-                    }}
+                    onClick={() => handleIndustrySelect(ind.id)}
                     className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#00ff66]/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)]"
                   >
                      <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 via-[#00ff66]/0 to-[#00ff66]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -280,7 +380,7 @@ export default function Home() {
               </div>
               
               <button 
-                onClick={() => setShowIndustryPopup(false)}
+                onClick={() => handleIndustrySelect("general")}
                 className="mt-6 text-white/30 hover:text-white/80 text-xs tracking-widest uppercase underline underline-offset-4 transition-colors"
               >
                 Skip & View General Enterprise
@@ -388,8 +488,8 @@ export default function Home() {
                         ))}
                       </div>
 
-                      <h1 className="font-sans text-[12vw] md:text-[90px] lg:text-[110px] leading-[0.9] text-center font-bold tracking-tighter bg-gradient-to-b from-white via-white/90 to-white/30 bg-clip-text text-transparent pb-4">
-                        {hubData.headline}
+                      <h1 className="font-sans text-5xl md:text-[70px] lg:text-[85px] leading-[0.9] text-center font-bold tracking-tighter bg-gradient-to-b from-white via-white/90 to-white/30 bg-clip-text text-transparent pb-4 max-w-6xl">
+                        {visitorName && <span className="text-[#00ff66] italic">{visitorName},</span>} <br className="hidden md:block"/> {hubData.headline}
                       </h1>
                       
                       <p className="text-white/60 font-sans text-sm md:text-base font-light max-w-2xl text-center leading-relaxed mb-12">
@@ -487,25 +587,25 @@ export default function Home() {
 
             {currentView === "portfolio" && (
               <OverlayWrapper key="portfolio" onClose={() => setCurrentView("hub")}>
-                <PortfolioExperience lang={lang} industry={selectedIndustry} onBack={() => setCurrentView("hub")} />
+                <PortfolioExperience lang={lang} industry={selectedIndustry} visitorName={visitorName} onBack={() => setCurrentView("hub")} onNavigateToApply={() => setCurrentView("about")} />
               </OverlayWrapper>
             )}
             
             {currentView === "services" && (
               <OverlayWrapper key="services" onClose={() => setCurrentView("hub")}>
-                <ServicesExperience lang={lang} onBack={() => setCurrentView("hub")} onThemeChange={setServicesTheme} />
+                <ServicesExperience lang={lang} visitorName={visitorName} onBack={() => setCurrentView("hub")} onThemeChange={setServicesTheme} onNavigateToApply={() => setCurrentView("about")} />
               </OverlayWrapper>
             )}
 
             {currentView === "whyus" && (
               <OverlayWrapper key="whyus" onClose={() => setCurrentView("hub")}>
-                <WhyUsExperience lang={lang} onBack={() => setCurrentView("hub")} />
+                <WhyUsExperience lang={lang} visitorName={visitorName} onBack={() => setCurrentView("hub")} onNavigateToApply={() => setCurrentView("about")} />
               </OverlayWrapper>
             )}
 
             {currentView === "about" && (
               <OverlayWrapper key="about" onClose={() => setCurrentView("hub")}>
-                <AboutExperience lang={lang} onBack={() => setCurrentView("hub")} />
+                <AboutExperience lang={lang} visitorName={visitorName} onBack={() => setCurrentView("hub")} />
               </OverlayWrapper>
             )}
           </AnimatePresence>

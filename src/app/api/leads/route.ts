@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, phone, business } = body;
+    const { name, email, phone, business, bottleneck, why } = body;
 
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
     const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     const { error } = await supabase.from("leads").insert([
-      { name, email, phone, business }
+      { name, email, phone, business, bottleneck, why }
     ]);
 
     if (error) {

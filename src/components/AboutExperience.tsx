@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import type { Language } from "../app/page";
 import { Shield, Zap, Lock, ArrowRight, CheckCircle2 } from "lucide-react";
@@ -10,17 +10,18 @@ const dict = {
     back: "Return",
     availability: "Currently Accepting 3 New Client Projects",
     title1: "Apply For",
-    title2: "Architecture Review.",
-    desc1: "We do not work with everyone. Your business must be at a scale where our sovereign digital infrastructure can generate massive, undeniable ROI.",
-    desc2: "Submit your application below. If you qualify, our lead architect will contact you to diagnose your operational bottlenecks.",
+    title2: "Deployment.",
+    desc1: "We reject over 70% of applicants. We only build our architecture for operations capable of handling massive, undeniable ROI. If you are not prepared for complete operational transformation, do not apply.",
+    desc2: "Submit your dossier below. If you meet our baseline criteria, our lead architect will contact you to diagnose your systems.",
     form: {
       name: "Full Name",
       email: "Direct Email Address",
       phone: "Direct Phone Number",
       business: "Company Name & Annual Revenue",
-      bottleneck: "What is your primary operational bottleneck?",
+      bottleneck: "Current Systemic Bottleneck",
+      why: "Why should we select your operation?",
       submit: "Submit Application",
-      successTitle: "Application Received.",
+      successTitle: "Dossier Received.",
       successDesc: "Your information has been secured. Our lead architect will review your submission to see if you qualify and reach out within 24 hours.",
       trust: "Your data is secured with bank-level encryption and absolute confidentiality."
     }
@@ -28,29 +29,40 @@ const dict = {
   es: {
     back: "Regresar",
     availability: "Aceptando 3 Nuevos Proyectos de Clientes",
-    title1: "Solicita tu",
-    title2: "Revisión de Arquitectura.",
-    desc1: "No trabajamos con cualquiera. Tu negocio debe estar a una escala donde nuestra infraestructura digital soberana pueda generar un ROI masivo e innegable.",
-    desc2: "Envía tu solicitud a continuación. Si calificas, nuestro arquitecto principal te contactará para diagnosticar tus cuellos de botella.",
+    title1: "Aplicar para",
+    title2: "Despliegue.",
+    desc1: "Rechazamos a más del 70% de los solicitantes. Solo desplegamos nuestra arquitectura en operaciones capaces de manejar un ROI masivo. Si no estás preparado para una transformación total, no apliques.",
+    desc2: "Envía tu expediente a continuación. Si cumples con nuestros criterios, nuestro arquitecto te contactará.",
     form: {
       name: "Nombre Completo",
       email: "Correo Electrónico Directo",
       phone: "Número de Teléfono Directo",
       business: "Nombre de Empresa e Ingresos Anuales",
-      bottleneck: "¿Cuál es tu principal cuello de botella operativo?",
+      bottleneck: "Cuello de Botella Sistémico",
+      why: "¿Por qué deberíamos seleccionar tu operación?",
       submit: "Enviar Solicitud",
-      successTitle: "Solicitud Recibida.",
+      successTitle: "Expediente Recibido.",
       successDesc: "Tu información ha sido asegurada. Nuestro arquitecto principal revisará tu envío para ver si calificas y te contactará en menos de 24 horas.",
       trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
     }
   }
 };
 
-export default function AboutExperience({ lang, onBack }: { lang: Language, onBack: () => void }) {
+export default function AboutExperience({ lang, onBack, visitorName }: { lang: Language, onBack: () => void, visitorName?: string }) {
   const t = dict[lang];
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", business: "", bottleneck: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", business: "", bottleneck: "", why: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
   const [focusedInput, setFocusedInput] = useState<string | null>(null);
+  const [step, setStep] = useState(0);
+
+  const formFields = [
+    { id: "name", label: t.form.name, type: "text" },
+    { id: "email", label: t.form.email, type: "email" },
+    { id: "phone", label: t.form.phone, type: "tel" },
+    { id: "business", label: t.form.business, type: "text" },
+    { id: "bottleneck", label: t.form.bottleneck, type: "text" },
+    { id: "why", label: t.form.why, type: "text" }
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -128,6 +140,12 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
             <span className="bg-gradient-to-r from-white via-white/80 to-[#00ff66] text-transparent bg-clip-text pr-4">{t.title2}</span>
           </motion.h1>
 
+          {visitorName && (
+            <motion.p variants={itemVariants} className="text-[#00ff66] text-lg md:text-xl font-medium tracking-wide mb-4">
+              {lang === 'en' ? 'Attention ' : 'Atención '}{visitorName}
+            </motion.p>
+          )}
+
           <motion.p variants={itemVariants} className="text-white/60 text-base md:text-xl font-light leading-relaxed mb-6 max-w-xl">
             {t.desc1}
           </motion.p>
@@ -175,64 +193,97 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
                   </div>
                 </motion.div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-                  <div className="space-y-5">
-                    {[
-                      { id: "name", label: t.form.name, type: "text" },
-                      { id: "email", label: t.form.email, type: "email" },
-                      { id: "phone", label: t.form.phone, type: "tel" },
-                      { id: "business", label: t.form.business, type: "text" },
-                      { id: "bottleneck", label: t.form.bottleneck, type: "text" }
-                    ].map((field) => (
-                      <div key={field.id} className="relative group">
-                        <input
-                          id={field.id}
-                          type={field.type}
-                          required
-                          value={(formData as any)[field.id]}
-                          onChange={e => setFormData({...formData, [field.id]: e.target.value})}
-                          onFocus={() => setFocusedInput(field.id)}
-                          onBlur={() => setFocusedInput(null)}
-                          className={`w-full bg-black/50 border rounded-xl px-5 py-4 text-white text-sm font-medium transition-all duration-300 outline-none
-                            ${focusedInput === field.id ? "border-[#00ff66]/50 shadow-[0_0_15px_rgba(0,255,102,0.1)]" : "border-white/10 hover:border-white/20"}
-                          `}
-                        />
-                        <label 
-                          htmlFor={field.id}
-                          className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
-                            ${(formData as any)[field.id] || focusedInput === field.id 
-                              ? "text-[9px] top-1.5 text-[#00ff66]" 
-                              : "text-[10px] top-4 text-white/40 group-hover:text-white/60"}
-                          `}
-                        >
-                          {field.label}
-                        </label>
-                      </div>
+                <form 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    if (step < formFields.length - 1) {
+                      setStep(step + 1);
+                    } else {
+                      handleSubmit(e);
+                    }
+                  }} 
+                  className="flex flex-col gap-6"
+                >
+                  
+                  {/* Progress Indicator */}
+                  <div className="flex gap-2 w-full mb-2">
+                    {formFields.map((_, i) => (
+                      <div key={i} className={`h-1 flex-1 rounded-full transition-colors duration-500 ${i <= step ? "bg-[#00ff66]" : "bg-white/10"}`} />
                     ))}
                   </div>
 
-                  <button 
-                    type="submit"
-                    disabled={status === "loading"}
-                    className="relative w-full overflow-hidden rounded-xl mt-4 group"
-                  >
-                    <div className={`absolute inset-0 transition-all duration-500 ${status === "loading" ? "bg-white/10" : "bg-white hover:bg-white/90"}`} />
-                    <div className="relative px-8 py-5 flex items-center justify-center gap-3">
-                      {status === "loading" ? (
-                        <>
-                          <div className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
-                          <span className="text-white text-xs font-bold uppercase tracking-widest">Encrypting & Submitting...</span>
-                        </>
-                      ) : (
-                        <>
-                          <span className="text-black text-xs font-bold uppercase tracking-widest">{t.form.submit}</span>
-                          <ArrowRight className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" />
-                        </>
-                      )}
-                    </div>
-                  </button>
+                  <div className="min-h-[100px] flex flex-col justify-center">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={step}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="relative group w-full"
+                      >
+                        <input
+                          id={formFields[step].id}
+                          type={formFields[step].type}
+                          required
+                          autoFocus
+                          value={(formData as any)[formFields[step].id]}
+                          onChange={e => setFormData({...formData, [formFields[step].id]: e.target.value})}
+                          onFocus={() => setFocusedInput(formFields[step].id)}
+                          onBlur={() => setFocusedInput(null)}
+                          className={`w-full bg-black/50 border rounded-xl px-5 py-5 text-white text-base md:text-lg font-medium transition-all duration-300 outline-none
+                            ${focusedInput === formFields[step].id ? "border-[#00ff66]/50 shadow-[0_0_15px_rgba(0,255,102,0.1)]" : "border-white/10 hover:border-white/20"}
+                          `}
+                        />
+                        <label 
+                          htmlFor={formFields[step].id}
+                          className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
+                            ${(formData as any)[formFields[step].id] || focusedInput === formFields[step].id 
+                              ? "text-[9px] top-1.5 text-[#00ff66]" 
+                              : "text-xs md:text-sm top-5 text-white/40 group-hover:text-white/60"}
+                          `}
+                        >
+                          {formFields[step].label}
+                        </label>
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
 
-                  <div className="flex items-center justify-center gap-2 mt-4 text-white/30">
+                  <div className="flex gap-3">
+                    {step > 0 && (
+                      <button 
+                        type="button"
+                        onClick={() => setStep(step - 1)}
+                        className="px-6 py-5 rounded-xl border border-white/10 hover:bg-white/5 transition-colors text-white/50 hover:text-white uppercase tracking-widest text-xs font-bold"
+                      >
+                        {lang === 'en' ? "Back" : "Atrás"}
+                      </button>
+                    )}
+                    <button 
+                      type="submit"
+                      disabled={status === "loading" || !(formData as any)[formFields[step].id]}
+                      className="relative flex-1 overflow-hidden rounded-xl group disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <div className={`absolute inset-0 transition-all duration-500 ${status === "loading" ? "bg-white/10" : "bg-white hover:bg-white/90"}`} />
+                      <div className="relative px-8 py-5 flex items-center justify-center gap-3">
+                        {status === "loading" ? (
+                          <>
+                            <div className="w-4 h-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+                            <span className="text-white text-xs font-bold uppercase tracking-widest">Encrypting...</span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="text-black text-xs font-bold uppercase tracking-widest">
+                              {step < formFields.length - 1 ? (lang === 'en' ? "Next Step" : "Siguiente") : t.form.submit}
+                            </span>
+                            <ArrowRight className="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" />
+                          </>
+                        )}
+                      </div>
+                    </button>
+                  </div>
+
+                  <div className="flex items-center justify-center gap-2 mt-2 text-white/30">
                     <Lock className="w-3 h-3" />
                     <span className="text-[10px] uppercase tracking-wider">{t.form.trust}</span>
                   </div>

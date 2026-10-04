@@ -70,7 +70,7 @@ const dict = {
   }
 };
 
-export default function ServicesExperience({ lang, onBack, onThemeChange }: { lang: Language, onBack: () => void, onThemeChange?: (theme: "dark" | "light") => void }) {
+export default function ServicesExperience({ lang, onBack, onThemeChange, onNavigateToApply, visitorName }: { lang: Language, onBack: () => void, onThemeChange?: (theme: "dark" | "light") => void, onNavigateToApply?: () => void, visitorName?: string }) {
   const t = dict[lang];
   const [activeTier, setActiveTier] = useState<"tier1" | "complete">("complete");
 
@@ -237,6 +237,27 @@ export default function ServicesExperience({ lang, onBack, onThemeChange }: { la
             )}
           </AnimatePresence>
         </div>
+
+        {/* Aggressive CTA */}
+        {onNavigateToApply && (
+          <motion.div variants={itemVariants} initial="hidden" animate="show" className="w-full flex flex-col items-center justify-center mt-24 text-center pb-12">
+            <h3 className={`text-2xl md:text-4xl font-bold mb-6 tracking-tight font-sans transition-colors duration-700 ${activeTier === "tier1" ? "text-black" : "text-white"}`}>
+              {lang === 'en' ? `Is Your Operation Qualified, ${visitorName || 'Commander'}?` : `¿Tu Operación Está Calificada, ${visitorName || 'Comandante'}?`}
+            </h3>
+            <p className={`max-w-xl mb-8 font-light transition-colors duration-700 ${activeTier === "tier1" ? "text-black/60" : "text-white/50"}`}>
+              {lang === 'en' ? "We do not deploy our architecture for everyone. Apply below to see if your business qualifies for our digital infrastructure." : "No desplegamos nuestra arquitectura para todos. Aplica a continuación para ver si calificas."}
+            </p>
+            <button 
+              onClick={onNavigateToApply}
+              className={`group relative px-12 py-5 font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full transition-all duration-700 overflow-hidden ${activeTier === "tier1" ? "bg-black text-white shadow-[0_0_40px_rgba(0,0,0,0.2)] hover:shadow-[0_0_60px_rgba(0,0,0,0.4)]" : "bg-[#00ff66] text-black shadow-[0_0_40px_rgba(0,255,102,0.2)] hover:shadow-[0_0_60px_rgba(0,255,102,0.4)]"}`}
+            >
+              <div className={`absolute inset-0 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ${activeTier === "tier1" ? "bg-[var(--color-cobalt)]" : "bg-white"}`} />
+              <span className="relative z-10 transition-colors duration-500">
+                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+              </span>
+            </button>
+          </motion.div>
+        )}
 
         </div>
 

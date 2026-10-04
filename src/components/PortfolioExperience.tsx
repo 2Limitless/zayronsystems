@@ -201,7 +201,7 @@ const dict = {
   }
 };
 
-export default function PortfolioExperience({ lang, industry, onBack }: { lang: Language, industry: Industry, onBack: () => void }) {
+export default function PortfolioExperience({ lang, industry, onBack, onNavigateToApply, visitorName }: { lang: Language, industry: Industry, onBack: () => void, onNavigateToApply?: () => void, visitorName?: string }) {
   const t = dict[lang];
   const content = t.industries[industry];
 
@@ -310,6 +310,27 @@ export default function PortfolioExperience({ lang, industry, onBack }: { lang: 
           </motion.div>
 
         </div>
+
+        {/* Aggressive CTA */}
+        {onNavigateToApply && (
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2, duration: 0.5 }} className="w-full flex flex-col items-center justify-center mb-24 text-center">
+            <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
+              {lang === 'en' ? `Ready to Build Your Moat, ${visitorName || 'Commander'}?` : `¿Listo para Construir tu Foso, ${visitorName || 'Comandante'}?`}
+            </h3>
+            <p className="text-white/50 max-w-xl mb-8 font-light">
+              {lang === 'en' ? "Stop leaving money on the table. Apply for an architecture review to see what a bespoke digital infrastructure can do for your margins." : "Deja de dejar dinero en la mesa. Solicita una revisión de arquitectura."}
+            </p>
+            <button 
+              onClick={onNavigateToApply}
+              className="group relative px-12 py-5 bg-[#00ff66] text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(0,255,102,0.2)] hover:shadow-[0_0_60px_rgba(0,255,102,0.4)] transition-all duration-500 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
+              <span className="relative z-10 transition-colors duration-500">
+                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+              </span>
+            </button>
+          </motion.div>
+        )}
 
         {/* Legitimate SEO Footer Credit */}
         <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">

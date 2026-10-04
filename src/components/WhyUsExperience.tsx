@@ -65,7 +65,7 @@ const dict = {
   }
 };
 
-export default function WhyUsExperience({ lang, onBack }: { lang: Language, onBack: () => void }) {
+export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visitorName }: { lang: Language, onBack: () => void, onNavigateToApply?: () => void, visitorName?: string }) {
   const t = dict[lang];
 
   const containerVariants: any = {
@@ -179,6 +179,27 @@ export default function WhyUsExperience({ lang, onBack }: { lang: Language, onBa
             </motion.div>
 
         </div>
+
+        {/* Aggressive CTA */}
+        {onNavigateToApply && (
+          <motion.div variants={itemVariants} className="w-full flex flex-col items-center justify-center mt-24 text-center">
+            <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
+              {lang === 'en' ? `Ready to Secure Your Operations, ${visitorName || 'Commander'}?` : `¿Listo para Asegurar tus Operaciones, ${visitorName || 'Comandante'}?`}
+            </h3>
+            <p className="text-white/50 max-w-xl mb-8 font-light">
+              {lang === 'en' ? "Stop renting your business from agencies. Submit your architecture review application to see if you qualify for deployment." : "Deja de alquilar tu negocio a las agencias. Envía tu solicitud de revisión de arquitectura para ver si calificas."}
+            </p>
+            <button 
+              onClick={onNavigateToApply}
+              className="group relative px-12 py-5 bg-white text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(255,255,255,0.4)] transition-all duration-500 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-[#00ff66] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
+              <span className="relative z-10 transition-colors duration-500">
+                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+              </span>
+            </button>
+          </motion.div>
+        )}
       </motion.div>
     </motion.div>
   );
