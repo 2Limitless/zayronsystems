@@ -44,7 +44,7 @@ const hubImages: Record<Industry, { left: string, center: string, right: string 
 
 const dict = {
   en: {
-    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Apply for Architecture", partners: "Partner Portal" },
+    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Submit Dossier", partners: "Partner Portal" },
     hub: {
       general: {
         pills: ["Sovereign Infrastructure", "Systemic Diagnosis", "Workflow Automation"],
@@ -98,7 +98,7 @@ const dict = {
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Aplicar para Arquitectura", partners: "Portal de Socios" },
+    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Enviar Dossier", partners: "Portal de Socios" },
     hub: {
       general: {
         pills: ["Infraestructura Soberana", "Diagnóstico Sistémico", "Automatización"],
@@ -716,11 +716,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Bottom Row (52px exactly, 154px wide) */}
-                <div className="md:hidden flex items-center justify-center h-[52px] w-[154px] relative z-10 pb-2">
+                {/* Bottom Row (Flexible Width for Mobile) */}
+                <div className="md:hidden flex items-center justify-center h-[52px] w-auto relative z-10 pb-2 px-2">
                   <button
                     onClick={() => handleNavClick("about")}
-                    className={`relative w-[150px] h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
+                    className={`relative w-auto px-6 h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
                       currentView === "about"
                         ? "text-[var(--color-void)] font-bold"
                         : isLightMode
