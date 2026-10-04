@@ -143,8 +143,8 @@ export default function PartnerDashboard() {
             <div className="w-16 h-16 bg-[#00ff66]/10 rounded-full flex items-center justify-center mb-6 border border-[#00ff66]/30 shadow-[0_0_40px_rgba(0,255,102,0.15)]">
               <DollarSign className="text-[#00ff66]" size={28} />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">Partner Login</h1>
-            <p className="text-white/50 text-sm leading-relaxed">Enter your email to view your active commissions and drop new leads into our system.</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">Syndicate Portal</h1>
+            <p className="text-white/50 text-sm leading-relaxed">Authenticate to view your asset pipeline, active commissions, and drop new intel.</p>
           </div>
 
           <form onSubmit={handleLogin} className="space-y-6 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
@@ -163,7 +163,7 @@ export default function PartnerDashboard() {
               type="submit"
               className="w-full bg-[#00ff66] text-black font-bold uppercase tracking-[0.1em] text-sm rounded-xl px-4 py-4 hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(0,255,102,0.2)] hover:shadow-[0_0_40px_rgba(0,255,102,0.4)] flex items-center justify-center gap-2"
             >
-              Enter Portal <ArrowUpRight size={18} />
+              Authorize Access <ArrowUpRight size={18} />
             </button>
           </form>
         </motion.div>
@@ -201,7 +201,7 @@ export default function PartnerDashboard() {
               </button>
               
               <h2 className="text-2xl md:text-3xl font-bold mb-8 tracking-tighter">
-                Drop a New Lead
+                Deploy Asset Intel
               </h2>
 
               {submitSuccess ? (
@@ -246,7 +246,7 @@ export default function PartnerDashboard() {
                     type="submit"
                     className="w-full mt-8 bg-[#00ff66] text-black font-bold uppercase tracking-widest text-sm rounded-xl px-4 py-5 hover:bg-white transition-all disabled:opacity-50"
                   >
-                    {loading ? "Transmitting..." : "Submit Lead"}
+                    {loading ? "Transmitting..." : "Initiate Transfer (Submit)"}
                   </button>
                 </form>
               )}
@@ -260,11 +260,11 @@ export default function PartnerDashboard() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <span className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-widest uppercase font-bold text-[#00ff66]">
-                {email}
+                Operative: {email}
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-              Dashboard
+              Syndicate Hub
             </h1>
           </div>
           <div className="flex gap-4">
@@ -272,7 +272,7 @@ export default function PartnerDashboard() {
               onClick={() => setShowSubmitModal(true)}
               className="bg-[#00ff66] text-black px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white transition-colors shadow-[0_0_30px_rgba(0,255,102,0.2)] flex items-center gap-2"
             >
-              <Plus size={16} /> Submit Lead
+              <Plus size={16} /> Deploy Asset
             </button>
             <button 
               onClick={handleLogout}
@@ -373,15 +373,15 @@ export default function PartnerDashboard() {
               <div className="absolute inset-0 bg-[#00ff66]/20 rounded-full animate-ping" />
               <DollarSign className="text-[#00ff66] relative z-10" size={36} />
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-4">Start Earning 30%</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-4">Your Pipeline is Empty.</h2>
             <p className="text-white/50 text-lg max-w-lg mx-auto mb-10 leading-relaxed">
-              You haven't dropped any leads yet. Connect us with a business that needs a software upgrade, and we'll cut you 30% of the revenue when the deal closes.
+              The syndicate thrives on execution. Drop intel on a target business, let our architects close the deal, and automatically extract your 30% commission.
             </p>
             <button 
               onClick={() => setShowSubmitModal(true)}
               className="bg-[#00ff66] text-black px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white transition-all shadow-[0_0_40px_rgba(0,255,102,0.2)] hover:shadow-[0_0_60px_rgba(0,255,102,0.4)] flex items-center gap-3"
             >
-              <Plus size={20} /> Submit Your First Lead
+              <Plus size={20} /> Deploy Asset (Submit Lead)
             </button>
           </div>
         )}

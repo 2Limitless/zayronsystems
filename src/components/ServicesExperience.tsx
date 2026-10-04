@@ -15,25 +15,25 @@ const dict = {
     tier1: {
       headerSubtitle: "Core",
       headerTitle: "Core Infrastructure.",
-      headerDesc: "The foundational software stack for industrial operations.",
+      headerDesc: "The foundational software stack for operational dominance.",
       cards: [
-        { title: "Logistics Hub", desc: "Custom dashboards for real-time tracking and dispatching." },
-        { title: "Data Warehouse", desc: "Centralized storage for critical operational data." },
-        { title: "API Gateway", desc: "Secure endpoints for third-party service integration." },
-        { title: "Live Analytics", desc: "100% ownership of your performance metrics and usage trends." }
+        { title: "Command Center", desc: "Watch your entire operation run on autopilot from a single, flawless pane of glass." },
+        { title: "Absolute Memory", desc: "Never lose a data point again. Have your entire operational history instantly accessible." },
+        { title: "System Control", desc: "Command external tools effortlessly. Your software becomes the central brain of your business." },
+        { title: "Predictive Analytics", desc: "Predict market trends and operational bottlenecks before your competitors even wake up." }
       ]
     },
     complete: {
       headerSubtitle: "Full-Scale",
       headerTitle: "Full-Scale Transformation.",
-      headerDesc: "Everything in Core, PLUS our 'White-Glove' enterprise deployment.",
+      headerDesc: "Total operational takeover. We handle the transition while you focus on scaling.",
       cards: [
-        { title: "Cloud Deployment", desc: "We manage AWS/GCP provisioning, security, and VPC setup." },
-        { title: "Legacy Migration", desc: "We manually migrate your old data to the new architecture." },
-        { title: "Hardware Provisioning", desc: "Pre-configured rugged industrial tablets and IoT sensors." },
-        { title: "SOP Development", desc: "Custom digital standard operating procedures and documentation." },
-        { title: "Automated Alerts", desc: "Critical system notifications and maintenance reminders via SMS." },
-        { title: "24/7 Support SLA", desc: "Dedicated engineering support and guaranteed uptime SLAs." }
+        { title: "Infinite Scale", desc: "Sleep soundly knowing your bespoke cloud architecture can handle massive growth without breaking." },
+        { title: "Painless Extraction", desc: "We surgically extract your business from archaic legacy systems without you lifting a finger." },
+        { title: "Workforce Weaponization", desc: "Your team hits the ground running on day one with pre-configured, rugged hardware." },
+        { title: "Replicable Genius", desc: "We encode your operational SOPs into software, making your business infinitely scalable." },
+        { title: "Peace of Mind", desc: "Critical updates and automated alerts find you instantly, wherever you are in the world." },
+        { title: "Digital Perimeter", desc: "An elite engineering team on standby 24/7. We guard your infrastructure while you sleep." }
       ]
     }
   },
@@ -46,25 +46,25 @@ const dict = {
     tier1: {
       headerSubtitle: "Base",
       headerTitle: "Infraestructura Base.",
-      headerDesc: "El stack de software fundamental para operaciones industriales.",
+      headerDesc: "El stack de software fundamental para el dominio operativo.",
       cards: [
-        { title: "Hub Logístico", desc: "Paneles personalizados para seguimiento y despacho en tiempo real." },
-        { title: "Almacén de Datos", desc: "Almacenamiento centralizado para datos operativos críticos." },
-        { title: "Gateway API", desc: "Endpoints seguros para la integración de servicios de terceros." },
-        { title: "Análisis en Vivo", desc: "Propiedad del 100% de tus métricas de rendimiento y tendencias." }
+        { title: "Centro de Comando", desc: "Observa cómo toda tu operación funciona en piloto automático desde un solo panel perfecto." },
+        { title: "Memoria Absoluta", desc: "Nunca vuelvas a perder un dato. Ten todo tu historial operativo accesible al instante." },
+        { title: "Control de Sistemas", desc: "Comanda herramientas externas sin esfuerzo. Tu software se convierte en el cerebro central." },
+        { title: "Análisis Predictivo", desc: "Predice tendencias del mercado y cuellos de botella antes de que tus competidores despierten." }
       ]
     },
     complete: {
       headerSubtitle: "Escala Total",
       headerTitle: "Transformación a Escala Total.",
-      headerDesc: "Todo en la Base, MÁS nuestro despliegue empresarial 'VIP'.",
+      headerDesc: "Toma de control operativo total. Manejamos la transición mientras tú te enfocas en crecer.",
       cards: [
-        { title: "Despliegue en la Nube", desc: "Manejamos AWS/GCP, seguridad y configuración de VPC." },
-        { title: "Migración de Sistemas", desc: "Migramos manualmente tus datos antiguos a la nueva arquitectura." },
-        { title: "Hardware Industrial", desc: "Tabletas industriales resistentes preconfiguradas y sensores IoT." },
-        { title: "Desarrollo de SOPs", desc: "Procedimientos operativos estándar digitales personalizados." },
-        { title: "Alertas Automatizadas", desc: "Notificaciones críticas del sistema y recordatorios de mantenimiento." },
-        { title: "Soporte SLA 24/7", desc: "Soporte de ingeniería dedicado y garantías de tiempo de actividad." }
+        { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejará un crecimiento masivo sin fallar." },
+        { title: "Extracción Sin Dolor", desc: "Extraemos quirúrgicamente tu negocio de sistemas arcaicos sin que muevas un dedo." },
+        { title: "Fuerza Laboral Armada", desc: "Tu equipo entra en acción el primer día con hardware preconfigurado y resistente." },
+        { title: "Genio Replicable", desc: "Codificamos tus procesos en el software, haciendo que tu negocio sea infinitamente escalable." },
+        { title: "Tranquilidad", desc: "Actualizaciones críticas y alertas automatizadas te encuentran al instante, dondequiera que estés." },
+        { title: "Perímetro Digital", desc: "Un equipo de élite en espera 24/7. Protegemos tu infraestructura mientras duermes." }
       ]
     }
   }

@@ -7,59 +7,59 @@ import { X, Check, ShieldAlert, ShieldCheck } from "lucide-react";
 const dict = {
   en: {
     back: "Back to Hub",
-    title1: "The Enterprise",
-    title2: "Illusion.",
-    subtitle: "Stop paying for bloat. Start investing in your digital real estate.",
-    desc: "The massive million-dollar agencies want you trapped in retainers for generic, off-the-shelf templates. They sell you the illusion of scale while eating your margins. We build custom, high-velocity infrastructure that gives you the unfair advantage.",
+    title1: "The Agency",
+    title2: "Parasite.",
+    subtitle: "Stop renting your business. Start building sovereign digital real estate.",
+    desc: "Traditional agencies view your business as a host to feed on. They trap you in infinite retainers, holding your code and customer data hostage while eating your margins. We are a sovereign engineering firm. We architect bespoke digital infrastructure, hand you the keys, and give you an unfair market advantage.",
     them: {
       title: "The Industry",
-      subtitle: "The Million-Dollar Agency Model",
+      subtitle: "The Parasitic Agency Model",
       points: [
-        "Off-the-shelf, bloated template codebases",
-        "You rent your infrastructure forever",
-        "Slow, generic UX that bleeds conversions",
-        "Massive retainers with zero urgency",
-        "You are just another account number"
+        "Bloated, vulnerable template codebases",
+        "Hostage-style monthly infrastructure rent",
+        "Generic UX that actively bleeds conversions",
+        "Infinite retainers designed to drain margins",
+        "You do not own your data or codebase"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "The Digital Dominance Model",
+      subtitle: "The Digital Sovereignty Model",
       points: [
-        "Custom-engineered from the ground up",
-        "Complete data sovereignty and ownership",
-        "Lightning-fast, Awwwards-level performance",
-        "Margin-expanding ROI built to scale",
-        "Direct access to your lead architect"
+        "Sovereign infrastructure engineered from scratch",
+        "Absolute ownership of your data and code",
+        "Ruthless performance and conversion speeds",
+        "Engineered specifically for massive ROI",
+        "Direct comms with elite systems architects"
       ]
     }
   },
   es: {
     back: "Volver al Inicio",
-    title1: "La Ilusión",
-    title2: "Empresarial.",
-    subtitle: "Deja de pagar por ineficiencia. Invierte en tus bienes raíces digitales.",
-    desc: "Las agencias masivas quieren atraparte en contratos por plantillas genéricas. Te venden la ilusión de escalar mientras devoran tus márgenes. Nosotros construimos infraestructura rápida y personalizada que te da una ventaja injusta.",
+    title1: "El Parásito",
+    title2: "de Agencia.",
+    subtitle: "Deja de alquilar tu negocio. Empieza a construir bienes raíces digitales soberanos.",
+    desc: "Las agencias tradicionales ven a tu negocio como un huésped del cual alimentarse. Te atrapan en contratos infinitos, secuestrando tu código y datos mientras devoran tus márgenes. Somos una firma de ingeniería soberana. Diseñamos infraestructura digital a medida, te entregamos las llaves y te damos una ventaja injusta.",
     them: {
       title: "La Industria",
-      subtitle: "El Modelo de las Grandes Agencias",
+      subtitle: "El Modelo Parasitario",
       points: [
-        "Bases de código infladas y de plantilla",
-        "Alquilas tu infraestructura para siempre",
-        "UX lenta y genérica que pierde conversiones",
-        "Contratos masivos con cero urgencia",
-        "Eres solo un número de cuenta más"
+        "Bases de código infladas y vulnerables",
+        "Alquiler de infraestructura estilo rehén",
+        "UX genérica que sangra tus conversiones",
+        "Contratos infinitos diseñados para drenar márgenes",
+        "No eres dueño de tus datos ni de tu código"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "El Modelo de Dominio Digital",
+      subtitle: "El Modelo de Soberanía Digital",
       points: [
-        "Diseñado a medida desde cero",
-        "Soberanía total de datos y propiedad",
-        "Rendimiento ultrarrápido nivel Awwwards",
-        "ROI que expande márgenes y escala",
-        "Acceso directo a tu arquitecto principal"
+        "Infraestructura soberana diseñada desde cero",
+        "Propiedad absoluta de tus datos y código",
+        "Velocidad de rendimiento y conversión despiadada",
+        "Diseñado específicamente para un ROI masivo",
+        "Comunicaciones directas con arquitectos de élite"
       ]
     }
   }

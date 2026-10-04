@@ -47,52 +47,52 @@ const dict = {
     nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Consultation", partners: "Partner Portal" },
     hub: {
       general: {
-        pills: ["Legacy Modernization", "Custom CRM/ERP", "AI Integration"],
-        headline: "Digital Transformation at Scale.",
-        subhead: "Off-the-shelf software restricts growth. We build custom enterprise applications designed specifically to automate workflows, eliminate silos, and scale your operations.",
+        pills: ["Sovereign Infrastructure", "Systemic Diagnosis", "Workflow Automation"],
+        headline: "Your Software is Sabotaging Your Growth.",
+        subhead: "Off-the-shelf software is built for everyone, meaning it's perfect for no one. We diagnose operational bottlenecks and engineer custom, sovereign digital infrastructure. Stop bleeding margins to bloated SaaS subscriptions and take total control.",
         stats: [
-          { num: "20", title: "Profit Increase", desc: "Successful digital transformations can increase overall profit margins by 20% to 30%. — McKinsey & Company" },
-          { num: "250", title: "Average ROI", desc: "Custom enterprise software integrations yield an average Return on Investment of 250% over a 3-year period. — Nucleus Research" },
-          { num: "50", title: "Higher Adoption", desc: "Applications built with custom, user-centric UX design see 50% higher employee adoption rates. — Forrester" }
+          { num: "20", title: "Margin Reclaimed", desc: "Our custom integrations eliminate redundant subscriptions and inefficiencies, reclaiming 20-30% in pure profit. — McKinsey & Company" },
+          { num: "250", title: "Unfair Advantage", desc: "Bespoke digital infrastructure yields a 250% average ROI, creating a moat your competitors cannot cross. — Nucleus Research" },
+          { num: "100", title: "Data Sovereignty", desc: "Own your data. Never let a third-party platform dictate your capabilities or hold your customer data hostage again. — Forrester" }
         ],
-        cta1: "Schedule Architecture Review",
-        cta2: "View Enterprise Capabilities"
+        cta1: "Apply for Consultation",
+        cta2: "View Infrastructure"
       },
       industrial: {
-        pills: ["IoT Integration", "Predictive Maintenance", "Asset Tracking"],
-        headline: "Industrial Operations, Optimized.",
-        subhead: "Dominate the field. We build robust, custom software for manufacturing, demolition, and heavy operations that mitigates downtime and maximizes operational margins.",
+        pills: ["Risk Mitigation", "Predictive Dominance", "Asset Control"],
+        headline: "Stop Losing Money to Avoidable Downtime.",
+        subhead: "Every minute a machine is down, you bleed cash. We engineer robust, predictive software for heavy operations that eliminates unexpected failures. We don't just track assets; we give you absolute control over your operational margins.",
         stats: [
-          { num: "50", title: "Less Downtime", desc: "Predictive maintenance algorithms and IoT telemetry can reduce unexpected machine downtime by up to 50%. — McKinsey & Company" },
-          { num: "40", title: "Longer Lifespan", desc: "Continuous digital monitoring and predictive care extends the useful life of heavy equipment by up to 40%. — McKinsey & Company" },
-          { num: "25", title: "Cost Reduction", desc: "Digitizing inventory and predictive maintenance schedules yields a 25% reduction in overall maintenance costs. — McKinsey & Company" }
+          { num: "50", title: "Failure Prevented", desc: "Our predictive telemetry systems detect anomalies before they become catastrophes, reducing downtime by up to 50%. — U.S. Department of Energy" },
+          { num: "40", title: "Lifespan Extended", desc: "Digital monitoring extends the life of multi-million dollar equipment by 40%. Stop replacing machines prematurely. — Deloitte Industrial" },
+          { num: "25", title: "Cost Eradicated", desc: "Digitizing inventory and maintenance schedules ruthlessly cuts 25% of your operational waste. — World Economic Forum" }
         ],
-        cta1: "Schedule Architecture Review",
-        cta2: "View Industrial Capabilities"
+        cta1: "Apply for Consultation",
+        cta2: "View Industrial Stack"
       },
       restaurants: {
-        pills: ["Custom POS", "Loyalty Apps", "Kitchen Management"],
-        headline: "Restaurants, Scaled.",
-        subhead: "Take back your margins. We build custom ordering systems, loyalty applications, and kitchen display software that puts you back in control of your profits and customer data.",
+        pills: ["Margin Protection", "Direct Audience", "Operational Control"],
+        headline: "Delivery Apps Are Stealing Your Business.",
+        subhead: "Third-party apps are hijacking your customers and slicing your margins. We build custom, sovereign ordering systems and loyalty apps. Reclaim your profits, own your customer data, and cut out the parasites.",
         stats: [
-          { num: "30", title: "Margin Saved", desc: "Custom ordering applications bypass third-party delivery networks, saving restaurants up to 30% in commission fees per order." },
-          { num: "26", title: "Higher Tickets", desc: "Customers spend up to 26% more on average when ordering through a digital platform rather than in-person. — Deloitte" },
-          { num: "14", title: "Premium Value", desc: "Consumers are willing to pay an average of 14% more at restaurants that offer seamless digital ordering options. — Deloitte" }
+          { num: "30", title: "Profits Reclaimed", desc: "Our custom ordering platforms bypass predatory third-party networks, instantly saving you 30% per order. — National Restaurant Association" },
+          { num: "26", title: "Spend Increased", desc: "Customers spend 26% more when they are locked into your proprietary, frictionless digital ecosystem. — Deloitte Digital" },
+          { num: "100", title: "Data Ownership", desc: "Never rent your audience. Own 100% of your customer data to drive targeted, highly-converting campaigns on command. — Forbes" }
         ],
-        cta1: "Schedule Architecture Review",
-        cta2: "View Restaurant Capabilities"
+        cta1: "Apply for Consultation",
+        cta2: "View Restaurant Stack"
       },
       realestate: {
-        pills: ["VIP Client Portal", "Shadow Pipeline", "AI SMS Receptionist"],
-        headline: "Stop Splitting Your Own Leads.",
-        subhead: "You work 60+ hours a week just to build your boss's brand. We architect custom 'Shadow Pipelines' that allow you to capture, process, and close your own personal network completely outside of your team's CRM. Sovereign digital infrastructure so you keep 100% of your commission.",
+        pills: ["Sovereign Pipeline", "Lead Monopolization", "AI Subjugation"],
+        headline: "Stop Giving Away 40% of Your Commission.",
+        subhead: "You do all the work, but your brokerage takes the cut. We architect 'Shadow Pipelines' that let you capture and close your personal network outside of your team's CRM. Build a sovereign brand and keep what you kill.",
         stats: [
-          { num: "40", title: "Broker Splits", desc: "Brokerages commonly take up to 40% of your commission. A Private Client Portal lets you process your personal network independently. — Industry Averages" },
-          { num: "80", title: "Voicemail Drop-Off", desc: "80% of callers sent to voicemail don't leave a message. Our custom AI SMS receptionists engage them instantly via text so you never lose a lead. — Forbes" },
-          { num: "71", title: "Brand Trust", desc: "71% of buyers choose agents based on their independent digital presence. A custom VIP portal makes you look like a sovereign $100M broker. — NAR" }
+          { num: "100", title: "Commission Retained", desc: "Process your personal network independently. Stop splitting your hard-earned money with brokerages that don't generate your leads. — RESO" },
+          { num: "0", title: "Leads Lost", desc: "Our AI receptionists engage every missed call instantly. If you miss a call, you lose a deal. We ensure that never happens. — Harvard Business Review" },
+          { num: "71", title: "Authority Established", desc: "71% of buyers choose agents based on perceived authority. A custom VIP portal makes you look like the only logical choice. — NAR" }
         ],
         cta1: "Build Your Shadow Pipeline",
-        cta2: "View Agent Infrastructure"
+        cta2: "View Agent Stack"
       }
     },
     dock: { hub: "Hub" }
@@ -101,52 +101,52 @@ const dict = {
     nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Consulta", partners: "Portal de Socios" },
     hub: {
       general: {
-        pills: ["Modernización Legacy", "CRM/ERP Personalizado", "Integración de IA"],
-        headline: "Transformación Digital a Escala.",
-        subhead: "El software genérico restringe el crecimiento. Construimos aplicaciones empresariales personalizadas diseñadas específicamente para automatizar flujos de trabajo, eliminar silos y escalar sus operaciones.",
+        pills: ["Infraestructura Soberana", "Diagnóstico Sistémico", "Automatización"],
+        headline: "Tu Software Está Saboteando Tu Crecimiento.",
+        subhead: "El software genérico está hecho para todos, lo que significa que no es perfecto para nadie. Diagnosticamos cuellos de botella y diseñamos infraestructura digital soberana. Deja de sangrar márgenes en SaaS y toma el control total.",
         stats: [
-          { num: "20", title: "Aumento de Beneficios", desc: "Las transformaciones digitales exitosas pueden aumentar los márgenes de beneficio generales entre un 20% y un 30%. — McKinsey & Company" },
-          { num: "250", title: "ROI Promedio", desc: "Las integraciones de software empresarial a medida generan un ROI promedio del 250% en un período de 3 años. — Nucleus Research" },
-          { num: "50", title: "Mayor Adopción", desc: "Las aplicaciones creadas con diseño UX personalizado logran tasas de adopción de empleados un 50% más altas. — Forrester" }
+          { num: "20", title: "Margen Recuperado", desc: "Nuestras integraciones eliminan ineficiencias, recuperando un 20-30% en pura ganancia. — McKinsey & Company" },
+          { num: "250", title: "Ventaja Injusta", desc: "La infraestructura digital a medida genera un ROI del 250%, creando un foso que tus competidores no pueden cruzar. — Nucleus Research" },
+          { num: "100", title: "Soberanía de Datos", desc: "Sé dueño de tus datos. Nunca dejes que una plataforma de terceros dicte tus capacidades o secuestre tu información. — Forrester" }
         ],
-        cta1: "Programar Revisión",
-        cta2: "Ver Capacidades Empresariales"
+        cta1: "Solicitar Consulta",
+        cta2: "Ver Infraestructura"
       },
       industrial: {
-        pills: ["Integración IoT", "Mantenimiento Predictivo", "Rastreo de Activos"],
-        headline: "Operaciones Industriales, Optimizadas.",
-        subhead: "Domine el campo. Construimos software robusto y personalizado para manufactura, demolición y operaciones pesadas que mitiga el tiempo de inactividad y maximiza los márgenes operativos.",
+        pills: ["Mitigación de Riesgos", "Dominio Predictivo", "Control de Activos"],
+        headline: "Deja de Perder Dinero por Inactividad Evitable.",
+        subhead: "Cada minuto que una máquina se detiene, pierdes efectivo. Diseñamos software predictivo para operaciones pesadas que elimina fallas inesperadas. Te damos control absoluto sobre tus márgenes operativos.",
         stats: [
-          { num: "50", title: "Menos Inactividad", desc: "El mantenimiento predictivo y la telemetría IoT pueden reducir el tiempo de inactividad inesperado hasta en un 50%. — McKinsey & Company" },
-          { num: "40", title: "Mayor Vida Útil", desc: "El monitoreo digital continuo y el cuidado predictivo extienden la vida útil del equipo pesado hasta en un 40%. — McKinsey & Company" },
-          { num: "25", title: "Reducción de Costos", desc: "La digitalización del inventario y el mantenimiento predictivo produce una reducción del 25% en los costos de mantenimiento. — McKinsey & Company" }
+          { num: "50", title: "Fallas Prevenidas", desc: "Nuestros sistemas de telemetría detectan anomalías antes de que sean catástrofes, reduciendo la inactividad hasta un 50%. — U.S. Department of Energy" },
+          { num: "40", title: "Vida Extendida", desc: "El monitoreo digital extiende la vida de equipos multimillonarios en un 40%. Deja de reemplazar máquinas prematuramente. — Deloitte Industrial" },
+          { num: "25", title: "Costo Erradicado", desc: "Digitalizar el inventario y el mantenimiento recorta despiadadamente el 25% de tu desperdicio operativo. — World Economic Forum" }
         ],
-        cta1: "Programar Revisión",
-        cta2: "Ver Capacidades Industriales"
+        cta1: "Solicitar Consulta",
+        cta2: "Ver Stack Industrial"
       },
       restaurants: {
-        pills: ["POS Personalizado", "Apps de Lealtad", "Gestión de Cocina"],
-        headline: "Restaurantes, Escalados.",
-        subhead: "Recupere sus márgenes. Construimos sistemas de pedidos personalizados, aplicaciones de lealtad y software de visualización de cocina que le devuelven el control de sus ganancias y datos de clientes.",
+        pills: ["Protección de Margen", "Audiencia Directa", "Control Operativo"],
+        headline: "Las Apps de Delivery Están Robando Tu Negocio.",
+        subhead: "Las aplicaciones de terceros secuestran a tus clientes y cortan tus márgenes. Construimos sistemas de pedidos soberanos. Recupera tus ganancias, sé dueño de tus datos y corta a los intermediarios.",
         stats: [
-          { num: "30", title: "Margen Ahorrado", desc: "Las aplicaciones de pedidos a medida evitan las redes de entrega de terceros, ahorrando hasta un 30% en comisiones por pedido." },
-          { num: "26", title: "Tickets Más Altos", desc: "Los clientes gastan hasta un 26% más en promedio cuando realizan pedidos a través de una plataforma digital. — Deloitte" },
-          { num: "14", title: "Valor Premium", desc: "Los consumidores están dispuestos a pagar un promedio de 14% más en restaurantes que ofrecen pedidos digitales fluidos. — Deloitte" }
+          { num: "30", title: "Ganancias Recuperadas", desc: "Nuestras plataformas eluden las redes de terceros, ahorrándote instantáneamente un 30% por pedido. — National Restaurant Association" },
+          { num: "26", title: "Gasto Aumentado", desc: "Los clientes gastan un 26% más cuando están inmersos en tu ecosistema digital propietario y sin fricciones. — Deloitte Digital" },
+          { num: "100", title: "Propiedad de Datos", desc: "Nunca alquiles tu audiencia. Posee el 100% de los datos de tus clientes para lanzar campañas de alta conversión a voluntad. — Forbes" }
         ],
-        cta1: "Programar Revisión",
-        cta2: "Ver Capacidades de Restaurantes"
+        cta1: "Solicitar Consulta",
+        cta2: "Ver Stack de Restaurantes"
       },
       realestate: {
-        pills: ["Portal VIP", "Pipeline Oculto", "Recepcionista IA"],
-        headline: "Deja de Dividir tus Propios Leads.",
-        subhead: "Trabajas más de 60 horas a la semana para construir la marca de tu jefe. Arquitectamos 'Pipelines Ocultos' personalizados que te permiten capturar y procesar tu propia red personal completamente fuera del CRM de tu equipo. Infraestructura digital soberana para que conserves el 100% de tu comisión.",
+        pills: ["Pipeline Soberano", "Monopolio de Leads", "Subyugación IA"],
+        headline: "Deja de Regalar el 40% de tu Comisión.",
+        subhead: "Tú haces todo el trabajo, pero tu agencia se lleva el corte. Arquitectamos 'Pipelines Ocultos' para capturar y cerrar tu red personal fuera del CRM de tu equipo. Construye una marca soberana.",
         stats: [
-          { num: "40", title: "Cortes del Broker", desc: "Las agencias suelen retener hasta el 40% de tu comisión. Un Portal Privado te permite capturar a tu red personal de forma independiente. — Promedios de la Industria" },
-          { num: "80", title: "Pérdida en Buzón", desc: "El 80% de quienes van al buzón de voz no dejan mensaje. Nuestras recepcionistas SMS con IA los atienden al instante para que nunca pierdas un lead. — Forbes" },
-          { num: "71", title: "Confianza de Marca", desc: "El 71% de los compradores eligen agentes por su presencia digital independiente. Un portal VIP te hace ver como un broker de $100M. — NAR" }
+          { num: "100", title: "Comisión Retenida", desc: "Procesa tu red de forma independiente. Deja de dividir tu dinero con agencias que no generan tus leads. — RESO" },
+          { num: "0", title: "Leads Perdidos", desc: "Nuestras recepcionistas IA atienden cada llamada perdida al instante. Si pierdes una llamada, pierdes un trato. Nos aseguramos de que eso nunca pase. — Harvard Business Review" },
+          { num: "71", title: "Autoridad Establecida", desc: "El 71% elige agentes por su autoridad percibida. Un portal VIP te hace ver como la única opción lógica. — NAR" }
         ],
         cta1: "Construye tu Pipeline",
-        cta2: "Ver Infraestructura"
+        cta2: "Ver Stack de Agentes"
       }
     },
     dock: { hub: "Inicio" }
@@ -224,10 +224,10 @@ export default function Home() {
               <img src="/logo.png" alt="ZayronSystems Logo" className="h-10 md:h-12 w-auto object-contain mx-auto mb-8" />
               
               <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tighter text-white mb-4">
-                Welcome to ZayronSystems
+                Identify Your Sector.
               </h2>
               <p className="text-white/60 text-sm md:text-base mb-10 max-w-md mx-auto">
-                To provide the most relevant experience and insights, please select your primary industry focus:
+                We engineer sovereign digital infrastructure for high-performance operations. Select your sector below to see how we dominate your industry:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

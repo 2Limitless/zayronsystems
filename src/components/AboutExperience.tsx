@@ -9,36 +9,38 @@ const dict = {
   en: {
     back: "Return",
     availability: "Currently Accepting 3 New Client Projects",
-    title1: "Build Your",
-    title2: "Digital Legacy.",
-    desc1: "Your business deserves software that works as relentlessly as you do. Stop fighting with fragile, off-the-shelf tools and fragmented systems.",
-    desc2: "We architect bespoke, sovereign digital infrastructure that scales infinitely. Become the undeniable authority in your industry.",
+    title1: "Apply For",
+    title2: "Architecture Review.",
+    desc1: "We do not work with everyone. Your business must be at a scale where our sovereign digital infrastructure can generate massive, undeniable ROI.",
+    desc2: "Submit your application below. If you qualify, our lead architect will contact you to diagnose your operational bottlenecks.",
     form: {
       name: "Full Name",
-      email: "Email Address",
-      phone: "Phone Number",
-      business: "Company Name & Industry",
-      submit: "Request Consultation",
-      successTitle: "Request Received.",
-      successDesc: "Your information has been secured. Our lead architect will review your request and reach out within 24 hours.",
+      email: "Direct Email Address",
+      phone: "Direct Phone Number",
+      business: "Company Name & Annual Revenue",
+      bottleneck: "What is your primary operational bottleneck?",
+      submit: "Submit Application",
+      successTitle: "Application Received.",
+      successDesc: "Your information has been secured. Our lead architect will review your submission to see if you qualify and reach out within 24 hours.",
       trust: "Your data is secured with bank-level encryption and absolute confidentiality."
     }
   },
   es: {
     back: "Regresar",
     availability: "Aceptando 3 Nuevos Proyectos de Clientes",
-    title1: "Construye tu",
-    title2: "Legado Digital.",
-    desc1: "Tu negocio merece software que trabaje tan incansablemente como tú. Deja de luchar con herramientas frágiles y genéricas.",
-    desc2: "Diseñamos infraestructura digital soberana y a la medida que escala infinitamente. Conviértete en la autoridad innegable de tu industria.",
+    title1: "Solicita tu",
+    title2: "Revisión de Arquitectura.",
+    desc1: "No trabajamos con cualquiera. Tu negocio debe estar a una escala donde nuestra infraestructura digital soberana pueda generar un ROI masivo e innegable.",
+    desc2: "Envía tu solicitud a continuación. Si calificas, nuestro arquitecto principal te contactará para diagnosticar tus cuellos de botella.",
     form: {
       name: "Nombre Completo",
-      email: "Correo Electrónico",
-      phone: "Número de Teléfono",
-      business: "Nombre de Empresa e Industria",
-      submit: "Solicitar Consulta",
+      email: "Correo Electrónico Directo",
+      phone: "Número de Teléfono Directo",
+      business: "Nombre de Empresa e Ingresos Anuales",
+      bottleneck: "¿Cuál es tu principal cuello de botella operativo?",
+      submit: "Enviar Solicitud",
       successTitle: "Solicitud Recibida.",
-      successDesc: "Tu información ha sido asegurada. Nuestro arquitecto principal revisará tu solicitud y te contactará en menos de 24 horas.",
+      successDesc: "Tu información ha sido asegurada. Nuestro arquitecto principal revisará tu envío para ver si calificas y te contactará en menos de 24 horas.",
       trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
     }
   }
@@ -46,7 +48,7 @@ const dict = {
 
 export default function AboutExperience({ lang, onBack }: { lang: Language, onBack: () => void }) {
   const t = dict[lang];
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", business: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", phone: "", business: "", bottleneck: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
   const [focusedInput, setFocusedInput] = useState<string | null>(null);
 
@@ -179,7 +181,8 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
                       { id: "name", label: t.form.name, type: "text" },
                       { id: "email", label: t.form.email, type: "email" },
                       { id: "phone", label: t.form.phone, type: "tel" },
-                      { id: "business", label: t.form.business, type: "text" }
+                      { id: "business", label: t.form.business, type: "text" },
+                      { id: "bottleneck", label: t.form.bottleneck, type: "text" }
                     ].map((field) => (
                       <div key={field.id} className="relative group">
                         <input
@@ -199,7 +202,7 @@ export default function AboutExperience({ lang, onBack }: { lang: Language, onBa
                           className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
                             ${(formData as any)[field.id] || focusedInput === field.id 
                               ? "text-[9px] top-1.5 text-[#00ff66]" 
-                              : "text-[11px] top-4 text-white/40 group-hover:text-white/60"}
+                              : "text-[10px] top-4 text-white/40 group-hover:text-white/60"}
                           `}
                         >
                           {field.label}
