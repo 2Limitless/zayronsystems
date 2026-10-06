@@ -586,6 +586,14 @@ export default function Home() {
                     </AnimatePresence>
                   </motion.div>
                 </div>
+
+                <footer className="w-full mt-24 mb-32 md:mb-12 flex flex-col items-center justify-center z-20 pointer-events-auto border-t border-white/10 pt-8 gap-4 px-8">
+                  <div className="flex items-center gap-6">
+                    <a href="/privacy" className="text-white/40 hover:text-white text-[10px] uppercase tracking-widest transition-colors">Privacy Policy</a>
+                    <a href="/terms" className="text-white/40 hover:text-white text-[10px] uppercase tracking-widest transition-colors">Terms & Conditions</a>
+                  </div>
+                  <p className="text-white/20 text-[10px] tracking-widest uppercase text-center">&copy; {new Date().getFullYear()} ZayronSystems. All rights reserved.</p>
+                </footer>
               </motion.div>
             )}
 
