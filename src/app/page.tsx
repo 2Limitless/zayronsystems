@@ -283,7 +283,7 @@ export default function Home() {
                 className="flex flex-col items-center gap-8 w-full max-w-sm"
               >
                 <div className="text-center space-y-4 mb-2">
-                  <h1 className="text-white text-2xl md:text-3xl font-light tracking-[0.2em] uppercase">Welcome to ZayronSystems</h1>
+                  <h1 className="text-white text-2xl md:text-3xl font-light tracking-[0.2em]">Welcome to ZayronSystems</h1>
                   <p className="text-[#00ff66]/80 text-xs md:text-sm tracking-[0.3em] font-light uppercase">Visitor Access</p>
                 </div>
 
