@@ -253,6 +253,15 @@ export default function Home() {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="fixed inset-0 z-[1000] bg-[#051f0e] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
           >
+            <button 
+              onClick={() => {
+                sessionStorage.setItem("zayron_access", "granted");
+                setHasInitiated(true);
+              }}
+              className="absolute top-8 right-8 md:top-12 md:right-12 z-50 p-4 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white hover:text-black transition-colors"
+            >
+              <X size={24} />
+            </button>
             {/* Ambient green glow to match the background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#00ff66]/[0.15] via-transparent to-transparent pointer-events-none" />
             
@@ -295,7 +304,7 @@ export default function Home() {
                     if (e.key === 'Enter' && visitorName.trim()) handleInitiate();
                   }}
                   maxLength={20}
-                  placeholder="IDENTIFY YOURSELF"
+                  placeholder="WHAT SHOULD WE CALL YOU?"
                   className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/40 font-light"
                   autoFocus
                 />
