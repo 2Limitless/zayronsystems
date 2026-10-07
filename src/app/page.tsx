@@ -304,7 +304,7 @@ export default function Home() {
                     if (e.key === 'Enter' && visitorName.trim()) handleInitiate();
                   }}
                   maxLength={20}
-                  placeholder="WHAT SHOULD WE CALL YOU?"
+                  placeholder="ENTER YOUR NAME"
                   className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/40 font-light"
                   autoFocus
                 />
