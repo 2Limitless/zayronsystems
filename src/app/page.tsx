@@ -251,10 +251,10 @@ export default function Home() {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 1.1, filter: "blur(20px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[1000] bg-black flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
+            className="fixed inset-0 z-[1000] bg-[#051f0e] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
           >
-            {/* Extremely subtle, deep ambient glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" />
+            {/* Ambient green glow to match the background */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#00ff66]/[0.15] via-transparent to-transparent pointer-events-none" />
             
             {/* Top Left Logo */}
             <motion.div
@@ -282,6 +282,11 @@ export default function Home() {
                 transition={{ duration: 1, delay: 1 }}
                 className="flex flex-col items-center gap-8 w-full max-w-sm"
               >
+                <div className="text-center space-y-4 mb-2">
+                  <h1 className="text-white text-2xl md:text-3xl font-light tracking-[0.2em] uppercase">Welcome to Zayron</h1>
+                  <p className="text-[#00ff66]/80 text-xs md:text-sm tracking-[0.3em] font-light uppercase">Visitor Access</p>
+                </div>
+
                 <input 
                   type="text" 
                   value={visitorName}
@@ -291,16 +296,16 @@ export default function Home() {
                   }}
                   maxLength={20}
                   placeholder="IDENTIFY YOURSELF"
-                  className="w-full bg-transparent border-b border-white/20 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/20 font-light"
+                  className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/40 font-light"
                   autoFocus
                 />
                 
                 <button 
                   onClick={handleInitiate}
                   disabled={!visitorName.trim()}
-                  className="group relative w-full py-5 bg-transparent border border-white/30 hover:border-white hover:bg-white disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-white/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0)] hover:shadow-[0_0_60px_rgba(255,255,255,0.15)]"
+                  className="group relative w-full py-5 bg-transparent border border-[#00ff66]/30 hover:border-[#00ff66] hover:bg-[#00ff66]/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#00ff66]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0)] hover:shadow-[0_0_60px_rgba(0,255,102,0.15)]"
                 >
-                  <span className="relative z-10 text-white/70 group-hover:text-black disabled:group-hover:text-white/70 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
+                  <span className="relative z-10 text-white/80 group-hover:text-white disabled:group-hover:text-white/80 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
                     Initialize
                   </span>
                 </button>
