@@ -291,16 +291,13 @@ export default function Home() {
                 transition={{ duration: 1, delay: 1 }}
                 className="flex flex-col items-center gap-8 w-full max-w-sm"
               >
-                <div className="text-center space-y-6 mb-4">
+                <div className="text-center space-y-4 mb-4">
                   <h1 className="text-white text-3xl md:text-4xl font-light tracking-[0.1em] leading-tight">
-                    Discover What You've<br/><span className="text-[#00ff66] font-bold">Been Missing.</span>
+                    Welcome to<br/><span className="text-[#00ff66] font-bold">ZayronSystems.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
-                    There's a level of operational control and margin growth you haven't unlocked yet. Step inside to uncover the blueprint your competitors hope you never find.
+                    Step inside to discover how custom digital infrastructure can unlock your next stage of growth.
                   </p>
-                  <div className="pt-2">
-                    <p className="text-[#00ff66]/80 text-[10px] md:text-xs tracking-[0.4em] font-bold uppercase">Exclusive Access Granted</p>
-                  </div>
                 </div>
 
                 <input 
@@ -322,7 +319,7 @@ export default function Home() {
                   className="group relative w-full py-5 bg-transparent border border-[#00ff66]/30 hover:border-[#00ff66] hover:bg-[#00ff66]/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#00ff66]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0)] hover:shadow-[0_0_60px_rgba(0,255,102,0.15)]"
                 >
                   <span className="relative z-10 text-white/80 group-hover:text-white disabled:group-hover:text-white/80 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
-                    Unlock The Blueprint
+                    Enter Hub
                   </span>
                 </button>
               </motion.div>
