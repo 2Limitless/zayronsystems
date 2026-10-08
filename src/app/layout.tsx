@@ -61,6 +61,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
+    "alternateName": ["Zayron Systems", "Zayron"],
+    "brand": {
+      "@type": "Brand",
+      "name": "ZayronSystems"
+    },
     "description": "ZayronSystems is the premier software development agency building bespoke enterprise software, mobile apps, zero-commission ordering platforms, real estate webapps, and IoT industrial infrastructure for high-performance teams.",
     "url": "https://zayronsystems.com",
     "founder": [
