@@ -73,7 +73,7 @@ export default function RootLayout({
       },
       {
         "@type": "Person",
-        "name": "Xzavier",
+        "name": "Xzaveir Bellamy",
         "jobTitle": "Co-Founder"
       }
     ],
