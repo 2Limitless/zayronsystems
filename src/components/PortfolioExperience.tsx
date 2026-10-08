@@ -14,7 +14,7 @@ const dict = {
         desc: "Why replacing disjointed legacy systems with custom enterprise software is a competitive necessity.",
         profit: {
           market: "Off-the-shelf Software",
-          marketMetric: "SAAS TRAP",
+          marketMetric: "SAAS LIMITS",
           marketDesc1: "Annual cost of patching together 5 different SaaS tools.",
           marketDesc2: "High friction, data silos, monthly fees.",
           direct: "Custom Architecture",
@@ -57,7 +57,7 @@ const dict = {
       restaurants: {
         title: "Restaurant ",
         titleHighlight: "Scale.",
-        desc: "Why ditching 3rd-party aggregators for custom ordering infrastructure is a competitive necessity.",
+        desc: "Why upgrading from 3rd-party aggregators to custom ordering infrastructure is a competitive necessity.",
         profit: {
           market: "Third-party Delivery Apps",
           marketMetric: "30% FEES",

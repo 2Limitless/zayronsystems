@@ -7,59 +7,59 @@ import { X, Check, ShieldAlert, ShieldCheck } from "lucide-react";
 const dict = {
   en: {
     back: "Back to Hub",
-    title1: "The Agency",
-    title2: "Parasite.",
-    subtitle: "Stop renting your business. Start building sovereign digital real estate.",
-    desc: "Traditional agencies view your business as a host to feed on. They trap you in infinite retainers, holding your code and customer data hostage while eating your margins. We are a sovereign engineering firm. We architect bespoke digital infrastructure, hand you the keys, and give you an unfair market advantage.",
+    title1: "The Hidden",
+    title2: "Cost.",
+    subtitle: "Stop renting your digital presence. Start building sovereign digital assets.",
+    desc: "Traditional platforms often limit your potential, trapping you in recurring fees while restricting access to your own data and code. We are a bespoke engineering firm. We architect custom digital infrastructure, hand you the keys, and unlock your true market potential.",
     them: {
-      title: "The Industry",
-      subtitle: "The Parasitic Agency Model",
+      title: "Standard Providers",
+      subtitle: "The Rental Model",
       points: [
-        "Bloated, vulnerable template codebases",
-        "Hostage-style monthly infrastructure rent",
-        "Generic UX that actively bleeds conversions",
-        "Infinite retainers designed to drain margins",
-        "You do not own your data or codebase"
+        "Generic template codebases",
+        "Ongoing monthly infrastructure fees",
+        "Standardized UX that limits conversions",
+        "Recurring retainers that impact margins",
+        "Limited ownership of data and code"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "The Digital Sovereignty Model",
+      subtitle: "The Sovereignty Model",
       points: [
-        "Sovereign infrastructure engineered from scratch",
+        "Custom infrastructure engineered from scratch",
         "Absolute ownership of your data and code",
-        "Ruthless performance and conversion speeds",
-        "Engineered specifically for massive ROI",
-        "Direct comms with elite systems architects"
+        "Optimized performance and conversion speeds",
+        "Engineered specifically for clear ROI",
+        "Direct collaboration with system architects"
       ]
     }
   },
   es: {
     back: "Volver al Inicio",
-    title1: "El Parásito",
-    title2: "de Agencia.",
-    subtitle: "Deja de alquilar tu negocio. Empieza a construir bienes raíces digitales soberanos.",
-    desc: "Las agencias tradicionales ven a tu negocio como un huésped del cual alimentarse. Te atrapan en contratos infinitos, secuestrando tu código y datos mientras devoran tus márgenes. Somos una firma de ingeniería soberana. Diseñamos infraestructura digital a medida, te entregamos las llaves y te damos una ventaja injusta.",
+    title1: "El Costo",
+    title2: "Oculto.",
+    subtitle: "Deja de alquilar tu presencia digital. Empieza a construir activos digitales soberanos.",
+    desc: "Las plataformas tradicionales a menudo limitan tu potencial, atrapándote en tarifas recurrentes mientras restringen el acceso a tus propios datos y código. Somos una firma de ingeniería a medida. Diseñamos infraestructura digital personalizada, te entregamos las llaves y desbloqueamos tu verdadero potencial de mercado.",
     them: {
-      title: "La Industria",
-      subtitle: "El Modelo Parasitario",
+      title: "Proveedores Estándar",
+      subtitle: "El Modelo de Alquiler",
       points: [
-        "Bases de código infladas y vulnerables",
-        "Alquiler de infraestructura estilo rehén",
-        "UX genérica que sangra tus conversiones",
-        "Contratos infinitos diseñados para drenar márgenes",
-        "No eres dueño de tus datos ni de tu código"
+        "Bases de código de plantillas genéricas",
+        "Tarifas mensuales continuas de infraestructura",
+        "UX estandarizada que limita las conversiones",
+        "Contratos recurrentes que impactan los márgenes",
+        "Propiedad limitada de datos y código"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "El Modelo de Soberanía Digital",
+      subtitle: "El Modelo de Soberanía",
       points: [
-        "Infraestructura soberana diseñada desde cero",
+        "Infraestructura personalizada diseñada desde cero",
         "Propiedad absoluta de tus datos y código",
-        "Velocidad de rendimiento y conversión despiadada",
-        "Diseñado específicamente para un ROI masivo",
-        "Comunicaciones directas con arquitectos de élite"
+        "Rendimiento optimizado y velocidades de conversión",
+        "Diseñado específicamente para un ROI claro",
+        "Colaboración directa con arquitectos de sistemas"
       ]
     }
   }
@@ -184,10 +184,10 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
         {onNavigateToApply && (
           <motion.div variants={itemVariants} className="w-full flex flex-col items-center justify-center mt-24 text-center">
             <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
-              {lang === 'en' ? `Ready to Secure Your Operations, ${visitorName || 'Commander'}?` : `¿Listo para Asegurar tus Operaciones, ${visitorName || 'Comandante'}?`}
+              {lang === 'en' ? `Ready to Unlock Your Potential, ${visitorName || 'Leader'}?` : `¿Listo para Desbloquear tu Potencial, ${visitorName || 'Líder'}?`}
             </h3>
             <p className="text-white/50 max-w-xl mb-8 font-light">
-              {lang === 'en' ? "Stop renting your business from agencies. Submit your architecture review application to see if you qualify for deployment." : "Deja de alquilar tu negocio a las agencias. Envía tu solicitud de revisión de arquitectura para ver si calificas."}
+              {lang === 'en' ? "Stop renting your infrastructure. Submit your architecture review application to discover what's possible." : "Deja de alquilar tu infraestructura. Envía tu solicitud de revisión de arquitectura para descubrir lo que es posible."}
             </p>
             <button 
               onClick={onNavigateToApply}

@@ -48,50 +48,50 @@ const dict = {
     hub: {
       general: {
         pills: ["Sovereign Infrastructure", "Systemic Diagnosis", "Workflow Automation"],
-        headline: "Your Software is Sabotaging Your Growth.",
-        subhead: "Off-the-shelf software is built for everyone, meaning it's perfect for no one. We diagnose operational bottlenecks and engineer custom, sovereign digital infrastructure. Stop bleeding margins to bloated SaaS subscriptions and take total control.",
+        headline: "Discover the Margins Your Software is Hiding.",
+        subhead: "Standard software forces you into compromises that quietly limit your potential. We build custom infrastructure that unlocks the 20-30% growth you've been missing out on. It's time to capture your full value.",
         stats: [
-          { num: "20", title: "Margin Reclaimed", desc: "Our custom integrations eliminate redundant subscriptions and inefficiencies, reclaiming 20-30% in pure profit. — McKinsey & Company" },
-          { num: "250", title: "Unfair Advantage", desc: "Bespoke digital infrastructure yields a 250% average ROI, creating a moat your competitors cannot cross. — Nucleus Research" },
-          { num: "100", title: "Data Sovereignty", desc: "Own your data. Never let a third-party platform dictate your capabilities or hold your customer data hostage again. — Forrester" }
+          { num: "20", title: "Hidden Value Captured", desc: "Our custom integrations eliminate redundant subscriptions and inefficiencies, unlocking 20-30% in pure profit you didn't know you were missing. — McKinsey & Company" },
+          { num: "250", title: "The Missing Advantage", desc: "Bespoke digital infrastructure yields a 250% average ROI. Discover the unfair advantage that top-performing competitors are already using. — Nucleus Research" },
+          { num: "100", title: "Total Sovereignty", desc: "Take back your data. When you own your platform, you unlock capabilities and customer insights that third-parties usually keep for themselves. — Forrester" }
         ],
-        cta1: "Apply for Consultation",
+        cta1: "Unlock Your Potential",
         cta2: "View Infrastructure"
       },
       industrial: {
-        pills: ["Risk Mitigation", "Predictive Dominance", "Asset Control"],
-        headline: "Stop Losing Money to Avoidable Downtime.",
-        subhead: "Every minute a machine is down, you bleed cash. We engineer robust, predictive software for heavy operations that eliminates unexpected failures. We don't just track assets; we give you absolute control over your operational margins.",
+        pills: ["Risk Mitigation", "Predictive Analytics", "Asset Control"],
+        headline: "Unlock the Hidden Value in Your Operations.",
+        subhead: "Unpredictable downtime isn't just an inconvenience; it's lost revenue you could be capturing. With our predictive systems, you stop reacting to failures and start capturing every minute of productive value.",
         stats: [
-          { num: "50", title: "Failure Prevented", desc: "Our predictive telemetry systems detect anomalies before they become catastrophes, reducing downtime by up to 50%. — U.S. Department of Energy" },
-          { num: "40", title: "Lifespan Extended", desc: "Digital monitoring extends the life of multi-million dollar equipment by 40%. Stop replacing machines prematurely. — Deloitte Industrial" },
-          { num: "25", title: "Cost Eradicated", desc: "Digitizing inventory and maintenance schedules ruthlessly cuts 25% of your operational waste. — World Economic Forum" }
+          { num: "50", title: "Uptime Reclaimed", desc: "With our predictive telemetry systems, you capture the 50% of uptime that traditional operations lose to unexpected anomalies. — U.S. Department of Energy" },
+          { num: "40", title: "Lifespan Maximized", desc: "Stop leaving capital on the table. Digital monitoring unlocks an extra 40% lifespan for multi-million dollar equipment. — Deloitte Industrial" },
+          { num: "25", title: "Budget Optimized", desc: "Digitizing inventory and maintenance schedules helps you recapture 25% of your operational budget that is currently going to waste. — World Economic Forum" }
         ],
-        cta1: "Apply for Consultation",
+        cta1: "Unlock Your Potential",
         cta2: "View Industrial Stack"
       },
       restaurants: {
         pills: ["Margin Protection", "Direct Audience", "Operational Control"],
-        headline: "Delivery Apps Are Stealing Your Business.",
-        subhead: "Third-party apps are hijacking your customers and slicing your margins. We build custom, sovereign ordering systems and loyalty apps. Reclaim your profits, own your customer data, and cut out the parasites.",
+        headline: "Reclaim the Profits Delivery Apps Are Keeping.",
+        subhead: "Every third-party order takes a piece of your hard-earned revenue. We build custom ordering systems that ensure you keep 100% of your margins and own your customer relationships directly.",
         stats: [
-          { num: "30", title: "Profits Reclaimed", desc: "Our custom ordering platforms bypass predatory third-party networks, instantly saving you 30% per order. — National Restaurant Association" },
-          { num: "26", title: "Spend Increased", desc: "Customers spend 26% more when they are locked into your proprietary, frictionless digital ecosystem. — Deloitte Digital" },
-          { num: "100", title: "Data Ownership", desc: "Never rent your audience. Own 100% of your customer data to drive targeted, highly-converting campaigns on command. — Forbes" }
+          { num: "30", title: "Profits Kept", desc: "Keep the 30% you've been giving away. Our custom ordering platforms bypass predatory networks so every dollar stays in your pocket. — National Restaurant Association" },
+          { num: "26", title: "Revenue Unlocked", desc: "Unlock 26% more revenue per customer by bringing them into your own proprietary, frictionless digital ecosystem. — Deloitte Digital" },
+          { num: "100", title: "Audience Captured", desc: "Discover the power of owning 100% of your customer data, allowing you to drive highly-converting campaigns whenever you choose. — Forbes" }
         ],
-        cta1: "Apply for Consultation",
+        cta1: "Unlock Your Potential",
         cta2: "View Restaurant Stack"
       },
       realestate: {
-        pills: ["Sovereign Pipeline", "Lead Monopolization", "AI Subjugation"],
-        headline: "Stop Giving Away 40% of Your Commission.",
-        subhead: "You do all the work, but your brokerage takes the cut. We architect 'Shadow Pipelines' that let you capture and close your personal network outside of your team's CRM. Build a sovereign brand and keep what you kill.",
+        pills: ["Sovereign Pipeline", "Lead Generation", "AI Automation"],
+        headline: "Keep 100% of the Value You Generate.",
+        subhead: "You do the hard work of building relationships, yet generic CRMs force you to share the reward. We architect 'Shadow Pipelines' so you capture the full commission of your personal network.",
         stats: [
-          { num: "100", title: "Commission Retained", desc: "Process your personal network independently. Stop splitting your hard-earned money with brokerages that don't generate your leads. — RESO" },
-          { num: "0", title: "Leads Lost", desc: "Our AI receptionists engage every missed call instantly. If you miss a call, you lose a deal. We ensure that never happens. — Harvard Business Review" },
-          { num: "71", title: "Authority Established", desc: "71% of buyers choose agents based on perceived authority. A custom VIP portal makes you look like the only logical choice. — NAR" }
+          { num: "100", title: "Commission Kept", desc: "Capture the full value of your work. Stop splitting your hard-earned money with brokerages that don't generate your leads. — RESO" },
+          { num: "0", title: "Opportunities Missed", desc: "Never let a warm lead slip away again. Discover the advantage of AI receptionists that engage every missed call instantly. — Harvard Business Review" },
+          { num: "71", title: "Authority Unlocked", desc: "Capture the buyers who are looking for absolute authority. A custom VIP portal makes you the undeniable, exclusive choice. — NAR" }
         ],
-        cta1: "Build Your Shadow Pipeline",
+        cta1: "Unlock Your Potential",
         cta2: "View Agent Stack"
       }
     },
@@ -102,50 +102,50 @@ const dict = {
     hub: {
       general: {
         pills: ["Infraestructura Soberana", "Diagnóstico Sistémico", "Automatización"],
-        headline: "Tu Software Está Saboteando Tu Crecimiento.",
-        subhead: "El software genérico está hecho para todos, lo que significa que no es perfecto para nadie. Diagnosticamos cuellos de botella y diseñamos infraestructura digital soberana. Deja de sangrar márgenes en SaaS y toma el control total.",
+        headline: "Descubre los Márgenes que tu Software Oculta.",
+        subhead: "El software estándar te obliga a hacer compromisos que limitan tu potencial. Construimos infraestructura que desbloquea el crecimiento del 20-30% que te has estado perdiendo.",
         stats: [
-          { num: "20", title: "Margen Recuperado", desc: "Nuestras integraciones eliminan ineficiencias, recuperando un 20-30% en pura ganancia. — McKinsey & Company" },
-          { num: "250", title: "Ventaja Injusta", desc: "La infraestructura digital a medida genera un ROI del 250%, creando un foso que tus competidores no pueden cruzar. — Nucleus Research" },
-          { num: "100", title: "Soberanía de Datos", desc: "Sé dueño de tus datos. Nunca dejes que una plataforma de terceros dicte tus capacidades o secuestre tu información. — Forrester" }
+          { num: "20", title: "Valor Oculto Capturado", desc: "Nuestras integraciones eliminan ineficiencias, desbloqueando un 20-30% en pura ganancia que no sabías que perdías. — McKinsey & Company" },
+          { num: "250", title: "La Ventaja Faltante", desc: "La infraestructura digital a medida genera un ROI del 250%. Descubre la ventaja injusta que tus competidores ya usan. — Nucleus Research" },
+          { num: "100", title: "Soberanía Total", desc: "Recupera tus datos. Al ser dueño de tu plataforma, desbloqueas capacidades que terceros suelen guardarse para sí mismos. — Forrester" }
         ],
-        cta1: "Solicitar Consulta",
+        cta1: "Desbloquea tu Potencial",
         cta2: "Ver Infraestructura"
       },
       industrial: {
-        pills: ["Mitigación de Riesgos", "Dominio Predictivo", "Control de Activos"],
-        headline: "Deja de Perder Dinero por Inactividad Evitable.",
-        subhead: "Cada minuto que una máquina se detiene, pierdes efectivo. Diseñamos software predictivo para operaciones pesadas que elimina fallas inesperadas. Te damos control absoluto sobre tus márgenes operativos.",
+        pills: ["Mitigación de Riesgos", "Análisis Predictivo", "Control de Activos"],
+        headline: "Desbloquea el Valor Oculto de tus Operaciones.",
+        subhead: "La inactividad impredecible son ingresos perdidos que podrías estar capturando. Con nuestros sistemas predictivos, capturas cada minuto de valor productivo.",
         stats: [
-          { num: "50", title: "Fallas Prevenidas", desc: "Nuestros sistemas de telemetría detectan anomalías antes de que sean catástrofes, reduciendo la inactividad hasta un 50%. — U.S. Department of Energy" },
-          { num: "40", title: "Vida Extendida", desc: "El monitoreo digital extiende la vida de equipos multimillonarios en un 40%. Deja de reemplazar máquinas prematuramente. — Deloitte Industrial" },
-          { num: "25", title: "Costo Erradicado", desc: "Digitalizar el inventario y el mantenimiento recorta despiadadamente el 25% de tu desperdicio operativo. — World Economic Forum" }
+          { num: "50", title: "Tiempo de Actividad", desc: "Con nuestros sistemas de telemetría, capturas el 50% de actividad que las operaciones tradicionales pierden por anomalías. — U.S. Department of Energy" },
+          { num: "40", title: "Vida Útil Maximizada", desc: "Deja de dejar capital en la mesa. El monitoreo digital desbloquea un 40% extra de vida útil para equipos costosos. — Deloitte Industrial" },
+          { num: "25", title: "Presupuesto Optimizado", desc: "Digitalizar el inventario y el mantenimiento te ayuda a recuperar el 25% de tu presupuesto operativo que actualmente se desperdicia. — World Economic Forum" }
         ],
-        cta1: "Solicitar Consulta",
+        cta1: "Desbloquea tu Potencial",
         cta2: "Ver Stack Industrial"
       },
       restaurants: {
         pills: ["Protección de Margen", "Audiencia Directa", "Control Operativo"],
-        headline: "Las Apps de Delivery Están Robando Tu Negocio.",
-        subhead: "Las aplicaciones de terceros secuestran a tus clientes y cortan tus márgenes. Construimos sistemas de pedidos soberanos. Recupera tus ganancias, sé dueño de tus datos y corta a los intermediarios.",
+        headline: "Recupera las Ganancias de las Apps de Delivery.",
+        subhead: "Cada pedido a terceros se lleva parte de tus ingresos. Construimos sistemas de pedidos que aseguran que conserves el 100% de tus márgenes y relaciones.",
         stats: [
-          { num: "30", title: "Ganancias Recuperadas", desc: "Nuestras plataformas eluden las redes de terceros, ahorrándote instantáneamente un 30% por pedido. — National Restaurant Association" },
-          { num: "26", title: "Gasto Aumentado", desc: "Los clientes gastan un 26% más cuando están inmersos en tu ecosistema digital propietario y sin fricciones. — Deloitte Digital" },
-          { num: "100", title: "Propiedad de Datos", desc: "Nunca alquiles tu audiencia. Posee el 100% de los datos de tus clientes para lanzar campañas de alta conversión a voluntad. — Forbes" }
+          { num: "30", title: "Ganancias Conservadas", desc: "Quédate con el 30% que has estado regalando. Nuestras plataformas eluden las redes depredadoras para que cada dólar se quede contigo. — National Restaurant Association" },
+          { num: "26", title: "Ingresos Desbloqueados", desc: "Desbloquea un 26% más de ingresos por cliente al llevarlos a tu propio ecosistema digital sin fricciones. — Deloitte Digital" },
+          { num: "100", title: "Audiencia Capturada", desc: "Descubre el poder de poseer el 100% de los datos de tus clientes para lanzar campañas altamente rentables. — Forbes" }
         ],
-        cta1: "Solicitar Consulta",
+        cta1: "Desbloquea tu Potencial",
         cta2: "Ver Stack de Restaurantes"
       },
       realestate: {
-        pills: ["Pipeline Soberano", "Monopolio de Leads", "Subyugación IA"],
-        headline: "Deja de Regalar el 40% de tu Comisión.",
-        subhead: "Tú haces todo el trabajo, pero tu agencia se lleva el corte. Arquitectamos 'Pipelines Ocultos' para capturar y cerrar tu red personal fuera del CRM de tu equipo. Construye una marca soberana.",
+        pills: ["Pipeline Soberano", "Generación de Leads", "Automatización IA"],
+        headline: "Conserva el 100% del Valor que Generas.",
+        subhead: "Haces el trabajo duro, pero los CRM genéricos te obligan a compartir la recompensa. Arquitectamos 'Pipelines Ocultos' para que captures tu comisión completa.",
         stats: [
-          { num: "100", title: "Comisión Retenida", desc: "Procesa tu red de forma independiente. Deja de dividir tu dinero con agencias que no generan tus leads. — RESO" },
-          { num: "0", title: "Leads Perdidos", desc: "Nuestras recepcionistas IA atienden cada llamada perdida al instante. Si pierdes una llamada, pierdes un trato. Nos aseguramos de que eso nunca pase. — Harvard Business Review" },
-          { num: "71", title: "Autoridad Establecida", desc: "El 71% elige agentes por su autoridad percibida. Un portal VIP te hace ver como la única opción lógica. — NAR" }
+          { num: "100", title: "Comisión Conservada", desc: "Captura el valor total de tu trabajo. Deja de dividir tu dinero con agencias que no generan tus leads. — RESO" },
+          { num: "0", title: "Oportunidades Perdidas", desc: "Nunca dejes escapar un prospecto. Descubre la ventaja de recepcionistas IA que atienden cada llamada al instante. — Harvard Business Review" },
+          { num: "71", title: "Autoridad Desbloqueada", desc: "Captura a los compradores que buscan autoridad absoluta. Un portal VIP te convierte en la opción exclusiva e innegable. — NAR" }
         ],
-        cta1: "Construye tu Pipeline",
+        cta1: "Desbloquea tu Potencial",
         cta2: "Ver Stack de Agentes"
       }
     },
@@ -291,9 +291,16 @@ export default function Home() {
                 transition={{ duration: 1, delay: 1 }}
                 className="flex flex-col items-center gap-8 w-full max-w-sm"
               >
-                <div className="text-center space-y-4 mb-2">
-                  <h1 className="text-white text-2xl md:text-3xl font-light tracking-[0.2em]">Welcome to ZayronSystems</h1>
-                  <p className="text-[#00ff66]/80 text-xs md:text-sm tracking-[0.3em] font-light uppercase">Visitor Access</p>
+                <div className="text-center space-y-6 mb-4">
+                  <h1 className="text-white text-3xl md:text-4xl font-light tracking-[0.1em] leading-tight">
+                    Discover What You've<br/><span className="text-[#00ff66] font-bold">Been Missing.</span>
+                  </h1>
+                  <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
+                    There's a level of operational control and margin growth you haven't unlocked yet. Step inside to uncover the blueprint your competitors hope you never find.
+                  </p>
+                  <div className="pt-2">
+                    <p className="text-[#00ff66]/80 text-[10px] md:text-xs tracking-[0.4em] font-bold uppercase">Exclusive Access Granted</p>
+                  </div>
                 </div>
 
                 <input 
@@ -315,7 +322,7 @@ export default function Home() {
                   className="group relative w-full py-5 bg-transparent border border-[#00ff66]/30 hover:border-[#00ff66] hover:bg-[#00ff66]/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#00ff66]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0)] hover:shadow-[0_0_60px_rgba(0,255,102,0.15)]"
                 >
                   <span className="relative z-10 text-white/80 group-hover:text-white disabled:group-hover:text-white/80 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
-                    Initialize
+                    Unlock The Blueprint
                   </span>
                 </button>
               </motion.div>

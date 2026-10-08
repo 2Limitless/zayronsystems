@@ -15,25 +15,25 @@ const dict = {
     tier1: {
       headerSubtitle: "Core",
       headerTitle: "Core Infrastructure.",
-      headerDesc: "The foundational software stack for operational dominance.",
+      headerDesc: "The foundational software stack for operational excellence.",
       cards: [
-        { title: "Command Center", desc: "Watch your entire operation run on autopilot from a single, flawless pane of glass." },
-        { title: "Absolute Memory", desc: "Never lose a data point again. Have your entire operational history instantly accessible." },
-        { title: "System Control", desc: "Command external tools effortlessly. Your software becomes the central brain of your business." },
-        { title: "Predictive Analytics", desc: "Predict market trends and operational bottlenecks before your competitors even wake up." }
+        { title: "Command Center", desc: "Watch your entire operation run smoothly from a single, intuitive dashboard." },
+        { title: "Data Continuity", desc: "Never lose a data point again. Have your entire operational history instantly accessible." },
+        { title: "System Orchestration", desc: "Connect external tools effortlessly. Your software becomes the central hub of your business." },
+        { title: "Predictive Analytics", desc: "Anticipate market trends and operational bottlenecks before they impact your bottom line." }
       ]
     },
     complete: {
       headerSubtitle: "Full-Scale",
       headerTitle: "Full-Scale Transformation.",
-      headerDesc: "Total operational takeover. We handle the transition while you focus on scaling.",
+      headerDesc: "Comprehensive digital transformation. We handle the technical execution while you focus on scaling.",
       cards: [
-        { title: "Infinite Scale", desc: "Sleep soundly knowing your bespoke cloud architecture can handle massive growth without breaking." },
-        { title: "Painless Extraction", desc: "We surgically extract your business from archaic legacy systems without you lifting a finger." },
-        { title: "Workforce Weaponization", desc: "Your team hits the ground running on day one with pre-configured, rugged hardware." },
-        { title: "Replicable Genius", desc: "We encode your operational SOPs into software, making your business infinitely scalable." },
-        { title: "Peace of Mind", desc: "Critical updates and automated alerts find you instantly, wherever you are in the world." },
-        { title: "Digital Perimeter", desc: "An elite engineering team on standby 24/7. We guard your infrastructure while you sleep." }
+        { title: "Infinite Scale", desc: "Sleep soundly knowing your custom cloud architecture can handle massive growth smoothly." },
+        { title: "Painless Transition", desc: "We carefully migrate your operations from existing systems without disrupting your workflow." },
+        { title: "Empowered Workforce", desc: "Your team hits the ground running on day one with pre-configured, reliable hardware." },
+        { title: "Operational Excellence", desc: "We encode your operational SOPs into software, making your business scalable and repeatable." },
+        { title: "Peace of Mind", desc: "Critical updates and automated alerts reach you instantly, wherever you are in the world." },
+        { title: "Digital Security", desc: "An elite engineering team on standby 24/7. We monitor your infrastructure continuously." }
       ]
     }
   },
@@ -46,25 +46,25 @@ const dict = {
     tier1: {
       headerSubtitle: "Base",
       headerTitle: "Infraestructura Base.",
-      headerDesc: "El stack de software fundamental para el dominio operativo.",
+      headerDesc: "El stack de software fundamental para la excelencia operativa.",
       cards: [
-        { title: "Centro de Comando", desc: "Observa cómo toda tu operación funciona en piloto automático desde un solo panel perfecto." },
-        { title: "Memoria Absoluta", desc: "Nunca vuelvas a perder un dato. Ten todo tu historial operativo accesible al instante." },
-        { title: "Control de Sistemas", desc: "Comanda herramientas externas sin esfuerzo. Tu software se convierte en el cerebro central." },
-        { title: "Análisis Predictivo", desc: "Predice tendencias del mercado y cuellos de botella antes de que tus competidores despierten." }
+        { title: "Centro de Comando", desc: "Observa cómo toda tu operación funciona fluidamente desde un panel intuitivo." },
+        { title: "Continuidad de Datos", desc: "Nunca vuelvas a perder un dato. Ten todo tu historial operativo accesible al instante." },
+        { title: "Orquestación de Sistemas", desc: "Conecta herramientas externas sin esfuerzo. Tu software se convierte en el centro neurálgico." },
+        { title: "Análisis Predictivo", desc: "Anticipa tendencias del mercado y cuellos de botella antes de que impacten tus resultados." }
       ]
     },
     complete: {
       headerSubtitle: "Escala Total",
       headerTitle: "Transformación a Escala Total.",
-      headerDesc: "Toma de control operativo total. Manejamos la transición mientras tú te enfocas en crecer.",
+      headerDesc: "Transformación digital integral. Manejamos la ejecución técnica mientras tú te enfocas en crecer.",
       cards: [
-        { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejará un crecimiento masivo sin fallar." },
-        { title: "Extracción Sin Dolor", desc: "Extraemos quirúrgicamente tu negocio de sistemas arcaicos sin que muevas un dedo." },
-        { title: "Fuerza Laboral Armada", desc: "Tu equipo entra en acción el primer día con hardware preconfigurado y resistente." },
-        { title: "Genio Replicable", desc: "Codificamos tus procesos en el software, haciendo que tu negocio sea infinitamente escalable." },
+        { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejará el crecimiento sin problemas." },
+        { title: "Transición Sin Fricción", desc: "Migramos tus operaciones de sistemas existentes cuidadosamente sin interrumpir tu flujo." },
+        { title: "Fuerza Laboral Empoderada", desc: "Tu equipo entra en acción el primer día con hardware preconfigurado y confiable." },
+        { title: "Excelencia Operativa", desc: "Codificamos tus procesos en el software, haciendo que tu negocio sea escalable y repetible." },
         { title: "Tranquilidad", desc: "Actualizaciones críticas y alertas automatizadas te encuentran al instante, dondequiera que estés." },
-        { title: "Perímetro Digital", desc: "Un equipo de élite en espera 24/7. Protegemos tu infraestructura mientras duermes." }
+        { title: "Seguridad Digital", desc: "Un equipo de élite en espera 24/7. Monitoreamos tu infraestructura continuamente." }
       ]
     }
   }
