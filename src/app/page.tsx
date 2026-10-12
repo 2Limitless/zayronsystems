@@ -44,110 +44,112 @@ const hubImages: Record<Industry, { left: string, center: string, right: string 
 
 const dict = {
   en: {
-    nav: { portfolio: "Case Studies", services: "Enterprise Stack", whyus: "Why Us", about: "Submit Dossier", partners: "Partner Portal" },
+    nav: { portfolio: "Case Studies", services: "Capabilities", whyus: "Why Us", about: "Get In Touch", partners: "Partner Portal" },
     hub: {
       general: {
-        pills: ["Sovereign Infrastructure", "Systemic Diagnosis", "Workflow Automation"],
-        headline: "Discover the Margins Your Software is Hiding.",
-        subhead: "Standard software forces you into compromises that quietly limit your potential. We build custom infrastructure that unlocks the 20-30% growth you've been missing out on. It's time to capture your full value.",
+        pills: ["Digital Behavior Engineers", "Frictionless UX", "Custom Webapps"],
+        headline: "Most websites look good. Ours actually make customers buy.",
+        subhead: "You don't have a traffic problem—you have a hesitation problem. When someone visits your site, their brain decides in 3 seconds whether to trust you or close the tab. We build custom software and web applications engineered to eliminate hesitation and make choosing you the easiest decision.",
         stats: [
-          { num: "20", title: "Hidden Value Captured", desc: "Our custom integrations eliminate redundant subscriptions and inefficiencies, unlocking 20-30% in pure profit you didn't know you were missing. — McKinsey & Company" },
-          { num: "250", title: "The Missing Advantage", desc: "Bespoke digital infrastructure yields a 250% average ROI. Discover the unfair advantage that top-performing competitors are already using. — Nucleus Research" },
-          { num: "100", title: "Total Sovereignty", desc: "Take back your data. When you own your platform, you unlock capabilities and customer insights that third-parties usually keep for themselves. — Forrester" }
+          { num: "3", title: "Seconds to Trust", desc: "A customer decides in 3 seconds whether your site feels legitimate or amateur. We eliminate the red flags that cause immediate bounce." },
+          { num: "3x", title: "Decision Speed", desc: "Clear, frictionless pathways remove hesitation—guiding interested visitors toward checkout and inquiries up to 3x faster." },
+          { num: "100", title: "Total Ownership", desc: "No monthly template fees or platform locks. You own 100% of your code, your customer list, and your digital assets." }
         ],
-        cta1: "Unlock Your Potential",
-        cta2: "View Infrastructure"
+        cta1: "Request Behavioral Audit",
+        cta2: "View Case Studies"
       },
       industrial: {
-        pills: ["Risk Mitigation", "Predictive Analytics", "Asset Control"],
-        headline: "Unlock the Hidden Value in Your Operations.",
-        subhead: "Unpredictable downtime isn't just an inconvenience; it's lost revenue you could be capturing. With our predictive systems, you stop reacting to failures and start capturing every minute of productive value.",
+        pills: ["Error Prevention", "Simple Workflows", "Operational Speed"],
+        headline: "Eliminate operational mistakes before they happen.",
+        subhead: "When internal software is clunky and confusing, your team makes expensive errors. We build custom operational dashboards and tracking tools so simple and fast that your workforce gets it right the first time, every time.",
         stats: [
-          { num: "50", title: "Uptime Reclaimed", desc: "With our predictive telemetry systems, you capture the 50% of uptime that traditional operations lose to unexpected anomalies. — U.S. Department of Energy" },
-          { num: "40", title: "Lifespan Maximized", desc: "Stop leaving capital on the table. Digital monitoring unlocks an extra 40% lifespan for multi-million dollar equipment. — Deloitte Industrial" },
-          { num: "25", title: "Budget Optimized", desc: "Digitizing inventory and maintenance schedules helps you recapture 25% of your operational budget that is currently going to waste. — World Economic Forum" }
+          { num: "50", title: "Uptime Protected", desc: "Predictive alerts and real-time tracking catch equipment and workflow issues before they cause costly downtime." },
+          { num: "0", title: "Workflow Friction", desc: "Tools designed around real human habits on the floor prevent confusion, double-entry, and communication breakdowns." },
+          { num: "25", title: "Budget Recaptured", desc: "Eliminate wasted labor hours and redundant tools with a single unified operational command center." }
         ],
-        cta1: "Unlock Your Potential",
-        cta2: "View Industrial Stack"
+        cta1: "Optimize Operations",
+        cta2: "View Industrial Platform"
       },
       restaurants: {
-        pills: ["Margin Protection", "Direct Audience", "Operational Control"],
-        headline: "Reclaim the Profits Delivery Apps Are Keeping.",
-        subhead: "Every third-party order takes a piece of your hard-earned revenue. We build custom ordering systems that ensure you keep 100% of your margins and own your customer relationships directly.",
+        pills: ["Direct Ordering Apps", "Customer Habit Loops", "0% Commissions"],
+        headline: "Reprogram ordering habits away from third-party apps.",
+        subhead: "DoorDash takes 30% of your revenue because their app makes ordering effortless. We build your own custom ordering webapp engineered with the exact same habit loops, so customers order direct from you every single time.",
         stats: [
-          { num: "30", title: "Profits Kept", desc: "Keep the 30% you've been giving away. Our custom ordering platforms bypass predatory networks so every dollar stays in your pocket. — National Restaurant Association" },
-          { num: "26", title: "Revenue Unlocked", desc: "Unlock 26% more revenue per customer by bringing them into your own proprietary, frictionless digital ecosystem. — Deloitte Digital" },
-          { num: "100", title: "Audience Captured", desc: "Discover the power of owning 100% of your customer data, allowing you to drive highly-converting campaigns whenever you choose. — Forbes" }
+          { num: "30", title: "Margins Kept", desc: "Stop giving 30% away on every ticket. Your own custom ordering platform puts that entire cut directly back in your register." },
+          { num: "100", title: "Customer Ownership", desc: "Own your customer contacts and order history. Send direct incentives whenever you want without paying a middleman." },
+          { num: "0", title: "Commission Cuts", desc: "Bespoke ordering and kitchen-display integration that you own outright—with zero per-order fees." }
         ],
-        cta1: "Unlock Your Potential",
-        cta2: "View Restaurant Stack"
+        cta1: "Reclaim Your Margins",
+        cta2: "View Restaurant Platform"
       },
       realestate: {
-        pills: ["Sovereign Pipeline", "Lead Generation", "AI Automation"],
-        headline: "Keep 100% of the Value You Generate.",
-        subhead: "You do the hard work of building relationships, yet generic CRMs force you to share the reward. We architect 'Shadow Pipelines' so you capture the full commission of your personal network.",
+        pills: ["Subconscious Authority", "High-Net-Worth Portals", "Direct Lead Capture"],
+        headline: "Command instant authority with high-net-worth clients.",
+        subhead: "High-value buyers and sellers won't trust an agent using a generic website from 2018. We build bespoke client webapps engineered with luxury status cues, instant booking, and private client portals that make you the only clear choice.",
         stats: [
-          { num: "100", title: "Commission Kept", desc: "Capture the full value of your work. Stop splitting your hard-earned money with brokerages that don't generate your leads. — RESO" },
-          { num: "0", title: "Opportunities Missed", desc: "Never let a warm lead slip away again. Discover the advantage of AI receptionists that engage every missed call instantly. — Harvard Business Review" },
-          { num: "71", title: "Authority Unlocked", desc: "Capture the buyers who are looking for absolute authority. A custom VIP portal makes you the undeniable, exclusive choice. — NAR" }
+          { num: "100", title: "Direct Commission", desc: "Capture and manage high-value clients directly on your own portal instead of splitting leads through third-party platforms." },
+          { num: "3", title: "Seconds to Impress", desc: "Establish undeniable market authority the second a client opens your link. Luxury presentation commands luxury trust." },
+          { num: "0", title: "Lost Inquiries", desc: "Frictionless booking and automated instant-response tools ensure warm buyers never slip away to another broker." }
         ],
-        cta1: "Unlock Your Potential",
+        cta1: "Upgrade Your Presence",
         cta2: "View Agent Stack"
-      }
+      },
+      subtleSocial: "Join forward-thinking business owners upgrading their digital presence."
     },
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Stack Empresarial", whyus: "Por Qué Elegirnos", about: "Enviar Dossier", partners: "Portal de Socios" },
+    nav: { portfolio: "Casos de Estudio", services: "Capacidades", whyus: "Por Qué Nosotros", about: "Contacto", partners: "Portal de Socios" },
     hub: {
       general: {
-        pills: ["Infraestructura Soberana", "Diagnóstico Sistémico", "Automatización"],
-        headline: "Descubre los Márgenes que tu Software Oculta.",
-        subhead: "El software estándar te obliga a hacer compromisos que limitan tu potencial. Construimos infraestructura que desbloquea el crecimiento del 20-30% que te has estado perdiendo.",
+        pills: ["Ingenieros de Comportamiento Digital", "UX Sin Fricción", "Webapps a Medida"],
+        headline: "La mayoría de sitios se ven bien. Los nuestros hacen que los clientes compren.",
+        subhead: "No tienes un problema de tráfico: tienes un problema de vacilación. Cuando alguien entra a tu web, su cerebro decide en 3 segundos si confiar o cerrar la pestaña. Diseñamos software y aplicaciones web para eliminar la duda y hacer que elegirte sea la decisión más fácil.",
         stats: [
-          { num: "20", title: "Valor Oculto Capturado", desc: "Nuestras integraciones eliminan ineficiencias, desbloqueando un 20-30% en pura ganancia que no sabías que perdías. — McKinsey & Company" },
-          { num: "250", title: "La Ventaja Faltante", desc: "La infraestructura digital a medida genera un ROI del 250%. Descubre la ventaja injusta que tus competidores ya usan. — Nucleus Research" },
-          { num: "100", title: "Soberanía Total", desc: "Recupera tus datos. Al ser dueño de tu plataforma, desbloqueas capacidades que terceros suelen guardarse para sí mismos. — Forrester" }
+          { num: "3", title: "Segundos para Confiar", desc: "Un cliente decide en 3 segundos si tu web inspira autoridad. Eliminamos las señales de alerta que provocan abandonos inmediatos." },
+          { num: "3x", title: "Velocidad de Decisión", desc: "Rutas limpias y sin fricción eliminan la indecisión, guiando a los visitantes hacia la compra hasta 3 veces más rápido." },
+          { num: "100", title: "Propiedad Total", desc: "Sin cuotas de plantillas ni bloqueos de plataformas. Eres dueño del 100% de tu código, datos y clientes." }
         ],
-        cta1: "Desbloquea tu Potencial",
-        cta2: "Ver Infraestructura"
+        cta1: "Solicitar Auditoría",
+        cta2: "Ver Casos de Estudio"
       },
       industrial: {
-        pills: ["Mitigación de Riesgos", "Análisis Predictivo", "Control de Activos"],
-        headline: "Desbloquea el Valor Oculto de tus Operaciones.",
-        subhead: "La inactividad impredecible son ingresos perdidos que podrías estar capturando. Con nuestros sistemas predictivos, capturas cada minuto de valor productivo.",
+        pills: ["Prevención de Errores", "Flujos Simples", "Velocidad Operativa"],
+        headline: "Elimina los errores operativos antes de que ocurran.",
+        subhead: "Cuando el software interno es confuso, tu equipo comete errores costosos. Construimos paneles y herramientas operativas tan simples y rápidas que tu personal acierta a la primera, siempre.",
         stats: [
-          { num: "50", title: "Tiempo de Actividad", desc: "Con nuestros sistemas de telemetría, capturas el 50% de actividad que las operaciones tradicionales pierden por anomalías. — U.S. Department of Energy" },
-          { num: "40", title: "Vida Útil Maximizada", desc: "Deja de dejar capital en la mesa. El monitoreo digital desbloquea un 40% extra de vida útil para equipos costosos. — Deloitte Industrial" },
-          { num: "25", title: "Presupuesto Optimizado", desc: "Digitalizar el inventario y el mantenimiento te ayuda a recuperar el 25% de tu presupuesto operativo que actualmente se desperdicia. — World Economic Forum" }
+          { num: "50", title: "Tiempo Protegido", desc: "Alertas predictivas y seguimiento en tiempo real detienen fallos en equipos antes de que paralicen la producción." },
+          { num: "0", title: "Fricción de Flujo", desc: "Herramientas diseñadas en base a hábitos reales en planta evitan confusiones y pérdidas de tiempo." },
+          { num: "25", title: "Presupuesto Recuperado", desc: "Recupera horas perdidas y elimina herramientas innecesarias con un único centro de mando operativo." }
         ],
-        cta1: "Desbloquea tu Potencial",
-        cta2: "Ver Stack Industrial"
+        cta1: "Optimizar Operaciones",
+        cta2: "Ver Plataforma Industrial"
       },
       restaurants: {
-        pills: ["Protección de Margen", "Audiencia Directa", "Control Operativo"],
-        headline: "Recupera las Ganancias de las Apps de Delivery.",
-        subhead: "Cada pedido a terceros se lleva parte de tus ingresos. Construimos sistemas de pedidos que aseguran que conserves el 100% de tus márgenes y relaciones.",
+        pills: ["Apps de Pedido Directo", "Hábitos de Clientes", "0% Comisiones"],
+        headline: "Reprograma los hábitos de pedido lejos de apps de terceros.",
+        subhead: "DoorDash se queda con el 30% porque su app hace que pedir sea facilísimo. Construimos tu propia webapp de pedidos con esos mismos bucles de hábito para que te pidan directamente a ti, siempre.",
         stats: [
-          { num: "30", title: "Ganancias Conservadas", desc: "Quédate con el 30% que has estado regalando. Nuestras plataformas eluden las redes depredadoras para que cada dólar se quede contigo. — National Restaurant Association" },
-          { num: "26", title: "Ingresos Desbloqueados", desc: "Desbloquea un 26% más de ingresos por cliente al llevarlos a tu propio ecosistema digital sin fricciones. — Deloitte Digital" },
-          { num: "100", title: "Audiencia Capturada", desc: "Descubre el poder de poseer el 100% de los datos de tus clientes para lanzar campañas altamente rentables. — Forbes" }
+          { num: "30", title: "Márgenes Conservados", desc: "Deja de regalar el 30% en cada orden. Tu propia plataforma pone ese margen directamente en tu caja registradora." },
+          { num: "100", title: "Control de Clientes", desc: "Sé dueño de tus contactos e historial de pedidos. Lanza promociones directas sin pagar peajes a intermediarios." },
+          { num: "0", title: "Comisiones por Orden", desc: "Pedidos e integración con cocina a medida que te pertenecen por completo, sin recargos por venta." }
         ],
-        cta1: "Desbloquea tu Potencial",
-        cta2: "Ver Stack de Restaurantes"
+        cta1: "Recupera tus Márgenes",
+        cta2: "Ver Plataforma de Restaurantes"
       },
       realestate: {
-        pills: ["Pipeline Soberano", "Generación de Leads", "Automatización IA"],
-        headline: "Conserva el 100% del Valor que Generas.",
-        subhead: "Haces el trabajo duro, pero los CRM genéricos te obligan a compartir la recompensa. Arquitectamos 'Pipelines Ocultos' para que captures tu comisión completa.",
+        pills: ["Autoridad Inmediata", "Portales VIP", "Captación Directa"],
+        headline: "Impón autoridad instantánea ante clientes de alto poder adquisitivo.",
+        subhead: "Los compradores y vendedores exigentes no confían en agentes con webs genéricas de 2018. Diseñamos webapps exclusivas con señales de estatus, reservas privadas y portales VIP que te convierten en la opción evidente.",
         stats: [
-          { num: "100", title: "Comisión Conservada", desc: "Captura el valor total de tu trabajo. Deja de dividir tu dinero con agencias que no generan tus leads. — RESO" },
-          { num: "0", title: "Oportunidades Perdidas", desc: "Nunca dejes escapar un prospecto. Descubre la ventaja de recepcionistas IA que atienden cada llamada al instante. — Harvard Business Review" },
-          { num: "71", title: "Autoridad Desbloqueada", desc: "Captura a los compradores que buscan autoridad absoluta. Un portal VIP te convierte en la opción exclusiva e innegable. — NAR" }
+          { num: "100", title: "Comisión Directa", desc: "Capta y gestiona clientes de alto valor directamente en tu propio portal sin repartir leads con plataformas externas." },
+          { num: "3", title: "Segundos para Impresionar", desc: "Establece autoridad indiscutible en cuanto abran tu enlace. La presentación de lujo genera confianza de lujo." },
+          { num: "0", title: "Leads Perdidos", desc: "Reservas sin fricción y respuestas inmediatas garantizan que los compradores serios nunca se vayan con la competencia." }
         ],
-        cta1: "Desbloquea tu Potencial",
-        cta2: "Ver Stack de Agentes"
-      }
+        cta1: "Eleva tu Presencia",
+        cta2: "Ver Stack Inmobiliario"
+      },
+      subtleSocial: "Únete a los empresarios que están modernizando su presencia digital."
     },
     dock: { hub: "Inicio" }
   }
@@ -296,7 +298,7 @@ export default function Home() {
                     Welcome to<br/><span className="text-[#00ff66] font-bold">ZayronSystems.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
-                    Step inside to discover how custom digital infrastructure can unlock your next stage of growth.
+                    Custom websites and software based on behavior engineering and how customers think, click, and buy.
                   </p>
                 </div>
 
@@ -352,7 +354,7 @@ export default function Home() {
                 Identify Your Sector.
               </h2>
               <p className="text-white/60 text-sm md:text-base mb-10 max-w-md mx-auto">
-                We engineer sovereign digital infrastructure for high-performance operations. Select your sector below to see how we dominate your industry:
+                We engineer custom software and web applications tailored to how customers make buying decisions in your market. Select your sector:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -568,6 +570,10 @@ export default function Home() {
                           </motion.span>
                         </motion.button>
                       </div>
+
+                      <p className="text-white/40 text-[11px] md:text-xs font-light tracking-wide text-center mt-4 pointer-events-none">
+                        {t.hub.subtleSocial}
+                      </p>
 
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}

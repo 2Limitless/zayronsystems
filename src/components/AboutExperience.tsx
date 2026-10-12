@@ -9,40 +9,40 @@ const dict = {
   en: {
     back: "Return",
     availability: "Currently Accepting 3 New Client Projects",
-    title1: "Discover Your",
-    title2: "Potential.",
-    desc1: "We partner with organizations ready to unlock their next stage of growth. Our architecture is designed for operations looking to capture undeniable ROI through custom digital infrastructure.",
-    desc2: "Submit your information below. Our lead architect will reach out to explore how we can optimize your systems.",
+    title1: "Engineer Your",
+    title2: "Advantage.",
+    desc1: "Tell us where your current digital presence or software is losing customers. We diagnose the friction points and map out custom software built to drive measurable revenue.",
+    desc2: "Submit your details below. Our lead systems architect reviews every application personally and responds within 24 hours.",
     form: {
       name: "Full Name",
       email: "Direct Email Address",
       phone: "Direct Phone Number",
       business: "Company Name & Annual Revenue",
-      bottleneck: "Current Systemic Bottleneck",
-      why: "What is your primary goal for this transformation?",
-      submit: "Submit Application",
+      bottleneck: "Where are customers hesitating or dropping off?",
+      why: "What is your primary revenue or operational goal?",
+      submit: "Request Behavioral Review",
       successTitle: "Information Received.",
-      successDesc: "Your details have been secured. Our lead architect will review your submission and reach out within 24 hours to explore the possibilities.",
-      trust: "Your data is secured with bank-level encryption and absolute confidentiality."
+      successDesc: "Your details have been secured. Our lead architect will review your submission and reach out within 24 hours to map out the next steps.",
+      trust: "Your information is secured with bank-level encryption and absolute confidentiality."
     }
   },
   es: {
     back: "Regresar",
     availability: "Aceptando 3 Nuevos Proyectos de Clientes",
-    title1: "Descubre tu",
-    title2: "Potencial.",
-    desc1: "Nos asociamos con organizaciones listas para desbloquear su próxima etapa de crecimiento. Nuestra arquitectura está diseñada para operaciones que buscan capturar un ROI innegable a través de infraestructura digital personalizada.",
-    desc2: "Envía tu información a continuación. Nuestro arquitecto principal se comunicará para explorar cómo podemos optimizar tus sistemas.",
+    title1: "Diseña tu",
+    title2: "Ventaja.",
+    desc1: "Cuéntanos dónde tu presencia digital o software actual está perdiendo clientes. Diagnosticamos los puntos de fricción y diseñamos software a medida para generar ingresos medibles.",
+    desc2: "Envía tus datos a continuación. Nuestro arquitecto principal revisa cada solicitud personalmente y te contactará en menos de 24 horas.",
     form: {
       name: "Nombre Completo",
       email: "Correo Electrónico Directo",
       phone: "Número de Teléfono Directo",
       business: "Nombre de Empresa e Ingresos Anuales",
-      bottleneck: "Cuello de Botella Sistémico",
-      why: "¿Cuál es tu objetivo principal para esta transformación?",
-      submit: "Enviar Solicitud",
+      bottleneck: "¿Dónde están dudando o abandonando tus clientes?",
+      why: "¿Cuál es tu principal objetivo comercial u operativo?",
+      submit: "Solicitar Revisión",
       successTitle: "Información Recibida.",
-      successDesc: "Tus detalles han sido asegurados. Nuestro arquitecto principal revisará tu envío y te contactará en menos de 24 horas para explorar las posibilidades.",
+      successDesc: "Tus datos han sido asegurados. Nuestro arquitecto principal revisará tu solicitud y te contactará en menos de 24 horas con los siguientes pasos.",
       trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
     }
   }

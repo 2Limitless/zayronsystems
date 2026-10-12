@@ -14,24 +14,25 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zayronsystems.com"),
-  title: "ZayronSystems | Custom Enterprise Software & Architecture",
-  description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
+  title: "ZayronSystems | Digital Behavior Engineers • Custom Software & Webapps",
+  description: "ZayronSystems engineers custom websites, webapps, and digital software built around how customers think, choose, and buy. Inspired by behavioral profiling and decision psychology.",
   keywords: [
     "ZayronSystems",
-    "Enterprise Software Development",
+    "Digital Behavior Engineers",
+    "Custom Software Development",
+    "Custom Web Applications",
+    "High Converting Websites",
     "Custom Restaurant Apps",
     "Zero Commission Ordering",
-    "Real Estate Webapps",
-    "Industrial IoT Software",
-    "Predictive Maintenance Systems",
-    "Custom CRM ERP",
-    "Digital Transformation"
+    "Real Estate Portals",
+    "Industrial Operations Software",
+    "Conversion Architecture"
   ],
   authors: [{ name: "ZayronSystems Engineering", url: "mailto:aaron@zayronsystems.com" }],
   creator: "ZayronSystems",
   openGraph: {
-    title: "ZayronSystems | Custom Enterprise Software & Architecture",
-    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
+    title: "ZayronSystems | Digital Behavior Engineers • Custom Software & Webapps",
+    description: "ZayronSystems engineers custom websites, webapps, and digital software built around how customers think, choose, and buy.",
     url: "https://zayronsystems.com",
     siteName: "ZayronSystems",
     images: [
@@ -46,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZayronSystems | Custom Enterprise Software & Architecture",
-    description: "ZayronSystems builds bespoke enterprise software, zero-commission ordering apps, real estate webapps, and IoT industrial infrastructure to maximize ROI.",
+    title: "ZayronSystems | Digital Behavior Engineers • Custom Software & Webapps",
+    description: "ZayronSystems engineers custom websites, webapps, and digital software built around how customers think, choose, and buy.",
     creator: "@ZayronSystems",
   },
 };
@@ -61,7 +62,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "ZayronSystems",
-    "description": "ZayronSystems is the premier software development agency building bespoke enterprise software, mobile apps, zero-commission ordering platforms, real estate webapps, and IoT industrial infrastructure for high-performance teams.",
+    "description": "ZayronSystems is a digital behavior engineering firm building custom websites, web applications, zero-commission ordering platforms, and operations software built around how customers decide and buy.",
     "url": "https://zayronsystems.com",
     "founder": [
       {
@@ -77,14 +78,14 @@ export default function RootLayout({
         "jobTitle": "Co-Founder"
       }
     ],
-    "slogan": "Digital Transformation at Scale.",
+    "slogan": "Custom software engineered around how customers decide and buy.",
     "knowsAbout": [
-      "Enterprise System Software",
-      "Restaurant Tech & Zero Commission Apps",
-      "Real Estate Webapps",
-      "Industrial IoT & Predictive Maintenance",
-      "Custom Architecture",
-      "Scalable Infrastructure"
+      "Digital Behavior Engineering",
+      "Custom Software Development",
+      "High-Converting Web Applications",
+      "Restaurant Tech & Direct Ordering",
+      "Real Estate Client Portals",
+      "Operations & Industrial Systems"
     ]
   };
 

@@ -7,59 +7,59 @@ import { X, Check, ShieldAlert, ShieldCheck } from "lucide-react";
 const dict = {
   en: {
     back: "Back to Hub",
-    title1: "The Hidden",
-    title2: "Cost.",
-    subtitle: "Stop renting your digital presence. Start building sovereign digital assets.",
-    desc: "Traditional platforms often limit your potential, trapping you in recurring fees while restricting access to your own data and code. We are a bespoke engineering firm. We architect custom digital infrastructure, hand you the keys, and unlock your true market potential.",
+    title1: "The Real",
+    title2: "Difference.",
+    subtitle: "Most agencies build pages that look pretty. We engineer software that makes customers take action.",
+    desc: "You’ve probably paid for a website or app before that did absolutely nothing for your bottom line. Most designers give you a cookie-cutter template, hand you a link, and walk away. If your software doesn't trigger trust and remove buying hesitation, it's just an expensive decoration. We build custom software and web applications engineered around how customers actually think, click, and buy.",
     them: {
-      title: "Standard Providers",
-      subtitle: "The Rental Model",
+      title: "Standard Agencies",
+      subtitle: "Template Decorators",
       points: [
-        "Generic template codebases",
-        "Ongoing monthly infrastructure fees",
-        "Standardized UX that limits conversions",
-        "Recurring retainers that impact margins",
-        "Limited ownership of data and code"
+        "Pre-made templates that look identical to your competitors",
+        "Built for design portfolios, not for customer purchasing decisions",
+        "Hidden friction and red flags that make visitors bounce in seconds",
+        "Zero understanding of customer psychology or trust triggers",
+        "Monthly retainer traps without real, measurable ROI"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "The Sovereignty Model",
+      subtitle: "Digital Behavior Engineers",
       points: [
-        "Custom infrastructure engineered from scratch",
-        "Absolute ownership of your data and code",
-        "Optimized performance and conversion speeds",
-        "Engineered specifically for clear ROI",
-        "Direct collaboration with system architects"
+        "Custom software engineered from scratch for your exact business",
+        "Built around customer psychology—tested to eliminate hesitation",
+        "Fast, frictionless pathways that guide visitors directly to buy",
+        "Total ownership: you own 100% of your code, data, and platform",
+        "Direct collaboration with senior engineers who care about your revenue"
       ]
     }
   },
   es: {
     back: "Volver al Inicio",
-    title1: "El Costo",
-    title2: "Oculto.",
-    subtitle: "Deja de alquilar tu presencia digital. Empieza a construir activos digitales soberanos.",
-    desc: "Las plataformas tradicionales a menudo limitan tu potencial, atrapándote en tarifas recurrentes mientras restringen el acceso a tus propios datos y código. Somos una firma de ingeniería a medida. Diseñamos infraestructura digital personalizada, te entregamos las llaves y desbloqueamos tu verdadero potencial de mercado.",
+    title1: "La Verdadera",
+    title2: "Diferencia.",
+    subtitle: "La mayoría de agencias crean webs que se ven bonitas. Nosotros diseñamos software que hace que los clientes actúen.",
+    desc: "Probablemente ya has pagado antes por una web o app que no aportó nada a tus ingresos. La mayoría de diseñadores te entregan una plantilla genérica, te pasan el enlace y desaparecen. Si tu software no inspira confianza ni elimina la duda de compra, es solo un adorno costoso. Diseñamos software a medida pensado exactamente en cómo los clientes piensan, hacen clic y compran.",
     them: {
-      title: "Proveedores Estándar",
-      subtitle: "El Modelo de Alquiler",
+      title: "Agencias Estándar",
+      subtitle: "Decoradores de Plantillas",
       points: [
-        "Bases de código de plantillas genéricas",
-        "Tarifas mensuales continuas de infraestructura",
-        "UX estandarizada que limita las conversiones",
-        "Contratos recurrentes que impactan los márgenes",
-        "Propiedad limitada de datos y código"
+        "Plantillas prefabricadas idénticas a las de tu competencia",
+        "Diseñadas para portafolios, no para decisiones de compra",
+        "Fricción invisible que hace que los visitantes salgan en segundos",
+        "Cero comprensión de psicología de compra y confianza",
+        "Cuotas mensuales recurrentes sin un ROI demostrable"
       ]
     },
     us: {
       title: "ZayronSystems",
-      subtitle: "El Modelo de Soberanía",
+      subtitle: "Ingenieros de Comportamiento Digital",
       points: [
-        "Infraestructura personalizada diseñada desde cero",
-        "Propiedad absoluta de tus datos y código",
-        "Rendimiento optimizado y velocidades de conversión",
-        "Diseñado específicamente para un ROI claro",
-        "Colaboración directa con arquitectos de sistemas"
+        "Software a medida programado desde cero para tu negocio",
+        "Basado en psicología del cliente—probado para eliminar la vacilación",
+        "Rutas rápidas y sin fricción que guían al cliente a la compra",
+        "Propiedad total: eres dueño del 100% de tu código y datos",
+        "Trato directo con ingenieros senior enfocados en tus ventas"
       ]
     }
   }
@@ -184,10 +184,10 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
         {onNavigateToApply && (
           <motion.div variants={itemVariants} className="w-full flex flex-col items-center justify-center mt-24 text-center">
             <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
-              {lang === 'en' ? `Ready to Unlock Your Potential, ${visitorName || 'Leader'}?` : `¿Listo para Desbloquear tu Potencial, ${visitorName || 'Líder'}?`}
+              {lang === 'en' ? `Ready to Stop Losing Customers to Hesitation, ${visitorName || 'Partner'}?` : `¿Listo para Dejar de Perder Clientes por Dudas, ${visitorName || 'Socio'}?`}
             </h3>
             <p className="text-white/50 max-w-xl mb-8 font-light">
-              {lang === 'en' ? "Stop renting your infrastructure. Submit your architecture review application to discover what's possible." : "Deja de alquilar tu infraestructura. Envía tu solicitud de revisión de arquitectura para descubrir lo que es posible."}
+              {lang === 'en' ? "Stop settling for generic templates that don't convert. Request a behavioral architecture review to see what's possible." : "Deja de conformarte con plantillas genéricas que no convierten. Solicita una revisión de arquitectura para descubrir lo que es posible."}
             </p>
             <button 
               onClick={onNavigateToApply}
@@ -195,7 +195,7 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
             >
               <div className="absolute inset-0 bg-[#00ff66] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
               <span className="relative z-10 transition-colors duration-500">
-                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+                {lang === 'en' ? "Request Behavioral Review" : "Solicitar Revisión"}
               </span>
             </button>
           </motion.div>
