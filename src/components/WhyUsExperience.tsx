@@ -17,9 +17,10 @@ const dict = {
       points: [
         "Pre-made templates that look identical to your competitors",
         "Built for design portfolios, not for customer purchasing decisions",
+        "Outdated surface-level SEO practices that completely ignore modern AI search engines (ChatGPT, Perplexity)",
         "Hidden friction and red flags that make visitors bounce in seconds",
         "Zero understanding of customer psychology or trust triggers",
-        "Monthly retainer traps without real, measurable ROI"
+        "Ongoing platform dependencies without real, measurable ROI"
       ]
     },
     us: {
@@ -28,6 +29,7 @@ const dict = {
       points: [
         "Custom software engineered from scratch for your exact business",
         "Built around customer psychology—tested to eliminate hesitation",
+        "Best-in-class Technical SEO & AI SEO (GEO) built directly into your site—engineered to win Google, ChatGPT, and Perplexity",
         "Fast, frictionless pathways that guide visitors directly to buy",
         "Total ownership: you own 100% of your code, data, and platform",
         "Direct collaboration with senior engineers who care about your revenue"
@@ -46,9 +48,10 @@ const dict = {
       points: [
         "Plantillas prefabricadas idénticas a las de tu competencia",
         "Diseñadas para portafolios, no para decisiones de compra",
+        "Prácticas de SEO superficiales y obsoletas que ignoran por completo los motores de búsqueda de IA (ChatGPT, Perplexity)",
         "Fricción invisible que hace que los visitantes salgan en segundos",
         "Cero comprensión de psicología de compra y confianza",
-        "Cuotas mensuales recurrentes sin un ROI demostrable"
+        "Dependencia de plataformas externas sin un ROI demostrable"
       ]
     },
     us: {
@@ -57,6 +60,7 @@ const dict = {
       points: [
         "Software a medida programado desde cero para tu negocio",
         "Basado en psicología del cliente—probado para eliminar la vacilación",
+        "El mejor SEO técnico y SEO para IA (GEO) integrado directamente en tu web—diseñado para liderar en Google, ChatGPT y Perplexity",
         "Rutas rápidas y sin fricción que guían al cliente a la compra",
         "Propiedad total: eres dueño del 100% de tu código y datos",
         "Trato directo con ingenieros senior enfocados en tus ventas"

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, CheckCircle2, Smartphone, BookOpen, MonitorSmartphone, Megaphone, MessageSquare, HeartHandshake, ChevronDown, LayoutDashboard, Gift, BarChart3, Tablet } from "lucide-react";
+import { ArrowRight, CheckCircle2, Smartphone, BookOpen, MonitorSmartphone, Megaphone, MessageSquare, HeartHandshake, ChevronDown, LayoutDashboard, Gift, BarChart3, Tablet, Sparkles, Bot, Search } from "lucide-react";
 import type { Language } from "../app/page";
 
 const dict = {
@@ -12,15 +12,23 @@ const dict = {
     titleHighlight: "Stack.",
     desc: "A complete infrastructure. We architect high-performance data systems while delivering world-class reliability.",
     scrollCompare: "Compare Tiers Below",
+    seoCallout: {
+      badge: "INCLUDED STANDARD WITH OUR SITES",
+      title: "Industry-Leading Technical SEO & AI Search Dominance (GEO)",
+      desc: "Every site and application we build comes pre-engineered with best-in-class Technical SEO and Generative Engine Optimization (GEO). We structure your code, schema, and semantic knowledge graphs so you rank at the top of Google and get cited across ChatGPT, Perplexity, and Gemini.",
+      tag1: "ChatGPT & Perplexity Ready",
+      tag2: "100/100 Core Web Vitals",
+      tag3: "Native Architecture"
+    },
     tier1: {
       headerSubtitle: "Core",
       headerTitle: "Core Infrastructure.",
       headerDesc: "The foundational software stack for operational excellence.",
       cards: [
         { title: "Command Center", desc: "Watch your entire operation run smoothly from a single, intuitive dashboard." },
+        { title: "AI SEO & Search Dominance", desc: "Structured knowledge schema that puts you on page #1 of Google and inside ChatGPT & Perplexity recommendations." },
         { title: "Data Continuity", desc: "Never lose a data point again. Have your entire operational history instantly accessible." },
-        { title: "System Orchestration", desc: "Connect external tools effortlessly. Your software becomes the central hub of your business." },
-        { title: "Predictive Analytics", desc: "Anticipate market trends and operational bottlenecks before they impact your bottom line." }
+        { title: "System Orchestration", desc: "Connect external tools effortlessly. Your software becomes the central hub of your business." }
       ]
     },
     complete: {
@@ -31,7 +39,7 @@ const dict = {
         { title: "Infinite Scale", desc: "Sleep soundly knowing your custom cloud architecture can handle massive growth smoothly." },
         { title: "Painless Transition", desc: "We carefully migrate your operations from existing systems without disrupting your workflow." },
         { title: "Empowered Workforce", desc: "Your team hits the ground running on day one with pre-configured, reliable hardware." },
-        { title: "Operational Excellence", desc: "We encode your operational SOPs into software, making your business scalable and repeatable." },
+        { title: "Built-In AI SEO & Search Dominance", desc: "Rank at the top of Google and get recommended by ChatGPT, Perplexity, and Gemini—built directly into your codebase." },
         { title: "Peace of Mind", desc: "Critical updates and automated alerts reach you instantly, wherever you are in the world." },
         { title: "Digital Security", desc: "An elite engineering team on standby 24/7. We monitor your infrastructure continuously." }
       ]
@@ -43,15 +51,23 @@ const dict = {
     titleHighlight: "Empresarial.",
     desc: "Una infraestructura completa. Diseñamos sistemas de datos de alto rendimiento con confiabilidad mundial.",
     scrollCompare: "Compara Niveles Abajo",
+    seoCallout: {
+      badge: "INCLUIDO DE SERIE EN NUESTROS SITIOS",
+      title: "El Mejor SEO Técnico y SEO para Motores de IA (GEO)",
+      desc: "Cada sitio y aplicación que desarrollamos incluye el mejor SEO técnico y optimización para motores generativos (GEO) de serie. Estructuramos tu código, datos y esquemas para que lideres en Google y seas citado en ChatGPT, Perplexity y Gemini.",
+      tag1: "Listo para ChatGPT y Perplexity",
+      tag2: "100/100 Core Web Vitals",
+      tag3: "Arquitectura Nativa"
+    },
     tier1: {
       headerSubtitle: "Base",
       headerTitle: "Infraestructura Base.",
       headerDesc: "El stack de software fundamental para la excelencia operativa.",
       cards: [
         { title: "Centro de Comando", desc: "Observa cómo toda tu operación funciona fluidamente desde un panel intuitivo." },
+        { title: "SEO y Dominio en Búsqueda IA", desc: "Esquema estructurado que te posiciona en la página 1 de Google y en las recomendaciones de ChatGPT y Perplexity." },
         { title: "Continuidad de Datos", desc: "Nunca vuelvas a perder un dato. Ten todo tu historial operativo accesible al instante." },
-        { title: "Orquestación de Sistemas", desc: "Conecta herramientas externas sin esfuerzo. Tu software se convierte en el centro neurálgico." },
-        { title: "Análisis Predictivo", desc: "Anticipa tendencias del mercado y cuellos de botella antes de que impacten tus resultados." }
+        { title: "Orquestación de Sistemas", desc: "Conecta herramientas externas sin esfuerzo. Tu software se convierte en el centro neurálgico." }
       ]
     },
     complete: {
@@ -62,7 +78,7 @@ const dict = {
         { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejará el crecimiento sin problemas." },
         { title: "Transición Sin Fricción", desc: "Migramos tus operaciones de sistemas existentes cuidadosamente sin interrumpir tu flujo." },
         { title: "Fuerza Laboral Empoderada", desc: "Tu equipo entra en acción el primer día con hardware preconfigurado y confiable." },
-        { title: "Excelencia Operativa", desc: "Codificamos tus procesos en el software, haciendo que tu negocio sea escalable y repetible." },
+        { title: "SEO y Dominio en Búsqueda IA", desc: "Posiciónate en Google y en las respuestas de ChatGPT, Perplexity y Gemini—integrado directamente en tu código." },
         { title: "Tranquilidad", desc: "Actualizaciones críticas y alertas automatizadas te encuentran al instante, dondequiera que estés." },
         { title: "Seguridad Digital", desc: "Un equipo de élite en espera 24/7. Monitoreamos tu infraestructura continuamente." }
       ]
@@ -237,6 +253,61 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
             )}
           </AnimatePresence>
         </div>
+
+        {/* Standard Built-In SEO & AI SEO Feature Callout */}
+        <motion.div 
+          variants={itemVariants}
+          initial="hidden" 
+          animate="show" 
+          className={`w-full max-w-5xl mx-auto mt-16 p-6 md:p-10 rounded-2xl md:rounded-[2rem] border backdrop-blur-xl relative overflow-hidden transition-colors duration-700 ${
+            activeTier === "tier1" 
+              ? "bg-white/90 border-[var(--color-void)]/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)]" 
+              : "bg-white/[0.03] border-[#00ff66]/20 shadow-[0_0_50px_rgba(0,255,102,0.05)]"
+          }`}
+        >
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-3">
+                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase ${
+                  activeTier === "tier1" ? "bg-[var(--color-cobalt)]/10 text-[var(--color-cobalt)]" : "bg-[#00ff66]/10 text-[#00ff66] border border-[#00ff66]/20"
+                }`}>
+                  <Sparkles className="w-3.5 h-3.5" />
+                  {t.seoCallout.badge}
+                </span>
+              </div>
+              <h3 className={`text-2xl md:text-3xl font-serif font-light mb-3 transition-colors duration-700 ${
+                activeTier === "tier1" ? "text-[var(--color-void)]" : "text-white"
+              }`}>
+                {t.seoCallout.title}
+              </h3>
+              <p className={`text-xs md:text-sm leading-relaxed max-w-3xl transition-colors duration-700 ${
+                activeTier === "tier1" ? "text-[var(--color-void)]/70" : "text-white/60"
+              }`}>
+                {t.seoCallout.desc}
+              </p>
+            </div>
+            <div className="flex flex-wrap md:flex-col gap-2 shrink-0">
+              <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
+                activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-white/5 border-white/10 text-white/90"
+              }`}>
+                <Bot className="w-4 h-4 text-[#00ff66]" />
+                {t.seoCallout.tag1}
+              </div>
+              <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
+                activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-white/5 border-white/10 text-white/90"
+              }`}>
+                <Search className="w-4 h-4 text-[#00ff66]" />
+                {t.seoCallout.tag2}
+              </div>
+              <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
+                activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-[#00ff66]/10 border-[#00ff66]/30 text-[#00ff66]"
+              }`}>
+                <CheckCircle2 className="w-4 h-4" />
+                {t.seoCallout.tag3}
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Aggressive CTA */}
         {onNavigateToApply && (

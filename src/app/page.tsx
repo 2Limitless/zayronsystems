@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, ArrowUp, Globe } from "lucide-react";
+import { X, ArrowUp, Globe, Sparkles, Bot, Zap, ShieldCheck, Search } from "lucide-react";
 import PortfolioExperience from "../components/PortfolioExperience";
 import ServicesExperience from "../components/ServicesExperience";
 import AboutExperience from "../components/AboutExperience";
@@ -47,7 +47,7 @@ const dict = {
     nav: { portfolio: "Case Studies", services: "Capabilities", whyus: "Why Us", about: "Get In Touch", partners: "Partner Portal" },
     hub: {
       general: {
-        pills: ["Digital Behavior Engineers", "Frictionless UX", "Custom Webapps"],
+        pills: ["Digital Behavior Engineers", "Built-In AI SEO & GEO", "High-Converting Webapps"],
         headline: "Most websites look good. Ours actually make customers buy.",
         subhead: "You don't have a traffic problem—you have a hesitation problem. When someone visits your site, their brain decides in 3 seconds whether to trust you or close the tab. We build custom software and web applications engineered to eliminate hesitation and make choosing you the easiest decision.",
         stats: [
@@ -94,6 +94,32 @@ const dict = {
         cta1: "Upgrade Your Presence",
         cta2: "View Agent Stack"
       },
+      seoShowcase: {
+        badge: "INCLUDED WITH OUR SITES • BUILT-IN ARCHITECTURE",
+        title: "The Best Technical SEO & Modern AI SEO.",
+        titleHighlight: "Built In Standard.",
+        desc: "We engineer every website and web application with elite Technical SEO and Generative Engine Optimization (GEO) built directly into the foundation. When potential clients search on Google or ask questions on ChatGPT, Perplexity, and Gemini, your platform is structured to rank at the top and be cited as the definitive authority.",
+        cards: [
+          {
+            tag: "AI SEARCH READY",
+            title: "Generative Engine Optimization (GEO)",
+            desc: "Structured semantic JSON-LD knowledge graphs engineered specifically so ChatGPT, Perplexity, and Google AI Overviews cite and recommend your brand when customers query AI.",
+            metric: "ChatGPT • Perplexity • Gemini"
+          },
+          {
+            tag: "GOOGLE DOMINANCE",
+            title: "100/100 Core Web Vitals",
+            desc: "Sub-second server rendering, zero layout shifts, and clean semantic architecture that search algorithms reward with top organic domain authority.",
+            metric: "< 0.4s Instant Index"
+          },
+          {
+            tag: "CORE ARCHITECTURE",
+            title: "Native Codebase Integration",
+            desc: "No fragile plugins or third-party wrappers. Elite search optimization is hardcoded directly into your software architecture and schema from day one.",
+            metric: "Direct Code Ownership"
+          }
+        ]
+      },
       subtleSocial: "Join forward-thinking business owners upgrading their digital presence."
     },
     dock: { hub: "Hub" }
@@ -102,7 +128,7 @@ const dict = {
     nav: { portfolio: "Casos de Estudio", services: "Capacidades", whyus: "Por Qué Nosotros", about: "Contacto", partners: "Portal de Socios" },
     hub: {
       general: {
-        pills: ["Ingenieros de Comportamiento Digital", "UX Sin Fricción", "Webapps a Medida"],
+        pills: ["Ingenieros de Comportamiento Digital", "SEO & AI SEO Incluido", "Webapps de Alta Conversión"],
         headline: "La mayoría de sitios se ven bien. Los nuestros hacen que los clientes compren.",
         subhead: "No tienes un problema de tráfico: tienes un problema de vacilación. Cuando alguien entra a tu web, su cerebro decide en 3 segundos si confiar o cerrar la pestaña. Diseñamos software y aplicaciones web para eliminar la duda y hacer que elegirte sea la decisión más fácil.",
         stats: [
@@ -148,6 +174,32 @@ const dict = {
         ],
         cta1: "Eleva tu Presencia",
         cta2: "Ver Stack Inmobiliario"
+      },
+      seoShowcase: {
+        badge: "INTEGRADO EN NUESTROS SITIOS • ARQUITECTURA NATIVA",
+        title: "El Mejor SEO Técnico y SEO para IA.",
+        titleHighlight: "Integrado de Serie.",
+        desc: "Diseñamos cada sitio web y aplicación con el mejor SEO técnico y optimización para motores generativos (GEO) integrados en su base. Cuando tus clientes buscan en Google o consultan en ChatGPT, Perplexity y Gemini, tu plataforma está estructurada para liderar y ser recomendada como la máxima autoridad.",
+        cards: [
+          {
+            tag: "LISTO PARA IA",
+            title: "Optimización para Motores de IA (GEO)",
+            desc: "Grafos de conocimiento semánticos JSON-LD diseñados para que ChatGPT, Perplexity y las respuestas de Google recomienden tu negocio al responder.",
+            metric: "ChatGPT • Perplexity • Gemini"
+          },
+          {
+            tag: "DOMINIO EN GOOGLE",
+            title: "100/100 Core Web Vitals",
+            desc: "Carga en submilisegundos, cero saltos visuales y arquitectura semántica limpia que los algoritmos premian con máxima autoridad orgánica.",
+            metric: "< 0.4s Carga Instantánea"
+          },
+          {
+            tag: "ARQUITECTURA CENTRAL",
+            title: "Integración Nativa en el Código",
+            desc: "Sin plugins frágiles ni herramientas externas. La optimización técnica de búsqueda se programa directamente en la estructura de tu software desde el primer día.",
+            metric: "Propiedad Total del Código"
+          }
+        ]
       },
       subtleSocial: "Únete a los empresarios que están modernizando su presencia digital."
     },
@@ -298,7 +350,9 @@ export default function Home() {
                     Welcome to<br/><span className="text-[#00ff66] font-bold">ZayronSystems.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
-                    Custom websites and software based on behavior engineering and how customers think, click, and buy.
+                    {lang === 'en' 
+                      ? "Custom websites and software engineered around buyer psychology, with best-in-class SEO and AI search dominance built in standard." 
+                      : "Sitios web y software a medida basados en psicología de compra, con el mejor SEO y posicionamiento en IA incluido de serie."}
                   </p>
                 </div>
 
@@ -574,6 +628,68 @@ export default function Home() {
                       <p className="text-white/40 text-[11px] md:text-xs font-light tracking-wide text-center mt-4 pointer-events-none">
                         {t.hub.subtleSocial}
                       </p>
+
+                      {/* Built-In SEO & AI SEO Dominance Section */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6, duration: 0.8 }}
+                        className="mt-16 md:mt-20 w-full max-w-5xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-[#00ff66]/30 bg-gradient-to-b from-[#00ff66]/[0.08] via-white/[0.02] to-transparent p-6 md:p-12 backdrop-blur-xl relative overflow-hidden shadow-[0_0_80px_rgba(0,255,102,0.08)] pointer-events-auto"
+                      >
+                        {/* Ambient top right glow */}
+                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#00ff66]/10 blur-[100px] rounded-full pointer-events-none" />
+
+                        <div className="relative z-10 flex flex-col items-center text-center mb-10 md:mb-12">
+                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 text-[#00ff66] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-[0_0_20px_rgba(0,255,102,0.15)]">
+                            <Sparkles className="w-3.5 h-3.5" />
+                            {t.hub.seoShowcase.badge}
+                          </div>
+
+                          <h2 className="text-3xl md:text-5xl font-sans font-bold tracking-tight text-white mb-4 max-w-3xl leading-tight">
+                            {t.hub.seoShowcase.title} <br className="hidden md:block" />
+                            <span className="text-[#00ff66] font-light italic">{t.hub.seoShowcase.titleHighlight}</span>
+                          </h2>
+
+                          <p className="text-white/60 text-xs md:text-base font-light max-w-2xl leading-relaxed">
+                            {t.hub.seoShowcase.desc}
+                          </p>
+                        </div>
+
+                        {/* 3 Pillar Cards */}
+                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                          {t.hub.seoShowcase.cards.map((card, idx) => {
+                            const icons = [Bot, Zap, ShieldCheck];
+                            const IconComponent = icons[idx];
+                            return (
+                              <div
+                                key={idx}
+                                className="bg-black/60 border border-white/10 hover:border-[#00ff66]/40 rounded-2xl p-6 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)] group"
+                              >
+                                <div>
+                                  <div className="flex items-center justify-between mb-4">
+                                    <span className="text-[10px] font-mono tracking-widest text-[#00ff66] uppercase">
+                                      {card.tag}
+                                    </span>
+                                    <div className="w-8 h-8 rounded-lg bg-[#00ff66]/10 flex items-center justify-center text-[#00ff66] group-hover:bg-[#00ff66] group-hover:text-black transition-colors duration-300">
+                                      <IconComponent className="w-4 h-4" />
+                                    </div>
+                                  </div>
+                                  <h4 className="text-white font-bold text-base md:text-lg mb-2 tracking-tight group-hover:text-[#00ff66] transition-colors">
+                                    {card.title}
+                                  </h4>
+                                  <p className="text-white/50 text-xs leading-relaxed font-light">
+                                    {card.desc}
+                                  </p>
+                                </div>
+                                <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-white/40">
+                                  <span>Metric</span>
+                                  <span className="text-white font-semibold">{card.metric}</span>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </motion.div>
 
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}

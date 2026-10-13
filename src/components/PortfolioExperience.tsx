@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Database, Zap, Gift, MonitorSmartphone, TrendingUp, Bell } from "lucide-react";
+import { Database, Zap, Bot, MonitorSmartphone, TrendingUp, Bell } from "lucide-react";
 import type { Language, Industry } from "../app/page";
 
 const dict = {
@@ -25,7 +25,7 @@ const dict = {
         cards: [
           { title: "Data Sovereignty", desc: "Own your data architecture. Avoid vendor lock-in and power your operations with centralized intelligence." },
           { title: "Operational Automation", desc: "Reduce manual overhead by automating logistics, scheduling, and asset management in real-time." },
-          { title: "AI Integration", desc: "Deploy custom machine learning models trained specifically on your enterprise data." },
+          { title: "AI SEO & Search Dominance", desc: "Engineered for #1 Google placement and generative engine citations across ChatGPT, Perplexity, and Gemini standard." },
           { title: "Legacy System Integration", desc: "Seamlessly connect old databases and hardware to modern cloud infrastructure." },
           { title: "Mission Critical Uptime", desc: "Heavy-duty server architectures designed for the demands of 24/7 environments." },
           { title: "Scalable Infrastructure", desc: "Built to handle massive data loads without breaking a sweat as your enterprise grows." }
@@ -122,7 +122,7 @@ const dict = {
         cards: [
           { title: "Soberanía de Datos", desc: "Sé dueño de tu arquitectura de datos. Evita ataduras a proveedores y potencia tus operaciones." },
           { title: "Automatización Operativa", desc: "Reduce costos manuales automatizando logística, programación y gestión de activos en tiempo real." },
-          { title: "Integración de IA", desc: "Implementa modelos de aprendizaje automático personalizados entrenados con tus datos empresariales." },
+          { title: "SEO y Dominio en Búsqueda IA", desc: "Diseñado para el puesto #1 en Google y menciones directas en ChatGPT, Perplexity y Gemini de serie." },
           { title: "Integración de Sistemas Heredados", desc: "Conecta sin problemas bases de datos y hardware antiguos a una infraestructura en la nube." },
           { title: "Confiabilidad Crítica", desc: "Arquitecturas de servidores diseñadas para las demandas de entornos 24/7." },
           { title: "Infraestructura Escalable", desc: "Creada para manejar cargas de datos masivas sin problemas a medida que tu empresa crece." }
@@ -277,7 +277,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.5 }} className="col-span-1 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <Gift className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#00ff66] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <Bot className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#00ff66] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-xl mb-1 md:mb-3 leading-tight">{content.cards[2].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[2].desc}</p>

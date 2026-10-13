@@ -11,7 +11,7 @@ const dict = {
     availability: "Currently Accepting 3 New Client Projects",
     title1: "Engineer Your",
     title2: "Advantage.",
-    desc1: "Tell us where your current digital presence or software is losing customers. We diagnose the friction points and map out custom software built to drive measurable revenue.",
+    desc1: "Tell us where your current digital presence or software is losing customers. We diagnose the friction points and engineer custom software designed to convert—with best-in-class Technical SEO and AI SEO (GEO) included standard.",
     desc2: "Submit your details below. Our lead systems architect reviews every application personally and responds within 24 hours.",
     form: {
       name: "Full Name",
@@ -23,7 +23,7 @@ const dict = {
       submit: "Request Behavioral Review",
       successTitle: "Information Received.",
       successDesc: "Your details have been secured. Our lead architect will review your submission and reach out within 24 hours to map out the next steps.",
-      trust: "Your information is secured with bank-level encryption and absolute confidentiality."
+      trust: "Includes full code ownership, built-in search architecture, and bank-level data confidentiality."
     }
   },
   es: {
@@ -31,7 +31,7 @@ const dict = {
     availability: "Aceptando 3 Nuevos Proyectos de Clientes",
     title1: "Diseña tu",
     title2: "Ventaja.",
-    desc1: "Cuéntanos dónde tu presencia digital o software actual está perdiendo clientes. Diagnosticamos los puntos de fricción y diseñamos software a medida para generar ingresos medibles.",
+    desc1: "Cuéntanos dónde tu presencia digital o software actual está perdiendo clientes. Diagnosticamos los puntos de fricción y diseñamos software a medida para convertir—con el mejor SEO y SEO para IA (GEO) incluido de serie.",
     desc2: "Envía tus datos a continuación. Nuestro arquitecto principal revisa cada solicitud personalmente y te contactará en menos de 24 horas.",
     form: {
       name: "Nombre Completo",
@@ -43,7 +43,7 @@ const dict = {
       submit: "Solicitar Revisión",
       successTitle: "Información Recibida.",
       successDesc: "Tus datos han sido asegurados. Nuestro arquitecto principal revisará tu solicitud y te contactará en menos de 24 horas con los siguientes pasos.",
-      trust: "Tus datos están protegidos con encriptación de nivel bancario y confidencialidad absoluta."
+      trust: "Incluye propiedad total del código, arquitectura de búsqueda integrada y máxima confidencialidad bancaria."
     }
   }
 };
