@@ -12,7 +12,7 @@ export default function BarbersShowcase() {
           className="flex items-center gap-3 bg-black/40 backdrop-blur-xl border border-white/10 text-white/70 hover:text-white px-4 py-3 rounded-full hover:bg-black/60 transition-all shadow-lg group"
         >
           <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-          <span className="text-xs font-semibold tracking-widest uppercase hidden md:block">ZayronSystems</span>
+          <span className="text-xs font-semibold tracking-widest uppercase hidden md:block">Pongofly</span>
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ export default function BarbersShowcase() {
         <iframe 
           src="https://ldw.vercel.app" 
           className="w-full h-full border-none relative z-10"
-          title="ZayronSystems Barber Showcase"
+          title="Pongofly Barber Showcase"
           allowFullScreen
         />
       </div>

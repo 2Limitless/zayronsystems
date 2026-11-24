@@ -19,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       }
     ],
-    sitemap: "https://zayronsystems.com/sitemap.xml",
+    sitemap: "https://pongofly.com/sitemap.xml",
   };
 }

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, Zap, DollarSign, Clock, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import BrandWordmark from "../../components/BrandWordmark";
 
 export default function PartnersPage() {
   return (
@@ -17,8 +18,8 @@ export default function PartnersPage() {
 
       {/* Navigation */}
       <header className="relative z-10 flex flex-none items-center justify-between px-6 py-8 md:px-12 md:py-10">
-        <Link href="/">
-          <img src="/logo.png" alt="ZayronSystems Logo" className="h-8 md:h-10 w-auto object-contain hover:opacity-70 transition-opacity" />
+        <Link href="/" className="hover:opacity-80 transition-opacity">
+          <BrandWordmark size="md" />
         </Link>
         <Link href="/" className="group flex items-center gap-2 text-white/50 hover:text-white text-xs font-bold uppercase tracking-widest transition-colors">
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
@@ -36,7 +37,7 @@ export default function PartnersPage() {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 text-[#00ff66] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-10"
           >
             <Zap size={14} className="animate-pulse" />
-            ZayronSystems Partner Protocol
+            Pongofly Partner Protocol
           </motion.div>
           
           <motion.h1 

@@ -24,7 +24,7 @@ const dict = {
       ]
     },
     us: {
-      title: "ZayronSystems",
+      title: "Pongofly",
       subtitle: "Digital Behavior Engineers",
       points: [
         "Custom software engineered from scratch for your exact business",
@@ -55,7 +55,7 @@ const dict = {
       ]
     },
     us: {
-      title: "ZayronSystems",
+      title: "Pongofly",
       subtitle: "Ingenieros de Comportamiento Digital",
       points: [
         "Software a medida programado desde cero para tu negocio",
@@ -156,7 +156,7 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
                 </ul>
             </motion.div>
 
-            {/* ZayronSystems (Us) */}
+            {/* Pongofly (Us) */}
             <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#00ff66]/30 bg-[#00ff66]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(0,255,102,0.05)]">
                 <div className="absolute -bottom-4 md:-bottom-8 -right-2 md:-right-4 opacity-[0.04] pointer-events-none select-none overflow-visible">
                     <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#00ff66] uppercase tracking-tighter">US</span>

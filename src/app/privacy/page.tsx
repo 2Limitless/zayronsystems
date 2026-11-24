@@ -13,15 +13,15 @@ export default function PrivacyPolicy() {
         <div className="space-y-8 text-white/70 text-sm md:text-base font-light leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">1. Information We Collect</h2>
-            <p>ZayronSystems collects information to provide better services to our enterprise clients. This includes information you provide directly (such as names, emails, and corporate details during consultation applications) and automated data (such as IP addresses and interaction metrics on our sovereign digital infrastructure).</p>
+            <p>Pongofly collects information to provide better services to our enterprise clients. This includes information you provide directly (such as names, emails, and corporate details during consultation applications) and automated data (such as IP addresses and interaction metrics on our sovereign digital infrastructure).</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">2. How We Use Information</h2>
-            <p>We use the collected information to design, develop, and deploy bespoke enterprise software, improve our predictive algorithms, and communicate regarding project milestones. ZayronSystems never sells your operational data to third-party data brokers.</p>
+            <p>We use the collected information to design, develop, and deploy bespoke enterprise software, improve our predictive algorithms, and communicate regarding project milestones. Pongofly never sells your operational data to third-party data brokers.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">3. Data Sovereignty</h2>
-            <p>At ZayronSystems, we believe in Data Sovereignty. Any data processed through the custom software we build for you remains 100% yours. Our internal collection only pertains to our direct communication and marketing analytics on this website.</p>
+            <p>At Pongofly, we believe in Data Sovereignty. Any data processed through the custom software we build for you remains 100% yours. Our internal collection only pertains to our direct communication and marketing analytics on this website.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">4. Cookies & Tracking</h2>
@@ -29,9 +29,9 @@ export default function PrivacyPolicy() {
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">5. Contact</h2>
-            <p>For any inquiries regarding our privacy practices, please contact our legal team at legal@zayronsystems.com.</p>
+            <p>For any inquiries regarding our privacy practices, please contact us at aaron@pongofly.com.</p>
           </section>
-          <p className="pt-8 text-xs text-white/40 border-t border-white/10 uppercase tracking-widest">Last Updated: October 2026</p>
+          <p className="pt-8 text-xs text-white/40 border-t border-white/10 uppercase tracking-widest">Last Updated: November 2026</p>
         </div>
       </div>
     </main>

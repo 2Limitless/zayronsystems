@@ -3,31 +3,31 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://zayronsystems.com',
+      url: 'https://pongofly.com',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
-      url: 'https://zayronsystems.com/partners',
+      url: 'https://pongofly.com/partners',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: 'https://zayronsystems.com/barbers',
+      url: 'https://pongofly.com/barbers',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://zayronsystems.com/privacy',
+      url: 'https://pongofly.com/privacy',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: 'https://zayronsystems.com/terms',
+      url: 'https://pongofly.com/terms',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,

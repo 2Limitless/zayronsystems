@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import type { Language } from "../app/page";
 import { Shield, Zap, Lock, ArrowRight, CheckCircle2 } from "lucide-react";
+import BrandWordmark from "./BrandWordmark";
 
 const dict = {
   en: {
@@ -118,7 +119,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
           </div>
           <span className="hidden md:inline">{t.back}</span>
         </motion.button>
-        <img src="/logo.png" alt="ZayronSystems" className="h-8 md:h-10 opacity-80" />
+        <BrandWordmark size="sm" className="opacity-90" />
       </div>
 
       <div className="flex-1 w-full max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col lg:flex-row items-center justify-center gap-16 relative z-10">

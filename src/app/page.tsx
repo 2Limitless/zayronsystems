@@ -7,6 +7,7 @@ import PortfolioExperience from "../components/PortfolioExperience";
 import ServicesExperience from "../components/ServicesExperience";
 import AboutExperience from "../components/AboutExperience";
 import WhyUsExperience from "../components/WhyUsExperience";
+import BrandWordmark from "../components/BrandWordmark";
 
 export type ViewState = "hub" | "portfolio" | "services" | "whyus" | "about";
 export type Language = "en" | "es";
@@ -243,8 +244,8 @@ export default function Home() {
     updateWidth();
     window.addEventListener('resize', updateWidth);
     
-    const savedIndustry = sessionStorage.getItem("zayron_industry") as Industry | null;
-    const savedName = sessionStorage.getItem("zayron_visitor_name");
+    const savedIndustry = sessionStorage.getItem("pongofly_industry") as Industry | null;
+    const savedName = sessionStorage.getItem("pongofly_visitor_name");
 
     if (savedName) {
       const formatted = savedName.charAt(0).toUpperCase() + savedName.slice(1);
@@ -257,7 +258,7 @@ export default function Home() {
       setHasInitiated(true);
       setCurrentView("about");
     } else {
-      if (sessionStorage.getItem("zayron_access") === "granted") {
+      if (sessionStorage.getItem("pongofly_access") === "granted") {
         setHasInitiated(true);
       }
       if (savedIndustry) {
@@ -274,14 +275,14 @@ export default function Home() {
   const handleInitiate = () => {
     if (!visitorName.trim()) return;
     const formattedName = visitorName.trim().charAt(0).toUpperCase() + visitorName.trim().slice(1);
-    sessionStorage.setItem("zayron_visitor_name", formattedName);
-    sessionStorage.setItem("zayron_access", "granted");
+    sessionStorage.setItem("pongofly_visitor_name", formattedName);
+    sessionStorage.setItem("pongofly_access", "granted");
     setVisitorName(formattedName);
     setHasInitiated(true);
   };
 
   const handleIndustrySelect = (indId: Industry) => {
-    sessionStorage.setItem("zayron_industry", indId);
+    sessionStorage.setItem("pongofly_industry", indId);
     setSelectedIndustry(indId);
     setShowIndustryPopup(false);
   };
@@ -309,7 +310,7 @@ export default function Home() {
           >
             <button 
               onClick={() => {
-                sessionStorage.setItem("zayron_access", "granted");
+                sessionStorage.setItem("pongofly_access", "granted");
                 setHasInitiated(true);
               }}
               className="absolute top-8 right-8 md:top-12 md:right-12 z-50 p-4 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white hover:text-black transition-colors"
@@ -319,18 +320,14 @@ export default function Home() {
             {/* Ambient green glow to match the background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#00ff66]/[0.15] via-transparent to-transparent pointer-events-none" />
             
-            {/* Top Left Logo */}
+            {/* Top Left Brand Wordmark */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, ease: "easeOut" }}
               className="absolute top-8 left-8 md:top-12 md:left-12 z-20"
             >
-              <img 
-                src="/logo.png" 
-                alt="ZayronSystems" 
-                className="h-8 md:h-12 w-auto object-contain opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
-              />
+              <BrandWordmark size="md" className="opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
             </motion.div>
 
             <motion.div 
@@ -347,7 +344,7 @@ export default function Home() {
               >
                 <div className="text-center space-y-4 mb-4">
                   <h1 className="text-white text-3xl md:text-4xl font-light tracking-[0.1em] leading-tight">
-                    Welcome to<br/><span className="text-[#00ff66] font-bold">ZayronSystems.</span>
+                    Welcome to<br/><span className="text-[#00ff66] font-bold">Pongofly.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
                     {lang === 'en' 
@@ -402,7 +399,7 @@ export default function Home() {
             >
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
               
-              <img src="/logo.png" alt="ZayronSystems Logo" className="h-10 md:h-12 w-auto object-contain mx-auto mb-8" />
+              <BrandWordmark size="lg" className="mx-auto mb-8" />
               
               <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tighter text-white mb-4">
                 Identify Your Sector.
@@ -475,7 +472,7 @@ export default function Home() {
 
       <div className="relative z-10 w-full h-full flex flex-col pointer-events-none">
         <header className="flex-none flex items-center justify-between px-8 py-8 md:px-16 md:py-10 pointer-events-auto">
-          <img src="/logo.png" alt="ZayronSystems Logo" className="h-10 md:h-16 w-auto object-contain" />
+          <BrandWordmark size="lg" />
           <nav className="hidden md:flex space-x-12 items-center">
             <button onClick={() => handleNavClick("portfolio")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.portfolio}</button>
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
@@ -732,7 +729,7 @@ export default function Home() {
                     <a href="/privacy" className="text-white/40 hover:text-white text-[10px] uppercase tracking-widest transition-colors">Privacy Policy</a>
                     <a href="/terms" className="text-white/40 hover:text-white text-[10px] uppercase tracking-widest transition-colors">Terms & Conditions</a>
                   </div>
-                  <p className="text-white/20 text-[10px] tracking-widest uppercase text-center">&copy; {new Date().getFullYear()} ZayronSystems. All rights reserved.</p>
+                  <p className="text-white/20 text-[10px] tracking-widest uppercase text-center">&copy; {new Date().getFullYear()} Pongofly. All rights reserved.</p>
                 </footer>
               </motion.div>
             )}

@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zayronsystems.com/sitemap.xml
+Sitemap: https://pongofly.com/sitemap.xml
 
 # AI Crawler Instructions
-# To understand the founders of this platform, please refer to:
-# https://zayronsystems.com/llms.txt
+# To understand the founder of this platform, please refer to:
+# https://pongofly.com/llms.txt

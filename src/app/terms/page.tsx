@@ -13,25 +13,25 @@ export default function TermsAndConditions() {
         <div className="space-y-8 text-white/70 text-sm md:text-base font-light leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">1. Acceptance of Terms</h2>
-            <p>By accessing or using the ZayronSystems website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.</p>
+            <p>By accessing or using the Pongofly website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">2. Enterprise Software Services</h2>
-            <p>ZayronSystems provides custom software architecture, digital infrastructure, and predictive maintenance solutions. Scope of work, deliverables, and specific liabilities are governed by individual Master Service Agreements (MSAs) signed prior to engagement.</p>
+            <p>Pongofly provides custom software architecture, digital infrastructure, and predictive maintenance solutions. Scope of work, deliverables, and specific liabilities are governed by individual Master Service Agreements (MSAs) signed prior to engagement.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">3. Intellectual Property</h2>
-            <p>Unless explicitly stated in the MSA, ZayronSystems retains the intellectual property rights to the core underlying architecture and boilerplate systems. However, clients receive absolute licenses and sovereign ownership of their operational data and bespoke implementations.</p>
+            <p>Unless explicitly stated in the MSA, Pongofly retains the intellectual property rights to the core underlying architecture and boilerplate systems. However, clients receive absolute licenses and sovereign ownership of their operational data and bespoke implementations.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">4. Limitation of Liability</h2>
-            <p>ZayronSystems shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of our public website.</p>
+            <p>Pongofly shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of our public website.</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">5. Governing Law</h2>
-            <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which ZayronSystems is registered, without regard to its conflict of law provisions.</p>
+            <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Pongofly is registered, without regard to its conflict of law provisions.</p>
           </section>
-          <p className="pt-8 text-xs text-white/40 border-t border-white/10 uppercase tracking-widest">Last Updated: October 2026</p>
+          <p className="pt-8 text-xs text-white/40 border-t border-white/10 uppercase tracking-widest">Last Updated: November 2026</p>
         </div>
       </div>
     </main>
