@@ -50,10 +50,10 @@ const dict = {
       general: {
         pills: ["Digital Behavior Engineers", "Built-In AI SEO & GEO", "High-Converting Webapps"],
         headline: "Most websites look good. Ours actually make customers buy.",
-        subhead: "You don't have a traffic problem—you have a hesitation problem. When someone visits your site, their brain decides in 3 seconds whether to trust you or close the tab. We build custom software and web applications engineered to eliminate hesitation and make choosing you the easiest decision.",
+        subhead: "You don't have a traffic problemâ€”you have a hesitation problem. When someone visits your site, their brain decides in 3 seconds whether to trust you or close the tab. We build custom software and web applications engineered to eliminate hesitation and make choosing you the easiest decision.",
         stats: [
           { num: "3", title: "Seconds to Trust", desc: "A customer decides in 3 seconds whether your site feels legitimate or amateur. We eliminate the red flags that cause immediate bounce." },
-          { num: "3x", title: "Decision Speed", desc: "Clear, frictionless pathways remove hesitation—guiding interested visitors toward checkout and inquiries up to 3x faster." },
+          { num: "3x", title: "Decision Speed", desc: "Clear, frictionless pathways remove hesitationâ€”guiding interested visitors toward checkout and inquiries up to 3x faster." },
           { num: "100", title: "Total Ownership", desc: "No monthly template fees or platform locks. You own 100% of your code, your customer list, and your digital assets." }
         ],
         cta1: "Request Behavioral Audit",
@@ -78,7 +78,7 @@ const dict = {
         stats: [
           { num: "30", title: "Margins Kept", desc: "Stop giving 30% away on every ticket. Your own custom ordering platform puts that entire cut directly back in your register." },
           { num: "100", title: "Customer Ownership", desc: "Own your customer contacts and order history. Send direct incentives whenever you want without paying a middleman." },
-          { num: "0", title: "Commission Cuts", desc: "Bespoke ordering and kitchen-display integration that you own outright—with zero per-order fees." }
+          { num: "0", title: "Commission Cuts", desc: "Bespoke ordering and kitchen-display integration that you own outrightâ€”with zero per-order fees." }
         ],
         cta1: "Reclaim Your Margins",
         cta2: "View Restaurant Platform"
@@ -96,7 +96,7 @@ const dict = {
         cta2: "View Agent Stack"
       },
       seoShowcase: {
-        badge: "INCLUDED WITH OUR SITES • BUILT-IN ARCHITECTURE",
+        badge: "INCLUDED WITH OUR SITES â€¢ BUILT-IN ARCHITECTURE",
         title: "The Best Technical SEO & Modern AI SEO.",
         titleHighlight: "Built In Standard.",
         desc: "We engineer every website and web application with elite Technical SEO and Generative Engine Optimization (GEO) built directly into the foundation. When potential clients search on Google or ask questions on ChatGPT, Perplexity, and Gemini, your platform is structured to rank at the top and be cited as the definitive authority.",
@@ -105,7 +105,7 @@ const dict = {
             tag: "AI SEARCH READY",
             title: "Generative Engine Optimization (GEO)",
             desc: "Structured semantic JSON-LD knowledge graphs engineered specifically so ChatGPT, Perplexity, and Google AI Overviews cite and recommend your brand when customers query AI.",
-            metric: "ChatGPT • Perplexity • Gemini"
+            metric: "ChatGPT â€¢ Perplexity â€¢ Gemini"
           },
           {
             tag: "GOOGLE DOMINANCE",
@@ -126,83 +126,83 @@ const dict = {
     dock: { hub: "Hub" }
   },
   es: {
-    nav: { portfolio: "Casos de Estudio", services: "Capacidades", whyus: "Por Qué Nosotros", about: "Contacto", partners: "Portal de Socios" },
+    nav: { portfolio: "Casos de Estudio", services: "Capacidades", whyus: "Por QuÃ© Nosotros", about: "Contacto", partners: "Portal de Socios" },
     hub: {
       general: {
-        pills: ["Ingenieros de Comportamiento Digital", "SEO & AI SEO Incluido", "Webapps de Alta Conversión"],
-        headline: "La mayoría de sitios se ven bien. Los nuestros hacen que los clientes compren.",
-        subhead: "No tienes un problema de tráfico: tienes un problema de vacilación. Cuando alguien entra a tu web, su cerebro decide en 3 segundos si confiar o cerrar la pestaña. Diseñamos software y aplicaciones web para eliminar la duda y hacer que elegirte sea la decisión más fácil.",
+        pills: ["Ingenieros de Comportamiento Digital", "SEO & AI SEO Incluido", "Webapps de Alta ConversiÃ³n"],
+        headline: "La mayorÃ­a de sitios se ven bien. Los nuestros hacen que los clientes compren.",
+        subhead: "No tienes un problema de trÃ¡fico: tienes un problema de vacilaciÃ³n. Cuando alguien entra a tu web, su cerebro decide en 3 segundos si confiar o cerrar la pestaÃ±a. DiseÃ±amos software y aplicaciones web para eliminar la duda y hacer que elegirte sea la decisiÃ³n mÃ¡s fÃ¡cil.",
         stats: [
-          { num: "3", title: "Segundos para Confiar", desc: "Un cliente decide en 3 segundos si tu web inspira autoridad. Eliminamos las señales de alerta que provocan abandonos inmediatos." },
-          { num: "3x", title: "Velocidad de Decisión", desc: "Rutas limpias y sin fricción eliminan la indecisión, guiando a los visitantes hacia la compra hasta 3 veces más rápido." },
-          { num: "100", title: "Propiedad Total", desc: "Sin cuotas de plantillas ni bloqueos de plataformas. Eres dueño del 100% de tu código, datos y clientes." }
+          { num: "3", title: "Segundos para Confiar", desc: "Un cliente decide en 3 segundos si tu web inspira autoridad. Eliminamos las seÃ±ales de alerta que provocan abandonos inmediatos." },
+          { num: "3x", title: "Velocidad de DecisiÃ³n", desc: "Rutas limpias y sin fricciÃ³n eliminan la indecisiÃ³n, guiando a los visitantes hacia la compra hasta 3 veces mÃ¡s rÃ¡pido." },
+          { num: "100", title: "Propiedad Total", desc: "Sin cuotas de plantillas ni bloqueos de plataformas. Eres dueÃ±o del 100% de tu cÃ³digo, datos y clientes." }
         ],
-        cta1: "Solicitar Auditoría",
+        cta1: "Solicitar AuditorÃ­a",
         cta2: "Ver Casos de Estudio"
       },
       industrial: {
-        pills: ["Prevención de Errores", "Flujos Simples", "Velocidad Operativa"],
+        pills: ["PrevenciÃ³n de Errores", "Flujos Simples", "Velocidad Operativa"],
         headline: "Elimina los errores operativos antes de que ocurran.",
-        subhead: "Cuando el software interno es confuso, tu equipo comete errores costosos. Construimos paneles y herramientas operativas tan simples y rápidas que tu personal acierta a la primera, siempre.",
+        subhead: "Cuando el software interno es confuso, tu equipo comete errores costosos. Construimos paneles y herramientas operativas tan simples y rÃ¡pidas que tu personal acierta a la primera, siempre.",
         stats: [
-          { num: "50", title: "Tiempo Protegido", desc: "Alertas predictivas y seguimiento en tiempo real detienen fallos en equipos antes de que paralicen la producción." },
-          { num: "0", title: "Fricción de Flujo", desc: "Herramientas diseñadas en base a hábitos reales en planta evitan confusiones y pérdidas de tiempo." },
-          { num: "25", title: "Presupuesto Recuperado", desc: "Recupera horas perdidas y elimina herramientas innecesarias con un único centro de mando operativo." }
+          { num: "50", title: "Tiempo Protegido", desc: "Alertas predictivas y seguimiento en tiempo real detienen fallos en equipos antes de que paralicen la producciÃ³n." },
+          { num: "0", title: "FricciÃ³n de Flujo", desc: "Herramientas diseÃ±adas en base a hÃ¡bitos reales en planta evitan confusiones y pÃ©rdidas de tiempo." },
+          { num: "25", title: "Presupuesto Recuperado", desc: "Recupera horas perdidas y elimina herramientas innecesarias con un Ãºnico centro de mando operativo." }
         ],
         cta1: "Optimizar Operaciones",
         cta2: "Ver Plataforma Industrial"
       },
       restaurants: {
-        pills: ["Apps de Pedido Directo", "Hábitos de Clientes", "0% Comisiones"],
-        headline: "Reprograma los hábitos de pedido lejos de apps de terceros.",
-        subhead: "DoorDash se queda con el 30% porque su app hace que pedir sea facilísimo. Construimos tu propia webapp de pedidos con esos mismos bucles de hábito para que te pidan directamente a ti, siempre.",
+        pills: ["Apps de Pedido Directo", "HÃ¡bitos de Clientes", "0% Comisiones"],
+        headline: "Reprograma los hÃ¡bitos de pedido lejos de apps de terceros.",
+        subhead: "DoorDash se queda con el 30% porque su app hace que pedir sea facilÃ­simo. Construimos tu propia webapp de pedidos con esos mismos bucles de hÃ¡bito para que te pidan directamente a ti, siempre.",
         stats: [
-          { num: "30", title: "Márgenes Conservados", desc: "Deja de regalar el 30% en cada orden. Tu propia plataforma pone ese margen directamente en tu caja registradora." },
-          { num: "100", title: "Control de Clientes", desc: "Sé dueño de tus contactos e historial de pedidos. Lanza promociones directas sin pagar peajes a intermediarios." },
-          { num: "0", title: "Comisiones por Orden", desc: "Pedidos e integración con cocina a medida que te pertenecen por completo, sin recargos por venta." }
+          { num: "30", title: "MÃ¡rgenes Conservados", desc: "Deja de regalar el 30% en cada orden. Tu propia plataforma pone ese margen directamente en tu caja registradora." },
+          { num: "100", title: "Control de Clientes", desc: "SÃ© dueÃ±o de tus contactos e historial de pedidos. Lanza promociones directas sin pagar peajes a intermediarios." },
+          { num: "0", title: "Comisiones por Orden", desc: "Pedidos e integraciÃ³n con cocina a medida que te pertenecen por completo, sin recargos por venta." }
         ],
-        cta1: "Recupera tus Márgenes",
+        cta1: "Recupera tus MÃ¡rgenes",
         cta2: "Ver Plataforma de Restaurantes"
       },
       realestate: {
-        pills: ["Autoridad Inmediata", "Portales VIP", "Captación Directa"],
-        headline: "Impón autoridad instantánea ante clientes de alto poder adquisitivo.",
-        subhead: "Los compradores y vendedores exigentes no confían en agentes con webs genéricas de 2018. Diseñamos webapps exclusivas con señales de estatus, reservas privadas y portales VIP que te convierten en la opción evidente.",
+        pills: ["Autoridad Inmediata", "Portales VIP", "CaptaciÃ³n Directa"],
+        headline: "ImpÃ³n autoridad instantÃ¡nea ante clientes de alto poder adquisitivo.",
+        subhead: "Los compradores y vendedores exigentes no confÃ­an en agentes con webs genÃ©ricas de 2018. DiseÃ±amos webapps exclusivas con seÃ±ales de estatus, reservas privadas y portales VIP que te convierten en la opciÃ³n evidente.",
         stats: [
-          { num: "100", title: "Comisión Directa", desc: "Capta y gestiona clientes de alto valor directamente en tu propio portal sin repartir leads con plataformas externas." },
-          { num: "3", title: "Segundos para Impresionar", desc: "Establece autoridad indiscutible en cuanto abran tu enlace. La presentación de lujo genera confianza de lujo." },
-          { num: "0", title: "Leads Perdidos", desc: "Reservas sin fricción y respuestas inmediatas garantizan que los compradores serios nunca se vayan con la competencia." }
+          { num: "100", title: "ComisiÃ³n Directa", desc: "Capta y gestiona clientes de alto valor directamente en tu propio portal sin repartir leads con plataformas externas." },
+          { num: "3", title: "Segundos para Impresionar", desc: "Establece autoridad indiscutible en cuanto abran tu enlace. La presentaciÃ³n de lujo genera confianza de lujo." },
+          { num: "0", title: "Leads Perdidos", desc: "Reservas sin fricciÃ³n y respuestas inmediatas garantizan que los compradores serios nunca se vayan con la competencia." }
         ],
         cta1: "Eleva tu Presencia",
         cta2: "Ver Stack Inmobiliario"
       },
       seoShowcase: {
-        badge: "INTEGRADO EN NUESTROS SITIOS • ARQUITECTURA NATIVA",
-        title: "El Mejor SEO Técnico y SEO para IA.",
+        badge: "INTEGRADO EN NUESTROS SITIOS â€¢ ARQUITECTURA NATIVA",
+        title: "El Mejor SEO TÃ©cnico y SEO para IA.",
         titleHighlight: "Integrado de Serie.",
-        desc: "Diseñamos cada sitio web y aplicación con el mejor SEO técnico y optimización para motores generativos (GEO) integrados en su base. Cuando tus clientes buscan en Google o consultan en ChatGPT, Perplexity y Gemini, tu plataforma está estructurada para liderar y ser recomendada como la máxima autoridad.",
+        desc: "DiseÃ±amos cada sitio web y aplicaciÃ³n con el mejor SEO tÃ©cnico y optimizaciÃ³n para motores generativos (GEO) integrados en su base. Cuando tus clientes buscan en Google o consultan en ChatGPT, Perplexity y Gemini, tu plataforma estÃ¡ estructurada para liderar y ser recomendada como la mÃ¡xima autoridad.",
         cards: [
           {
             tag: "LISTO PARA IA",
-            title: "Optimización para Motores de IA (GEO)",
-            desc: "Grafos de conocimiento semánticos JSON-LD diseñados para que ChatGPT, Perplexity y las respuestas de Google recomienden tu negocio al responder.",
-            metric: "ChatGPT • Perplexity • Gemini"
+            title: "OptimizaciÃ³n para Motores de IA (GEO)",
+            desc: "Grafos de conocimiento semÃ¡nticos JSON-LD diseÃ±ados para que ChatGPT, Perplexity y las respuestas de Google recomienden tu negocio al responder.",
+            metric: "ChatGPT â€¢ Perplexity â€¢ Gemini"
           },
           {
             tag: "DOMINIO EN GOOGLE",
             title: "100/100 Core Web Vitals",
-            desc: "Carga en submilisegundos, cero saltos visuales y arquitectura semántica limpia que los algoritmos premian con máxima autoridad orgánica.",
-            metric: "< 0.4s Carga Instantánea"
+            desc: "Carga en submilisegundos, cero saltos visuales y arquitectura semÃ¡ntica limpia que los algoritmos premian con mÃ¡xima autoridad orgÃ¡nica.",
+            metric: "< 0.4s Carga InstantÃ¡nea"
           },
           {
             tag: "ARQUITECTURA CENTRAL",
-            title: "Integración Nativa en el Código",
-            desc: "Sin plugins frágiles ni herramientas externas. La optimización técnica de búsqueda se programa directamente en la estructura de tu software desde el primer día.",
-            metric: "Propiedad Total del Código"
+            title: "IntegraciÃ³n Nativa en el CÃ³digo",
+            desc: "Sin plugins frÃ¡giles ni herramientas externas. La optimizaciÃ³n tÃ©cnica de bÃºsqueda se programa directamente en la estructura de tu software desde el primer dÃ­a.",
+            metric: "Propiedad Total del CÃ³digo"
           }
         ]
       },
-      subtleSocial: "Únete a los empresarios que están modernizando su presencia digital."
+      subtleSocial: "Ãšnete a los empresarios que estÃ¡n modernizando su presencia digital."
     },
     dock: { hub: "Inicio" }
   }
@@ -306,7 +306,7 @@ export default function Home() {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 1.1, filter: "blur(20px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[1000] bg-[#1c0904] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
+            className="fixed inset-0 z-[1000] bg-[#0f071f] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
           >
             <button 
               onClick={() => {
@@ -317,8 +317,8 @@ export default function Home() {
             >
               <X size={24} />
             </button>
-            {/* Ambient russet glow to match the background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#C84B1C]/[0.18] via-transparent to-transparent pointer-events-none" />
+            {/* Ambient purple glow to match the background */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#8B5CF6]/[0.18] via-transparent to-transparent pointer-events-none" />
             
             {/* Top Left Brand Wordmark */}
             <motion.div
@@ -344,12 +344,12 @@ export default function Home() {
               >
                 <div className="text-center space-y-4 mb-4">
                   <h1 className="text-white text-3xl md:text-4xl font-light tracking-[0.1em] leading-tight">
-                    Welcome to<br/><span className="text-[#C84B1C] font-bold">Pongofly.</span>
+                    Welcome to<br/><span className="text-[#8B5CF6] font-bold">Pongofly.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
                     {lang === 'en' 
                       ? "Custom websites and software engineered around buyer psychology, with best-in-class SEO and AI search dominance built in standard." 
-                      : "Sitios web y software a medida basados en psicología de compra, con el mejor SEO y posicionamiento en IA incluido de serie."}
+                      : "Sitios web y software a medida basados en psicologÃ­a de compra, con el mejor SEO y posicionamiento en IA incluido de serie."}
                   </p>
                 </div>
 
@@ -362,14 +362,14 @@ export default function Home() {
                   }}
                   maxLength={20}
                   placeholder="ENTER YOUR NAME"
-                  className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#C84B1C] transition-colors placeholder:text-white/40 font-light"
+                  className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#8B5CF6] transition-colors placeholder:text-white/40 font-light"
                   autoFocus
                 />
                 
                 <button 
                   onClick={handleInitiate}
                   disabled={!visitorName.trim()}
-                  className="group relative w-full py-5 bg-transparent border border-[#C84B1C]/40 hover:border-[#C84B1C] hover:bg-[#C84B1C]/15 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#C84B1C]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(200,75,28,0)] hover:shadow-[0_0_60px_rgba(200,75,28,0.2)]"
+                  className="group relative w-full py-5 bg-transparent border border-[#8B5CF6]/40 hover:border-[#8B5CF6] hover:bg-[#8B5CF6]/15 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#8B5CF6]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(139,92,246,0)] hover:shadow-[0_0_60px_rgba(139,92,246,0.2)]"
                 >
                   <span className="relative z-10 text-white/80 group-hover:text-white disabled:group-hover:text-white/80 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
                     Enter Hub
@@ -413,9 +413,9 @@ export default function Home() {
                   <button
                     key={ind.id}
                     onClick={() => handleIndustrySelect(ind.id)}
-                    className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#C84B1C]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)]"
+                    className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#8B5CF6]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(139,92,246,0.15)]"
                   >
-                     <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 via-[#C84B1C]/0 to-[#C84B1C]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/0 via-[#8B5CF6]/0 to-[#8B5CF6]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
                      <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
                        {ind.id === 'realestate' && lang === 'en' ? 'Real Estate' : ind.label[lang].split(" ")[0]}
                      </span>
@@ -427,9 +427,9 @@ export default function Home() {
                 
                 <a
                   href="/barbers"
-                  className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#C84B1C]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)] block no-underline"
+                  className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#8B5CF6]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(139,92,246,0.15)] block no-underline"
                 >
-                   <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 via-[#C84B1C]/0 to-[#C84B1C]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/0 via-[#8B5CF6]/0 to-[#8B5CF6]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
                    <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
                      {lang === 'es' ? "Barberos" : "Barbers"}
                    </span>
@@ -442,10 +442,10 @@ export default function Home() {
               <div className="mt-4">
                 <a
                   href="/partners"
-                  className="group relative overflow-hidden rounded-2xl border border-[#C84B1C]/35 bg-[#C84B1C]/10 p-4 md:p-6 hover:border-[#C84B1C]/70 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.2)] block no-underline w-full text-center"
+                  className="group relative overflow-hidden rounded-2xl border border-[#8B5CF6]/35 bg-[#8B5CF6]/10 p-4 md:p-6 hover:border-[#8B5CF6]/70 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(139,92,246,0.2)] block no-underline w-full text-center"
                 >
-                   <div className="absolute inset-0 bg-gradient-to-r from-[#C84B1C]/0 via-[#C84B1C]/15 to-[#C84B1C]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                   <span className="relative z-10 text-[#E06D3B] font-bold text-sm md:text-base tracking-widest uppercase block mb-1">
+                   <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6]/0 via-[#8B5CF6]/15 to-[#8B5CF6]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <span className="relative z-10 text-[#A78BFA] font-bold text-sm md:text-base tracking-widest uppercase block mb-1">
                      Referral Portal (Earn 30%)
                    </span>
                    <span className="relative z-10 text-white/50 text-[10px] tracking-widest uppercase block">
@@ -478,7 +478,7 @@ export default function Home() {
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
             <button onClick={() => handleNavClick("whyus")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.whyus}</button>
             <button onClick={() => handleNavClick("about")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.about}</button>
-            <a href="/partners" className="text-[#E06D3B]/90 hover:text-[#E06D3B] text-xs tracking-widest uppercase transition-colors drop-shadow-[0_0_8px_rgba(200,75,28,0.35)]">{t.nav.partners}</a>
+            <a href="/partners" className="text-[#A78BFA]/90 hover:text-[#A78BFA] text-xs tracking-widest uppercase transition-colors drop-shadow-[0_0_8px_rgba(139,92,246,0.35)]">{t.nav.partners}</a>
             
             {/* Language Toggle */}
             <button 
@@ -498,7 +498,7 @@ export default function Home() {
               <Globe size={16} />
               {lang}
             </button>
-            <a href="/partners" className="flex items-center justify-center px-4 py-2 rounded-full border border-[#C84B1C]/40 bg-[#C84B1C]/15 text-[#E06D3B] text-xs font-bold uppercase">
+            <a href="/partners" className="flex items-center justify-center px-4 py-2 rounded-full border border-[#8B5CF6]/40 bg-[#8B5CF6]/15 text-[#A78BFA] text-xs font-bold uppercase">
               {t.nav.partners}
             </a>
           </div>
@@ -564,7 +564,7 @@ export default function Home() {
                       </div>
 
                       <h1 className="font-sans text-5xl md:text-[70px] lg:text-[85px] leading-[0.9] text-center font-bold tracking-tighter bg-gradient-to-b from-white via-white/90 to-white/30 bg-clip-text text-transparent pb-4 max-w-6xl">
-                        {visitorName && <span className="text-[#C84B1C] italic">{visitorName},</span>} <br className="hidden md:block"/> {hubData.headline}
+                        {visitorName && <span className="text-[#8B5CF6] italic">{visitorName},</span>} <br className="hidden md:block"/> {hubData.headline}
                       </h1>
                       
                       <p className="text-white/60 font-sans text-sm md:text-base font-light max-w-2xl text-center leading-relaxed mb-12">
@@ -584,7 +584,7 @@ export default function Home() {
                               <div className="flex items-center gap-2 mb-1">
                                 <span className="text-4xl md:text-5xl font-bold font-sans tracking-tighter text-white">{stat.num}<span className="text-white/40 text-3xl">{stat.num !== "0" && stat.num !== "3x" && stat.num !== "5x" ? "%" : ""}</span></span>
                                 <motion.div animate={{ y: [0, -3, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
-                                  <ArrowUp className="text-[#C84B1C] w-5 h-5 md:w-6 md:h-6 drop-shadow-[0_0_15px_rgba(200,75,28,0.7)]" strokeWidth={3} />
+                                  <ArrowUp className="text-[#8B5CF6] w-5 h-5 md:w-6 md:h-6 drop-shadow-[0_0_15px_rgba(139,92,246,0.7)]" strokeWidth={3} />
                                 </motion.div>
                               </div>
                               <h4 className="text-white text-sm font-bold mb-2 tracking-wide uppercase">{stat.title}</h4>
@@ -615,7 +615,7 @@ export default function Home() {
                           <motion.span 
                             animate={{ x: [0, 3, 0] }} 
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                            className="text-[#C84B1C] text-lg leading-none inline-block ml-2"
+                            className="text-[#8B5CF6] text-lg leading-none inline-block ml-2"
                           >
                             &rarr;
                           </motion.span>
@@ -631,20 +631,20 @@ export default function Home() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
-                        className="mt-16 md:mt-20 w-full max-w-5xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-[#C84B1C]/35 bg-gradient-to-b from-[#C84B1C]/[0.12] via-white/[0.02] to-transparent p-6 md:p-12 backdrop-blur-xl relative overflow-hidden shadow-[0_0_80px_rgba(200,75,28,0.1)] pointer-events-auto"
+                        className="mt-16 md:mt-20 w-full max-w-5xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-[#8B5CF6]/35 bg-gradient-to-b from-[#8B5CF6]/[0.12] via-white/[0.02] to-transparent p-6 md:p-12 backdrop-blur-xl relative overflow-hidden shadow-[0_0_80px_rgba(139,92,246,0.1)] pointer-events-auto"
                       >
                         {/* Ambient top right glow */}
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#C84B1C]/15 blur-[100px] rounded-full pointer-events-none" />
+                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#8B5CF6]/15 blur-[100px] rounded-full pointer-events-none" />
 
                         <div className="relative z-10 flex flex-col items-center text-center mb-10 md:mb-12">
-                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#C84B1C]/35 bg-[#C84B1C]/15 text-[#E06D3B] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-[0_0_20px_rgba(200,75,28,0.2)]">
+                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#8B5CF6]/35 bg-[#8B5CF6]/15 text-[#A78BFA] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-[0_0_20px_rgba(139,92,246,0.2)]">
                             <Sparkles className="w-3.5 h-3.5" />
                             {t.hub.seoShowcase.badge}
                           </div>
 
                           <h2 className="text-3xl md:text-5xl font-sans font-bold tracking-tight text-white mb-4 max-w-3xl leading-tight">
                             {t.hub.seoShowcase.title} <br className="hidden md:block" />
-                            <span className="text-[#C84B1C] font-light italic">{t.hub.seoShowcase.titleHighlight}</span>
+                            <span className="text-[#8B5CF6] font-light italic">{t.hub.seoShowcase.titleHighlight}</span>
                           </h2>
 
                           <p className="text-white/60 text-xs md:text-base font-light max-w-2xl leading-relaxed">
@@ -660,18 +660,18 @@ export default function Home() {
                             return (
                               <div
                                 key={idx}
-                                className="bg-black/60 border border-white/10 hover:border-[#C84B1C]/50 rounded-2xl p-6 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)] group"
+                                className="bg-black/60 border border-white/10 hover:border-[#8B5CF6]/50 rounded-2xl p-6 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-[0_10px_30px_rgba(139,92,246,0.15)] group"
                               >
                                 <div>
                                   <div className="flex items-center justify-between mb-4">
-                                    <span className="text-[10px] font-mono tracking-widest text-[#E06D3B] uppercase">
+                                    <span className="text-[10px] font-mono tracking-widest text-[#A78BFA] uppercase">
                                       {card.tag}
                                     </span>
-                                    <div className="w-8 h-8 rounded-lg bg-[#C84B1C]/15 flex items-center justify-center text-[#C84B1C] group-hover:bg-[#C84B1C] group-hover:text-white transition-colors duration-300">
+                                    <div className="w-8 h-8 rounded-lg bg-[#8B5CF6]/15 flex items-center justify-center text-[#8B5CF6] group-hover:bg-[#8B5CF6] group-hover:text-white transition-colors duration-300">
                                       <IconComponent className="w-4 h-4" />
                                     </div>
                                   </div>
-                                  <h4 className="text-white font-bold text-base md:text-lg mb-2 tracking-tight group-hover:text-[#E06D3B] transition-colors">
+                                  <h4 className="text-white font-bold text-base md:text-lg mb-2 tracking-tight group-hover:text-[#A78BFA] transition-colors">
                                     {card.title}
                                   </h4>
                                   <p className="text-white/50 text-xs leading-relaxed font-light">
@@ -692,13 +692,13 @@ export default function Home() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 0.6 }}
-                        className="mt-12 md:mt-16 w-full max-w-2xl bg-gradient-to-r from-[#C84B1C]/15 to-transparent border border-[#C84B1C]/30 rounded-3xl p-6 md:p-8 backdrop-blur-sm pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6"
+                        className="mt-12 md:mt-16 w-full max-w-2xl bg-gradient-to-r from-[#8B5CF6]/15 to-transparent border border-[#8B5CF6]/30 rounded-3xl p-6 md:p-8 backdrop-blur-sm pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6"
                       >
                         <div>
-                          <h4 className="text-[#E06D3B] font-bold text-lg md:text-xl tracking-tight mb-2">Earn 30% Commission</h4>
+                          <h4 className="text-[#A78BFA] font-bold text-lg md:text-xl tracking-tight mb-2">Earn 30% Commission</h4>
                           <p className="text-white/70 text-xs md:text-sm max-w-md">Join our Partner Program. Refer clients and earn a massive 30% commission on every closed deal. Fully transparent tracking.</p>
                         </div>
-                        <a href="/partners" className="flex-none whitespace-nowrap bg-[#C84B1C] text-white px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors shadow-[0_0_20px_rgba(200,75,28,0.35)]">
+                        <a href="/partners" className="flex-none whitespace-nowrap bg-[#8B5CF6] text-white px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors shadow-[0_0_20px_rgba(139,92,246,0.35)]">
                           View Portal
                         </a>
                       </motion.div>
@@ -846,14 +846,14 @@ export default function Home() {
                         currentView === "about"
                           ? "text-white font-bold"
                           : isLightMode
-                            ? "text-[#9A3412] font-bold bg-[#C84B1C]/20 border border-[#C84B1C] hover:bg-[#C84B1C]/35 shadow-[0_0_15px_rgba(200,75,28,0.25)]"
-                            : "text-[#E06D3B] font-bold bg-[#C84B1C]/15 hover:bg-[#C84B1C]/25 shadow-[0_0_15px_rgba(200,75,28,0.15)]"
+                            ? "text-[#6D28D9] font-bold bg-[#8B5CF6]/20 border border-[#8B5CF6] hover:bg-[#8B5CF6]/35 shadow-[0_0_15px_rgba(139,92,246,0.25)]"
+                            : "text-[#A78BFA] font-bold bg-[#8B5CF6]/15 hover:bg-[#8B5CF6]/25 shadow-[0_0_15px_rgba(139,92,246,0.15)]"
                       }`}
                     >
                       {currentView === "about" && (
                         <motion.div
                           layoutId="liquid-nav-blob"
-                          className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#C84B1C] shadow-[0_0_20px_rgba(200,75,28,0.45)]"
+                          className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#8B5CF6] shadow-[0_0_20px_rgba(139,92,246,0.45)]"
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
                       )}
@@ -870,14 +870,14 @@ export default function Home() {
                       currentView === "about"
                         ? "text-white font-bold"
                         : isLightMode
-                          ? "text-[#9A3412] font-bold bg-[#C84B1C]/20 border border-[#C84B1C] hover:bg-[#C84B1C]/35 shadow-[0_0_15px_rgba(200,75,28,0.25)]"
-                          : "text-[#E06D3B] font-bold bg-[#C84B1C]/15 hover:bg-[#C84B1C]/25 shadow-[0_0_15px_rgba(200,75,28,0.15)]"
+                          ? "text-[#6D28D9] font-bold bg-[#8B5CF6]/20 border border-[#8B5CF6] hover:bg-[#8B5CF6]/35 shadow-[0_0_15px_rgba(139,92,246,0.25)]"
+                          : "text-[#A78BFA] font-bold bg-[#8B5CF6]/15 hover:bg-[#8B5CF6]/25 shadow-[0_0_15px_rgba(139,92,246,0.15)]"
                     }`}
                   >
                     {currentView === "about" && (
                       <motion.div
                         layoutId="liquid-nav-blob"
-                        className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#C84B1C] shadow-[0_0_20px_rgba(200,75,28,0.45)]"
+                        className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#8B5CF6] shadow-[0_0_20px_rgba(139,92,246,0.45)]"
                         transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                       />
                     )}

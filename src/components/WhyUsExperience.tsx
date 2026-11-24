@@ -10,7 +10,7 @@ const dict = {
     title1: "The Real",
     title2: "Difference.",
     subtitle: "Most agencies build pages that look pretty. We engineer software that makes customers take action.",
-    desc: "You’ve probably paid for a website or app before that did absolutely nothing for your bottom line. Most designers give you a cookie-cutter template, hand you a link, and walk away. If your software doesn't trigger trust and remove buying hesitation, it's just an expensive decoration. We build custom software and web applications engineered around how customers actually think, click, and buy.",
+    desc: "Youâ€™ve probably paid for a website or app before that did absolutely nothing for your bottom line. Most designers give you a cookie-cutter template, hand you a link, and walk away. If your software doesn't trigger trust and remove buying hesitation, it's just an expensive decoration. We build custom software and web applications engineered around how customers actually think, click, and buy.",
     them: {
       title: "Standard Agencies",
       subtitle: "Template Decorators",
@@ -28,8 +28,8 @@ const dict = {
       subtitle: "Digital Behavior Engineers",
       points: [
         "Custom software engineered from scratch for your exact business",
-        "Built around customer psychology—tested to eliminate hesitation",
-        "Best-in-class Technical SEO & AI SEO (GEO) built directly into your site—engineered to win Google, ChatGPT, and Perplexity",
+        "Built around customer psychologyâ€”tested to eliminate hesitation",
+        "Best-in-class Technical SEO & AI SEO (GEO) built directly into your siteâ€”engineered to win Google, ChatGPT, and Perplexity",
         "Fast, frictionless pathways that guide visitors directly to buy",
         "Total ownership: you own 100% of your code, data, and platform",
         "Direct collaboration with senior engineers who care about your revenue"
@@ -40,17 +40,17 @@ const dict = {
     back: "Volver al Inicio",
     title1: "La Verdadera",
     title2: "Diferencia.",
-    subtitle: "La mayoría de agencias crean webs que se ven bonitas. Nosotros diseñamos software que hace que los clientes actúen.",
-    desc: "Probablemente ya has pagado antes por una web o app que no aportó nada a tus ingresos. La mayoría de diseñadores te entregan una plantilla genérica, te pasan el enlace y desaparecen. Si tu software no inspira confianza ni elimina la duda de compra, es solo un adorno costoso. Diseñamos software a medida pensado exactamente en cómo los clientes piensan, hacen clic y compran.",
+    subtitle: "La mayorÃ­a de agencias crean webs que se ven bonitas. Nosotros diseÃ±amos software que hace que los clientes actÃºen.",
+    desc: "Probablemente ya has pagado antes por una web o app que no aportÃ³ nada a tus ingresos. La mayorÃ­a de diseÃ±adores te entregan una plantilla genÃ©rica, te pasan el enlace y desaparecen. Si tu software no inspira confianza ni elimina la duda de compra, es solo un adorno costoso. DiseÃ±amos software a medida pensado exactamente en cÃ³mo los clientes piensan, hacen clic y compran.",
     them: {
-      title: "Agencias Estándar",
+      title: "Agencias EstÃ¡ndar",
       subtitle: "Decoradores de Plantillas",
       points: [
-        "Plantillas prefabricadas idénticas a las de tu competencia",
-        "Diseñadas para portafolios, no para decisiones de compra",
-        "Prácticas de SEO superficiales y obsoletas que ignoran por completo los motores de búsqueda de IA (ChatGPT, Perplexity)",
-        "Fricción invisible que hace que los visitantes salgan en segundos",
-        "Cero comprensión de psicología de compra y confianza",
+        "Plantillas prefabricadas idÃ©nticas a las de tu competencia",
+        "DiseÃ±adas para portafolios, no para decisiones de compra",
+        "PrÃ¡cticas de SEO superficiales y obsoletas que ignoran por completo los motores de bÃºsqueda de IA (ChatGPT, Perplexity)",
+        "FricciÃ³n invisible que hace que los visitantes salgan en segundos",
+        "Cero comprensiÃ³n de psicologÃ­a de compra y confianza",
         "Dependencia de plataformas externas sin un ROI demostrable"
       ]
     },
@@ -59,10 +59,10 @@ const dict = {
       subtitle: "Ingenieros de Comportamiento Digital",
       points: [
         "Software a medida programado desde cero para tu negocio",
-        "Basado en psicología del cliente—probado para eliminar la vacilación",
-        "El mejor SEO técnico y SEO para IA (GEO) integrado directamente en tu web—diseñado para liderar en Google, ChatGPT y Perplexity",
-        "Rutas rápidas y sin fricción que guían al cliente a la compra",
-        "Propiedad total: eres dueño del 100% de tu código y datos",
+        "Basado en psicologÃ­a del clienteâ€”probado para eliminar la vacilaciÃ³n",
+        "El mejor SEO tÃ©cnico y SEO para IA (GEO) integrado directamente en tu webâ€”diseÃ±ado para liderar en Google, ChatGPT y Perplexity",
+        "Rutas rÃ¡pidas y sin fricciÃ³n que guÃ­an al cliente a la compra",
+        "Propiedad total: eres dueÃ±o del 100% de tu cÃ³digo y datos",
         "Trato directo con ingenieros senior enfocados en tus ventas"
       ]
     }
@@ -119,7 +119,7 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
                 <span className="text-white/40 italic font-light">{t.title2}</span>
             </motion.h2>
 
-            <motion.h3 variants={itemVariants} className="text-xl md:text-2xl text-[#C84B1C] font-light mb-8">
+            <motion.h3 variants={itemVariants} className="text-xl md:text-2xl text-[#8B5CF6] font-light mb-8">
                 {t.subtitle}
             </motion.h3>
 
@@ -157,13 +157,13 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
             </motion.div>
 
             {/* Pongofly (Us) */}
-            <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#C84B1C]/35 bg-[#C84B1C]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(200,75,28,0.08)]">
+            <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#8B5CF6]/35 bg-[#8B5CF6]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(139,92,246,0.08)]">
                 <div className="absolute -bottom-4 md:-bottom-8 -right-2 md:-right-4 opacity-[0.05] pointer-events-none select-none overflow-visible">
-                    <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#C84B1C] uppercase tracking-tighter">US</span>
+                    <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#8B5CF6] uppercase tracking-tighter">US</span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 to-[#C84B1C]/10 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/0 to-[#8B5CF6]/10 pointer-events-none" />
 
-                <h4 className="text-[#E06D3B] text-xs font-bold tracking-[0.2em] uppercase mb-2 relative z-10">
+                <h4 className="text-[#A78BFA] text-xs font-bold tracking-[0.2em] uppercase mb-2 relative z-10">
                     {t.us.subtitle}
                 </h4>
                 <h3 className="text-white text-3xl font-bold mb-10 tracking-tight relative z-10">
@@ -173,8 +173,8 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
                 <ul className="flex flex-col gap-6 relative z-10">
                     {t.us.points.map((point, i) => (
                         <li key={i} className="flex items-start gap-4 group/item">
-                            <div className="mt-0.5 bg-[#C84B1C]/20 p-1 rounded flex-shrink-0 group-hover/item:bg-[#C84B1C] transition-colors duration-300">
-                                <Check size={14} className="text-[#C84B1C] group-hover/item:text-white transition-colors duration-300" />
+                            <div className="mt-0.5 bg-[#8B5CF6]/20 p-1 rounded flex-shrink-0 group-hover/item:bg-[#8B5CF6] transition-colors duration-300">
+                                <Check size={14} className="text-[#8B5CF6] group-hover/item:text-white transition-colors duration-300" />
                             </div>
                             <span className="text-white/90 text-sm font-medium leading-relaxed">{point}</span>
                         </li>
@@ -188,18 +188,18 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
         {onNavigateToApply && (
           <motion.div variants={itemVariants} className="w-full flex flex-col items-center justify-center mt-24 text-center">
             <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
-              {lang === 'en' ? `Ready to Stop Losing Customers to Hesitation, ${visitorName || 'Partner'}?` : `¿Listo para Dejar de Perder Clientes por Dudas, ${visitorName || 'Socio'}?`}
+              {lang === 'en' ? `Ready to Stop Losing Customers to Hesitation, ${visitorName || 'Partner'}?` : `Â¿Listo para Dejar de Perder Clientes por Dudas, ${visitorName || 'Socio'}?`}
             </h3>
             <p className="text-white/50 max-w-xl mb-8 font-light">
-              {lang === 'en' ? "Stop settling for generic templates that don't convert. Request a behavioral architecture review to see what's possible." : "Deja de conformarte con plantillas genéricas que no convierten. Solicita una revisión de arquitectura para descubrir lo que es posible."}
+              {lang === 'en' ? "Stop settling for generic templates that don't convert. Request a behavioral architecture review to see what's possible." : "Deja de conformarte con plantillas genÃ©ricas que no convierten. Solicita una revisiÃ³n de arquitectura para descubrir lo que es posible."}
             </p>
             <button 
               onClick={onNavigateToApply}
-              className="group relative px-12 py-5 bg-white text-black hover:text-white font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(200,75,28,0.4)] transition-all duration-500 overflow-hidden"
+              className="group relative px-12 py-5 bg-white text-black hover:text-white font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(139,92,246,0.4)] transition-all duration-500 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-[#C84B1C] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-[#8B5CF6] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
               <span className="relative z-10 transition-colors duration-500">
-                {lang === 'en' ? "Request Behavioral Review" : "Solicitar Revisión"}
+                {lang === 'en' ? "Request Behavioral Review" : "Solicitar RevisiÃ³n"}
               </span>
             </button>
           </motion.div>

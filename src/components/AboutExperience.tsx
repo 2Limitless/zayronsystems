@@ -12,7 +12,7 @@ const dict = {
     availability: "Currently Accepting 3 New Client Projects",
     title1: "Engineer Your",
     title2: "Advantage.",
-    desc1: "Tell us where your current digital presence or software is losing customers. We diagnose the friction points and engineer custom software designed to convert—with best-in-class Technical SEO and AI SEO (GEO) included standard.",
+    desc1: "Tell us where your current digital presence or software is losing customers. We diagnose the friction points and engineer custom software designed to convertâ€”with best-in-class Technical SEO and AI SEO (GEO) included standard.",
     desc2: "Submit your details below. Our lead systems architect reviews every application personally and responds within 24 hours.",
     form: {
       name: "Full Name",
@@ -30,21 +30,21 @@ const dict = {
   es: {
     back: "Regresar",
     availability: "Aceptando 3 Nuevos Proyectos de Clientes",
-    title1: "Diseña tu",
+    title1: "DiseÃ±a tu",
     title2: "Ventaja.",
-    desc1: "Cuéntanos dónde tu presencia digital o software actual está perdiendo clientes. Diagnosticamos los puntos de fricción y diseñamos software a medida para convertir—con el mejor SEO y SEO para IA (GEO) incluido de serie.",
-    desc2: "Envía tus datos a continuación. Nuestro arquitecto principal revisa cada solicitud personalmente y te contactará en menos de 24 horas.",
+    desc1: "CuÃ©ntanos dÃ³nde tu presencia digital o software actual estÃ¡ perdiendo clientes. Diagnosticamos los puntos de fricciÃ³n y diseÃ±amos software a medida para convertirâ€”con el mejor SEO y SEO para IA (GEO) incluido de serie.",
+    desc2: "EnvÃ­a tus datos a continuaciÃ³n. Nuestro arquitecto principal revisa cada solicitud personalmente y te contactarÃ¡ en menos de 24 horas.",
     form: {
       name: "Nombre Completo",
-      email: "Correo Electrónico Directo",
-      phone: "Número de Teléfono Directo",
+      email: "Correo ElectrÃ³nico Directo",
+      phone: "NÃºmero de TelÃ©fono Directo",
       business: "Nombre de Empresa e Ingresos Anuales",
-      bottleneck: "¿Dónde están dudando o abandonando tus clientes?",
-      why: "¿Cuál es tu principal objetivo comercial u operativo?",
-      submit: "Solicitar Revisión",
-      successTitle: "Información Recibida.",
-      successDesc: "Tus datos han sido asegurados. Nuestro arquitecto principal revisará tu solicitud y te contactará en menos de 24 horas con los siguientes pasos.",
-      trust: "Incluye propiedad total del código, arquitectura de búsqueda integrada y máxima confidencialidad bancaria."
+      bottleneck: "Â¿DÃ³nde estÃ¡n dudando o abandonando tus clientes?",
+      why: "Â¿CuÃ¡l es tu principal objetivo comercial u operativo?",
+      submit: "Solicitar RevisiÃ³n",
+      successTitle: "InformaciÃ³n Recibida.",
+      successDesc: "Tus datos han sido asegurados. Nuestro arquitecto principal revisarÃ¡ tu solicitud y te contactarÃ¡ en menos de 24 horas con los siguientes pasos.",
+      trust: "Incluye propiedad total del cÃ³digo, arquitectura de bÃºsqueda integrada y mÃ¡xima confidencialidad bancaria."
     }
   }
 };
@@ -101,7 +101,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
     >
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,75,28,0.14),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(139,92,246,0.14),transparent_70%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-30" />
       </div>
 
@@ -131,19 +131,19 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
           animate="visible"
           className="flex-1 flex flex-col justify-center max-w-2xl"
         >
-          <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#C84B1C]/35 bg-[#C84B1C]/15 mb-10 w-max shadow-[0_0_20px_rgba(200,75,28,0.2)]">
-            <span className="w-2 h-2 rounded-full bg-[#C84B1C] animate-pulse shadow-[0_0_10px_#C84B1C]" />
-            <span className="text-[#E06D3B] text-[10px] md:text-xs font-bold tracking-widest uppercase">{t.availability}</span>
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#8B5CF6]/35 bg-[#8B5CF6]/15 mb-10 w-max shadow-[0_0_20px_rgba(139,92,246,0.2)]">
+            <span className="w-2 h-2 rounded-full bg-[#8B5CF6] animate-pulse shadow-[0_0_10px_#8B5CF6]" />
+            <span className="text-[#A78BFA] text-[10px] md:text-xs font-bold tracking-widest uppercase">{t.availability}</span>
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white tracking-tighter leading-[0.9] mb-8">
             {t.title1} <br/>
-            <span className="bg-gradient-to-r from-white via-white/80 to-[#C84B1C] text-transparent bg-clip-text pr-4">{t.title2}</span>
+            <span className="bg-gradient-to-r from-white via-white/80 to-[#8B5CF6] text-transparent bg-clip-text pr-4">{t.title2}</span>
           </motion.h1>
 
           {visitorName && (
-            <motion.p variants={itemVariants} className="text-[#C84B1C] text-lg md:text-xl font-medium tracking-wide mb-4">
-              {lang === 'en' ? 'Attention ' : 'Atención '}{visitorName}
+            <motion.p variants={itemVariants} className="text-[#8B5CF6] text-lg md:text-xl font-medium tracking-wide mb-4">
+              {lang === 'en' ? 'Attention ' : 'AtenciÃ³n '}{visitorName}
             </motion.p>
           )}
 
@@ -156,12 +156,12 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
 
           <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
             <div className="flex flex-col gap-2">
-              <Shield className="w-6 h-6 text-[#C84B1C]/80 mb-2" />
+              <Shield className="w-6 h-6 text-[#8B5CF6]/80 mb-2" />
               <h4 className="text-white text-sm font-bold uppercase tracking-wider">Absolute Sovereignty</h4>
               <p className="text-white/40 text-xs">Own your data and infrastructure completely.</p>
             </div>
             <div className="flex flex-col gap-2">
-              <Zap className="w-6 h-6 text-[#C84B1C]/80 mb-2" />
+              <Zap className="w-6 h-6 text-[#8B5CF6]/80 mb-2" />
               <h4 className="text-white text-sm font-bold uppercase tracking-wider">Infinite Scalability</h4>
               <p className="text-white/40 text-xs">Built to handle massive growth without friction.</p>
             </div>
@@ -175,7 +175,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="w-full max-w-lg lg:w-[450px]"
         >
-          <div className="relative p-[1px] rounded-[2rem] overflow-hidden bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-[0_40px_100px_-20px_rgba(200,75,28,0.2)]">
+          <div className="relative p-[1px] rounded-[2rem] overflow-hidden bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-[0_40px_100px_-20px_rgba(139,92,246,0.2)]">
             <div className="absolute inset-0 bg-black/40 backdrop-blur-3xl" />
             
             <div className="relative p-8 md:p-10 flex flex-col gap-8">
@@ -185,8 +185,8 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col items-center justify-center text-center py-12 gap-6"
                 >
-                  <div className="w-20 h-20 rounded-full bg-[#C84B1C]/15 border border-[#C84B1C]/35 flex items-center justify-center shadow-[0_0_40px_rgba(200,75,28,0.25)]">
-                    <CheckCircle2 className="w-10 h-10 text-[#C84B1C]" />
+                  <div className="w-20 h-20 rounded-full bg-[#8B5CF6]/15 border border-[#8B5CF6]/35 flex items-center justify-center shadow-[0_0_40px_rgba(139,92,246,0.25)]">
+                    <CheckCircle2 className="w-10 h-10 text-[#8B5CF6]" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-3">{t.form.successTitle}</h3>
@@ -209,7 +209,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                   {/* Progress Indicator */}
                   <div className="flex gap-2 w-full mb-2">
                     {formFields.map((_, i) => (
-                      <div key={i} className={`h-1 flex-1 rounded-full transition-colors duration-500 ${i <= step ? "bg-[#C84B1C]" : "bg-white/10"}`} />
+                      <div key={i} className={`h-1 flex-1 rounded-full transition-colors duration-500 ${i <= step ? "bg-[#8B5CF6]" : "bg-white/10"}`} />
                     ))}
                   </div>
 
@@ -233,14 +233,14 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                           onFocus={() => setFocusedInput(formFields[step].id)}
                           onBlur={() => setFocusedInput(null)}
                           className={`w-full bg-black/50 border rounded-xl px-5 py-5 text-white text-base md:text-lg font-medium transition-all duration-300 outline-none
-                            ${focusedInput === formFields[step].id ? "border-[#C84B1C]/60 shadow-[0_0_15px_rgba(200,75,28,0.15)]" : "border-white/10 hover:border-white/20"}
+                            ${focusedInput === formFields[step].id ? "border-[#8B5CF6]/60 shadow-[0_0_15px_rgba(139,92,246,0.15)]" : "border-white/10 hover:border-white/20"}
                           `}
                         />
                         <label 
                           htmlFor={formFields[step].id}
                           className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
                             ${(formData as any)[formFields[step].id] || focusedInput === formFields[step].id 
-                              ? "text-[9px] top-1.5 text-[#C84B1C]" 
+                              ? "text-[9px] top-1.5 text-[#8B5CF6]" 
                               : "text-xs md:text-sm top-5 text-white/40 group-hover:text-white/60"}
                           `}
                         >
@@ -257,7 +257,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                         onClick={() => setStep(step - 1)}
                         className="px-6 py-5 rounded-xl border border-white/10 hover:bg-white/5 transition-colors text-white/50 hover:text-white uppercase tracking-widest text-xs font-bold"
                       >
-                        {lang === 'en' ? "Back" : "Atrás"}
+                        {lang === 'en' ? "Back" : "AtrÃ¡s"}
                       </button>
                     )}
                     <button 

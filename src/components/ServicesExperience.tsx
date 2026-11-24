@@ -39,7 +39,7 @@ const dict = {
         { title: "Infinite Scale", desc: "Sleep soundly knowing your custom cloud architecture can handle massive growth smoothly." },
         { title: "Painless Transition", desc: "We carefully migrate your operations from existing systems without disrupting your workflow." },
         { title: "Empowered Workforce", desc: "Your team hits the ground running on day one with pre-configured, reliable hardware." },
-        { title: "Built-In AI SEO & Search Dominance", desc: "Rank at the top of Google and get recommended by ChatGPT, Perplexity, and Gemini—built directly into your codebase." },
+        { title: "Built-In AI SEO & Search Dominance", desc: "Rank at the top of Google and get recommended by ChatGPT, Perplexity, and Geminiâ€”built directly into your codebase." },
         { title: "Peace of Mind", desc: "Critical updates and automated alerts reach you instantly, wherever you are in the world." },
         { title: "Digital Security", desc: "An elite engineering team on standby 24/7. We monitor your infrastructure continuously." }
       ]
@@ -49,12 +49,12 @@ const dict = {
     back: "Volver al Inicio",
     title: "Stack ",
     titleHighlight: "Empresarial.",
-    desc: "Una infraestructura completa. Diseñamos sistemas de datos de alto rendimiento con confiabilidad mundial.",
+    desc: "Una infraestructura completa. DiseÃ±amos sistemas de datos de alto rendimiento con confiabilidad mundial.",
     scrollCompare: "Compara Niveles Abajo",
     seoCallout: {
       badge: "INCLUIDO DE SERIE EN NUESTROS SITIOS",
-      title: "El Mejor SEO Técnico y SEO para Motores de IA (GEO)",
-      desc: "Cada sitio y aplicación que desarrollamos incluye el mejor SEO técnico y optimización para motores generativos (GEO) de serie. Estructuramos tu código, datos y esquemas para que lideres en Google y seas citado en ChatGPT, Perplexity y Gemini.",
+      title: "El Mejor SEO TÃ©cnico y SEO para Motores de IA (GEO)",
+      desc: "Cada sitio y aplicaciÃ³n que desarrollamos incluye el mejor SEO tÃ©cnico y optimizaciÃ³n para motores generativos (GEO) de serie. Estructuramos tu cÃ³digo, datos y esquemas para que lideres en Google y seas citado en ChatGPT, Perplexity y Gemini.",
       tag1: "Listo para ChatGPT y Perplexity",
       tag2: "100/100 Core Web Vitals",
       tag3: "Arquitectura Nativa"
@@ -64,23 +64,23 @@ const dict = {
       headerTitle: "Infraestructura Base.",
       headerDesc: "El stack de software fundamental para la excelencia operativa.",
       cards: [
-        { title: "Centro de Comando", desc: "Observa cómo toda tu operación funciona fluidamente desde un panel intuitivo." },
-        { title: "SEO y Dominio en Búsqueda IA", desc: "Esquema estructurado que te posiciona en la página 1 de Google y en las recomendaciones de ChatGPT y Perplexity." },
+        { title: "Centro de Comando", desc: "Observa cÃ³mo toda tu operaciÃ³n funciona fluidamente desde un panel intuitivo." },
+        { title: "SEO y Dominio en BÃºsqueda IA", desc: "Esquema estructurado que te posiciona en la pÃ¡gina 1 de Google y en las recomendaciones de ChatGPT y Perplexity." },
         { title: "Continuidad de Datos", desc: "Nunca vuelvas a perder un dato. Ten todo tu historial operativo accesible al instante." },
-        { title: "Orquestación de Sistemas", desc: "Conecta herramientas externas sin esfuerzo. Tu software se convierte en el centro neurálgico." }
+        { title: "OrquestaciÃ³n de Sistemas", desc: "Conecta herramientas externas sin esfuerzo. Tu software se convierte en el centro neurÃ¡lgico." }
       ]
     },
     complete: {
       headerSubtitle: "Escala Total",
-      headerTitle: "Transformación a Escala Total.",
-      headerDesc: "Transformación digital integral. Manejamos la ejecución técnica mientras tú te enfocas en crecer.",
+      headerTitle: "TransformaciÃ³n a Escala Total.",
+      headerDesc: "TransformaciÃ³n digital integral. Manejamos la ejecuciÃ³n tÃ©cnica mientras tÃº te enfocas en crecer.",
       cards: [
-        { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejará el crecimiento sin problemas." },
-        { title: "Transición Sin Fricción", desc: "Migramos tus operaciones de sistemas existentes cuidadosamente sin interrumpir tu flujo." },
-        { title: "Fuerza Laboral Empoderada", desc: "Tu equipo entra en acción el primer día con hardware preconfigurado y confiable." },
-        { title: "SEO y Dominio en Búsqueda IA", desc: "Posiciónate en Google y en las respuestas de ChatGPT, Perplexity y Gemini—integrado directamente en tu código." },
-        { title: "Tranquilidad", desc: "Actualizaciones críticas y alertas automatizadas te encuentran al instante, dondequiera que estés." },
-        { title: "Seguridad Digital", desc: "Un equipo de élite en espera 24/7. Monitoreamos tu infraestructura continuamente." }
+        { title: "Escala Infinita", desc: "Duerme tranquilo sabiendo que tu arquitectura en la nube manejarÃ¡ el crecimiento sin problemas." },
+        { title: "TransiciÃ³n Sin FricciÃ³n", desc: "Migramos tus operaciones de sistemas existentes cuidadosamente sin interrumpir tu flujo." },
+        { title: "Fuerza Laboral Empoderada", desc: "Tu equipo entra en acciÃ³n el primer dÃ­a con hardware preconfigurado y confiable." },
+        { title: "SEO y Dominio en BÃºsqueda IA", desc: "PosiciÃ³nate en Google y en las respuestas de ChatGPT, Perplexity y Geminiâ€”integrado directamente en tu cÃ³digo." },
+        { title: "Tranquilidad", desc: "Actualizaciones crÃ­ticas y alertas automatizadas te encuentran al instante, dondequiera que estÃ©s." },
+        { title: "Seguridad Digital", desc: "Un equipo de Ã©lite en espera 24/7. Monitoreamos tu infraestructura continuamente." }
       ]
     }
   }
@@ -122,7 +122,7 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
           {activeTier === "complete" && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }} className="absolute inset-0 pointer-events-none -z-10">
               <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--color-acid)]/10 blur-[120px] rounded-full" />
-              <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#C84B1C]/10 blur-[120px] rounded-full" />
+              <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8B5CF6]/10 blur-[120px] rounded-full" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -162,7 +162,7 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
               className={`relative px-6 md:px-10 py-3 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase transition-colors duration-500 z-10 ${activeTier === "complete" ? "text-white" : "text-[var(--color-void)]/50 hover:text-[var(--color-void)]"}`}
             >
               {activeTier === "complete" && (
-                <motion.div layoutId="tier-toggle" className="absolute inset-0 bg-[var(--color-acid)] rounded-full -z-10 shadow-[0_0_20px_rgba(200,75,28,0.45)]" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
+                <motion.div layoutId="tier-toggle" className="absolute inset-0 bg-[var(--color-acid)] rounded-full -z-10 shadow-[0_0_20px_rgba(139,92,246,0.45)]" transition={{ type: "spring", stiffness: 300, damping: 30 }} />
               )}
               {t.complete.headerSubtitle}
             </button>
@@ -262,14 +262,14 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
           className={`w-full max-w-5xl mx-auto mt-16 p-6 md:p-10 rounded-2xl md:rounded-[2rem] border backdrop-blur-xl relative overflow-hidden transition-colors duration-700 ${
             activeTier === "tier1" 
               ? "bg-white/90 border-[var(--color-void)]/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)]" 
-              : "bg-white/[0.03] border-[#C84B1C]/30 shadow-[0_0_50px_rgba(200,75,28,0.08)]"
+              : "bg-white/[0.03] border-[#8B5CF6]/30 shadow-[0_0_50px_rgba(139,92,246,0.08)]"
           }`}
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-3">
                 <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] md:text-xs font-bold tracking-widest uppercase ${
-                  activeTier === "tier1" ? "bg-[var(--color-cobalt)]/10 text-[var(--color-cobalt)]" : "bg-[#C84B1C]/15 text-[#E06D3B] border border-[#C84B1C]/30"
+                  activeTier === "tier1" ? "bg-[var(--color-cobalt)]/10 text-[var(--color-cobalt)]" : "bg-[#8B5CF6]/15 text-[#A78BFA] border border-[#8B5CF6]/30"
                 }`}>
                   <Sparkles className="w-3.5 h-3.5" />
                   {t.seoCallout.badge}
@@ -290,17 +290,17 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
               <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
                 activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-white/5 border-white/10 text-white/90"
               }`}>
-                <Bot className="w-4 h-4 text-[#C84B1C]" />
+                <Bot className="w-4 h-4 text-[#8B5CF6]" />
                 {t.seoCallout.tag1}
               </div>
               <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
                 activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-white/5 border-white/10 text-white/90"
               }`}>
-                <Search className="w-4 h-4 text-[#C84B1C]" />
+                <Search className="w-4 h-4 text-[#8B5CF6]" />
                 {t.seoCallout.tag2}
               </div>
               <div className={`px-4 py-2 rounded-xl text-[11px] font-bold tracking-wider uppercase border flex items-center gap-2 ${
-                activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-[#C84B1C]/15 border-[#C84B1C]/35 text-[#E06D3B]"
+                activeTier === "tier1" ? "bg-white border-black/10 text-black" : "bg-[#8B5CF6]/15 border-[#8B5CF6]/35 text-[#A78BFA]"
               }`}>
                 <CheckCircle2 className="w-4 h-4" />
                 {t.seoCallout.tag3}
@@ -313,18 +313,18 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
         {onNavigateToApply && (
           <motion.div variants={itemVariants} initial="hidden" animate="show" className="w-full flex flex-col items-center justify-center mt-24 text-center pb-12">
             <h3 className={`text-2xl md:text-4xl font-bold mb-6 tracking-tight font-sans transition-colors duration-700 ${activeTier === "tier1" ? "text-black" : "text-white"}`}>
-              {lang === 'en' ? `Is Your Operation Qualified, ${visitorName || 'Commander'}?` : `¿Tu Operación Está Calificada, ${visitorName || 'Comandante'}?`}
+              {lang === 'en' ? `Is Your Operation Qualified, ${visitorName || 'Commander'}?` : `Â¿Tu OperaciÃ³n EstÃ¡ Calificada, ${visitorName || 'Comandante'}?`}
             </h3>
             <p className={`max-w-xl mb-8 font-light transition-colors duration-700 ${activeTier === "tier1" ? "text-black/60" : "text-white/50"}`}>
-              {lang === 'en' ? "We do not deploy our architecture for everyone. Apply below to see if your business qualifies for our digital infrastructure." : "No desplegamos nuestra arquitectura para todos. Aplica a continuación para ver si calificas."}
+              {lang === 'en' ? "We do not deploy our architecture for everyone. Apply below to see if your business qualifies for our digital infrastructure." : "No desplegamos nuestra arquitectura para todos. Aplica a continuaciÃ³n para ver si calificas."}
             </p>
             <button 
               onClick={onNavigateToApply}
-              className={`group relative px-12 py-5 font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full transition-all duration-700 overflow-hidden ${activeTier === "tier1" ? "bg-black text-white shadow-[0_0_40px_rgba(0,0,0,0.2)] hover:shadow-[0_0_60px_rgba(0,0,0,0.4)]" : "bg-[#C84B1C] text-white hover:text-black shadow-[0_0_40px_rgba(200,75,28,0.25)] hover:shadow-[0_0_60px_rgba(200,75,28,0.45)]"}`}
+              className={`group relative px-12 py-5 font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full transition-all duration-700 overflow-hidden ${activeTier === "tier1" ? "bg-black text-white shadow-[0_0_40px_rgba(0,0,0,0.2)] hover:shadow-[0_0_60px_rgba(0,0,0,0.4)]" : "bg-[#8B5CF6] text-white hover:text-black shadow-[0_0_40px_rgba(139,92,246,0.25)] hover:shadow-[0_0_60px_rgba(139,92,246,0.45)]"}`}
             >
               <div className={`absolute inset-0 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ${activeTier === "tier1" ? "bg-[var(--color-cobalt)]" : "bg-white"}`} />
               <span className="relative z-10 transition-colors duration-500">
-                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+                {lang === 'en' ? "Submit Application" : "Enviar AplicaciÃ³n"}
               </span>
             </button>
           </motion.div>
@@ -334,7 +334,7 @@ export default function ServicesExperience({ lang, onBack, onThemeChange, onNavi
 
         {/* Legitimate SEO Footer Credit */}
         <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">
-          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#C84B1C]/20">
+          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#8B5CF6]/20">
             &copy; {new Date().getFullYear()} Pongofly. Enterprise System Software Development.
           </p>
         </footer>

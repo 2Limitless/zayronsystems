@@ -108,53 +108,53 @@ const dict = {
       general: {
         title: "Escala ",
         titleHighlight: "Empresarial.",
-        desc: "Por qué reemplazar los sistemas heredados con software empresarial personalizado es una necesidad competitiva.",
+        desc: "Por quÃ© reemplazar los sistemas heredados con software empresarial personalizado es una necesidad competitiva.",
         profit: {
           market: "Software Comercial",
           marketMetric: "TRAMPA SAAS",
           marketDesc1: "Costo anual de usar 5 herramientas SaaS diferentes.",
-          marketDesc2: "Alta fricción, silos de datos, tarifas mensuales.",
+          marketDesc2: "Alta fricciÃ³n, silos de datos, tarifas mensuales.",
           direct: "Arquitectura Personalizada",
           directMetric: "CONTROL TOTAL",
-          directDesc1: "Un sistema unificado creado específicamente para tus operaciones.",
-          directDesc2: "Soberanía total de datos. Sin licencias por usuario."
+          directDesc1: "Un sistema unificado creado especÃ­ficamente para tus operaciones.",
+          directDesc2: "SoberanÃ­a total de datos. Sin licencias por usuario."
         },
         cards: [
-          { title: "Soberanía de Datos", desc: "Sé dueño de tu arquitectura de datos. Evita ataduras a proveedores y potencia tus operaciones." },
-          { title: "Automatización Operativa", desc: "Reduce costos manuales automatizando logística, programación y gestión de activos en tiempo real." },
-          { title: "SEO y Dominio en Búsqueda IA", desc: "Diseñado para el puesto #1 en Google y menciones directas en ChatGPT, Perplexity y Gemini de serie." },
-          { title: "Integración de Sistemas Heredados", desc: "Conecta sin problemas bases de datos y hardware antiguos a una infraestructura en la nube." },
-          { title: "Confiabilidad Crítica", desc: "Arquitecturas de servidores diseñadas para las demandas de entornos 24/7." },
+          { title: "SoberanÃ­a de Datos", desc: "SÃ© dueÃ±o de tu arquitectura de datos. Evita ataduras a proveedores y potencia tus operaciones." },
+          { title: "AutomatizaciÃ³n Operativa", desc: "Reduce costos manuales automatizando logÃ­stica, programaciÃ³n y gestiÃ³n de activos en tiempo real." },
+          { title: "SEO y Dominio en BÃºsqueda IA", desc: "DiseÃ±ado para el puesto #1 en Google y menciones directas en ChatGPT, Perplexity y Gemini de serie." },
+          { title: "IntegraciÃ³n de Sistemas Heredados", desc: "Conecta sin problemas bases de datos y hardware antiguos a una infraestructura en la nube." },
+          { title: "Confiabilidad CrÃ­tica", desc: "Arquitecturas de servidores diseÃ±adas para las demandas de entornos 24/7." },
           { title: "Infraestructura Escalable", desc: "Creada para manejar cargas de datos masivas sin problemas a medida que tu empresa crece." }
         ]
       },
       industrial: {
         title: "Escala ",
         titleHighlight: "Industrial.",
-        desc: "Por qué reemplazar herramientas genéricas con software industrial personalizado es una necesidad competitiva.",
+        desc: "Por quÃ© reemplazar herramientas genÃ©ricas con software industrial personalizado es una necesidad competitiva.",
         profit: {
-          market: "Software de Gestión Genérico",
+          market: "Software de GestiÃ³n GenÃ©rico",
           marketMetric: "INACTIVIDAD",
           marketDesc1: "Altos costos por inactividad inesperada y seguimiento manual.",
           marketDesc2: "Informes retrasados, operaciones de campo inconexas.",
           direct: "Stack Industrial Personalizado",
           directMetric: "TIEMPO REAL",
           directDesc1: "Un sistema unificado creado para operaciones pesadas e IoT.",
-          directDesc2: "Información predictiva. Cero licencias por usuario."
+          directDesc2: "InformaciÃ³n predictiva. Cero licencias por usuario."
         },
         cards: [
-          { title: "Mantenimiento Predictivo", desc: "Usa telemetría IoT para predecir fallas en equipos antes de que causen costosos tiempos de inactividad." },
+          { title: "Mantenimiento Predictivo", desc: "Usa telemetrÃ­a IoT para predecir fallas en equipos antes de que causen costosos tiempos de inactividad." },
           { title: "Seguimiento de Activos", desc: "Visibilidad en tiempo real de maquinaria pesada, flotas y recursos empresariales dispersos." },
-          { title: "Sincronización de Campo", desc: "Mantén a los trabajadores de campo y al comando central en la misma página en tiempo real." },
-          { title: "Integración de Hardware", desc: "Conecta sin problemas sensores industriales antiguos a la infraestructura en la nube moderna." },
-          { title: "Confiabilidad Crítica", desc: "Arquitecturas diseñadas para las duras demandas de entornos industriales 24/7." },
-          { title: "Infraestructura Escalable", desc: "Creada para manejar cargas masivas de datos de telemetría a medida que crecen las operaciones." }
+          { title: "SincronizaciÃ³n de Campo", desc: "MantÃ©n a los trabajadores de campo y al comando central en la misma pÃ¡gina en tiempo real." },
+          { title: "IntegraciÃ³n de Hardware", desc: "Conecta sin problemas sensores industriales antiguos a la infraestructura en la nube moderna." },
+          { title: "Confiabilidad CrÃ­tica", desc: "Arquitecturas diseÃ±adas para las duras demandas de entornos industriales 24/7." },
+          { title: "Infraestructura Escalable", desc: "Creada para manejar cargas masivas de datos de telemetrÃ­a a medida que crecen las operaciones." }
         ]
       },
       restaurants: {
         title: "Escala de ",
         titleHighlight: "Restaurantes.",
-        desc: "Por qué abandonar los agregadores de terceros por una infraestructura de pedidos personalizada es una necesidad.",
+        desc: "Por quÃ© abandonar los agregadores de terceros por una infraestructura de pedidos personalizada es una necesidad.",
         profit: {
           market: "Apps de Entrega de Terceros",
           marketMetric: "30% TARIFAS",
@@ -163,38 +163,38 @@ const dict = {
           direct: "Plataforma de Pedidos Propia",
           directMetric: "0% TARIFAS",
           directDesc1: "Tu propia app a medida y sistema de pedidos web.",
-          directDesc2: "100% Libre de comisiones. Soberanía total de datos."
+          directDesc2: "100% Libre de comisiones. SoberanÃ­a total de datos."
         },
         cards: [
-          { title: "Pedidos Sin Comisión", desc: "Mantén el 100% de tus márgenes. Deja de pagar tarifas exorbitantes a agregadores externos." },
-          { title: "Soberanía de Datos del Cliente", desc: "Sé dueño de tu lista de clientes. Usa el historial para campañas de marketing dirigidas." },
-          { title: "Programas de Lealtad a Medida", desc: "Incentiva las visitas repetidas con un sistema de puntos diseñado completamente para tu marca." },
-          { title: "Integración de Cocina", desc: "Enruta pedidos digitales directamente a tus sistemas de visualización de cocina personalizados." },
-          { title: "Venta Sugestiva Automatizada", desc: "Usa algoritmos estratégicos para sugerir adiciones, aumentando el ticket promedio automáticamente." },
-          { title: "Sincronización Omnicanal", desc: "Sincroniza el inventario y los menús en todas las ubicaciones físicas y digitales al instante." }
+          { title: "Pedidos Sin ComisiÃ³n", desc: "MantÃ©n el 100% de tus mÃ¡rgenes. Deja de pagar tarifas exorbitantes a agregadores externos." },
+          { title: "SoberanÃ­a de Datos del Cliente", desc: "SÃ© dueÃ±o de tu lista de clientes. Usa el historial para campaÃ±as de marketing dirigidas." },
+          { title: "Programas de Lealtad a Medida", desc: "Incentiva las visitas repetidas con un sistema de puntos diseÃ±ado completamente para tu marca." },
+          { title: "IntegraciÃ³n de Cocina", desc: "Enruta pedidos digitales directamente a tus sistemas de visualizaciÃ³n de cocina personalizados." },
+          { title: "Venta Sugestiva Automatizada", desc: "Usa algoritmos estratÃ©gicos para sugerir adiciones, aumentando el ticket promedio automÃ¡ticamente." },
+          { title: "SincronizaciÃ³n Omnicanal", desc: "Sincroniza el inventario y los menÃºs en todas las ubicaciones fÃ­sicas y digitales al instante." }
         ]
       },
       realestate: {
         title: "Escala ",
         titleHighlight: "Inmobiliaria.",
-        desc: "Por qué actualizar su sitio web estático a una webapp dinámica es una necesidad competitiva.",
+        desc: "Por quÃ© actualizar su sitio web estÃ¡tico a una webapp dinÃ¡mica es una necesidad competitiva.",
         profit: {
-          market: "Sitios Web Estáticos",
+          market: "Sitios Web EstÃ¡ticos",
           marketMetric: "CLIENTES PERDIDOS",
-          marketDesc1: "Plantillas genéricas que se confunden con cualquier otro agente.",
-          marketDesc2: "Cero características interactivas. Altas tasas de rebote.",
+          marketDesc1: "Plantillas genÃ©ricas que se confunden con cualquier otro agente.",
+          marketDesc2: "Cero caracterÃ­sticas interactivas. Altas tasas de rebote.",
           direct: "Experiencia Webapp Personalizada",
           directMetric: "MARCA PREMIUM",
           directDesc1: "Una plataforma digital a medida que lo distingue.",
-          directDesc2: "Portales de clientes. Listados dinámicos. Control total."
+          directDesc2: "Portales de clientes. Listados dinÃ¡micos. Control total."
         },
         cards: [
-          { title: "Webapps Dinámicas", desc: "Transforme su presencia en línea de un folleto estático a una plataforma digital interactiva." },
-          { title: "Portales de Clientes", desc: "Ofrezca a compradores y vendedores su propio inicio de sesión para rastrear propiedades y ofertas." },
+          { title: "Webapps DinÃ¡micas", desc: "Transforme su presencia en lÃ­nea de un folleto estÃ¡tico a una plataforma digital interactiva." },
+          { title: "Portales de Clientes", desc: "Ofrezca a compradores y vendedores su propio inicio de sesiÃ³n para rastrear propiedades y ofertas." },
           { title: "Listados Interactivos", desc: "Muestre propiedades con multimedia, mapas interactivos y algoritmos de filtrado avanzados." },
-          { title: "Programación Perfecta", desc: "Integre reservas directas para visitas directamente desde su webapp." },
-          { title: "Diferenciación de Marca", desc: "Deje de usar las mismas plantillas que sus competidores. Establezca una verdadera marca de lujo." },
-          { title: "Sincronización Omnicanal", desc: "Asegure que su webapp móvil y la experiencia de escritorio estén sincronizadas en tiempo real." }
+          { title: "ProgramaciÃ³n Perfecta", desc: "Integre reservas directas para visitas directamente desde su webapp." },
+          { title: "DiferenciaciÃ³n de Marca", desc: "Deje de usar las mismas plantillas que sus competidores. Establezca una verdadera marca de lujo." },
+          { title: "SincronizaciÃ³n Omnicanal", desc: "Asegure que su webapp mÃ³vil y la experiencia de escritorio estÃ©n sincronizadas en tiempo real." }
         ]
       }
     }
@@ -247,14 +247,14 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
 
           <motion.div 
             initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4, duration: 0.8 }}
-            className="flex flex-col gap-2 md:gap-4 p-4 md:p-8 rounded-2xl md:rounded-[1.5rem] border border-[#C84B1C]/30 bg-[#C84B1C]/10 relative overflow-hidden"
+            className="flex flex-col gap-2 md:gap-4 p-4 md:p-8 rounded-2xl md:rounded-[1.5rem] border border-[#8B5CF6]/30 bg-[#8B5CF6]/10 relative overflow-hidden"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#C84B1C]/15 blur-[80px] rounded-full pointer-events-none" />
-            <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#E06D3B] font-bold">{content.profit.direct}</h3>
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#8B5CF6]/15 blur-[80px] rounded-full pointer-events-none" />
+            <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#A78BFA] font-bold">{content.profit.direct}</h3>
             <div><span className="text-2xl min-[400px]:text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-normal md:whitespace-nowrap leading-none">{content.profit.directMetric}</span></div>
             <p className="text-white/70 text-xs md:text-base font-medium leading-tight mt-2">{content.profit.directDesc1}</p>
-            <div className="w-full h-[1px] bg-[#C84B1C]/25 my-2 md:my-4" />
-            <p className="text-[#E06D3B]/90 text-xs md:text-sm font-semibold leading-tight">{content.profit.directDesc2}</p>
+            <div className="w-full h-[1px] bg-[#8B5CF6]/25 my-2 md:my-4" />
+            <p className="text-[#A78BFA]/90 text-xs md:text-sm font-semibold leading-tight">{content.profit.directDesc2}</p>
           </motion.div>
         </div>
 
@@ -277,7 +277,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.5 }} className="col-span-1 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <Bot className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <Bot className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#8B5CF6] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-xl mb-1 md:mb-3 leading-tight">{content.cards[2].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[2].desc}</p>
@@ -285,7 +285,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.5 }} className="col-span-1 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <MonitorSmartphone className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <MonitorSmartphone className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#8B5CF6] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-xl mb-1 md:mb-3 leading-tight">{content.cards[3].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[3].desc}</p>
@@ -293,8 +293,8 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0, duration: 0.5 }} className="col-span-1 md:col-span-2 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <div className="hidden md:block absolute -bottom-24 -left-24 w-64 h-64 bg-[#C84B1C]/15 blur-[80px] rounded-full group-hover:bg-[#C84B1C]/25 transition-all duration-700" />
-            <Bell className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <div className="hidden md:block absolute -bottom-24 -left-24 w-64 h-64 bg-[#8B5CF6]/15 blur-[80px] rounded-full group-hover:bg-[#8B5CF6]/25 transition-all duration-700" />
+            <Bell className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#8B5CF6] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-2xl mb-1 md:mb-3 leading-tight">{content.cards[4].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[4].desc}</p>
@@ -315,18 +315,18 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
         {onNavigateToApply && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2, duration: 0.5 }} className="w-full flex flex-col items-center justify-center mb-24 text-center">
             <h3 className="text-2xl md:text-4xl text-white font-bold mb-6 tracking-tight font-sans">
-              {lang === 'en' ? `Ready to Build Your Moat, ${visitorName || 'Commander'}?` : `¿Listo para Construir tu Foso, ${visitorName || 'Comandante'}?`}
+              {lang === 'en' ? `Ready to Build Your Moat, ${visitorName || 'Commander'}?` : `Â¿Listo para Construir tu Foso, ${visitorName || 'Comandante'}?`}
             </h3>
             <p className="text-white/50 max-w-xl mb-8 font-light">
-              {lang === 'en' ? "Stop leaving money on the table. Apply for an architecture review to see what a bespoke digital infrastructure can do for your margins." : "Deja de dejar dinero en la mesa. Solicita una revisión de arquitectura."}
+              {lang === 'en' ? "Stop leaving money on the table. Apply for an architecture review to see what a bespoke digital infrastructure can do for your margins." : "Deja de dejar dinero en la mesa. Solicita una revisiÃ³n de arquitectura."}
             </p>
             <button 
               onClick={onNavigateToApply}
-              className="group relative px-12 py-5 bg-[#C84B1C] text-white hover:text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(200,75,28,0.25)] hover:shadow-[0_0_60px_rgba(200,75,28,0.45)] transition-all duration-500 overflow-hidden"
+              className="group relative px-12 py-5 bg-[#8B5CF6] text-white hover:text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(139,92,246,0.25)] hover:shadow-[0_0_60px_rgba(139,92,246,0.45)] transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
               <span className="relative z-10 transition-colors duration-500">
-                {lang === 'en' ? "Submit Application" : "Enviar Aplicación"}
+                {lang === 'en' ? "Submit Application" : "Enviar AplicaciÃ³n"}
               </span>
             </button>
           </motion.div>
@@ -334,7 +334,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
 
         {/* Legitimate SEO Footer Credit */}
         <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">
-          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#C84B1C]/20">
+          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#8B5CF6]/20">
             &copy; {new Date().getFullYear()} Pongofly. Enterprise System Software Development.
           </p>
         </footer>

@@ -125,7 +125,7 @@ export default function PartnerDashboard() {
       <main className="min-h-[100dvh] bg-black flex flex-col items-center justify-center p-6 relative overflow-hidden font-sans">
         {/* Clean Background */}
         <div className="absolute inset-0 z-0 bg-black pointer-events-none" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vh] bg-gradient-radial from-[#C84B1C]/15 to-transparent blur-[100px] pointer-events-none z-0" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vh] bg-gradient-radial from-[#8B5CF6]/15 to-transparent blur-[100px] pointer-events-none z-0" />
 
         <div className="absolute top-8 left-6 md:top-10 md:left-10 z-10">
           <Link href="/partners" className="flex items-center gap-2 text-white/50 hover:text-white text-xs font-bold uppercase tracking-widest transition-colors">
@@ -140,8 +140,8 @@ export default function PartnerDashboard() {
           className="w-full max-w-md relative z-10"
         >
           <div className="flex flex-col items-center mb-10 text-center">
-            <div className="w-16 h-16 bg-[#C84B1C]/15 rounded-full flex items-center justify-center mb-6 border border-[#C84B1C]/35 shadow-[0_0_40px_rgba(200,75,28,0.2)]">
-              <DollarSign className="text-[#C84B1C]" size={28} />
+            <div className="w-16 h-16 bg-[#8B5CF6]/15 rounded-full flex items-center justify-center mb-6 border border-[#8B5CF6]/35 shadow-[0_0_40px_rgba(139,92,246,0.2)]">
+              <DollarSign className="text-[#8B5CF6]" size={28} />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">Syndicate Portal</h1>
             <p className="text-white/50 text-sm leading-relaxed">Authenticate to view your asset pipeline, active commissions, and drop new intel.</p>
@@ -156,12 +156,12 @@ export default function PartnerDashboard() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors"
+                className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors"
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-[#C84B1C] text-white font-bold uppercase tracking-[0.1em] text-sm rounded-xl px-4 py-4 hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(200,75,28,0.25)] hover:shadow-[0_0_40px_rgba(200,75,28,0.45)] flex items-center justify-center gap-2"
+              className="w-full bg-[#8B5CF6] text-white font-bold uppercase tracking-[0.1em] text-sm rounded-xl px-4 py-4 hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(139,92,246,0.25)] hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] flex items-center justify-center gap-2"
             >
               Authorize Access <ArrowUpRight size={18} />
             </button>
@@ -172,10 +172,10 @@ export default function PartnerDashboard() {
   }
 
   return (
-    <main className="min-h-[100dvh] bg-black text-white selection:bg-[#C84B1C]/30 font-sans pb-32 relative overflow-x-hidden">
+    <main className="min-h-[100dvh] bg-black text-white selection:bg-[#8B5CF6]/30 font-sans pb-32 relative overflow-x-hidden">
       {/* Clean Background */}
       <div className="fixed inset-0 z-0 bg-black pointer-events-none" />
-      <div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-full h-[60vh] bg-gradient-radial from-[#C84B1C]/10 to-transparent blur-[120px] pointer-events-none z-0" />
+      <div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-full h-[60vh] bg-gradient-radial from-[#8B5CF6]/10 to-transparent blur-[120px] pointer-events-none z-0" />
       
       {/* Modals */}
       <AnimatePresence>
@@ -206,7 +206,7 @@ export default function PartnerDashboard() {
 
               {submitSuccess ? (
                 <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="py-12 flex flex-col items-center text-center">
-                  <CheckCircle2 className="text-[#C84B1C] w-24 h-24 mb-6 drop-shadow-[0_0_40px_rgba(200,75,28,0.45)]" strokeWidth={1} />
+                  <CheckCircle2 className="text-[#8B5CF6] w-24 h-24 mb-6 drop-shadow-[0_0_40px_rgba(139,92,246,0.45)]" strokeWidth={1} />
                   <h3 className="text-3xl font-bold mb-4 tracking-tighter">Secured.</h3>
                   <p className="text-white/50 text-base">We've got the intel. Keep an eye on your dashboard for live status updates.</p>
                 </motion.div>
@@ -215,27 +215,27 @@ export default function PartnerDashboard() {
                   {!name && (
                     <div>
                       <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Your Name</label>
-                      <input required type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors" />
+                      <input required type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors" />
                     </div>
                   )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Lead Contact Name *</label>
-                      <input required type="text" value={newReferral.lead_name} onChange={(e) => setNewReferral({...newReferral, lead_name: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors" />
+                      <input required type="text" value={newReferral.lead_name} onChange={(e) => setNewReferral({...newReferral, lead_name: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors" />
                     </div>
                     <div>
                       <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Business Name</label>
-                      <input type="text" value={newReferral.lead_business} onChange={(e) => setNewReferral({...newReferral, lead_business: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors" />
+                      <input type="text" value={newReferral.lead_business} onChange={(e) => setNewReferral({...newReferral, lead_business: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Lead Email *</label>
-                      <input required type="email" value={newReferral.lead_email} onChange={(e) => setNewReferral({...newReferral, lead_email: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors" />
+                      <input required type="email" value={newReferral.lead_email} onChange={(e) => setNewReferral({...newReferral, lead_email: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors" />
                     </div>
                     <div>
                       <label className="block text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Lead Phone</label>
-                      <input type="tel" value={newReferral.lead_phone} onChange={(e) => setNewReferral({...newReferral, lead_phone: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#C84B1C] transition-colors" />
+                      <input type="tel" value={newReferral.lead_phone} onChange={(e) => setNewReferral({...newReferral, lead_phone: e.target.value})} className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-4 text-white text-sm focus:outline-none focus:border-[#8B5CF6] transition-colors" />
                     </div>
                   </div>
                   
@@ -244,7 +244,7 @@ export default function PartnerDashboard() {
                   <button
                     disabled={loading}
                     type="submit"
-                    className="w-full mt-8 bg-[#C84B1C] text-white font-bold uppercase tracking-widest text-sm rounded-xl px-4 py-5 hover:bg-white hover:text-black transition-all disabled:opacity-50"
+                    className="w-full mt-8 bg-[#8B5CF6] text-white font-bold uppercase tracking-widest text-sm rounded-xl px-4 py-5 hover:bg-white hover:text-black transition-all disabled:opacity-50"
                   >
                     {loading ? "Transmitting..." : "Initiate Transfer (Submit)"}
                   </button>
@@ -259,7 +259,7 @@ export default function PartnerDashboard() {
         <header className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-white/10 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-widest uppercase font-bold text-[#E06D3B]">
+              <span className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-widest uppercase font-bold text-[#A78BFA]">
                 Operative: {email}
               </span>
             </div>
@@ -270,7 +270,7 @@ export default function PartnerDashboard() {
           <div className="flex gap-4">
             <button 
               onClick={() => setShowSubmitModal(true)}
-              className="bg-[#C84B1C] text-white px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors shadow-[0_0_30px_rgba(200,75,28,0.25)] flex items-center gap-2"
+              className="bg-[#8B5CF6] text-white px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors shadow-[0_0_30px_rgba(139,92,246,0.25)] flex items-center gap-2"
             >
               <Plus size={16} /> Deploy Asset
             </button>
@@ -287,10 +287,10 @@ export default function PartnerDashboard() {
           <>
             {/* Clean Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-              <div className="bg-white/5 border border-[#C84B1C]/25 rounded-3xl p-8 relative overflow-hidden backdrop-blur-md">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-[#C84B1C]/15 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none" />
+              <div className="bg-white/5 border border-[#8B5CF6]/25 rounded-3xl p-8 relative overflow-hidden backdrop-blur-md">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#8B5CF6]/15 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none" />
                 <h3 className="text-white/60 text-xs font-bold uppercase tracking-widest mb-4">Total Commission Earned</h3>
-                <p className="text-5xl md:text-6xl font-bold text-[#E06D3B] tracking-tighter">
+                <p className="text-5xl md:text-6xl font-bold text-[#A78BFA] tracking-tighter">
                   ${totalEarned.toLocaleString()}
                 </p>
               </div>
@@ -334,12 +334,12 @@ export default function PartnerDashboard() {
                             <td className="px-8 py-6">
                               <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest border ${
                                 ref.status === 'closed_won' || ref.status === 'paid' 
-                                  ? 'bg-[#C84B1C]/15 text-[#E06D3B] border-[#C84B1C]/35'
+                                  ? 'bg-[#8B5CF6]/15 text-[#A78BFA] border-[#8B5CF6]/35'
                                   : ref.status === 'closed_lost'
                                     ? 'bg-red-500/10 text-red-400 border-red-500/30'
                                     : 'bg-white/5 text-white/70 border-white/20'
                               }`}>
-                                {(ref.status === 'closed_won' || ref.status === 'paid') && <span className="w-1.5 h-1.5 rounded-full bg-[#C84B1C]" />}
+                                {(ref.status === 'closed_won' || ref.status === 'paid') && <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6]" />}
                                 {ref.status === 'closed_lost' && <span className="w-1.5 h-1.5 rounded-full bg-red-400" />}
                                 {ref.status.replace('_', ' ')}
                               </span>
@@ -369,9 +369,9 @@ export default function PartnerDashboard() {
           </>
         ) : (
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <div className="w-20 h-20 bg-[#C84B1C]/15 rounded-full flex items-center justify-center mb-8 border border-[#C84B1C]/35 shadow-[0_0_40px_rgba(200,75,28,0.2)] relative">
-              <div className="absolute inset-0 bg-[#C84B1C]/20 rounded-full animate-ping" />
-              <DollarSign className="text-[#C84B1C] relative z-10" size={36} />
+            <div className="w-20 h-20 bg-[#8B5CF6]/15 rounded-full flex items-center justify-center mb-8 border border-[#8B5CF6]/35 shadow-[0_0_40px_rgba(139,92,246,0.2)] relative">
+              <div className="absolute inset-0 bg-[#8B5CF6]/20 rounded-full animate-ping" />
+              <DollarSign className="text-[#8B5CF6] relative z-10" size={36} />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-4">Your Pipeline is Empty.</h2>
             <p className="text-white/50 text-lg max-w-lg mx-auto mb-10 leading-relaxed">
@@ -379,7 +379,7 @@ export default function PartnerDashboard() {
             </p>
             <button 
               onClick={() => setShowSubmitModal(true)}
-              className="bg-[#C84B1C] text-white px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_40px_rgba(200,75,28,0.25)] hover:shadow-[0_0_60px_rgba(200,75,28,0.45)] flex items-center gap-3"
+              className="bg-[#8B5CF6] text-white px-10 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_40px_rgba(139,92,246,0.25)] hover:shadow-[0_0_60px_rgba(139,92,246,0.45)] flex items-center gap-3"
             >
               <Plus size={20} /> Deploy Asset (Submit Lead)
             </button>

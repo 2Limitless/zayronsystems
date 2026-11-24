@@ -20,8 +20,8 @@ export default function BrandWordmark({
       className={`inline-flex items-baseline font-sans font-bold tracking-tight select-none leading-none ${sizeClasses} ${className}`}
     >
       <span className="text-white">Pongo</span>
-      <span className="text-[#C84B1C]">fly</span>
-      <span className="text-[#C84B1C] ml-0.5">.</span>
+      <span className="text-[#8B5CF6]">fly</span>
+      <span className="text-[#8B5CF6] ml-0.5">.</span>
     </span>
   );
 }

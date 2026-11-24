@@ -3,8 +3,8 @@ import { ArrowLeft } from "lucide-react";
 
 export default function TermsAndConditions() {
   return (
-    <main className="min-h-screen bg-black text-white px-8 py-20 md:px-24 md:py-32 font-sans selection:bg-[#C84B1C]/30">
-      <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-[#C84B1C] transition-colors mb-12 uppercase tracking-widest text-xs font-bold">
+    <main className="min-h-screen bg-black text-white px-8 py-20 md:px-24 md:py-32 font-sans selection:bg-[#8B5CF6]/30">
+      <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-[#8B5CF6] transition-colors mb-12 uppercase tracking-widest text-xs font-bold">
         <ArrowLeft size={16} />
         Back to Hub
       </Link>

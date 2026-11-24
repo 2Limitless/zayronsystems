@@ -33,7 +33,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span style={{ color: "#ffffff" }}>Pongo</span>
-          <span style={{ color: "#C84B1C" }}>fly.</span>
+          <span style={{ color: "#8B5CF6" }}>fly.</span>
         </div>
         <div
           style={{
@@ -43,7 +43,7 @@ export default function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          Digital Behavior Engineers • Custom Software &amp; Built-In AI SEO
+          Digital Behavior Engineers â€¢ Custom Software &amp; Built-In AI SEO
         </div>
       </div>
     ),
