@@ -20,9 +20,9 @@ export default function BarbersShowcase() {
       <div className="absolute bottom-8 right-8 z-50">
         <Link 
           href="/?consultation=true"
-          className="group relative flex items-center gap-3 bg-black/60 text-white px-6 py-4 rounded-full font-medium transition-all duration-300 border border-white/20 hover:border-[#00ff66]/50 hover:bg-[#00ff66]/10 backdrop-blur-xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(0,255,102,0.2)] hover:-translate-y-1"
+          className="group relative flex items-center gap-3 bg-black/60 text-white px-6 py-4 rounded-full font-medium transition-all duration-300 border border-white/20 hover:border-[#C84B1C]/50 hover:bg-[#C84B1C]/10 backdrop-blur-xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(200,75,28,0.25)] hover:-translate-y-1"
         >
-          <Calendar size={18} className="text-white/70 group-hover:text-[#00ff66] transition-colors duration-300" />
+          <Calendar size={18} className="text-white/70 group-hover:text-[#C84B1C] transition-colors duration-300" />
           <span className="text-sm font-bold uppercase tracking-widest">Book Consultation</span>
         </Link>
       </div>

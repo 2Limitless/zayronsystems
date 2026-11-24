@@ -119,7 +119,7 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
                 <span className="text-white/40 italic font-light">{t.title2}</span>
             </motion.h2>
 
-            <motion.h3 variants={itemVariants} className="text-xl md:text-2xl text-[#00ff66] font-light mb-8">
+            <motion.h3 variants={itemVariants} className="text-xl md:text-2xl text-[#C84B1C] font-light mb-8">
                 {t.subtitle}
             </motion.h3>
 
@@ -157,13 +157,13 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
             </motion.div>
 
             {/* Pongofly (Us) */}
-            <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#00ff66]/30 bg-[#00ff66]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(0,255,102,0.05)]">
-                <div className="absolute -bottom-4 md:-bottom-8 -right-2 md:-right-4 opacity-[0.04] pointer-events-none select-none overflow-visible">
-                    <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#00ff66] uppercase tracking-tighter">US</span>
+            <motion.div variants={itemVariants} className="flex flex-col p-8 md:p-12 rounded-[2rem] border border-[#C84B1C]/35 bg-[#C84B1C]/10 relative overflow-hidden group shadow-[0_0_50px_rgba(200,75,28,0.08)]">
+                <div className="absolute -bottom-4 md:-bottom-8 -right-2 md:-right-4 opacity-[0.05] pointer-events-none select-none overflow-visible">
+                    <span className="font-sans font-black text-[120px] md:text-[220px] leading-none text-[#C84B1C] uppercase tracking-tighter">US</span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 to-[#00ff66]/5 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 to-[#C84B1C]/10 pointer-events-none" />
 
-                <h4 className="text-[#00ff66] text-xs font-bold tracking-[0.2em] uppercase mb-2 relative z-10">
+                <h4 className="text-[#E06D3B] text-xs font-bold tracking-[0.2em] uppercase mb-2 relative z-10">
                     {t.us.subtitle}
                 </h4>
                 <h3 className="text-white text-3xl font-bold mb-10 tracking-tight relative z-10">
@@ -173,8 +173,8 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
                 <ul className="flex flex-col gap-6 relative z-10">
                     {t.us.points.map((point, i) => (
                         <li key={i} className="flex items-start gap-4 group/item">
-                            <div className="mt-0.5 bg-[#00ff66]/20 p-1 rounded flex-shrink-0 group-hover/item:bg-[#00ff66] transition-colors duration-300">
-                                <Check size={14} className="text-[#00ff66] group-hover/item:text-black transition-colors duration-300" />
+                            <div className="mt-0.5 bg-[#C84B1C]/20 p-1 rounded flex-shrink-0 group-hover/item:bg-[#C84B1C] transition-colors duration-300">
+                                <Check size={14} className="text-[#C84B1C] group-hover/item:text-white transition-colors duration-300" />
                             </div>
                             <span className="text-white/90 text-sm font-medium leading-relaxed">{point}</span>
                         </li>
@@ -195,9 +195,9 @@ export default function WhyUsExperience({ lang, onBack, onNavigateToApply, visit
             </p>
             <button 
               onClick={onNavigateToApply}
-              className="group relative px-12 py-5 bg-white text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(255,255,255,0.4)] transition-all duration-500 overflow-hidden"
+              className="group relative px-12 py-5 bg-white text-black hover:text-white font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_rgba(200,75,28,0.4)] transition-all duration-500 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-[#00ff66] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-[#C84B1C] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
               <span className="relative z-10 transition-colors duration-500">
                 {lang === 'en' ? "Request Behavioral Review" : "Solicitar Revisión"}
               </span>

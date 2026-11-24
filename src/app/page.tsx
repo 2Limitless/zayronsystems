@@ -306,7 +306,7 @@ export default function Home() {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, scale: 1.1, filter: "blur(20px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[1000] bg-[#051f0e] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
+            className="fixed inset-0 z-[1000] bg-[#1c0904] flex flex-col items-center justify-center pointer-events-auto overflow-hidden"
           >
             <button 
               onClick={() => {
@@ -317,8 +317,8 @@ export default function Home() {
             >
               <X size={24} />
             </button>
-            {/* Ambient green glow to match the background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#00ff66]/[0.15] via-transparent to-transparent pointer-events-none" />
+            {/* Ambient russet glow to match the background */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#C84B1C]/[0.18] via-transparent to-transparent pointer-events-none" />
             
             {/* Top Left Brand Wordmark */}
             <motion.div
@@ -344,7 +344,7 @@ export default function Home() {
               >
                 <div className="text-center space-y-4 mb-4">
                   <h1 className="text-white text-3xl md:text-4xl font-light tracking-[0.1em] leading-tight">
-                    Welcome to<br/><span className="text-[#00ff66] font-bold">Pongofly.</span>
+                    Welcome to<br/><span className="text-[#C84B1C] font-bold">Pongofly.</span>
                   </h1>
                   <p className="text-white/60 text-sm md:text-base font-light leading-relaxed px-2">
                     {lang === 'en' 
@@ -362,14 +362,14 @@ export default function Home() {
                   }}
                   maxLength={20}
                   placeholder="ENTER YOUR NAME"
-                  className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#00ff66] transition-colors placeholder:text-white/40 font-light"
+                  className="w-full bg-transparent border-b border-white/40 text-center text-white text-xl md:text-2xl tracking-[0.3em] uppercase pb-4 outline-none focus:border-[#C84B1C] transition-colors placeholder:text-white/40 font-light"
                   autoFocus
                 />
                 
                 <button 
                   onClick={handleInitiate}
                   disabled={!visitorName.trim()}
-                  className="group relative w-full py-5 bg-transparent border border-[#00ff66]/30 hover:border-[#00ff66] hover:bg-[#00ff66]/10 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#00ff66]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0)] hover:shadow-[0_0_60px_rgba(0,255,102,0.15)]"
+                  className="group relative w-full py-5 bg-transparent border border-[#C84B1C]/40 hover:border-[#C84B1C] hover:bg-[#C84B1C]/15 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#C84B1C]/30 transition-all duration-700 flex items-center justify-center shadow-[0_0_40px_rgba(200,75,28,0)] hover:shadow-[0_0_60px_rgba(200,75,28,0.2)]"
                 >
                   <span className="relative z-10 text-white/80 group-hover:text-white disabled:group-hover:text-white/80 text-xs md:text-sm font-bold tracking-[0.5em] uppercase transition-colors duration-700">
                     Enter Hub
@@ -413,9 +413,9 @@ export default function Home() {
                   <button
                     key={ind.id}
                     onClick={() => handleIndustrySelect(ind.id)}
-                    className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#00ff66]/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)]"
+                    className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#C84B1C]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)]"
                   >
-                     <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 via-[#00ff66]/0 to-[#00ff66]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 via-[#C84B1C]/0 to-[#C84B1C]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
                      <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
                        {ind.id === 'realestate' && lang === 'en' ? 'Real Estate' : ind.label[lang].split(" ")[0]}
                      </span>
@@ -427,9 +427,9 @@ export default function Home() {
                 
                 <a
                   href="/barbers"
-                  className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#00ff66]/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)] block no-underline"
+                  className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/50 p-6 hover:border-[#C84B1C]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)] block no-underline"
                 >
-                   <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/0 via-[#00ff66]/0 to-[#00ff66]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <div className="absolute inset-0 bg-gradient-to-br from-[#C84B1C]/0 via-[#C84B1C]/0 to-[#C84B1C]/15 opacity-0 group-hover:opacity-100 transition-opacity" />
                    <span className="relative z-10 text-white font-bold text-sm tracking-widest uppercase block mb-1">
                      {lang === 'es' ? "Barberos" : "Barbers"}
                    </span>
@@ -442,10 +442,10 @@ export default function Home() {
               <div className="mt-4">
                 <a
                   href="/partners"
-                  className="group relative overflow-hidden rounded-2xl border border-[#00ff66]/30 bg-[#00ff66]/5 p-4 md:p-6 hover:border-[#00ff66]/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,255,102,0.15)] block no-underline w-full text-center"
+                  className="group relative overflow-hidden rounded-2xl border border-[#C84B1C]/35 bg-[#C84B1C]/10 p-4 md:p-6 hover:border-[#C84B1C]/70 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(200,75,28,0.2)] block no-underline w-full text-center"
                 >
-                   <div className="absolute inset-0 bg-gradient-to-r from-[#00ff66]/0 via-[#00ff66]/10 to-[#00ff66]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                   <span className="relative z-10 text-[#00ff66] font-bold text-sm md:text-base tracking-widest uppercase block mb-1">
+                   <div className="absolute inset-0 bg-gradient-to-r from-[#C84B1C]/0 via-[#C84B1C]/15 to-[#C84B1C]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                   <span className="relative z-10 text-[#E06D3B] font-bold text-sm md:text-base tracking-widest uppercase block mb-1">
                      Referral Portal (Earn 30%)
                    </span>
                    <span className="relative z-10 text-white/50 text-[10px] tracking-widest uppercase block">
@@ -478,7 +478,7 @@ export default function Home() {
             <button onClick={() => handleNavClick("services")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.services}</button>
             <button onClick={() => handleNavClick("whyus")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.whyus}</button>
             <button onClick={() => handleNavClick("about")} className="text-white/60 hover:text-white text-xs tracking-widest uppercase transition-colors">{t.nav.about}</button>
-            <a href="/partners" className="text-[#00ff66]/80 hover:text-[#00ff66] text-xs tracking-widest uppercase transition-colors drop-shadow-[0_0_8px_rgba(0,255,102,0.3)]">{t.nav.partners}</a>
+            <a href="/partners" className="text-[#E06D3B]/90 hover:text-[#E06D3B] text-xs tracking-widest uppercase transition-colors drop-shadow-[0_0_8px_rgba(200,75,28,0.35)]">{t.nav.partners}</a>
             
             {/* Language Toggle */}
             <button 
@@ -498,7 +498,7 @@ export default function Home() {
               <Globe size={16} />
               {lang}
             </button>
-            <a href="/partners" className="flex items-center justify-center px-4 py-2 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 text-[#00ff66] text-xs font-bold uppercase">
+            <a href="/partners" className="flex items-center justify-center px-4 py-2 rounded-full border border-[#C84B1C]/40 bg-[#C84B1C]/15 text-[#E06D3B] text-xs font-bold uppercase">
               {t.nav.partners}
             </a>
           </div>
@@ -564,7 +564,7 @@ export default function Home() {
                       </div>
 
                       <h1 className="font-sans text-5xl md:text-[70px] lg:text-[85px] leading-[0.9] text-center font-bold tracking-tighter bg-gradient-to-b from-white via-white/90 to-white/30 bg-clip-text text-transparent pb-4 max-w-6xl">
-                        {visitorName && <span className="text-[#00ff66] italic">{visitorName},</span>} <br className="hidden md:block"/> {hubData.headline}
+                        {visitorName && <span className="text-[#C84B1C] italic">{visitorName},</span>} <br className="hidden md:block"/> {hubData.headline}
                       </h1>
                       
                       <p className="text-white/60 font-sans text-sm md:text-base font-light max-w-2xl text-center leading-relaxed mb-12">
@@ -584,7 +584,7 @@ export default function Home() {
                               <div className="flex items-center gap-2 mb-1">
                                 <span className="text-4xl md:text-5xl font-bold font-sans tracking-tighter text-white">{stat.num}<span className="text-white/40 text-3xl">{stat.num !== "0" && stat.num !== "3x" && stat.num !== "5x" ? "%" : ""}</span></span>
                                 <motion.div animate={{ y: [0, -3, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
-                                  <ArrowUp className="text-[#00ff66] w-5 h-5 md:w-6 md:h-6 drop-shadow-[0_0_15px_rgba(0,255,102,0.6)]" strokeWidth={3} />
+                                  <ArrowUp className="text-[#C84B1C] w-5 h-5 md:w-6 md:h-6 drop-shadow-[0_0_15px_rgba(200,75,28,0.7)]" strokeWidth={3} />
                                 </motion.div>
                               </div>
                               <h4 className="text-white text-sm font-bold mb-2 tracking-wide uppercase">{stat.title}</h4>
@@ -615,7 +615,7 @@ export default function Home() {
                           <motion.span 
                             animate={{ x: [0, 3, 0] }} 
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                            className="text-[#00ff66] text-lg leading-none inline-block ml-2"
+                            className="text-[#C84B1C] text-lg leading-none inline-block ml-2"
                           >
                             &rarr;
                           </motion.span>
@@ -631,20 +631,20 @@ export default function Home() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
-                        className="mt-16 md:mt-20 w-full max-w-5xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-[#00ff66]/30 bg-gradient-to-b from-[#00ff66]/[0.08] via-white/[0.02] to-transparent p-6 md:p-12 backdrop-blur-xl relative overflow-hidden shadow-[0_0_80px_rgba(0,255,102,0.08)] pointer-events-auto"
+                        className="mt-16 md:mt-20 w-full max-w-5xl mx-auto rounded-[2rem] md:rounded-[2.5rem] border border-[#C84B1C]/35 bg-gradient-to-b from-[#C84B1C]/[0.12] via-white/[0.02] to-transparent p-6 md:p-12 backdrop-blur-xl relative overflow-hidden shadow-[0_0_80px_rgba(200,75,28,0.1)] pointer-events-auto"
                       >
                         {/* Ambient top right glow */}
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#00ff66]/10 blur-[100px] rounded-full pointer-events-none" />
+                        <div className="absolute top-0 right-0 w-96 h-96 bg-[#C84B1C]/15 blur-[100px] rounded-full pointer-events-none" />
 
                         <div className="relative z-10 flex flex-col items-center text-center mb-10 md:mb-12">
-                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 text-[#00ff66] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-[0_0_20px_rgba(0,255,102,0.15)]">
+                          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#C84B1C]/35 bg-[#C84B1C]/15 text-[#E06D3B] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-4 shadow-[0_0_20px_rgba(200,75,28,0.2)]">
                             <Sparkles className="w-3.5 h-3.5" />
                             {t.hub.seoShowcase.badge}
                           </div>
 
                           <h2 className="text-3xl md:text-5xl font-sans font-bold tracking-tight text-white mb-4 max-w-3xl leading-tight">
                             {t.hub.seoShowcase.title} <br className="hidden md:block" />
-                            <span className="text-[#00ff66] font-light italic">{t.hub.seoShowcase.titleHighlight}</span>
+                            <span className="text-[#C84B1C] font-light italic">{t.hub.seoShowcase.titleHighlight}</span>
                           </h2>
 
                           <p className="text-white/60 text-xs md:text-base font-light max-w-2xl leading-relaxed">
@@ -660,18 +660,18 @@ export default function Home() {
                             return (
                               <div
                                 key={idx}
-                                className="bg-black/60 border border-white/10 hover:border-[#00ff66]/40 rounded-2xl p-6 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,255,102,0.1)] group"
+                                className="bg-black/60 border border-white/10 hover:border-[#C84B1C]/50 rounded-2xl p-6 flex flex-col justify-between text-left transition-all duration-300 hover:shadow-[0_10px_30px_rgba(200,75,28,0.15)] group"
                               >
                                 <div>
                                   <div className="flex items-center justify-between mb-4">
-                                    <span className="text-[10px] font-mono tracking-widest text-[#00ff66] uppercase">
+                                    <span className="text-[10px] font-mono tracking-widest text-[#E06D3B] uppercase">
                                       {card.tag}
                                     </span>
-                                    <div className="w-8 h-8 rounded-lg bg-[#00ff66]/10 flex items-center justify-center text-[#00ff66] group-hover:bg-[#00ff66] group-hover:text-black transition-colors duration-300">
+                                    <div className="w-8 h-8 rounded-lg bg-[#C84B1C]/15 flex items-center justify-center text-[#C84B1C] group-hover:bg-[#C84B1C] group-hover:text-white transition-colors duration-300">
                                       <IconComponent className="w-4 h-4" />
                                     </div>
                                   </div>
-                                  <h4 className="text-white font-bold text-base md:text-lg mb-2 tracking-tight group-hover:text-[#00ff66] transition-colors">
+                                  <h4 className="text-white font-bold text-base md:text-lg mb-2 tracking-tight group-hover:text-[#E06D3B] transition-colors">
                                     {card.title}
                                   </h4>
                                   <p className="text-white/50 text-xs leading-relaxed font-light">
@@ -692,13 +692,13 @@ export default function Home() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 0.6 }}
-                        className="mt-12 md:mt-16 w-full max-w-2xl bg-gradient-to-r from-[#00ff66]/10 to-transparent border border-[#00ff66]/20 rounded-3xl p-6 md:p-8 backdrop-blur-sm pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6"
+                        className="mt-12 md:mt-16 w-full max-w-2xl bg-gradient-to-r from-[#C84B1C]/15 to-transparent border border-[#C84B1C]/30 rounded-3xl p-6 md:p-8 backdrop-blur-sm pointer-events-auto flex flex-col md:flex-row items-center justify-between gap-6"
                       >
                         <div>
-                          <h4 className="text-[#00ff66] font-bold text-lg md:text-xl tracking-tight mb-2">Earn 30% Commission</h4>
+                          <h4 className="text-[#E06D3B] font-bold text-lg md:text-xl tracking-tight mb-2">Earn 30% Commission</h4>
                           <p className="text-white/70 text-xs md:text-sm max-w-md">Join our Partner Program. Refer clients and earn a massive 30% commission on every closed deal. Fully transparent tracking.</p>
                         </div>
-                        <a href="/partners" className="flex-none whitespace-nowrap bg-[#00ff66] text-black px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white transition-colors shadow-[0_0_20px_rgba(0,255,102,0.3)]">
+                        <a href="/partners" className="flex-none whitespace-nowrap bg-[#C84B1C] text-white px-6 py-3 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-white hover:text-black transition-colors shadow-[0_0_20px_rgba(200,75,28,0.35)]">
                           View Portal
                         </a>
                       </motion.div>
@@ -844,16 +844,16 @@ export default function Home() {
                       onClick={() => handleNavClick("about")}
                       className={`relative px-8 py-3 rounded-full text-center transition-colors duration-500 ${
                         currentView === "about"
-                          ? "text-[var(--color-void)] font-bold"
+                          ? "text-white font-bold"
                           : isLightMode
-                            ? "text-black font-bold bg-[#00ff66]/40 border border-[#00ff66] hover:bg-[#00ff66]/60 shadow-[0_0_15px_rgba(0,255,102,0.3)]"
-                            : "text-[#00ff66] font-bold bg-[#00ff66]/10 hover:bg-[#00ff66]/20 shadow-[0_0_15px_rgba(0,255,102,0.1)]"
+                            ? "text-[#9A3412] font-bold bg-[#C84B1C]/20 border border-[#C84B1C] hover:bg-[#C84B1C]/35 shadow-[0_0_15px_rgba(200,75,28,0.25)]"
+                            : "text-[#E06D3B] font-bold bg-[#C84B1C]/15 hover:bg-[#C84B1C]/25 shadow-[0_0_15px_rgba(200,75,28,0.15)]"
                       }`}
                     >
                       {currentView === "about" && (
                         <motion.div
                           layoutId="liquid-nav-blob"
-                          className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
+                          className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#C84B1C] shadow-[0_0_20px_rgba(200,75,28,0.45)]"
                           transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                         />
                       )}
@@ -868,16 +868,16 @@ export default function Home() {
                     onClick={() => handleNavClick("about")}
                     className={`relative w-auto px-6 h-[36px] flex items-center justify-center rounded-full text-center transition-colors duration-500 ${
                       currentView === "about"
-                        ? "text-[var(--color-void)] font-bold"
+                        ? "text-white font-bold"
                         : isLightMode
-                          ? "text-black font-bold bg-[#00ff66]/40 border border-[#00ff66] hover:bg-[#00ff66]/60 shadow-[0_0_15px_rgba(0,255,102,0.3)]"
-                          : "text-[#00ff66] font-bold bg-[#00ff66]/10 hover:bg-[#00ff66]/20 shadow-[0_0_15px_rgba(0,255,102,0.1)]"
+                          ? "text-[#9A3412] font-bold bg-[#C84B1C]/20 border border-[#C84B1C] hover:bg-[#C84B1C]/35 shadow-[0_0_15px_rgba(200,75,28,0.25)]"
+                          : "text-[#E06D3B] font-bold bg-[#C84B1C]/15 hover:bg-[#C84B1C]/25 shadow-[0_0_15px_rgba(200,75,28,0.15)]"
                     }`}
                   >
                     {currentView === "about" && (
                       <motion.div
                         layoutId="liquid-nav-blob"
-                        className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#00ff66] shadow-[0_0_20px_rgba(0,255,102,0.4)]"
+                        className="absolute inset-0 rounded-full -z-10 shadow-lg bg-[#C84B1C] shadow-[0_0_20px_rgba(200,75,28,0.45)]"
                         transition={{ type: "spring", stiffness: 120, damping: 14, mass: 1.2 }}
                       />
                     )}

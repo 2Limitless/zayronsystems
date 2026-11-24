@@ -33,7 +33,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span style={{ color: "#ffffff" }}>Pongo</span>
-          <span style={{ color: "#00ff66" }}>fly.</span>
+          <span style={{ color: "#C84B1C" }}>fly.</span>
         </div>
         <div
           style={{

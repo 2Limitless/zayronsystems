@@ -138,11 +138,11 @@ export default function DashboardPage() {
           animate={{ opacity: 1, y: 0 }}
           className="w-full max-w-md bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl relative overflow-hidden"
         >
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#00ff66] to-emerald-500" />
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#C84B1C] to-[#9A3412]" />
           
           <div className="flex flex-col items-center mb-8">
             <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4 border border-white/10">
-              <Lock className="text-[#00ff66]" size={28} />
+              <Lock className="text-[#C84B1C]" size={28} />
             </div>
             <h1 className="text-2xl font-bold text-white tracking-tight">Admin Hub</h1>
             <p className="text-white/50 text-sm mt-2 text-center">Enter your password to view leads and referrals</p>
@@ -155,7 +155,7 @@ export default function DashboardPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
-                className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#00ff66]/50 transition-colors"
+                className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#C84B1C]/60 transition-colors"
               />
             </div>
             {error && <p className="text-red-400 text-sm text-center">{error}</p>}
@@ -172,7 +172,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <main className="min-h-screen bg-black text-white p-6 md:p-12 font-sans selection:bg-[#00ff66]/30">
+    <main className="min-h-screen bg-black text-white p-6 md:p-12 font-sans selection:bg-[#C84B1C]/30">
       
       {/* Edit Modal */}
       <AnimatePresence>
@@ -202,7 +202,7 @@ export default function DashboardPage() {
                   <select 
                     value={editStatus} 
                     onChange={(e) => setEditStatus(e.target.value)}
-                    className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00ff66]/50 appearance-none"
+                    className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#C84B1C]/60 appearance-none"
                   >
                     <option value="pending">Pending</option>
                     <option value="contacted">Contacted</option>
@@ -217,14 +217,14 @@ export default function DashboardPage() {
                     type="number" 
                     value={editCommission} 
                     onChange={(e) => setEditCommission(Number(e.target.value))}
-                    className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#00ff66]/50"
+                    className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#C84B1C]/60"
                   />
                   <p className="text-white/30 text-xs mt-2">Enter the exact 30% payout amount once the deal is closed.</p>
                 </div>
                 <button
                   disabled={loading}
                   type="submit"
-                  className="w-full bg-[#00ff66] text-black font-bold uppercase tracking-widest text-sm rounded-xl px-4 py-4 hover:bg-white transition-colors disabled:opacity-50"
+                  className="w-full bg-[#C84B1C] text-white font-bold uppercase tracking-widest text-sm rounded-xl px-4 py-4 hover:bg-white hover:text-black transition-colors disabled:opacity-50"
                 >
                   {loading ? "Saving..." : "Save Changes"}
                 </button>
@@ -251,7 +251,7 @@ export default function DashboardPage() {
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="bg-white/5 border border-white/10 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-[#00ff66]/50 w-full md:w-64 transition-all"
+                className="bg-white/5 border border-white/10 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-[#C84B1C]/60 w-full md:w-64 transition-all"
               />
             </div>
             <button 
@@ -280,13 +280,13 @@ export default function DashboardPage() {
             onClick={() => setActiveTab("referrals")}
             className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all flex items-center gap-2 ${
               activeTab === "referrals" 
-                ? "bg-[#00ff66] text-black shadow-[0_0_20px_rgba(0,255,102,0.3)]" 
-                : "text-white/50 hover:text-[#00ff66] hover:bg-white/5"
+                ? "bg-[#C84B1C] text-white shadow-[0_0_20px_rgba(200,75,28,0.35)]" 
+                : "text-white/50 hover:text-[#E06D3B] hover:bg-white/5"
             }`}
           >
             Partner Referrals
             {referrals.filter(r => r.status === 'pending').length > 0 && (
-              <span className={`w-2 h-2 rounded-full ${activeTab === 'referrals' ? 'bg-black' : 'bg-[#00ff66]'}`} />
+              <span className={`w-2 h-2 rounded-full ${activeTab === 'referrals' ? 'bg-white' : 'bg-[#C84B1C]'}`} />
             )}
           </button>
         </div>
@@ -294,10 +294,10 @@ export default function DashboardPage() {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#00ff66]/5 rounded-full blur-3xl -mr-10 -mt-10 transition-all group-hover:bg-[#00ff66]/10" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#C84B1C]/10 rounded-full blur-3xl -mr-10 -mt-10 transition-all group-hover:bg-[#C84B1C]/20" />
             <div className="flex items-center gap-4 mb-4">
               <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                <Users className="text-[#00ff66]" size={20} />
+                <Users className="text-[#C84B1C]" size={20} />
               </div>
               <h3 className="font-medium text-white/70">
                 {activeTab === 'leads' ? 'Total Leads' : 'Total Referrals'}
@@ -313,7 +313,7 @@ export default function DashboardPage() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                    <DollarSign className="text-[#00ff66]" size={20} />
+                    <DollarSign className="text-[#C84B1C]" size={20} />
                   </div>
                   <h3 className="font-medium text-white/70">Owed Commissions</h3>
                 </div>
@@ -324,7 +324,7 @@ export default function DashboardPage() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                    <CheckCircle className="text-[#00ff66]" size={20} />
+                    <CheckCircle className="text-[#C84B1C]" size={20} />
                   </div>
                   <h3 className="font-medium text-white/70">Paid Out</h3>
                 </div>
@@ -373,7 +373,7 @@ export default function DashboardPage() {
                   filteredLeads.map((lead) => (
                     <motion.tr initial={{ opacity: 0 }} animate={{ opacity: 1 }} key={lead.id} className="hover:bg-white/[0.02] transition-colors group">
                       <td className="px-6 py-4">
-                        <div className="font-medium text-white mb-1 group-hover:text-[#00ff66] transition-colors">{lead.name}</div>
+                        <div className="font-medium text-white mb-1 group-hover:text-[#C84B1C] transition-colors">{lead.name}</div>
                         <div className="flex items-center gap-3 text-sm text-white/50">
                           <span className="flex items-center gap-1"><Mail size={12}/> {lead.email}</span>
                           <span className="flex items-center gap-1"><Phone size={12}/> {lead.phone}</span>
@@ -397,7 +397,7 @@ export default function DashboardPage() {
                   filteredReferrals.map((ref) => (
                     <motion.tr initial={{ opacity: 0 }} animate={{ opacity: 1 }} key={ref.id} className="hover:bg-white/[0.02] transition-colors group">
                       <td className="px-6 py-4">
-                        <div className="font-medium text-white mb-1 group-hover:text-[#00ff66] transition-colors">{ref.referrer_name}</div>
+                        <div className="font-medium text-white mb-1 group-hover:text-[#C84B1C] transition-colors">{ref.referrer_name}</div>
                         <div className="text-sm text-white/50">{ref.referrer_email}</div>
                       </td>
                       <td className="px-6 py-4">
@@ -412,7 +412,7 @@ export default function DashboardPage() {
                       <td className="px-6 py-4">
                         <div className="flex flex-col gap-2 items-start">
                           <span className={`px-2 py-1 rounded text-[10px] font-bold uppercase tracking-widest border ${
-                            ref.status === 'closed_won' || ref.status === 'paid' ? 'bg-[#00ff66]/10 text-[#00ff66] border-[#00ff66]/20'
+                            ref.status === 'closed_won' || ref.status === 'paid' ? 'bg-[#C84B1C]/15 text-[#E06D3B] border-[#C84B1C]/30'
                             : ref.status === 'closed_lost' ? 'bg-red-500/10 text-red-400 border-red-500/20'
                             : 'bg-white/5 text-white/70 border-white/10'
                           }`}>

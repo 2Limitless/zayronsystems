@@ -101,7 +101,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
     >
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,255,102,0.1),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,75,28,0.14),transparent_70%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-30" />
       </div>
 
@@ -131,18 +131,18 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
           animate="visible"
           className="flex-1 flex flex-col justify-center max-w-2xl"
         >
-          <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#00ff66]/30 bg-[#00ff66]/10 mb-10 w-max shadow-[0_0_20px_rgba(0,255,102,0.15)]">
-            <span className="w-2 h-2 rounded-full bg-[#00ff66] animate-pulse shadow-[0_0_10px_#00ff66]" />
-            <span className="text-[#00ff66] text-[10px] md:text-xs font-bold tracking-widest uppercase">{t.availability}</span>
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#C84B1C]/35 bg-[#C84B1C]/15 mb-10 w-max shadow-[0_0_20px_rgba(200,75,28,0.2)]">
+            <span className="w-2 h-2 rounded-full bg-[#C84B1C] animate-pulse shadow-[0_0_10px_#C84B1C]" />
+            <span className="text-[#E06D3B] text-[10px] md:text-xs font-bold tracking-widest uppercase">{t.availability}</span>
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white tracking-tighter leading-[0.9] mb-8">
             {t.title1} <br/>
-            <span className="bg-gradient-to-r from-white via-white/80 to-[#00ff66] text-transparent bg-clip-text pr-4">{t.title2}</span>
+            <span className="bg-gradient-to-r from-white via-white/80 to-[#C84B1C] text-transparent bg-clip-text pr-4">{t.title2}</span>
           </motion.h1>
 
           {visitorName && (
-            <motion.p variants={itemVariants} className="text-[#00ff66] text-lg md:text-xl font-medium tracking-wide mb-4">
+            <motion.p variants={itemVariants} className="text-[#C84B1C] text-lg md:text-xl font-medium tracking-wide mb-4">
               {lang === 'en' ? 'Attention ' : 'Atención '}{visitorName}
             </motion.p>
           )}
@@ -156,12 +156,12 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
 
           <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
             <div className="flex flex-col gap-2">
-              <Shield className="w-6 h-6 text-[#00ff66]/70 mb-2" />
+              <Shield className="w-6 h-6 text-[#C84B1C]/80 mb-2" />
               <h4 className="text-white text-sm font-bold uppercase tracking-wider">Absolute Sovereignty</h4>
               <p className="text-white/40 text-xs">Own your data and infrastructure completely.</p>
             </div>
             <div className="flex flex-col gap-2">
-              <Zap className="w-6 h-6 text-[#00ff66]/70 mb-2" />
+              <Zap className="w-6 h-6 text-[#C84B1C]/80 mb-2" />
               <h4 className="text-white text-sm font-bold uppercase tracking-wider">Infinite Scalability</h4>
               <p className="text-white/40 text-xs">Built to handle massive growth without friction.</p>
             </div>
@@ -175,7 +175,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="w-full max-w-lg lg:w-[450px]"
         >
-          <div className="relative p-[1px] rounded-[2rem] overflow-hidden bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-[0_40px_100px_-20px_rgba(0,255,102,0.15)]">
+          <div className="relative p-[1px] rounded-[2rem] overflow-hidden bg-gradient-to-b from-white/20 via-white/5 to-transparent shadow-[0_40px_100px_-20px_rgba(200,75,28,0.2)]">
             <div className="absolute inset-0 bg-black/40 backdrop-blur-3xl" />
             
             <div className="relative p-8 md:p-10 flex flex-col gap-8">
@@ -185,8 +185,8 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col items-center justify-center text-center py-12 gap-6"
                 >
-                  <div className="w-20 h-20 rounded-full bg-[#00ff66]/10 border border-[#00ff66]/30 flex items-center justify-center shadow-[0_0_40px_rgba(0,255,102,0.2)]">
-                    <CheckCircle2 className="w-10 h-10 text-[#00ff66]" />
+                  <div className="w-20 h-20 rounded-full bg-[#C84B1C]/15 border border-[#C84B1C]/35 flex items-center justify-center shadow-[0_0_40px_rgba(200,75,28,0.25)]">
+                    <CheckCircle2 className="w-10 h-10 text-[#C84B1C]" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-3">{t.form.successTitle}</h3>
@@ -209,7 +209,7 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                   {/* Progress Indicator */}
                   <div className="flex gap-2 w-full mb-2">
                     {formFields.map((_, i) => (
-                      <div key={i} className={`h-1 flex-1 rounded-full transition-colors duration-500 ${i <= step ? "bg-[#00ff66]" : "bg-white/10"}`} />
+                      <div key={i} className={`h-1 flex-1 rounded-full transition-colors duration-500 ${i <= step ? "bg-[#C84B1C]" : "bg-white/10"}`} />
                     ))}
                   </div>
 
@@ -233,14 +233,14 @@ export default function AboutExperience({ lang, onBack, visitorName }: { lang: L
                           onFocus={() => setFocusedInput(formFields[step].id)}
                           onBlur={() => setFocusedInput(null)}
                           className={`w-full bg-black/50 border rounded-xl px-5 py-5 text-white text-base md:text-lg font-medium transition-all duration-300 outline-none
-                            ${focusedInput === formFields[step].id ? "border-[#00ff66]/50 shadow-[0_0_15px_rgba(0,255,102,0.1)]" : "border-white/10 hover:border-white/20"}
+                            ${focusedInput === formFields[step].id ? "border-[#C84B1C]/60 shadow-[0_0_15px_rgba(200,75,28,0.15)]" : "border-white/10 hover:border-white/20"}
                           `}
                         />
                         <label 
                           htmlFor={formFields[step].id}
                           className={`absolute left-5 transition-all duration-300 pointer-events-none uppercase tracking-widest font-bold
                             ${(formData as any)[formFields[step].id] || focusedInput === formFields[step].id 
-                              ? "text-[9px] top-1.5 text-[#00ff66]" 
+                              ? "text-[9px] top-1.5 text-[#C84B1C]" 
                               : "text-xs md:text-sm top-5 text-white/40 group-hover:text-white/60"}
                           `}
                         >

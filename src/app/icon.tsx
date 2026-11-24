@@ -20,9 +20,9 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#00ff66",
+          color: "#C84B1C",
           borderRadius: 8,
-          border: "1px solid rgba(0, 255, 102, 0.35)",
+          border: "1px solid rgba(200, 75, 28, 0.4)",
           fontFamily: "sans-serif",
         }}
       >

@@ -247,14 +247,14 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
 
           <motion.div 
             initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4, duration: 0.8 }}
-            className="flex flex-col gap-2 md:gap-4 p-4 md:p-8 rounded-2xl md:rounded-[1.5rem] border border-[#00ff66]/20 bg-[#00ff66]/5 relative overflow-hidden"
+            className="flex flex-col gap-2 md:gap-4 p-4 md:p-8 rounded-2xl md:rounded-[1.5rem] border border-[#C84B1C]/30 bg-[#C84B1C]/10 relative overflow-hidden"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#00ff66]/10 blur-[80px] rounded-full pointer-events-none" />
-            <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#00ff66] font-bold">{content.profit.direct}</h3>
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#C84B1C]/15 blur-[80px] rounded-full pointer-events-none" />
+            <h3 className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-[#E06D3B] font-bold">{content.profit.direct}</h3>
             <div><span className="text-2xl min-[400px]:text-3xl md:text-5xl lg:text-6xl font-sans font-bold text-white tracking-tighter whitespace-normal md:whitespace-nowrap leading-none">{content.profit.directMetric}</span></div>
             <p className="text-white/70 text-xs md:text-base font-medium leading-tight mt-2">{content.profit.directDesc1}</p>
-            <div className="w-full h-[1px] bg-[#00ff66]/20 my-2 md:my-4" />
-            <p className="text-[#00ff66]/80 text-xs md:text-sm font-semibold leading-tight">{content.profit.directDesc2}</p>
+            <div className="w-full h-[1px] bg-[#C84B1C]/25 my-2 md:my-4" />
+            <p className="text-[#E06D3B]/90 text-xs md:text-sm font-semibold leading-tight">{content.profit.directDesc2}</p>
           </motion.div>
         </div>
 
@@ -277,7 +277,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.5 }} className="col-span-1 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <Bot className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#00ff66] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <Bot className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-xl mb-1 md:mb-3 leading-tight">{content.cards[2].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[2].desc}</p>
@@ -285,7 +285,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.5 }} className="col-span-1 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <MonitorSmartphone className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#00ff66] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <MonitorSmartphone className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-xl mb-1 md:mb-3 leading-tight">{content.cards[3].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[3].desc}</p>
@@ -293,8 +293,8 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0, duration: 0.5 }} className="col-span-1 md:col-span-2 bg-[var(--color-ice)]/5 border border-[var(--color-ice)]/10 p-4 md:p-8 rounded-2xl md:rounded-[2rem] hover:bg-[var(--color-ice)]/10 transition-colors group relative overflow-hidden flex flex-col justify-start md:justify-between min-h-[auto] md:min-h-[240px] gap-2 md:gap-0">
-            <div className="hidden md:block absolute -bottom-24 -left-24 w-64 h-64 bg-[#00ff66]/10 blur-[80px] rounded-full group-hover:bg-[#00ff66]/20 transition-all duration-700" />
-            <Bell className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#00ff66] md:mb-6 group-hover:-translate-y-1 transition-transform" />
+            <div className="hidden md:block absolute -bottom-24 -left-24 w-64 h-64 bg-[#C84B1C]/15 blur-[80px] rounded-full group-hover:bg-[#C84B1C]/25 transition-all duration-700" />
+            <Bell className="w-6 h-6 md:w-8 md:h-8 shrink-0 text-[#C84B1C] md:mb-6 group-hover:-translate-y-1 transition-transform" />
             <div>
               <h4 className="text-[var(--color-ice)] font-serif text-base md:text-2xl mb-1 md:mb-3 leading-tight">{content.cards[4].title}</h4>
               <p className="text-[var(--color-ice)]/60 text-xs md:text-sm leading-relaxed">{content.cards[4].desc}</p>
@@ -322,7 +322,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
             </p>
             <button 
               onClick={onNavigateToApply}
-              className="group relative px-12 py-5 bg-[#00ff66] text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(0,255,102,0.2)] hover:shadow-[0_0_60px_rgba(0,255,102,0.4)] transition-all duration-500 overflow-hidden"
+              className="group relative px-12 py-5 bg-[#C84B1C] text-white hover:text-black font-bold tracking-[0.2em] text-xs md:text-sm uppercase rounded-full shadow-[0_0_40px_rgba(200,75,28,0.25)] hover:shadow-[0_0_60px_rgba(200,75,28,0.45)] transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-white translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
               <span className="relative z-10 transition-colors duration-500">
@@ -334,7 +334,7 @@ export default function PortfolioExperience({ lang, industry, onBack, onNavigate
 
         {/* Legitimate SEO Footer Credit */}
         <footer className="w-full text-center py-4 relative z-10 bg-transparent mt-12 md:mb-8 pointer-events-auto">
-          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#00ff66]/20">
+          <p className="text-white/20 text-[9px] md:text-[10px] tracking-widest uppercase font-mono selection:bg-[#C84B1C]/20">
             &copy; {new Date().getFullYear()} Pongofly. Enterprise System Software Development.
           </p>
         </footer>
